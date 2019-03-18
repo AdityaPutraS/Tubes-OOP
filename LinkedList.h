@@ -1,17 +1,14 @@
-#include <iostream>
-using namespace std;
+#include "Node.h"
 
 
-#ifndef GENERIK_H
-#define GENERIK_H
-
-#define MAXSIZE 500
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
 
 template <class T>
 class LinkedList{
     private:
-    T* List;
-    int neff;
+    Node<T> info;
+    LinkedList<T>* next;
     public:
     LinkedList();
     LinkedList(const LinkedList&);
@@ -27,8 +24,8 @@ class LinkedList{
 
 template <class T>
 LinkedList<T>::LinkedList(){
-    T = new T[MAXSIZE];
-    neff = 0;
+    info = 0;
+    next = nullptr;
 }
 template <class T>
 LinkedList<T>::LinkedList(const LinkedList<T>& LL){
