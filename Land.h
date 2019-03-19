@@ -11,10 +11,7 @@ class Land : public Cell{
 
     public:
         //ctor berparameter position dan grass
-        Land(Point, bool);
-
-        //dtor jika diperlukan untuk point<int>
-        ~Land();
+        Land(Point _pos, bool _grass = false);
 
         //Mengirimkan true jika Land punya grass
         bool hasGrass() const;
@@ -22,13 +19,13 @@ class Land : public Cell{
         //Menumbuhkan grass pada Land
         void growGrass();
 
-        //Merender grass (# atau -)
-        virtual void render() const;
-
+        //Checking apakah land ini sebuah barn
         virtual bool isBarn() const{return false;}
 
+        //Checking apakah land ini sebuah coop
         virtual bool isCoop() const{return false;}
 
+        //Checking apakah land ini sebuah grassland
         virtual bool isGrassland() const{return false;}
 };
 

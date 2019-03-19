@@ -4,12 +4,12 @@
 #include "Land.h"
 #include "Animal.h"
 
-class Grassland : public Land{
-    private:
+#define grasslandpointer Grassland*
 
+class Grassland : public Land{
     public:
-        //ctor berparameter grass = false
-        Grassland(Point);
+        //ctor berparameter posisi
+        Grassland(Point _pos, bool _grass);
 
         bool isGrassland() const{return true;}
 

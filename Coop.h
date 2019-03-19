@@ -4,16 +4,12 @@
 #include "Land.h"
 #include "Animal.h"
 
-class Coop : public Land{
-    private:
-        char renderChar;
+#define cooppointer Coop*
 
+class Coop : public Land{
     public:
         //ctor berparameter
-        Coop(Point);
-
-        //Merender renderChar jika tidak ada grass(*)
-        void render() const;
+        Coop(Point pos, bool _grass);
 
         bool isCoop() const{return true;}
 

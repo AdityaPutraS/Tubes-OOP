@@ -4,18 +4,25 @@
 #include "Generik.h"
 #include "Renderable.h"
 
+#define cellpointer Cell*
+
 class Cell : public Renderable{
     private:
         Point pos;
+        char renderChar;
+
     public:
         //ctor
-        Cell(Point);
+        Cell(Point _pos, char _renderChar);
 
         //getPoint
         Point getPoint() const;
 
         //setPoint
-        void setPoint(Point);
+        void setPos(Point _pos);
+
+        //set renderChar
+        virtual void setRenderChar(char _renderChar);
 
 
 };

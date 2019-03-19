@@ -4,16 +4,12 @@
 #include "Land.h"
 #include "Animal.h"
 
+#define barnpointer Barn*
+
 class Barn : public Land{
-    private:
-        char renderChar;
-
     public:
-        //ctor berparameter
-        Barn(Point);
-
-        //Merender renderChar jika tidak ada Grass (@)
-        void render() const;
+        //ctor 
+        Barn(Point pos, bool _grass);
 
         bool isBarn() const{return true;}
 };
