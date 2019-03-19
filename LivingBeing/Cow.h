@@ -1,11 +1,19 @@
+/**
+ * \class Cow
+ * \brief Cow adalah salah satu binatang dalam game
+ *
+ * Cow adalah binatang turunan dari MilkProducingAnimal dan MeatProducingAnimal
+ * sehingga Cow bisa menghasilkan susu maupun daging
+ * 
+ * \note Habitat Cow adalah Barn
+ *      dan bunyinya adalah "Mooo"
+ * 
+ * \author Ahmad Rizal Alifio
+ * 
+ */
+
 #ifndef _COW_H
 #define _COW_H
-
-/*
-* CATATAN
-* 1. animalSound = "Mooo"
-* 2. Habitat    : Barn
-*/
 
 #include <iostream>
 #include "MeatProducingAnimal.h"
@@ -16,7 +24,15 @@ class Cow : public MeatProducingAnimal, public MilkProducingAnimal {
     private:
         
     public:
-        //CTOR
-        Cow(int _x, int _y, string _animalSound); //Konstruk Cow dengan parametered location dan animalSound
+        /**
+         * \brief Konstruk Cow dengan parametered location, dan bunyi defaultnya
+         * 
+         * Cow akan memanggil konstruktor Animal
+         * dengan parameter bunyi "Mooo"
+         * 
+         * \param _x posisi x Cow
+         * \param _y posisi y Cow
+         */
+        Cow(int _x, int _y);
 };
 #endif

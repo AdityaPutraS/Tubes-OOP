@@ -37,7 +37,7 @@ public:
 	Tampilan();
 
 	/**
-	 * \breif Constructor dengan parameter
+	 * \brief Constructor dengan parameter
 	 * \param _row menandakan baris maksimal WINDOW, merupakan kelipatan 3
 	 * \param _col menandakan kolom maksimal WINDOW, merupakan kelipatan 3
 	 * \param _coorx menandakan nilai X pojok kiri atas WINDOW

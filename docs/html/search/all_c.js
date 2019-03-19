@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['tubes_2doop',['Tubes-OOP',['../autotoc_md0.html',1,'']]],
-  ['tampilan',['Tampilan',['../classTampilan.html',1,'Tampilan'],['../classTampilan.html#a43f269e3d5c293042af6037f5fdaef05',1,'Tampilan::Tampilan()'],['../classTampilan.html#a287f24563e5ce3776908f4b489a337f3',1,'Tampilan::Tampilan(int _row, int _col, int _coorx, int _coory, WINDOW *curwin)']]],
-  ['truck',['Truck',['../classTruck.html',1,'']]]
+  ['setanimalsound',['SetAnimalSound',['../classAnimal.html#af8fdb2bbb3d2ae4d1f70b850a71e42ab',1,'Animal']]],
+  ['setcol',['setcol',['../classTampilan.html#ac617ef582e2fe3a894c71372f60e562f',1,'Tampilan']]],
+  ['sethungermeter',['SetHungerMeter',['../classAnimal.html#a4d6894b8b33ce7cf3d6dc42c64f06b76',1,'Animal']]],
+  ['setrow',['setrow',['../classTampilan.html#aaec0545eaf5a7646482158078d0e6cd3',1,'Tampilan']]],
+  ['setx',['SetX',['../classLivingBeing.html#a066f825613f93f0d97f644d5f0ce1cb5',1,'LivingBeing::SetX()'],['../classTampilan.html#a1c8443c5bde9718f078ea517bf9f27f0',1,'Tampilan::setx()']]],
+  ['sety',['sety',['../classTampilan.html#a697d4d73cd649452b0c1aa8ef17c38f9',1,'Tampilan::sety()'],['../classLivingBeing.html#a69e58a8fb18b45d41b308dab4f654a37',1,'LivingBeing::SetY()']]],
+  ['sideproduct',['SideProduct',['../classSideProduct.html',1,'']]],
+  ['soundtheanimal',['SoundTheAnimal',['../classAnimal.html#a133f57a24e15741829d677c2602effd2',1,'Animal']]]
 ];

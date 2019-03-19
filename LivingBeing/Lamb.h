@@ -1,11 +1,18 @@
+/**
+ * \class Lamb
+ * \brief Lamb adalah salah satu binatang dalam game
+ *
+ * Lamb adalah binatang turunan dari MilkProducingAnimal dan MeatProducingAnimal
+ * sehingga Lamb bisa menghasilkan susu maupun daging
+ * 
+ * \note Habitat Lamb adalah Grassland
+ *      dan bunyinya adalah "Baaa"
+ * 
+ * \author Ahmad Rizal Alifio
+ * 
+ */
 #ifndef _LAMB_H
 #define _LAMB_H
-
-/*
-* CATATAN
-* 1. animalSound = "Baaa"
-* 2. Habitat    : Grassland
-*/
 
 #include <iostream>
 #include "MilkProducingAnimal.h"
@@ -16,7 +23,15 @@ class Lamb : public MeatProducingAnimal, public MilkProducingAnimal {
     private:
 
     public:
-        //CTOR    
-        Lamb(int _x, int _y, string _animalSound); //Konstruk Lamb dengan parametered location, dan animalSound
+        /**
+         * \brief Konstruk Lamb dengan parametered location, dan bunyi defaultnya
+         * 
+         * Lamb akan memanggil konstruktor Animal
+         * dengan parameter bunyi "Mooo"
+         * 
+         * \param _x posisi x Lamb
+         * \param _y posisi y Lamb
+         */  
+        Lamb(int _x, int _y);
 };
 #endif

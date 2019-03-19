@@ -1,11 +1,19 @@
+/**
+ * \class Diplodocus
+ * \brief Diplodocus adalah salah satu binatang dalam game
+ *
+ * Diplodocus adalah binatang turunan dari EggProducingAnimal dan MeatProducingAnimal
+ * sehingga Diplodocus bisa menghasilkan telur maupun daging
+ * 
+ * \note Habitat Diplodocus adalah Grassland
+ *      dan bunyinya adalah "Rawr XD"
+ * 
+ * \author Ahmad Rizal Alifio
+ * 
+ */
+
 #ifndef _DIPLODOCUS_H
 #define _DIPLODOCUS_H
-
-/*
-* CATATAN
-* 1. animalSound = "Rawr XD"
-* 2. Habitat    : Grassland
-*/
 
 #include <iostream>
 #include "EggProducingAnimal.h"
@@ -16,7 +24,15 @@ class Diplodocus : public EggProducingAnimal, public MeatProducingAnimal {
     private:
 
     public:
-        //CTOR    
-        Diplodocus(int _x, int _y, string _animalSound); //Konstruk Diplodocus dengan parametered location, dan animalSound
+        /**
+         * \brief Konstruk Diplodocus dengan parametered location, dan bunyi defaultnya
+         * 
+         * Diplodocus akan memanggil konstruktor Animal
+         * dengan parameter bunyi "Rawr XD"
+         * 
+         * \param _x posisi x Diplodocus
+         * \param _y posisi y Diplodocus
+         */   
+        Diplodocus(int _x, int _y);
 };
 #endif
