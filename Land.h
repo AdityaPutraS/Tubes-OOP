@@ -2,18 +2,18 @@
 #define _LAND_H
 
 #include "Cell.h"
-#include "SharedClasses.h" //perlu ada kumpulan kelas yang mungkin bakal dipake, mis. point, dll
+#include "Generik.h" //perlu ada kumpulan kelas yang mungkin bakal dipake, mis. point, dll
 
 #define landpointer Land*
 
 class Land : public Cell{
     private:
         bool grass;
-        point<int> position;
+        Point position;
 
     public:
         //ctor berparameter position dan grass
-        Land(point<int>, bool);
+        Land(Point, bool);
 
         //dtor jika diperlukan untuk point<int>
         ~Land();

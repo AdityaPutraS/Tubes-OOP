@@ -10,7 +10,7 @@ class Barn : public Land{
 
     public:
         //ctor berparameter
-        Barn(point<int>);
+        Barn(Point);
 
         //Merender renderChar jika tidak ada Grass (@)
         void render() const;

@@ -10,7 +10,7 @@ class Coop : public Land{
 
     public:
         //ctor berparameter
-        Coop(point<int>);
+        Coop(Point);
 
         //Merender renderChar jika tidak ada grass(*)
         void render() const;

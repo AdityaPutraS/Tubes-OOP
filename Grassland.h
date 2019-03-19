@@ -9,7 +9,7 @@ class Grassland : public Land{
 
     public:
         //ctor berparameter grass = false
-        Grassland(point<int>);
+        Grassland(Point);
 
         bool isGrassland() const{return true;}
 
