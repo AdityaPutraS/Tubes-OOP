@@ -94,4 +94,21 @@ int LinkedList<T>::getNeff(){
 }
 
 
+class Point{
+    private:
+        int x;
+        int y;
+    public:
+        //ctor
+        Point(int _x = 0, int _y = 0):x(_x), y(_y){}
+
+        //Getter dan setter
+        int getAbsis() const{return x;}
+        int getOrdinat() const{return y;}
+
+        void setAbsis(int _x){x = _x;}
+        void setOrdinat(int _y){y = _y;}
+
+};
+
 #endif
