@@ -2,6 +2,7 @@
 #define FACILITY_H
 
 #include "Product.h"
+#include "Cell.h"
 
 class Facility : public Cell
 {

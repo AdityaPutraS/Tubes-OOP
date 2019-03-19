@@ -61,7 +61,7 @@ void Tampilan::drawkotak(){
     mvwaddch(currentWindow, y2, x2, ACS_LRCORNER);
 }
 
-void Tampilan::drawtable(){
+void Tampilan::drawtable(int nBaris, int nKolom){
 	drawkotak();
 	int y1 = coory;
 	int y2 = row + coory;

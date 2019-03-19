@@ -13,10 +13,10 @@ class LivingBeing {
     protected:
         int x;
         int y;
-        enum direction = {up, down, left, right}; //up 1, down 2, left 3, right 4
+        enum direction {up, down, left, right}; //up 1, down 2, left 3, right 4
     public:
         //CTOR
-        MakhlukHidup(int _x, int _y);   //Konstruk dengan parametered location
+        LivingBeing(int _x, int _y);   //Konstruk dengan parametered location
         
         //GETTER
         int GetX();     
@@ -27,7 +27,7 @@ class LivingBeing {
         void SetY(int _y);
         
         //METHOD
-        void Move(int directionNumber);
+        void Move(direction directionNumber);
         void MoveRandom();  //untuk animal
 };
 #endif

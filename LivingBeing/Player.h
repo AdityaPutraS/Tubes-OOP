@@ -10,6 +10,10 @@
 #include <iostream>
 #include "LivingBeing.h"
 #include "Generik.h"
+#include "../Product.h"
+#include "Animal.h"
+#include "../Facility.h"
+
 using namespace std;
 
 class Player: public LivingBeing {
@@ -17,7 +21,7 @@ class Player: public LivingBeing {
         int water;  //Jumlah air yang dibawa Player
         int money;  //Jumlah uang yang dibawa Player
         //BUTUH INVENTORI (Linked List?)
-        LinkedList tas; //Ukuran default = 20
+        LinkedList<Product> tas; //Ukuran default = 20
     public:
         //CTOR
         Player();   //Konstruk player dengan predefined location, water, and money, dan tas ukuran default
