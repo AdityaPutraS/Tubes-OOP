@@ -3,7 +3,8 @@
 
 /*
 * CATATAN
-* 1. animalSound = "Purrr"
+* 1. animalSound = "Kokokpetok"
+* 2. Habitat    : Coop
 */
 
 #include <iostream>
@@ -16,6 +17,6 @@ class Chicken : public EggProducingAnimal, public MeatProducingAnimal {
 
     public:
         //CTOR
-        Chicken(int _x, int _y, string _animalSound); //Konstruk platypus dengan parametered location, hungerMeter, dan animalSound
+        Chicken(int _x, int _y, string _animalSound); //Konstruk Chicken dengan parametered location, dan animalSound
 };
 #endif

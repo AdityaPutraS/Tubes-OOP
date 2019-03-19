@@ -4,6 +4,7 @@
 /*
 * CATATAN
 * 1. animalSound = "Purrr"
+* 2. Habitat    : Coop
 */
 
 #include <iostream>
@@ -15,6 +16,6 @@ class Platypus : public EggProducingAnimal {
 
     public:
         //CTOR    
-        Platypus(int _x, int _y, string _animalSound); //Konstruk platypus dengan parametered location, hungerMeter, dan animalSound
+        Platypus(int _x, int _y, string _animalSound); //Konstruk Platypus dengan parametered location dan animalSound
 };
 #endif

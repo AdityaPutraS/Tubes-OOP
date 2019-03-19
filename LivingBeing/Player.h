@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include "LivingBeing.h"
+#include "Generik.h"
 using namespace std;
 
 class Player: public LivingBeing {
@@ -16,10 +17,11 @@ class Player: public LivingBeing {
         int water;  //Jumlah air yang dibawa Player
         int money;  //Jumlah uang yang dibawa Player
         //BUTUH INVENTORI (Linked List?)
+        LinkedList tas; //Ukuran default = 20
     public:
         //CTOR
-        Player();   //Konstruk player dengan predefined location, water, and money
-        Player(int _x, int _y, int _water, int _money); //Konstruk player dengan parametered water and money
+        Player();   //Konstruk player dengan predefined location, water, and money, dan tas ukuran default
+        Player(int _x, int _y, int _water, int _money); //Konstruk player dengan parametered water and money, dan tas ukuran default
 
         //GETTER
         int GetWater(); //return water
@@ -28,7 +30,7 @@ class Player: public LivingBeing {
         //SETTER
         void SetWater(int _water);  //set water
         void SetMoney(int _money);  //set money
-
+    
         //METHOD
         void TalkWith();
             //Cek hewan apa yang ada di sekitar lalu bunyikan suaranya

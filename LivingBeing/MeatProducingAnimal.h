@@ -12,10 +12,10 @@ using namespace std;
 
 class MeatProducingAnimal : public Animal {
     protected:
-        int meatAmount;
+    
     public:
         //CTOR
-        MeatProducingAnimal(int _x, int _y, string _animalSound, int _meatAmount);  //init meatAmount tergantung animalnya
+        MeatProducingAnimal(int _x, int _y, string _animalSound);
 
         //METHOD
         void DieAndGiveMeat();
