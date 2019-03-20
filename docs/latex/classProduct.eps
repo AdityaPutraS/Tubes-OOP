@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 215.053763
+%%BoundingBox: 0 0 500 460.992908
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 2.325000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 1.084615 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 2 def
-/cols 2 def
+/rows 13 def
+/cols 4 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -176,6 +176,23 @@ boxfont setfont
 (Product) cw
 (FarmProduct) cw
 (SideProduct) cw
+(ChickenEgg) cw
+(ChickenMeat) cw
+(CowMeat) cw
+(CowMilk) cw
+(DiplodocusEgg) cw
+(DiplodocusMeat) cw
+(LambMeat) cw
+(LambMilk) cw
+(PlatypusEgg) cw
+(SalmonEgg) cw
+(SalmonMeat) cw
+(BeefRolade) cw
+(BlueFeather) cw
+(CheesesteakOmelette) cw
+(CremeBrulee) cw
+(Lasagna) cw
+(STMJ) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -187,17 +204,76 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (Product) 0.500000 1.000000 box
- (FarmProduct) 0.000000 0.000000 box
- (SideProduct) 1.000000 0.000000 box
+ (Product) 1.000000 12.000000 box
+ (FarmProduct) 0.000000 11.000000 box
+ (SideProduct) 2.000000 11.000000 box
+ (ChickenEgg) 1.000000 10.000000 box
+ (ChickenMeat) 1.000000 9.000000 box
+ (CowMeat) 1.000000 8.000000 box
+ (CowMilk) 1.000000 7.000000 box
+ (DiplodocusEgg) 1.000000 6.000000 box
+ (DiplodocusMeat) 1.000000 5.000000 box
+ (LambMeat) 1.000000 4.000000 box
+ (LambMilk) 1.000000 3.000000 box
+ (PlatypusEgg) 1.000000 2.000000 box
+ (SalmonEgg) 1.000000 1.000000 box
+ (SalmonMeat) 1.000000 0.000000 box
+ (BeefRolade) 3.000000 10.000000 box
+ (BlueFeather) 3.000000 9.000000 box
+ (CheesesteakOmelette) 3.000000 8.000000 box
+ (CremeBrulee) 3.000000 7.000000 box
+ (Lasagna) 3.000000 6.000000 box
+ (STMJ) 3.000000 5.000000 box
 
 % ----- relations -----
 
 solid
-1 0.500000 0.250000 out
+1 1.000000 11.250000 out
 solid
-0.000000 1.000000 1.000000 conn
+0.000000 2.000000 12.000000 conn
 solid
-0 0.000000 0.750000 in
+0 0.000000 11.750000 in
 solid
-0 1.000000 0.750000 in
+1 0.000000 10.250000 out
+solid
+0 2.000000 11.750000 in
+solid
+1 2.000000 10.250000 out
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 11.000000 0.500000 vedge
+solid
+0 2.000000 10.500000 hedge
+solid
+0 2.000000 9.500000 hedge
+solid
+0 2.000000 8.500000 hedge
+solid
+0 2.000000 7.500000 hedge
+solid
+0 2.000000 6.500000 hedge
+solid
+0 2.000000 5.500000 hedge
+solid
+2.000000 11.000000 5.500000 vedge

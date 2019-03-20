@@ -1,46 +1,107 @@
-\hypertarget{classWorld}{}\doxysection{World Class Reference}
+\hypertarget{classWorld}{}\section{World Class Reference}
 \label{classWorld}\index{World@{World}}
-\doxysubsection*{Public Member Functions}
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWorld_a0528144a2fb6016a20cdd19915c8b466}\label{classWorld_a0528144a2fb6016a20cdd19915c8b466}} 
-void {\bfseries add\+Catalog} (\mbox{\hyperlink{classSideProduct}{Side\+Product}} sp)
+\mbox{\hyperlink{classWorld_a8c73fba541a5817fff65147ba47cd827}{$\sim$\+World}} ()
 \item 
-\mbox{\Hypertarget{classWorld_a2f056b646453284125e6f15f0c39a8f7}\label{classWorld_a2f056b646453284125e6f15f0c39a8f7}} 
-void {\bfseries set\+LB} (\mbox{\hyperlink{classLivingBeing}{Living\+Being}} lb, int \+\_\+x, int \+\_\+y)
+void \mbox{\hyperlink{classWorld_a0528144a2fb6016a20cdd19915c8b466}{add\+Catalog}} (\mbox{\hyperlink{classSideProduct}{Side\+Product}} sp)
+\item 
+void \mbox{\hyperlink{classWorld_a2f056b646453284125e6f15f0c39a8f7}{set\+LB}} (\mbox{\hyperlink{classLivingBeing}{Living\+Being}} lb, int \+\_\+x, int \+\_\+y)
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
+\subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}\label{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}} 
-static \mbox{\hyperlink{classWorld}{World}} $\ast$ {\bfseries get\+Instance} ()
+static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}{get\+Instance}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions}
+\subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classWorld_aecef883ed3a1b5e0bb5ed487d7bf170c}{World}} (int \+\_\+width, int \+\_\+height)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}{map\+Cell}}
+\item 
+\mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$$\ast$ \mbox{\hyperlink{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}{map\+LB}}
+\item 
+\mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$ \mbox{\hyperlink{classWorld_a0898f87df8392a7fcc6c2a346ecc3747}{catalog}}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_aa19cb8336da15073b55b881ba2b33c64}{world\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classWorld_aecef883ed3a1b5e0bb5ed487d7bf170c}\label{classWorld_aecef883ed3a1b5e0bb5ed487d7bf170c}} 
-{\bfseries World} (int \+\_\+width, int \+\_\+height)
-\end{DoxyCompactItemize}
-\doxysubsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}\label{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}} 
-\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$ {\bfseries map\+Cell}
-\item 
-\mbox{\Hypertarget{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}\label{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}} 
-\mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$$\ast$ {\bfseries map\+LB}
-\item 
+\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\subsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily World\+::\+World (\begin{DoxyParamCaption}\item[{int}]{\+\_\+width,  }\item[{int}]{\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWorld_a8c73fba541a5817fff65147ba47cd827}\label{classWorld_a8c73fba541a5817fff65147ba47cd827}} 
+\index{World@{World}!````~World@{$\sim$World}}
+\index{````~World@{$\sim$World}!World@{World}}
+\subsubsection{\texorpdfstring{$\sim$World()}{~World()}}
+{\footnotesize\ttfamily World\+::$\sim$\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWorld_a0528144a2fb6016a20cdd19915c8b466}\label{classWorld_a0528144a2fb6016a20cdd19915c8b466}} 
+\index{World@{World}!addCatalog@{addCatalog}}
+\index{addCatalog@{addCatalog}!World@{World}}
+\subsubsection{\texorpdfstring{addCatalog()}{addCatalog()}}
+{\footnotesize\ttfamily void World\+::add\+Catalog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSideProduct}{Side\+Product}}}]{sp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}\label{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}} 
+\index{World@{World}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!World@{World}}
+\subsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classWorld}{World}}$\ast$ World\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_a2f056b646453284125e6f15f0c39a8f7}\label{classWorld_a2f056b646453284125e6f15f0c39a8f7}} 
+\index{World@{World}!setLB@{setLB}}
+\index{setLB@{setLB}!World@{World}}
+\subsubsection{\texorpdfstring{setLB()}{setLB()}}
+{\footnotesize\ttfamily void World\+::set\+LB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLivingBeing}{Living\+Being}}}]{lb,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
 \mbox{\Hypertarget{classWorld_a0898f87df8392a7fcc6c2a346ecc3747}\label{classWorld_a0898f87df8392a7fcc6c2a346ecc3747}} 
-\mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$ {\bfseries catalog}
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
+\index{World@{World}!catalog@{catalog}}
+\index{catalog@{catalog}!World@{World}}
+\subsubsection{\texorpdfstring{catalog}{catalog}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSideProduct}{Side\+Product}}$\ast$ World\+::catalog\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}\label{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}} 
+\index{World@{World}!mapCell@{mapCell}}
+\index{mapCell@{mapCell}!World@{World}}
+\subsubsection{\texorpdfstring{mapCell}{mapCell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCell}{Cell}}$\ast$$\ast$ World\+::map\+Cell\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}\label{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}} 
+\index{World@{World}!mapLB@{mapLB}}
+\index{mapLB@{mapLB}!World@{World}}
+\subsubsection{\texorpdfstring{mapLB}{mapLB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLivingBeing}{Living\+Being}}$\ast$$\ast$ World\+::map\+LB\hspace{0.3cm}{\ttfamily [protected]}}
+
 \mbox{\Hypertarget{classWorld_aa19cb8336da15073b55b881ba2b33c64}\label{classWorld_aa19cb8336da15073b55b881ba2b33c64}} 
-static \mbox{\hyperlink{classWorld}{World}} $\ast$ {\bfseries world\+\_\+instance}
-\end{DoxyCompactItemize}
+\index{World@{World}!world\_instance@{world\_instance}}
+\index{world\_instance@{world\_instance}!World@{World}}
+\subsubsection{\texorpdfstring{world\_instance}{world\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWorld}{World}}$\ast$ World\+::world\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-World.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{World_8h}{World.\+h}}\end{DoxyCompactItemize}

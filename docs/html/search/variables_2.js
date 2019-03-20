@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['x',['x',['../classLivingBeing.html#a5007230d07e60ebd845dfd87ddc4a5e0',1,'LivingBeing']]]
+  ['haveegg',['haveEgg',['../classEggProducingAnimal.html#adba93a141ce347708ae9341c6a2f5a7e',1,'EggProducingAnimal']]],
+  ['havemilk',['haveMilk',['../classMilkProducingAnimal.html#ad31582ea9ea4eedd26753c1d9a7bbf46',1,'MilkProducingAnimal']]],
+  ['hungermeter',['hungerMeter',['../classAnimal.html#a7b6c94227fc60ac60d5506fb5e857fd9',1,'Animal']]]
 ];

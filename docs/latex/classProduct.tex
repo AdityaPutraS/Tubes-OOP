@@ -1,35 +1,88 @@
-\hypertarget{classProduct}{}\doxysection{Product Class Reference}
+\hypertarget{classProduct}{}\section{Product Class Reference}
 \label{classProduct}\index{Product@{Product}}
+
+
+{\ttfamily \#include $<$Product.\+h$>$}
+
 Inheritance diagram for Product\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classProduct}
+\includegraphics[height=12.000000cm]{classProduct}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classProduct_a496a1c6544b69157a788536c9270f170}\label{classProduct_a496a1c6544b69157a788536c9270f170}} 
-{\bfseries Product} (string \+\_\+name, int \+\_\+price)
+\mbox{\hyperlink{classProduct_a847c1d85e67ce387166a597579a55135}{Product}} ()
 \item 
-\mbox{\Hypertarget{classProduct_ac05be31b451b25cb15647e12f8ddf4bf}\label{classProduct_ac05be31b451b25cb15647e12f8ddf4bf}} 
-virtual void {\bfseries Sell} ()=0
+\mbox{\hyperlink{classProduct_a8befa76d00142c3fca908ba3e235eb15}{Product}} (int \+\_\+price)
 \item 
-\mbox{\Hypertarget{classProduct_a18f1195c8d57adb6f62b8e1c7bde9c2e}\label{classProduct_a18f1195c8d57adb6f62b8e1c7bde9c2e}} 
-virtual string {\bfseries get\+Name} () const =0
+\mbox{\hyperlink{classProduct_abe0afd3bea96d979185ec2cfdf681e6f}{$\sim$\+Product}} ()
 \item 
-\mbox{\Hypertarget{classProduct_a822232ae63108d7790fae0c56d3c4171}\label{classProduct_a822232ae63108d7790fae0c56d3c4171}} 
-virtual int {\bfseries get\+Price} () const
+void \mbox{\hyperlink{classProduct_a8061a46acea7b7888bf553a0451910e3}{sell}} ()
 \item 
-\mbox{\Hypertarget{classProduct_af49992f2b0f88d22c0a24b2157820552}\label{classProduct_af49992f2b0f88d22c0a24b2157820552}} 
-virtual void {\bfseries set\+Name} (string \+\_\+name)
+int \mbox{\hyperlink{classProduct_a822232ae63108d7790fae0c56d3c4171}{get\+Price}} () const
 \item 
-\mbox{\Hypertarget{classProduct_a278fb7c9e92ed41c01b5c9287ebe18e2}\label{classProduct_a278fb7c9e92ed41c01b5c9287ebe18e2}} 
-virtual void {\bfseries set\+Price} (int \+\_\+price)
+void \mbox{\hyperlink{classProduct_a278fb7c9e92ed41c01b5c9287ebe18e2}{set\+Price}} (int \+\_\+price)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classProduct_a06761b1d08d2b3fb032b1b9a13d90782}{price}}
 \end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProduct_a847c1d85e67ce387166a597579a55135}\label{classProduct_a847c1d85e67ce387166a597579a55135}} 
+\index{Product@{Product}!Product@{Product}}
+\index{Product@{Product}!Product@{Product}}
+\subsubsection{\texorpdfstring{Product()}{Product()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Product\+::\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProduct_a8befa76d00142c3fca908ba3e235eb15}\label{classProduct_a8befa76d00142c3fca908ba3e235eb15}} 
+\index{Product@{Product}!Product@{Product}}
+\index{Product@{Product}!Product@{Product}}
+\subsubsection{\texorpdfstring{Product()}{Product()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Product\+::\+Product (\begin{DoxyParamCaption}\item[{int}]{\+\_\+price }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProduct_abe0afd3bea96d979185ec2cfdf681e6f}\label{classProduct_abe0afd3bea96d979185ec2cfdf681e6f}} 
+\index{Product@{Product}!````~Product@{$\sim$Product}}
+\index{````~Product@{$\sim$Product}!Product@{Product}}
+\subsubsection{\texorpdfstring{$\sim$Product()}{~Product()}}
+{\footnotesize\ttfamily Product\+::$\sim$\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProduct_a822232ae63108d7790fae0c56d3c4171}\label{classProduct_a822232ae63108d7790fae0c56d3c4171}} 
+\index{Product@{Product}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Product@{Product}}
+\subsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily int Product\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProduct_a8061a46acea7b7888bf553a0451910e3}\label{classProduct_a8061a46acea7b7888bf553a0451910e3}} 
+\index{Product@{Product}!sell@{sell}}
+\index{sell@{sell}!Product@{Product}}
+\subsubsection{\texorpdfstring{sell()}{sell()}}
+{\footnotesize\ttfamily void Product\+::sell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProduct_a278fb7c9e92ed41c01b5c9287ebe18e2}\label{classProduct_a278fb7c9e92ed41c01b5c9287ebe18e2}} 
+\index{Product@{Product}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Product@{Product}}
+\subsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Product\+::set\+Price (\begin{DoxyParamCaption}\item[{int}]{\+\_\+price }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classProduct_a06761b1d08d2b3fb032b1b9a13d90782}\label{classProduct_a06761b1d08d2b3fb032b1b9a13d90782}} 
+\index{Product@{Product}!price@{price}}
+\index{price@{price}!Product@{Product}}
+\subsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily int Product\+::price\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Product.\+h\item 
-Product.\+cpp\end{DoxyCompactItemize}
+Product/\mbox{\hyperlink{Product_8h}{Product.\+h}}\end{DoxyCompactItemize}

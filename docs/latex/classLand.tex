@@ -1,34 +1,86 @@
-\hypertarget{classLand}{}\doxysection{Land Class Reference}
+\hypertarget{classLand}{}\section{Land Class Reference}
 \label{classLand}\index{Land@{Land}}
+
+
+{\ttfamily \#include $<$Land.\+h$>$}
+
 Inheritance diagram for Land\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=4.000000cm]{classLand}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classLand_a4942363111df14e29373af33038cf32b}\label{classLand_a4942363111df14e29373af33038cf32b}} 
-{\bfseries Land} (\mbox{\hyperlink{classPoint}{Point}} \+\_\+pos, bool \+\_\+grass=false)
+\mbox{\hyperlink{classLand_a4942363111df14e29373af33038cf32b}{Land}} (Point \+\_\+pos, bool \+\_\+grass=false)
 \item 
-\mbox{\Hypertarget{classLand_aecde97d7ed842f3bf3fdff52a6057cc5}\label{classLand_aecde97d7ed842f3bf3fdff52a6057cc5}} 
-bool {\bfseries has\+Grass} () const
+bool \mbox{\hyperlink{classLand_aecde97d7ed842f3bf3fdff52a6057cc5}{has\+Grass}} () const
 \item 
-\mbox{\Hypertarget{classLand_a8324641dc1cfdf2500a345441998c18d}\label{classLand_a8324641dc1cfdf2500a345441998c18d}} 
-void {\bfseries grow\+Grass} ()
+void \mbox{\hyperlink{classLand_a8324641dc1cfdf2500a345441998c18d}{grow\+Grass}} ()
 \item 
-\mbox{\Hypertarget{classLand_a0e7a4fa66fb495bada48ac00974bf5a7}\label{classLand_a0e7a4fa66fb495bada48ac00974bf5a7}} 
-virtual bool {\bfseries is\+Barn} () const
+virtual bool \mbox{\hyperlink{classLand_a0e7a4fa66fb495bada48ac00974bf5a7}{is\+Barn}} () const
 \item 
-\mbox{\Hypertarget{classLand_a685f9ec0e771dbf0fe348dd13d467c4e}\label{classLand_a685f9ec0e771dbf0fe348dd13d467c4e}} 
-virtual bool {\bfseries is\+Coop} () const
+virtual bool \mbox{\hyperlink{classLand_a685f9ec0e771dbf0fe348dd13d467c4e}{is\+Coop}} () const
 \item 
-\mbox{\Hypertarget{classLand_aa79c16746d74c0493e66ce73f2fa0e0f}\label{classLand_aa79c16746d74c0493e66ce73f2fa0e0f}} 
-virtual bool {\bfseries is\+Grassland} () const
+virtual bool \mbox{\hyperlink{classLand_aa79c16746d74c0493e66ce73f2fa0e0f}{is\+Grassland}} () const
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLand_a4942363111df14e29373af33038cf32b}\label{classLand_a4942363111df14e29373af33038cf32b}} 
+\index{Land@{Land}!Land@{Land}}
+\index{Land@{Land}!Land@{Land}}
+\subsubsection{\texorpdfstring{Land()}{Land()}}
+{\footnotesize\ttfamily Land\+::\+Land (\begin{DoxyParamCaption}\item[{Point}]{\+\_\+pos,  }\item[{bool}]{\+\_\+grass = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLand_a8324641dc1cfdf2500a345441998c18d}\label{classLand_a8324641dc1cfdf2500a345441998c18d}} 
+\index{Land@{Land}!growGrass@{growGrass}}
+\index{growGrass@{growGrass}!Land@{Land}}
+\subsubsection{\texorpdfstring{growGrass()}{growGrass()}}
+{\footnotesize\ttfamily void Land\+::grow\+Grass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classLand_aecde97d7ed842f3bf3fdff52a6057cc5}\label{classLand_aecde97d7ed842f3bf3fdff52a6057cc5}} 
+\index{Land@{Land}!hasGrass@{hasGrass}}
+\index{hasGrass@{hasGrass}!Land@{Land}}
+\subsubsection{\texorpdfstring{hasGrass()}{hasGrass()}}
+{\footnotesize\ttfamily bool Land\+::has\+Grass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classLand_a0e7a4fa66fb495bada48ac00974bf5a7}\label{classLand_a0e7a4fa66fb495bada48ac00974bf5a7}} 
+\index{Land@{Land}!isBarn@{isBarn}}
+\index{isBarn@{isBarn}!Land@{Land}}
+\subsubsection{\texorpdfstring{isBarn()}{isBarn()}}
+{\footnotesize\ttfamily virtual bool Land\+::is\+Barn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classBarn_a716f3e1ecf4d4d37fe934d29425841a1}{Barn}}.
+
+\mbox{\Hypertarget{classLand_a685f9ec0e771dbf0fe348dd13d467c4e}\label{classLand_a685f9ec0e771dbf0fe348dd13d467c4e}} 
+\index{Land@{Land}!isCoop@{isCoop}}
+\index{isCoop@{isCoop}!Land@{Land}}
+\subsubsection{\texorpdfstring{isCoop()}{isCoop()}}
+{\footnotesize\ttfamily virtual bool Land\+::is\+Coop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCoop_af611b31347d3a8cf2304af22ecbfc450}{Coop}}.
+
+\mbox{\Hypertarget{classLand_aa79c16746d74c0493e66ce73f2fa0e0f}\label{classLand_aa79c16746d74c0493e66ce73f2fa0e0f}} 
+\index{Land@{Land}!isGrassland@{isGrassland}}
+\index{isGrassland@{isGrassland}!Land@{Land}}
+\subsubsection{\texorpdfstring{isGrassland()}{isGrassland()}}
+{\footnotesize\ttfamily virtual bool Land\+::is\+Grassland (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classGrassland_ac4f00629f20061d2ec9f792a42f7315c}{Grassland}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Land.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{Land_8h}{Land.\+h}}\end{DoxyCompactItemize}

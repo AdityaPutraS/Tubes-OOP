@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sideproduct',['SideProduct',['../classSideProduct.html',1,'']]]
+  ['renderable',['Renderable',['../classRenderable.html',1,'']]]
 ];
