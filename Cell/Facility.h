@@ -1,7 +1,15 @@
+/**
+ * \class Facility
+ * \brief Facility adalah kelas untuk fasilitas seperti Mixer, Well, dan Truck
+ *
+ * \author Aditya Putra S.
+ * 
+ */
+
 #ifndef FACILITY_H
 #define FACILITY_H
 
-#include "Product.h"
+#include "../Product.h"
 #include "Cell.h"
 
 class Facility : public Cell

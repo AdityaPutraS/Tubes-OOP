@@ -1,3 +1,11 @@
+/**
+ * \class Land
+ * \brief Land adalah base class untuk Barn, Coop, dan Grassland
+ *
+ * \author M. Khairul Makirin
+ * 
+ */
+
 #ifndef _LAND_H
 #define _LAND_H
 
@@ -10,7 +18,10 @@ class Land : public Cell{
         bool grass;
 
     public:
-        //ctor berparameter position dan grass
+        /**
+         * \param _pos posisi Land yang ingin dibentuk
+         * \param _grass apakah di Land tersebut ada grass
+         */
         Land(Point _pos, bool _grass = false);
 
         //Mengirimkan true jika Land punya grass
