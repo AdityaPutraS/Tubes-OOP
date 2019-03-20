@@ -8,8 +8,6 @@
  * biasa ncurses.
  * 
  * \note Jangan lupa tambahkan -lncurses saat compile
- * 		Tambahkan juga initscr() pada awal main program
- * 		dan endwin() pada akhir program
  * 
  * \author Rayza Mahendra
  * 
@@ -31,13 +29,12 @@ private:
 
 	int coorx;	///< Nilai X atas kiri WINDOW
 	int coory;	///< Nilai Y atas kiri WINDOW
-
-public:
-	/// Default Constructor
-	Tampilan();
-
 	/**
-	 * \brief Constructor dengan parameter
+	 * \brief Singleton pattern, instance tampilan yang bisa dipanggil di mana saja
+	 */
+	static Tampilan* tampilan_instance;
+	/**
+	 * \brief Constructor dengan parameter, memanggil initscr()
 	 * \param _row menandakan baris maksimal WINDOW, merupakan kelipatan 3
 	 * \param _col menandakan kolom maksimal WINDOW, merupakan kelipatan 3
 	 * \param _coorx menandakan nilai X pojok kiri atas WINDOW
@@ -46,6 +43,11 @@ public:
 	 */
 	Tampilan(int _row, int _col, int _coorx, int _coory, WINDOW *curwin);
 
+public:
+	/**
+	 * \brief Destructor tampilan, mendelete pointer currentWindow dan memanggil endWin()
+	 */
+	~Tampilan();
 	/// Setter row
 	void setrow(int i);
 	/// Setter col
@@ -78,6 +80,9 @@ public:
 	void deletecharonpos(int x, int y);
 	//Mencetak string str pada posisi (x,y)
 	void printstronpos(char* str, int x, int y);
-
+	/**
+	 * \brief Singleton pattern, mengembalikan objek instance tampilan
+	 */
+	static Tampilan* GetInstance();
 };
 #endif 
