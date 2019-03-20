@@ -24,10 +24,10 @@ class Landsalmon : public EggProducingAnimal, public MeatProducingAnimal {
 
     public:
         /**
-         * \brief Konstruk Landsalmon dengan parametered location, dan bunyi defaultnya
+         * \brief Konstruk Landsalmon dengan parametered location
          * 
          * Landsalmon akan memanggil konstruktor Animal
-         * dengan parameter bunyi "BlubBlubBlub"
+         * 
          * 
          * \param _x posisi x Landsalmon
          * \param _y posisi y Landsalmon

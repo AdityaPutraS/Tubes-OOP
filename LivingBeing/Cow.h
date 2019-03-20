@@ -25,10 +25,9 @@ class Cow : public MeatProducingAnimal, public MilkProducingAnimal {
         
     public:
         /**
-         * \brief Konstruk Cow dengan parametered location, dan bunyi defaultnya
+         * \brief Konstruk Cow dengan parametered location
          * 
          * Cow akan memanggil konstruktor Animal
-         * dengan parameter bunyi "Mooo"
          * 
          * \param _x posisi x Cow
          * \param _y posisi y Cow

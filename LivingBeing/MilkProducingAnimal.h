@@ -10,6 +10,7 @@
 *\author Ahmad Rizal Alifio 
 */ 
 
+
 #include <iostream>
 #include "Animal.h"
 using namespace std;

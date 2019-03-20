@@ -41,6 +41,8 @@ class Player: public LivingBeing {
          */
         Player(int _x, int _y, int _water, int _money); //Konstruk player dengan parametered water and money, dan tas ukuran default
 
+        Player(int _x, int _y, int _water, int _money); 
+
         //GETTER
         int GetWater(); ///Getter water
         int GetMoney(); ///Getter money
