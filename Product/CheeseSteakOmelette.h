@@ -12,7 +12,7 @@ class CheesesteakOmelette: public SideProduct{
         CheesesteakOmelette(const CheesesteakOmelette&);
         CheesesteakOmelette& operator= (const CheesesteakOmelette&);
         ~CheesesteakOmelette();
-}
+};
 
 
 

@@ -12,7 +12,7 @@ class BlueFeather: public SideProduct{
         BlueFeather(const BlueFeather&);
         BlueFeather& operator= (const BlueFeather&);
         ~BlueFeather();
-}
+};
 
 
 

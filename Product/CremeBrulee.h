@@ -12,7 +12,7 @@ class CremeBrulee: public SideProduct{
         CremeBrulee(const CremeBrulee&);
         CremeBrulee& operator= (const CremeBrulee&);
         ~CremeBrulee();
-}
+};
 
 
 

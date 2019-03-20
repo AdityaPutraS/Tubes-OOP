@@ -12,7 +12,7 @@ class STMJ: public SideProduct{
         STMJ(const STMJ&);
         STMJ& operator= (const STMJ&);
         ~STMJ();
-}
+};
 
 
 

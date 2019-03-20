@@ -12,7 +12,7 @@ class Lasagna: public SideProduct{
         Lasagna(const Lasagna&);
         Lasagna& operator= (const Lasagna&);
         ~Lasagna();
-}
+};
 
 
 
