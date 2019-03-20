@@ -14,8 +14,8 @@
  * \author Rayza Mahendra
  * 
  */
-#ifndef FREND
-#define FREND
+#ifndef FREND_H
+#define FREND_H
 
 #include <ncurses.h>
 #include <iostream>
@@ -80,6 +80,4 @@ public:
 	void printstronpos(char* str, int x, int y);
 
 };
-
-
 #endif 

@@ -14,7 +14,7 @@ var searchData=
   ['_7elambmeat',['~LambMeat',['../classLambMeat.html#a92d05cb893a6d325c83084ddc1d8a6da',1,'LambMeat']]],
   ['_7elambmilk',['~LambMilk',['../classLambMilk.html#ae1fe22db66d3021363aed69d45b4b161',1,'LambMilk']]],
   ['_7elasagna',['~Lasagna',['../classLasagna.html#a5ef1f90e14286d828590c25710086991',1,'Lasagna']]],
-  ['_7elinkedlist',['~LinkedList',['../classLinkedList.html#a7c37609df3b83bc4eb0281b852f93fd7',1,'LinkedList']]],
+  ['_7elinkedlist',['~LinkedList',['../classLinkedList.html#a7c37609df3b83bc4eb0281b852f93fd7',1,'LinkedList::~LinkedList()'],['../classLinkedList.html#a7c37609df3b83bc4eb0281b852f93fd7',1,'LinkedList::~LinkedList()']]],
   ['_7eplatypusegg',['~PlatypusEgg',['../classPlatypusEgg.html#a94bde95b8b3d41f24d820429b156ce19',1,'PlatypusEgg']]],
   ['_7eproduct',['~Product',['../classProduct.html#abe0afd3bea96d979185ec2cfdf681e6f',1,'Product']]],
   ['_7esalmonegg',['~SalmonEgg',['../classSalmonEgg.html#aac22a45e0439de30e247f6780b0e6f3e',1,'SalmonEgg']]],

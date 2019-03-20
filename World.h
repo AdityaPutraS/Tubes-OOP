@@ -7,6 +7,9 @@
 */
 
 #include <iostream>
+#include "Product/SideProduct.h"
+#include "Cell/Cell.h"
+#include "LivingBeing/LivingBeing.h"
 using namespace std;
 
 class World {

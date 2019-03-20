@@ -18,7 +18,7 @@ var searchData=
   ['setrow',['setrow',['../classTampilan.html#aaec0545eaf5a7646482158078d0e6cd3',1,'Tampilan']]],
   ['setwater',['SetWater',['../classPlayer.html#af63a1b8623e2dd0ddd420958a4896974',1,'Player']]],
   ['setx',['SetX',['../classLivingBeing.html#a066f825613f93f0d97f644d5f0ce1cb5',1,'LivingBeing::SetX()'],['../classTampilan.html#a1c8443c5bde9718f078ea517bf9f27f0',1,'Tampilan::setx()']]],
-  ['sety',['sety',['../classTampilan.html#a697d4d73cd649452b0c1aa8ef17c38f9',1,'Tampilan::sety()'],['../classLivingBeing.html#a69e58a8fb18b45d41b308dab4f654a37',1,'LivingBeing::SetY()']]],
+  ['sety',['SetY',['../classLivingBeing.html#a69e58a8fb18b45d41b308dab4f654a37',1,'LivingBeing::SetY()'],['../classTampilan.html#a697d4d73cd649452b0c1aa8ef17c38f9',1,'Tampilan::sety()']]],
   ['showingridients',['showIngridients',['../classSideProduct.html#ad192ac2e64326fc728635ecf6ac1e45a',1,'SideProduct']]],
   ['sideproduct',['SideProduct',['../classSideProduct.html',1,'SideProduct'],['../classSideProduct.html#a78f9a12ca66e9a65a6a689e3dbb34d66',1,'SideProduct::SideProduct(int _price)'],['../classSideProduct.html#a6ee21911446be5c97997d8b2b64fc80b',1,'SideProduct::SideProduct(const SideProduct &amp;)']]],
   ['sideproduct_2eh',['SideProduct.h',['../SideProduct_8h.html',1,'']]],
