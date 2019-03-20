@@ -6,6 +6,7 @@ using namespace std;
 #define STMJ_H
 
 class STMJ: public SideProduct{
+    //ingredients : ChickenEgg & CowMilk
     public:
         STMJ(int _price);
         STMJ(const STMJ&);

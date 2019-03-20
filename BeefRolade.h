@@ -6,6 +6,7 @@ using namespace std;
 #define BEEFROLADE_H
 
 class BeefRolade: public SideProduct{
+    //ingredients : CowMeat & ChickenEgg
     public:
         BeefRolade(int _price);
         BeefRolade(const BeefRolade&);

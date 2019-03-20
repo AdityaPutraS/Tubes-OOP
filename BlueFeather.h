@@ -6,6 +6,7 @@ using namespace std;
 #define BLUEFEATHER_H
 
 class BlueFeather: public SideProduct{
+    //ingredients : semua
     public:
         BlueFeather(int _price);
         BlueFeather(const BlueFeather&);
