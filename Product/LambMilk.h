@@ -1,3 +1,12 @@
+/**
+ * \class LambMilk
+ * \brief LambMilk adalah salah satu FarmProduct dalam game
+ *
+ * LambMilk adalah FarmProduct bertipe Egg yang dihasilkan oleh Chicken
+ * 
+ * \author Naufal Aditya D.
+ * 
+ */
 #include "FarmProduct.h"
 
 
@@ -7,12 +16,15 @@
 class LambMilk: public FarmProduct{
     private:
     public:
+    /**
+    * \brief Constructor LambMilk dengan inisiasi harga LambMilk default
+    */
     LambMilk();
-        //ctor default
+    /**
+     * \brief Constructor  dengan parameter harga LambMilk
+     * \param _price Harga LambMilk
+     */
     LambMilk(int _price);
-        //ctor dengan parameter
-    ~LambMilk();
-        //dtor(kalo di sell)
 };
 
 #endif

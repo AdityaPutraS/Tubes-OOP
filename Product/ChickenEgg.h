@@ -1,8 +1,8 @@
 /**
- * \class BeefRolade
- * \brief BeefRolade adalah salah satu FarmProduct dalam game
+ * \class ChickenEgg
+ * \brief ChickenEgg adalah salah satu FarmProduct dalam game
  *
- * BeefRolade adalah FarmProduct bertipe Egg yang dihasilkan oleh Chicken
+ * ChickenEgg adalah FarmProduct bertipe Egg yang dihasilkan oleh Chicken
  * 
  * \author Naufal Aditya D.
  * 
@@ -19,5 +19,10 @@ class ChickenEgg: public FarmProduct{
     * \brief Constructor ChickenEgg dengan inisiasi harga ChickenEgg default
     */
     ChickenEgg();
+    /**
+     * \brief Constructor  dengan parameter harga ChickenEgg
+     * \param _price Harga ChickenEgg
+     */
+    ChickenEgg(int _price);
 };
 #endif

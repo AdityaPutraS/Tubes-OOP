@@ -2,7 +2,7 @@
  * \class BeefRolade
  * \brief BeefRolade adalah salah satu SideProduct dalam game
  *
- * BeefRolade adalah SideProduct yang dihasilkan dari CowMeat dan ChickenEgg
+ * BeefRolade adalah SideProduct yang dihasilkan dari CowMeat dan BeefRolade
  *  
  * \note Ingredients : CowMeat & ChickenEgg
  * 
@@ -18,6 +18,10 @@ using namespace std;
 
 class BeefRolade: public SideProduct{
     public:
+        /**
+        * \brief Constructor BeefRolade dengan inisiasi harga BeefRolade default
+        */
+        BeefRolade();
         /**
          * \brief Constructor BeefRolade dengan parameter harga BeefRolade
          * \param _price Harga BeefRolade

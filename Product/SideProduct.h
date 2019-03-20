@@ -2,7 +2,7 @@
  * \class SideProduct
  * \brief SideProduct adalah base class dari segala SideProduct (produk olahan hasil mix) di game
  *  
- *  SideProduct dihasilkan saat player berinteraksi dengan Mixer dan mencampur 2 FarmProduct
+ *  SideProduct dihasilkan saat player berinteraksi dengan Mixer dan mencampur 2 atau lebih FarmProduct
  *  Harga SideProduct ditentukan secara manual
  * \note ada minimal 3 SideProduct
  * \author Naufal Aditya D.
@@ -23,6 +23,10 @@ class SideProduct: public Product{
     protected:
         LinkedList<FarmProduct> ingredients;    ///< Sebuah list untuk mencatat bahan dasar yang dibutuhkan untuk SideProduct
     public:
+        /**
+         * \brief Constructor SideProduct default
+         */
+        SideProduct();
         /**
          * \brief Constructor SideProduct dengan parameter harga SideProduct
          * \param _price Harga SideProduct

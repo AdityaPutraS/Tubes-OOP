@@ -1,3 +1,12 @@
+/**
+ * \class DiplodocusMeat
+ * \brief DiplodocusMeat adalah salah satu FarmProduct dalam game
+ *
+ * DiplodocusMeat adalah FarmProduct bertipe Egg yang dihasilkan oleh Chicken
+ * 
+ * \author Naufal Aditya D.
+ * 
+ */
 #include "FarmProduct.h"
 
 
@@ -7,12 +16,15 @@
 class DiplodocusMeat: public FarmProduct{
     private:
     public:
+    /**
+    * \brief Constructor DiplodocusMeat dengan inisiasi harga DiplodocusMeat default
+    */
     DiplodocusMeat();
-        //ctor default
+    /**
+     * \brief Constructor  dengan parameter harga DiplodocusMeat
+     * \param _price Harga DiplodocusMeat
+     */
     DiplodocusMeat(int _price);
-        //ctor dengan parameter
-    ~DiplodocusMeat();
-        //dtor(kalo di sell)
 };
 
 #endif
