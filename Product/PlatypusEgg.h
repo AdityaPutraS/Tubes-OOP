@@ -1,3 +1,12 @@
+/**
+ * \class PlatypusEgg
+ * \brief PlatypusEgg adalah salah satu FarmProduct dalam game
+ *
+ * PlatypusEgg adalah FarmProduct bertipe Egg yang dihasilkan oleh Chicken
+ * 
+ * \author Naufal Aditya D.
+ * 
+ */
 #include "FarmProduct.h"
 
 
@@ -7,12 +16,16 @@
 class PlatypusEgg: public FarmProduct{
     private:
     public:
+    /**
+    * \brief Constructor PlatypusEgg dengan inisiasi harga PlatypusEgg default
+    */
     PlatypusEgg();
-        //ctor default
+    /**
+     * \brief Constructor  dengan parameter harga PlatypusEgg
+     * \param _price Harga PlatypusEgg
+     */
     PlatypusEgg(int _price);
-        //ctor dengan parameter
-    ~PlatypusEgg();
-        //dtor(kalo di sell)
+        
 };
 
 #endif

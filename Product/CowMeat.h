@@ -1,3 +1,12 @@
+/**
+ * \class CowMeat
+ * \brief CowMeat adalah salah satu FarmProduct dalam game
+ *
+ * CowMeat adalah FarmProduct bertipe Egg yang dihasilkan oleh Chicken
+ * 
+ * \author Naufal Aditya D.
+ * 
+ */
 #include "FarmProduct.h"
 
 
@@ -7,12 +16,15 @@
 class CowMeat: public FarmProduct{
     private:
     public:
+    /**
+    * \brief Constructor CowMeat dengan inisiasi harga CowMeat default
+    */
     CowMeat();
-        //ctor default
+    /**
+     * \brief Constructor  dengan parameter harga CowMeat
+     * \param _price Harga Cowmeat
+     */
     CowMeat(int _price);
-        //ctor dengan parameter
-    ~CowMeat();
-        //dtor(kalo di sell)
 };
 
 #endif

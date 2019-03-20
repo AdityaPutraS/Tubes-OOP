@@ -1,3 +1,12 @@
+/**
+ * \class SalmonEgg
+ * \brief SalmonEgg adalah salah satu FarmProduct dalam game
+ *
+ * SalmonEgg adalah FarmProduct bertipe Egg yang dihasilkan oleh Chicken
+ * 
+ * \author Naufal Aditya D.
+ * 
+ */
 #include "FarmProduct.h"
 
 
@@ -7,12 +16,15 @@
 class SalmonEgg: public FarmProduct{
     private:
     public:
+    /**
+    * \brief Constructor SalmonEgg dengan inisiasi harga SalmonEgg default
+    */
     SalmonEgg();
-        //ctor default
+    /**
+     * \brief Constructor  dengan parameter harga SalmonEgg
+     * \param _price Harga SalmonEgg
+     */
     SalmonEgg(int _price);
-        //ctor dengan parameter
-    ~SalmonEgg();
-        //dtor(kalo di sell)
 };
 
 #endif

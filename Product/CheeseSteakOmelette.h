@@ -20,6 +20,10 @@ class CheesesteakOmelette: public SideProduct{
     //ingredients : DiplodocusEgg & DiplodocusMeat & CowMilk
     public:
         /**
+        * \brief Constructor CheeseSteakOmelette dengan inisiasi harga CheeseSteakOmelette default
+        */
+        CheeseSteakOmelette();
+        /**
          * \brief Constructor CheeseSteakOmelette dengan parameter harga CheeseSteakOmelette
          * \param _price Harga CheeseSteakOmelette
          */

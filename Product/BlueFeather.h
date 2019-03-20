@@ -4,7 +4,7 @@
  *
  * BlueFeather adalah SideProduct yang dihasilkan dari semua FarmProduct yang ada di Game
  *  
- * \note Ingredients : ChickenEgg, ChickenMeat, CowMeat,CowMilk, DiplodocusEgg, DiplodocusMeat, LambMeat, LambMilk,
+ * \note Ingredients : Chicken, ChickenMeat, CowMeat,CowMilk, DiplodocusEgg, DiplodocusMeat, LambMeat, LambMilk,
  *  PlatypusEgg, SalmonEgg, SalmonMeat
  * 
  * \author Naufal Aditya D.
@@ -20,6 +20,10 @@ using namespace std;
 class BlueFeather: public SideProduct{
     //ingredients : semua
     public:
+        /**
+        * \brief Constructor BlueFeather dengan inisiasi harga BlueFeather default
+        */
+        BlueFeather();
         /**
          * \brief Constructor BlueFeather dengan parameter harga BlueFeather
          * \param _price Harga BlueFeather
