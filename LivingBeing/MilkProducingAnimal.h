@@ -2,9 +2,15 @@
 #define _MILKPRODUCINGANIMAL_H
 
 /*
-* CATATAN
-* 
+* class MilkProducingAnimal
+* brief class MilkProducingAnimal adalah tipe binatang dalam game
+*
+* MilkProducingAnimal menghasilkan milk jika dilakukan method InterractWith() 
+* oleh player yang berada di sekitar MilkProducingAnimal
+*
+*author Ahmad Rizal Alifio
 */
+
 
 #include <iostream>
 #include "Animal.h"
@@ -12,13 +18,23 @@ using namespace std;
 
 class MilkProducingAnimal : public Animal {
     protected:
-        bool haveMilk;
+        bool haveMilk; //atribut MilkProducingAnimal bernilai true jika memiliki milk
     public:
         //CTOR
+        /*
+        * brief Konstruktor berparameter MilkProducingAnimal
+        * \param _x adalah posisi x dari MilkProducingAnimal
+        * \param _y adalah posisi y dari MilkProducingAnimal
+        * \param _animalSound adalah string yang berisi suara yang dikeluarkan MilkProducingAnimal
+        */
         MilkProducingAnimal(int _x, int _y, string _animalSound); //init haveMilk = false
         
         //METHOD
+        // brief Menghasilkan milk ke player jika
+        // ada disekitar player yang melakukan Interaksi
         void ProduceMilk();
-        bool IsHaveEgg();
+
+        // brief Mereturn atribut haveMilk, mereturn True jika siap memproduksi milk, False jika tidak
+        bool IsHaveMilk();
 };
 #endif
