@@ -1,8 +1,16 @@
+/**
+ * \class Cell
+ * \brief Cell adalah Base class untuk Land dan Facility
+ *
+ * \author M. Khairul Makirin
+ * 
+ */
+
 #ifndef _CELL_H
 #define _CELL_H
 
-#include "Generik.h"
-#include "Renderable.h"
+#include "../Generik.h"
+#include "../Renderable.h"
 
 #define cellpointer Cell*
 
@@ -12,16 +20,23 @@ class Cell : public Renderable{
         char renderChar;
 
     public:
-        //ctor
+        /**
+         * \param _pos posisi cell yang ingin dibentuk
+         * \param _renderChar karakter yang akan di print saat rendering
+         */
         Cell(Point _pos, char _renderChar);
 
         //getPoint
         Point getPoint() const;
 
-        //setPoint
+        /**
+         * \param _pos posisi cell baru
+         */
         void setPos(Point _pos);
 
-        //set renderChar
+        /**
+         * \param _renderChar karakter baru untuk di render
+         */
         virtual void setRenderChar(char _renderChar);
 
 
