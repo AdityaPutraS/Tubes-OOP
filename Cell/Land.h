@@ -22,7 +22,7 @@ class Land : public Cell{
          * \param _pos posisi Land yang ingin dibentuk
          * \param _grass apakah di Land tersebut ada grass
          */
-        Land(Point _pos, bool _grass = false);
+        Land(Point _pos, bool _grass = false, char renderChar);
 
         //Mengirimkan true jika Land punya grass
         bool hasGrass() const;
@@ -31,7 +31,7 @@ class Land : public Cell{
         void growGrass();
 
         //Checking apakah land ini sebuah barn
-        virtual bool isBarn() const{return false;}
+        virtual bool isBarn() const;
 
         //Checking apakah land ini sebuah coop
         virtual bool isCoop() const{return false;}
