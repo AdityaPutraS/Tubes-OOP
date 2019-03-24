@@ -20,9 +20,10 @@ class Land : public Cell{
     public:
         /**
          * \param _pos posisi Land yang ingin dibentuk
+         * \param _renderChar karakter yang akan di render nantinya
          * \param _grass apakah di Land tersebut ada grass
          */
-        Land(Point _pos, bool _grass = false, char renderChar);
+        Land(Point _pos, char _renderChar, bool _grass = false);
 
         //Mengirimkan true jika Land punya grass
         bool hasGrass() const;

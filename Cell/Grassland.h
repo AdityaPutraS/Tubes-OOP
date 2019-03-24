@@ -15,12 +15,7 @@
 
 class Grassland : public Land{
     public:
-        /**
-         * \param _pos posisi Grassland yang ingin dibentuk
-         * \param _grass apakah di Grassland tersebut ada grass
-         */
-        Grassland(Point _pos, bool _grass);
-
+        //method
         bool isGrassland() const{return true;}
 
 };

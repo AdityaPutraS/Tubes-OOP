@@ -15,13 +15,8 @@
 
 class Coop : public Land{
     public:
-        /**
-         * \param _pos posisi Coop yang ingin dibentuk
-         * \param _grass apakah di Coop tersebut ada grass
-         */
-        Coop(Point pos, bool _grass);
-
-        bool isCoop() const{return true;}
+        //method
+        bool isCoop() const;
 
 };
 
