@@ -1,9 +1,9 @@
 #include "DiplodocusMeat.h"
 
 
-DiplodocusMeat::DiplodocusMeat():FarmProduct(){
+DiplodocusMeat::DiplodocusMeat():FarmProduct("DiplodocusMeat"){
 
 }
-DiplodocusMeat::DiplodocusMeat(int _price):FarmProduct(_price){
+DiplodocusMeat::DiplodocusMeat(int _price):FarmProduct(_price, "DiplodocusMeat"){
 
 }

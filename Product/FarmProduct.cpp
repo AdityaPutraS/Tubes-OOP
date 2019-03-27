@@ -1,7 +1,12 @@
 #include "FarmProduct.h"
 
 
-FarmProduct::FarmProduct():Product(){
+FarmProduct::FarmProduct(string _type):Product(){
+    type = _type;
 }
-FarmProduct::FarmProduct(int _price): Product(_price){
+FarmProduct::FarmProduct(int _price, string _type): Product(_price){
+    type = _type;
+}
+string FarmProduct::getType(){
+    return type;
 }

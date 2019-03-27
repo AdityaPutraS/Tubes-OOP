@@ -1,9 +1,9 @@
 #include "CowMeat.h"
 
 
-CowMeat::CowMeat():FarmProduct(){
+CowMeat::CowMeat():FarmProduct("CowMeat"){
 
 }
-CowMeat::CowMeat(int _price):FarmProduct(_price){
+CowMeat::CowMeat(int _price):FarmProduct(_price, "CowMeat"){
 
 }

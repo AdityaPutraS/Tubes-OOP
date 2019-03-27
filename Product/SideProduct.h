@@ -21,17 +21,18 @@ using namespace std;
 
 class SideProduct: public Product{
     protected:
+        string type;
         LinkedList<FarmProduct> ingredients;    ///< Sebuah list untuk mencatat bahan dasar yang dibutuhkan untuk SideProduct
     public:
         /**
          * \brief Constructor SideProduct default
          */
-        SideProduct();
+        SideProduct(string _type);
         /**
          * \brief Constructor SideProduct dengan parameter harga SideProduct
          * \param _price Harga SideProduct
          */
-        SideProduct(int _price);    
+        SideProduct(int _price, string _type);    
         /**
          * \brief Copy Constructor SideProduct dari SideProduct yang sudah ada
          * \param SideProduct& SideProduct lain
@@ -53,7 +54,19 @@ class SideProduct: public Product{
         /**
          * \brief setter Ingredient untuk meng-assign ingredient yang digunakan dalam sebuah SideProduct
          */
-         void setIngredients(LinkedList<FarmProduct>);
+        void setIngredients(LinkedList<FarmProduct>);
+        /**
+         * \brief addIngredient untuk menambahkan sebuah FarmProduct ke dalam Ingredients
+         */
+        void addIngredients(FarmProduct FP){
+        /**
+         * \brief getter Ingredient
+         */
+        LinkedList<FarmProduct> getIngredients();
+        /**
+         * \brief getter Type
+         */
+        string getType();
 };
 
 #endif

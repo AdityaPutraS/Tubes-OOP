@@ -32,12 +32,6 @@ class CheesesteakOmelette: public SideProduct{
          * \brief Copy Constructor SideProduct dengan parameter CheeseSteakOmelette lain
          * \param CheeseSteakOmelette& CheeseSteakOmelette tujuan copy
          */
-        CheesesteakOmelette(const CheesesteakOmelette&);
-        /**
-         * \brief Operator = untuk meng-assign CheeseSteakOmelette dengan CheeseSteakOmelette yang lain
-         * \param _price Harga CheeseSteakOmelette
-         */
-        CheesesteakOmelette& operator= (const CheesesteakOmelette&);
 };
 
 
