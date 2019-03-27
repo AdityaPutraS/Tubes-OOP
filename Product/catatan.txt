@@ -1,0 +1,16 @@
+List yang diubah :
+
+SideProduct
+SideProduct(string _type);
+SideProduct(int _price, string _type);
+void addIngredients(FarmProduct FP){
+LinkedList<FarmProduct> getIngredients();
+string getType();
+(masih bingung buat sideproduct naroh bahan bahan farmproductnya di main program apa di .cpp per classnya)
+
+FarmProduct
+string type;
+FarmProduct(string _type);
+FarmProduct(int _price, string _type);
+string getType();
+
