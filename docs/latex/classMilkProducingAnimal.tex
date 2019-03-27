@@ -1,5 +1,10 @@
-\hypertarget{classMilkProducingAnimal}{}\section{Milk\+Producing\+Animal Class Reference}
+\hypertarget{classMilkProducingAnimal}{}\doxysection{Milk\+Producing\+Animal Class Reference}
 \label{classMilkProducingAnimal}\index{MilkProducingAnimal@{MilkProducingAnimal}}
+
+
+class \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}} adalah tipe \mbox{\hyperlink{classAnimal}{Animal}} dalam game yang menghasilkan Milk  
+
+
 
 
 {\ttfamily \#include $<$Milk\+Producing\+Animal.\+h$>$}
@@ -10,56 +15,59 @@ Inheritance diagram for Milk\+Producing\+Animal\+:\begin{figure}[H]
 \includegraphics[height=5.000000cm]{classMilkProducingAnimal}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classMilkProducingAnimal_ad2c1a8cfaae9486d5f988a862d5af8bd}{Milk\+Producing\+Animal}} (int \+\_\+x, int \+\_\+y, string \+\_\+animal\+Sound)
-\item 
+\begin{DoxyCompactList}\small\item\em atribut \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}}, bernilai true jika memiliki Milk \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMilkProducingAnimal_ac3054aafbbda5a31143b060f0d91fd63}\label{classMilkProducingAnimal_ac3054aafbbda5a31143b060f0d91fd63}} 
 void \mbox{\hyperlink{classMilkProducingAnimal_ac3054aafbbda5a31143b060f0d91fd63}{Produce\+Milk}} ()
-\item 
-bool \mbox{\hyperlink{classMilkProducingAnimal_a8b8c85c702bd68fa97ec61dd054f3456}{Is\+Have\+Egg}} ()
-\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\begin{DoxyCompactList}\small\item\em Menghasilkan milk ke player jika ada disekitar player yang melakukan Interaksi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMilkProducingAnimal_a7af929b987af2329e3dd4af368e9d297}\label{classMilkProducingAnimal_a7af929b987af2329e3dd4af368e9d297}} 
+bool \mbox{\hyperlink{classMilkProducingAnimal_a7af929b987af2329e3dd4af368e9d297}{Is\+Have\+Milk}} ()
+\begin{DoxyCompactList}\small\item\em Mereturn atribut have\+Milk, return True jika siap memproduksi milk, False jika tidak. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{classMilkProducingAnimal_ad31582ea9ea4eedd26753c1d9a7bbf46}{have\+Milk}}
+\mbox{\Hypertarget{classMilkProducingAnimal_ad31582ea9ea4eedd26753c1d9a7bbf46}\label{classMilkProducingAnimal_ad31582ea9ea4eedd26753c1d9a7bbf46}} 
+bool {\bfseries have\+Milk}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Detailed Description}
+class \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}} adalah tipe \mbox{\hyperlink{classAnimal}{Animal}} dalam game yang menghasilkan Milk 
+
+\mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}} menghasilkan milk jika dilakukan method Interract\+With() ~\newline
+ oleh player yang berada di sekitar \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}}
+
+\begin{DoxyAuthor}{Author}
+Ahmad Rizal Alifio 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classMilkProducingAnimal_ad2c1a8cfaae9486d5f988a862d5af8bd}\label{classMilkProducingAnimal_ad2c1a8cfaae9486d5f988a862d5af8bd}} 
 \index{MilkProducingAnimal@{MilkProducingAnimal}!MilkProducingAnimal@{MilkProducingAnimal}}
 \index{MilkProducingAnimal@{MilkProducingAnimal}!MilkProducingAnimal@{MilkProducingAnimal}}
-\subsubsection{\texorpdfstring{MilkProducingAnimal()}{MilkProducingAnimal()}}
+\doxysubsubsection{\texorpdfstring{MilkProducingAnimal()}{MilkProducingAnimal()}}
 {\footnotesize\ttfamily Milk\+Producing\+Animal\+::\+Milk\+Producing\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{string}]{\+\_\+animal\+Sound }\end{DoxyParamCaption})}
 
 
 
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classMilkProducingAnimal_a8b8c85c702bd68fa97ec61dd054f3456}\label{classMilkProducingAnimal_a8b8c85c702bd68fa97ec61dd054f3456}} 
-\index{MilkProducingAnimal@{MilkProducingAnimal}!IsHaveEgg@{IsHaveEgg}}
-\index{IsHaveEgg@{IsHaveEgg}!MilkProducingAnimal@{MilkProducingAnimal}}
-\subsubsection{\texorpdfstring{IsHaveEgg()}{IsHaveEgg()}}
-{\footnotesize\ttfamily bool Milk\+Producing\+Animal\+::\+Is\+Have\+Egg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+atribut \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}}, bernilai true jika memiliki Milk 
 
-\mbox{\Hypertarget{classMilkProducingAnimal_ac3054aafbbda5a31143b060f0d91fd63}\label{classMilkProducingAnimal_ac3054aafbbda5a31143b060f0d91fd63}} 
-\index{MilkProducingAnimal@{MilkProducingAnimal}!ProduceMilk@{ProduceMilk}}
-\index{ProduceMilk@{ProduceMilk}!MilkProducingAnimal@{MilkProducingAnimal}}
-\subsubsection{\texorpdfstring{ProduceMilk()}{ProduceMilk()}}
-{\footnotesize\ttfamily void Milk\+Producing\+Animal\+::\+Produce\+Milk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classMilkProducingAnimal_ad31582ea9ea4eedd26753c1d9a7bbf46}\label{classMilkProducingAnimal_ad31582ea9ea4eedd26753c1d9a7bbf46}} 
-\index{MilkProducingAnimal@{MilkProducingAnimal}!haveMilk@{haveMilk}}
-\index{haveMilk@{haveMilk}!MilkProducingAnimal@{MilkProducingAnimal}}
-\subsubsection{\texorpdfstring{haveMilk}{haveMilk}}
-{\footnotesize\ttfamily bool Milk\+Producing\+Animal\+::have\+Milk\hspace{0.3cm}{\ttfamily [protected]}}
-
+Konstruktor berparameter \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}} 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & adalah posisi x dari \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}} \\
+\hline
+{\em \+\_\+y} & adalah posisi y dari \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}} \\
+\hline
+{\em \+\_\+animal\+Sound} & adalah string yang berisi suara yang dikeluarkan \mbox{\hyperlink{classMilkProducingAnimal}{Milk\+Producing\+Animal}} \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Living\+Being/\mbox{\hyperlink{MilkProducingAnimal_8h}{Milk\+Producing\+Animal.\+h}}\end{DoxyCompactItemize}
+Living\+Being/Milk\+Producing\+Animal.\+h\end{DoxyCompactItemize}

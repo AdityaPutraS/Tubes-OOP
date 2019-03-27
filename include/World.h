@@ -17,24 +17,33 @@
 #include "Product/SideProduct.h"
 #include "Cell/Cell.h"
 #include "LivingBeing/LivingBeing.h"
+#include "LinkedList.h"
 using namespace std;
 
 class World {
     protected:
         /**
+         * \brief width adalah lebar dari dunia game
+         */
+        int width;
+        /**
+         * \brief height adalah tinggi dari dunia game
+         */
+        int height;
+        /**
          * \brief mapCell adalah array 2 dimensi dari Cell
          */
         Cell** mapCell;
         /**
-         * \breif mapLB adalah array 2 dimensi dari LivingBeing
+         * \breif listLB adalah linked list dari LivingBeing yang
          * menampung semua objek living being yang ada di game
          */
-        LivingBeing** mapLB;
+        LinkedList<LivingBeing*> listLB;
         /**
-         * \brief catalog adalah array 1 dimensi dari SideProduct
+         * \brief catalog adalah linked list dari SideProduct yang
          * menampung semua SideProduct yang terdefinisi dalam game
          */
-        SideProduct* catalog;
+        LinkedList<SideProduct*> catalog;
         /**
          * \brief Singleton Pattern, objek statis yang hanya ada 1 dan bisa diakses dimanapun
          */
@@ -57,26 +66,26 @@ class World {
         /**
          * \brief Singleton Pattern, mengembalikan instance world yang bisa diakses dimanapun
          */
-        static World* getInstance();
+        static World* getInstance(){return world_instance;}
         /**
          * \brief Menambahkan SideProduct baru ke katalog
          * \param sp SideProduct yang akan ditambahkan
          */
-        void addCatalog(SideProduct sp);
+        void addCatalog(SideProduct* sp);
         /**
-         * \brief Mengeset living being pada posisi _x dan _y
-         * \param lb LivingBeing yang akan dimasukkan ke mapLB
+         * \brief Menambah living being pada posisi _x dan _y
+         * \param lb LivingBeing yang akan dimasukkan ke listLB
          * \param _x posisi x living being
          * \param _y posisi y living being
          */
-        void setLB(LivingBeing lb, int _x, int _y);
+        void addLB(LivingBeing *lb, int _x, int _y);
         /**
          * \brief Mengeset cell pada posisi _x dan _y
          * \param c Cell yang akan dimasukkan ke mapCell
          * \param _x posisi x cell
          * \param _y posisi y cell
          */
-        bool setCell(Cell c, int _x, int _y;
+        bool setCell(Cell c, int _x, int _y);
         /**
          * \brief Merender semua cell dan living being dengan memanggil method render
          */

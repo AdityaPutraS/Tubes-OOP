@@ -1,107 +1,161 @@
-\hypertarget{classWorld}{}\section{World Class Reference}
+\hypertarget{classWorld}{}\doxysection{World Class Reference}
 \label{classWorld}\index{World@{World}}
+
+
+Class yang menampung semua objek yang ada di game.  
+
+
 
 
 {\ttfamily \#include $<$World.\+h$>$}
 
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classWorld_a8c73fba541a5817fff65147ba47cd827}\label{classWorld_a8c73fba541a5817fff65147ba47cd827}} 
 \mbox{\hyperlink{classWorld_a8c73fba541a5817fff65147ba47cd827}{$\sim$\+World}} ()
-\item 
-void \mbox{\hyperlink{classWorld_a0528144a2fb6016a20cdd19915c8b466}{add\+Catalog}} (\mbox{\hyperlink{classSideProduct}{Side\+Product}} sp)
-\item 
-void \mbox{\hyperlink{classWorld_a2f056b646453284125e6f15f0c39a8f7}{set\+LB}} (\mbox{\hyperlink{classLivingBeing}{Living\+Being}} lb, int \+\_\+x, int \+\_\+y)
-\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
+\begin{DoxyCompactList}\small\item\em Destructor \mbox{\hyperlink{classWorld}{World}}, mendealokasi map\+Cell, map\+LB, catalog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_aa49727533f071d5014c0c5f8906a2768}{add\+Catalog}} (\mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Menambahkan \mbox{\hyperlink{classSideProduct}{Side\+Product}} baru ke katalog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a8bb0f6d9afea0c7210e576b0f11a5178}{add\+LB}} (\mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$lb, int \+\_\+x, int \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Menambah living being pada posisi \+\_\+x dan \+\_\+y. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWorld_adac2a178d4e424042dda556ecdc56bd7}{set\+Cell}} (\mbox{\hyperlink{classCell}{Cell}} c, int \+\_\+x, int \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Mengeset cell pada posisi \+\_\+x dan \+\_\+y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWorld_a848be277f92d37cff32ccfe10b9e747a}\label{classWorld_a848be277f92d37cff32ccfe10b9e747a}} 
+void \mbox{\hyperlink{classWorld_a848be277f92d37cff32ccfe10b9e747a}{render\+All}} ()
+\begin{DoxyCompactList}\small\item\em Merender semua cell dan living being dengan memanggil method render. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}\label{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}} 
 static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}{get\+Instance}} ()
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
+\begin{DoxyCompactList}\small\item\em Singleton Pattern, mengembalikan instance world yang bisa diakses dimanapun. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classWorld_aecef883ed3a1b5e0bb5ed487d7bf170c}{World}} (int \+\_\+width, int \+\_\+height)
-\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\begin{DoxyCompactList}\small\item\em Constructor \mbox{\hyperlink{classWorld}{World}}, Singleton Pattern maka di private agar user tidak bisa menciptakan objek \mbox{\hyperlink{classWorld}{World}} lainnya. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classWorld_ad441f046e49a274301278a3cf9339944}\label{classWorld_ad441f046e49a274301278a3cf9339944}} 
+int \mbox{\hyperlink{classWorld_ad441f046e49a274301278a3cf9339944}{width}}
+\begin{DoxyCompactList}\small\item\em width adalah lebar dari dunia game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}\label{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}} 
+int \mbox{\hyperlink{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}{height}}
+\begin{DoxyCompactList}\small\item\em height adalah tinggi dari dunia game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}\label{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}} 
 \mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}{map\+Cell}}
+\begin{DoxyCompactList}\small\item\em map\+Cell adalah array 2 dimensi dari \mbox{\hyperlink{classCell}{Cell}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ \mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$ $>$ \mbox{\hyperlink{classWorld_a719284875fa878248cedcb3267b188c4}{list\+LB}}
 \item 
-\mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$$\ast$ \mbox{\hyperlink{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}{map\+LB}}
-\item 
-\mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$ \mbox{\hyperlink{classWorld_a0898f87df8392a7fcc6c2a346ecc3747}{catalog}}
-\end{DoxyCompactItemize}
-\subsection*{Static Protected Attributes}
+\mbox{\Hypertarget{classWorld_a0ea56e0a0c1f15144466a24f178b9320}\label{classWorld_a0ea56e0a0c1f15144466a24f178b9320}} 
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ \mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$ $>$ \mbox{\hyperlink{classWorld_a0ea56e0a0c1f15144466a24f178b9320}{catalog}}
+\begin{DoxyCompactList}\small\item\em catalog adalah linked list dari \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang menampung semua \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang terdefinisi dalam game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_aa19cb8336da15073b55b881ba2b33c64}{world\+\_\+instance}}
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}\label{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}} 
+static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}{world\+\_\+instance}} = new \mbox{\hyperlink{classWorld}{World}}(40, 30)
+\begin{DoxyCompactList}\small\item\em Singleton Pattern, objek statis yang hanya ada 1 dan bisa diakses dimanapun. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Detailed Description}
+Class yang menampung semua objek yang ada di game. 
+
+Class ini dibuat dengan tujuan menyimpan semua objek yang ada di game dan melakukan manipulasi terhadap objek tersebut. Class ini diimplementasikan menggunakkan Singleton Pattern yaitu hanya ada 1 objek untuk tiap program
+
+\begin{DoxyAuthor}{Author}
+Ahmad Rizal Alifio \& Aditya Putra Santosa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classWorld_aecef883ed3a1b5e0bb5ed487d7bf170c}\label{classWorld_aecef883ed3a1b5e0bb5ed487d7bf170c}} 
 \index{World@{World}!World@{World}}
 \index{World@{World}!World@{World}}
-\subsubsection{\texorpdfstring{World()}{World()}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
 {\footnotesize\ttfamily World\+::\+World (\begin{DoxyParamCaption}\item[{int}]{\+\_\+width,  }\item[{int}]{\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classWorld_a8c73fba541a5817fff65147ba47cd827}\label{classWorld_a8c73fba541a5817fff65147ba47cd827}} 
-\index{World@{World}!````~World@{$\sim$World}}
-\index{````~World@{$\sim$World}!World@{World}}
-\subsubsection{\texorpdfstring{$\sim$World()}{~World()}}
-{\footnotesize\ttfamily World\+::$\sim$\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+Constructor \mbox{\hyperlink{classWorld}{World}}, Singleton Pattern maka di private agar user tidak bisa menciptakan objek \mbox{\hyperlink{classWorld}{World}} lainnya. 
 
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classWorld_a0528144a2fb6016a20cdd19915c8b466}\label{classWorld_a0528144a2fb6016a20cdd19915c8b466}} 
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+width} & lebar array 2D map\+Cell, map\+LB \\
+\hline
+{\em \+\_\+height} & tinggi array 2D map\+Cell, map\+LB \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWorld_aa49727533f071d5014c0c5f8906a2768}\label{classWorld_aa49727533f071d5014c0c5f8906a2768}} 
 \index{World@{World}!addCatalog@{addCatalog}}
 \index{addCatalog@{addCatalog}!World@{World}}
-\subsubsection{\texorpdfstring{addCatalog()}{addCatalog()}}
-{\footnotesize\ttfamily void World\+::add\+Catalog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSideProduct}{Side\+Product}}}]{sp }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}\label{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}} 
-\index{World@{World}!getInstance@{getInstance}}
-\index{getInstance@{getInstance}!World@{World}}
-\subsubsection{\texorpdfstring{getInstance()}{getInstance()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classWorld}{World}}$\ast$ World\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\mbox{\Hypertarget{classWorld_a2f056b646453284125e6f15f0c39a8f7}\label{classWorld_a2f056b646453284125e6f15f0c39a8f7}} 
-\index{World@{World}!setLB@{setLB}}
-\index{setLB@{setLB}!World@{World}}
-\subsubsection{\texorpdfstring{setLB()}{setLB()}}
-{\footnotesize\ttfamily void World\+::set\+LB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLivingBeing}{Living\+Being}}}]{lb,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{addCatalog()}{addCatalog()}}
+{\footnotesize\ttfamily void World\+::add\+Catalog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$}]{sp }\end{DoxyParamCaption})}
 
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classWorld_a0898f87df8392a7fcc6c2a346ecc3747}\label{classWorld_a0898f87df8392a7fcc6c2a346ecc3747}} 
-\index{World@{World}!catalog@{catalog}}
-\index{catalog@{catalog}!World@{World}}
-\subsubsection{\texorpdfstring{catalog}{catalog}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classSideProduct}{Side\+Product}}$\ast$ World\+::catalog\hspace{0.3cm}{\ttfamily [protected]}}
+Menambahkan \mbox{\hyperlink{classSideProduct}{Side\+Product}} baru ke katalog. 
 
-\mbox{\Hypertarget{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}\label{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}} 
-\index{World@{World}!mapCell@{mapCell}}
-\index{mapCell@{mapCell}!World@{World}}
-\subsubsection{\texorpdfstring{mapCell}{mapCell}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classCell}{Cell}}$\ast$$\ast$ World\+::map\+Cell\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}\label{classWorld_a6b4689eb19c90cc3ed3832585f5d1e91}} 
-\index{World@{World}!mapLB@{mapLB}}
-\index{mapLB@{mapLB}!World@{World}}
-\subsubsection{\texorpdfstring{mapLB}{mapLB}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classLivingBeing}{Living\+Being}}$\ast$$\ast$ World\+::map\+LB\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{classWorld_aa19cb8336da15073b55b881ba2b33c64}\label{classWorld_aa19cb8336da15073b55b881ba2b33c64}} 
-\index{World@{World}!world\_instance@{world\_instance}}
-\index{world\_instance@{world\_instance}!World@{World}}
-\subsubsection{\texorpdfstring{world\_instance}{world\_instance}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classWorld}{World}}$\ast$ World\+::world\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+\begin{DoxyParams}{Parameters}
+{\em sp} & \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang akan ditambahkan \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWorld_a8bb0f6d9afea0c7210e576b0f11a5178}\label{classWorld_a8bb0f6d9afea0c7210e576b0f11a5178}} 
+\index{World@{World}!addLB@{addLB}}
+\index{addLB@{addLB}!World@{World}}
+\doxysubsubsection{\texorpdfstring{addLB()}{addLB()}}
+{\footnotesize\ttfamily void World\+::add\+LB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$}]{lb,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Menambah living being pada posisi \+\_\+x dan \+\_\+y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lb} & \mbox{\hyperlink{classLivingBeing}{Living\+Being}} yang akan dimasukkan ke list\+LB \\
+\hline
+{\em \+\_\+x} & posisi x living being \\
+\hline
+{\em \+\_\+y} & posisi y living being \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWorld_adac2a178d4e424042dda556ecdc56bd7}\label{classWorld_adac2a178d4e424042dda556ecdc56bd7}} 
+\index{World@{World}!setCell@{setCell}}
+\index{setCell@{setCell}!World@{World}}
+\doxysubsubsection{\texorpdfstring{setCell()}{setCell()}}
+{\footnotesize\ttfamily bool World\+::set\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCell}{Cell}}}]{c,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Mengeset cell pada posisi \+\_\+x dan \+\_\+y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \mbox{\hyperlink{classCell}{Cell}} yang akan dimasukkan ke map\+Cell \\
+\hline
+{\em \+\_\+x} & posisi x cell \\
+\hline
+{\em \+\_\+y} & posisi y cell \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWorld_a719284875fa878248cedcb3267b188c4}\label{classWorld_a719284875fa878248cedcb3267b188c4}} 
+\index{World@{World}!listLB@{listLB}}
+\index{listLB@{listLB}!World@{World}}
+\doxysubsubsection{\texorpdfstring{listLB}{listLB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$\mbox{\hyperlink{classLivingBeing}{Living\+Being}}$\ast$$>$ World\+::list\+LB\hspace{0.3cm}{\ttfamily [protected]}}
+
+\textbackslash{}breif list\+LB adalah linked list dari \mbox{\hyperlink{classLivingBeing}{Living\+Being}} yang menampung semua objek living being yang ada di game 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{World_8h}{World.\+h}}\end{DoxyCompactItemize}
+include/World.\+h\item 
+src/World.\+cpp\end{DoxyCompactItemize}

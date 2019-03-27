@@ -114,7 +114,7 @@ class LinkedList
      * \brief Setter dari isi
      * \param _isi Isi elemen sekarang
      */
-    void setIsi(int _isi)
+    void setIsi(T _isi)
     {
         isi = _isi;
     }

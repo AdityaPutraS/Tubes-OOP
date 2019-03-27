@@ -24,12 +24,12 @@ class Point{
         * \brief operator+ overloading dengan menjumlahkan 2 buah Point
         * \param Point
         */
-        Point& operator+(const Point&);
+        Point operator+(const Point&);
         /**
         * \brief operator- overloading dengan mengurangkan 2 buah Point
         * \param Point
         */
-        Point& operator-(const Point&);
+        Point operator-(const Point&);
  
         /** \brief getter absis */
         int getAbsis() const{return x;} 

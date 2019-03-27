@@ -9,7 +9,7 @@
 #ifndef _CELL_H
 #define _CELL_H
 
-#include "../Renderable.h"
+#include "include/Renderable.h"
 #include "Point.h"
 
 #define cellpointer Cell*
@@ -21,25 +21,24 @@ class Cell : public Renderable{
 
     public:
         /**
+         * \brief Default constructor Cell, position -1,-1, tapi di render di 0,0 dengan char '-'
+         */
+        Cell():pos(Point(-1,-1)), renderChar('-'), Renderable(0,0,0,'-'){}
+        /**
          * \param _pos posisi cell yang ingin dibentuk
          * \param _renderChar karakter yang akan di print saat rendering
          */
         Cell(Point _pos, char _renderChar);
 
-        //getPoint
+        /**
+         * \brief return posisi cell berada sebagai point
+         */
         Point getPoint() const;
 
         /**
          * \param _pos posisi cell baru
          */
         void setPos(Point _pos);
-
-        /**
-         * \param _renderChar karakter baru untuk di render
-         */
-        virtual void setRenderChar(char _renderChar);
-
-
 };
 
 #endif

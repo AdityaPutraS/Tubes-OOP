@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tampilan',['Tampilan',['../classTampilan.html',1,'']]],
-  ['truck',['Truck',['../classTruck.html',1,'']]]
+  ['well',['Well',['../classWell.html',1,'']]],
+  ['world',['World',['../classWorld.html',1,'']]]
 ];

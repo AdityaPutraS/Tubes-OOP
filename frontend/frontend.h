@@ -19,31 +19,32 @@
 #include <iostream>
 #include <stdlib.h>
 
-class Tampilan{
-private:
+class Tampilan
+{
+  private:
 	/// Objek WINDOW untuk menggambar char pada layar
 	WINDOW *currentWindow;
 
-	int row;	///< Baris maksimal WINDOW
-	int col;	///< Kolom maksimal WINDOW
+	int row; ///< Baris maksimal WINDOW
+	int col; ///< Kolom maksimal WINDOW
 
-	int coorx;	///< Nilai X atas kiri WINDOW
-	int coory;	///< Nilai Y atas kiri WINDOW
+	int coorx; ///< Nilai X atas kiri WINDOW
+	int coory; ///< Nilai Y atas kiri WINDOW
 	/**
 	 * \brief Singleton pattern, instance tampilan yang bisa dipanggil di mana saja
 	 */
-	static Tampilan* tampilan_instance;
+	static Tampilan *tampilan_instance;
 	/**
 	 * \brief Constructor dengan parameter, memanggil initscr()
-	 * \param _row menandakan baris maksimal WINDOW, merupakan kelipatan 3
-	 * \param _col menandakan kolom maksimal WINDOW, merupakan kelipatan 3
+	 * \param _row menandakan baris maksimal WINDOW
+	 * \param _col menandakan kolom maksimal WINDOW
 	 * \param _coorx menandakan nilai X pojok kiri atas WINDOW
 	 * \param _coory menandakan nilai Y pojok kiri atas WINDOW
 	 * \param curwin menandakan WINDOW yang digunakkan untuk menggambar char
 	 */
 	Tampilan(int _row, int _col, int _coorx, int _coory, WINDOW *curwin);
 
-public:
+  public:
 	/**
 	 * \brief Destructor tampilan, mendelete pointer currentWindow dan memanggil endWin()
 	 */
@@ -64,7 +65,7 @@ public:
 	int gety();
 	/// Getter coory
 	int getx();
-	
+
 	//Method untuk menggambar kotak border terluar window
 	void drawkotak();
 	/**
@@ -79,10 +80,14 @@ public:
 	//Menghapus char pada posisi (x,y), menjadikannya kosong
 	void deletecharonpos(int x, int y);
 	//Mencetak string str pada posisi (x,y)
-	void printstronpos(char* str, int x, int y);
+	void printstronpos(char *str, int x, int y);
+	/**
+	 * \brief mengupdate isi layar
+	 */
+	void updateLayar() { refresh(); }
 	/**
 	 * \brief Singleton pattern, mengembalikan objek instance tampilan
 	 */
-	static Tampilan* GetInstance();
+	static Tampilan *GetInstance();
 };
-#endif 
+#endif

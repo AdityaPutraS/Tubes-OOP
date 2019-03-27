@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['up',['up',['../classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1a807a0a5f725e09c7c45418697f15fcbc',1,'LivingBeing']]]
+  ['well',['Well',['../classWell.html',1,'']]],
+  ['width',['width',['../classWorld.html#ad441f046e49a274301278a3cf9339944',1,'World']]],
+  ['world',['World',['../classWorld.html',1,'World'],['../classWorld.html#aecef883ed3a1b5e0bb5ed487d7bf170c',1,'World::World()']]],
+  ['world_5finstance',['world_instance',['../classWorld.html#ac7cdc71bd9c3356a91efea6c50d3cd29',1,'World']]]
 ];

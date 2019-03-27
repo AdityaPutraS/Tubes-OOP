@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['y',['y',['../classFacility.html#a28d1fbfe0699e800db094161504b0e44',1,'Facility::y()'],['../classLivingBeing.html#a3c8a9e6124ef52ea0554bc14e20b7486',1,'LivingBeing::y()']]]
+  ['_7elinkedlist',['~LinkedList',['../classLinkedList.html#a7c37609df3b83bc4eb0281b852f93fd7',1,'LinkedList']]],
+  ['_7etampilan',['~Tampilan',['../classTampilan.html#ab4cbbbc4ee45145fee2d7e07b16a8ff8',1,'Tampilan']]],
+  ['_7eworld',['~World',['../classWorld.html#a8c73fba541a5817fff65147ba47cd827',1,'World']]]
 ];

@@ -1,25 +1,125 @@
 \hypertarget{classPoint}{}\doxysection{Point Class Reference}
 \label{classPoint}\index{Point@{Point}}
+
+
+\mbox{\hyperlink{classPoint}{Point}} adalah suatu class yang menampung posisi x dan y sebagai representasi posisi.  
+
+
+
+
+{\ttfamily \#include $<$Point.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classPoint_adbd2637ceed85e28315d96c8208154a5}\label{classPoint_adbd2637ceed85e28315d96c8208154a5}} 
-{\bfseries Point} (int \+\_\+x=0, int \+\_\+y=0)
-\item 
+\mbox{\hyperlink{classPoint_adbd2637ceed85e28315d96c8208154a5}{Point}} (int \+\_\+x=0, int \+\_\+y=0)
+\begin{DoxyCompactList}\small\item\em Constructor \mbox{\hyperlink{classPoint}{Point}} dengan parameter x dan y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classPoint_a75cacbf8cb08861ae2b184ac23526251}{operator+}} (const \mbox{\hyperlink{classPoint}{Point}} \&)
+\begin{DoxyCompactList}\small\item\em operator+ overloading dengan menjumlahkan 2 buah \mbox{\hyperlink{classPoint}{Point}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classPoint_a3fe5f103fac490afef3b17cdcb55902b}{operator-\/}} (const \mbox{\hyperlink{classPoint}{Point}} \&)
+\begin{DoxyCompactList}\small\item\em operator-\/ overloading dengan mengurangkan 2 buah \mbox{\hyperlink{classPoint}{Point}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classPoint_a72330ff5163b8d0c8ff2b1ff2eb7c0e9}\label{classPoint_a72330ff5163b8d0c8ff2b1ff2eb7c0e9}} 
-int {\bfseries get\+Absis} () const
-\item 
+int \mbox{\hyperlink{classPoint_a72330ff5163b8d0c8ff2b1ff2eb7c0e9}{get\+Absis}} () const
+\begin{DoxyCompactList}\small\item\em getter absis \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classPoint_ab35051e24c7bacf10ce03072b36c1ecb}\label{classPoint_ab35051e24c7bacf10ce03072b36c1ecb}} 
-int {\bfseries get\+Ordinat} () const
-\item 
+int \mbox{\hyperlink{classPoint_ab35051e24c7bacf10ce03072b36c1ecb}{get\+Ordinat}} () const
+\begin{DoxyCompactList}\small\item\em getter ordinat \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoint_add1782a8109328ad174a8bc829621011}{set\+Absis}} (int \+\_\+x)
+\begin{DoxyCompactList}\small\item\em setter absis \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoint_adcb07a7e64713bc497e5174b5bec6a10}{set\+Ordinat}} (int \+\_\+y)
+\begin{DoxyCompactList}\small\item\em setter ordinat \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPoint}{Point}} adalah suatu class yang menampung posisi x dan y sebagai representasi posisi. 
+
+\begin{DoxyAuthor}{Author}
+M. Khairul Makirin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoint_adbd2637ceed85e28315d96c8208154a5}\label{classPoint_adbd2637ceed85e28315d96c8208154a5}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x = {\ttfamily 0},  }\item[{int}]{\+\_\+y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor \mbox{\hyperlink{classPoint}{Point}} dengan parameter x dan y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & dan y dengan default 0 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoint_a75cacbf8cb08861ae2b184ac23526251}\label{classPoint_a75cacbf8cb08861ae2b184ac23526251}} 
+\index{Point@{Point}!operator+@{operator+}}
+\index{operator+@{operator+}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} Point\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{P }\end{DoxyParamCaption})}
+
+
+
+operator+ overloading dengan menjumlahkan 2 buah \mbox{\hyperlink{classPoint}{Point}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classPoint}{Point}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoint_a3fe5f103fac490afef3b17cdcb55902b}\label{classPoint_a3fe5f103fac490afef3b17cdcb55902b}} 
+\index{Point@{Point}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} Point\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{P }\end{DoxyParamCaption})}
+
+
+
+operator-\/ overloading dengan mengurangkan 2 buah \mbox{\hyperlink{classPoint}{Point}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classPoint}{Point}}} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classPoint_add1782a8109328ad174a8bc829621011}\label{classPoint_add1782a8109328ad174a8bc829621011}} 
-void {\bfseries set\+Absis} (int \+\_\+x)
-\item 
+\index{Point@{Point}!setAbsis@{setAbsis}}
+\index{setAbsis@{setAbsis}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{setAbsis()}{setAbsis()}}
+{\footnotesize\ttfamily void Point\+::set\+Absis (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+setter absis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & dan \+\_\+y \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classPoint_adcb07a7e64713bc497e5174b5bec6a10}\label{classPoint_adcb07a7e64713bc497e5174b5bec6a10}} 
-void {\bfseries set\+Ordinat} (int \+\_\+y)
-\end{DoxyCompactItemize}
+\index{Point@{Point}!setOrdinat@{setOrdinat}}
+\index{setOrdinat@{setOrdinat}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{setOrdinat()}{setOrdinat()}}
+{\footnotesize\ttfamily void Point\+::set\+Ordinat (\begin{DoxyParamCaption}\item[{int}]{\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+
+setter ordinat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & dan \+\_\+y \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Generik.\+h\end{DoxyCompactItemize}
+include/Point.\+h\item 
+src/Point.\+cpp\end{DoxyCompactItemize}

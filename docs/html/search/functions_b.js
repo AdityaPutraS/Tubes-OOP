@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['main',['main',['../drivecurses_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'drivecurses.cpp']]],
-  ['meatproducinganimal',['MeatProducingAnimal',['../classMeatProducingAnimal.html#a6d4d1eeff935695331bae48fd17fb4e1',1,'MeatProducingAnimal']]],
-  ['milkproducinganimal',['MilkProducingAnimal',['../classMilkProducingAnimal.html#ad2c1a8cfaae9486d5f988a862d5af8bd',1,'MilkProducingAnimal']]],
-  ['mix',['mix',['../classMixer.html#a9352a81375709063c7473e3951f51214',1,'Mixer']]],
-  ['mixer',['Mixer',['../classMixer.html#a5620a7de2a956fb9eb512ef534e5ad18',1,'Mixer']]],
-  ['move',['Move',['../classLivingBeing.html#a5d612696127afb2cca466ff8757dde45',1,'LivingBeing']]],
-  ['moverandom',['MoveRandom',['../classLivingBeing.html#a41df7acfc3337b4ae07ae6f107d55a58',1,'LivingBeing']]]
+  ['operator_2b',['operator+',['../classPoint.html#a75cacbf8cb08861ae2b184ac23526251',1,'Point']]],
+  ['operator_2d',['operator-',['../classPoint.html#a3fe5f103fac490afef3b17cdcb55902b',1,'Point']]],
+  ['operator_3d',['operator=',['../classLinkedList.html#abf98175f89dcd53a927d471c40edc232',1,'LinkedList::operator=()'],['../classBeefRolade.html#a8325fd949e7c620eedf4d26451b47fa9',1,'BeefRolade::operator=()'],['../classBlueFeather.html#af30eff7845128300baf3117f5ba8bbf0',1,'BlueFeather::operator=()'],['../classCremeBrulee.html#aa1b2e48f56c6cb0efe5a905a77c2e74d',1,'CremeBrulee::operator=()'],['../classLasagna.html#a8a7d37e51d0758e731bf07d1717cc8df',1,'Lasagna::operator=()'],['../classSTMJ.html#a62856b0934c8285d47b972ec16b64546',1,'STMJ::operator=()']]]
 ];

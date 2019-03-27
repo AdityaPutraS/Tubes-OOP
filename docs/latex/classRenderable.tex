@@ -1,5 +1,10 @@
-\hypertarget{classRenderable}{}\section{Renderable Class Reference}
+\hypertarget{classRenderable}{}\doxysection{Renderable Class Reference}
 \label{classRenderable}\index{Renderable@{Renderable}}
+
+
+Class sebagai base semua class yang bisa di render.  
+
+
 
 
 {\ttfamily \#include $<$Renderable.\+h$>$}
@@ -10,33 +15,57 @@ Inheritance diagram for Renderable\+:\begin{figure}[H]
 \includegraphics[height=3.888889cm]{classRenderable}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classRenderable_a365e3f43ad3087bd2d527db4cb47f917}{Renderable}} (int \+\_\+x, int \+\_\+y, int \+\_\+c, int \+\_\+char)
-\item 
+\mbox{\hyperlink{classRenderable_acb0447c628685e308def861001a184c3}{Renderable}} (int \+\_\+x, int \+\_\+y, int \+\_\+color, char \+\_\+char)
+\begin{DoxyCompactList}\small\item\em Constructor renderable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderable_a1dce45c4703b60fd30acf824c77df9b6}\label{classRenderable_a1dce45c4703b60fd30acf824c77df9b6}} 
 void \mbox{\hyperlink{classRenderable_a1dce45c4703b60fd30acf824c77df9b6}{render}} ()
+\begin{DoxyCompactList}\small\item\em Merender objek ke layar dengan mengeprint char\+Representasi di posisi x\+Layar, y\+Layar. Memanggil instance tampilan untuk mengeprint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderable_a8c98ee851d9bb8ebc3598cebf8efa28c}\label{classRenderable_a8c98ee851d9bb8ebc3598cebf8efa28c}} 
+char \mbox{\hyperlink{classRenderable_a8c98ee851d9bb8ebc3598cebf8efa28c}{get\+Render\+Char}} ()
+\begin{DoxyCompactList}\small\item\em Mengembalikan char yang akan dirender. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRenderable_aaf91cb52654dcea98a90c36900b22531}\label{classRenderable_aaf91cb52654dcea98a90c36900b22531}} 
+void {\bfseries set\+Render\+Char} (char \+\_\+render\+Char)
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classRenderable_a365e3f43ad3087bd2d527db4cb47f917}\label{classRenderable_a365e3f43ad3087bd2d527db4cb47f917}} 
+\doxysubsection{Detailed Description}
+Class sebagai base semua class yang bisa di render. 
+
+Class ini dibuat dengan tujuan mengabstraksi sistem render semua objek dengan memanggil class tampilan dan mengeprint char\+Representasi di posisi x\+Layar, y\+Layar
+
+\begin{DoxyAuthor}{Author}
+Aditya Putra Santosa 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRenderable_acb0447c628685e308def861001a184c3}\label{classRenderable_acb0447c628685e308def861001a184c3}} 
 \index{Renderable@{Renderable}!Renderable@{Renderable}}
 \index{Renderable@{Renderable}!Renderable@{Renderable}}
-\subsubsection{\texorpdfstring{Renderable()}{Renderable()}}
-{\footnotesize\ttfamily Renderable\+::\+Renderable (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{int}]{\+\_\+c,  }\item[{int}]{\+\_\+char }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{Renderable()}{Renderable()}}
+{\footnotesize\ttfamily Renderable\+::\+Renderable (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{int}]{\+\_\+color,  }\item[{char}]{\+\_\+char }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classRenderable_a1dce45c4703b60fd30acf824c77df9b6}\label{classRenderable_a1dce45c4703b60fd30acf824c77df9b6}} 
-\index{Renderable@{Renderable}!render@{render}}
-\index{render@{render}!Renderable@{Renderable}}
-\subsubsection{\texorpdfstring{render()}{render()}}
-{\footnotesize\ttfamily void Renderable\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Constructor renderable. 
 
 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & posisi x objek \\
+\hline
+{\em \+\_\+y} & posisi y objek \\
+\hline
+{\em \+\_\+color} & warna karakter \\
+\hline
+{\em \+\_\+char} & karakter yang akan diprint di layar \\
+\hline
+\end{DoxyParams}
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{Renderable_8h}{Renderable.\+h}}\end{DoxyCompactItemize}
+include/Renderable.\+h\item 
+src/Renderable.\+cpp\end{DoxyCompactItemize}

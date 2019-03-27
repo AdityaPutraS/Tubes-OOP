@@ -5,13 +5,15 @@
 
 using namespace std;
 
-Tampilan::Tampilan(){
-	row = 0;
-	col = 0;
-	coorx = 0;
-	coory = 0;
-	currentWindow = stdscr;
-}
+Tampilan* Tampilan::tampilan_instance = new Tampilan(30,40,0,0,stdscr);
+
+// Tampilan::Tampilan(){
+// 	row = 0;
+// 	col = 0;
+// 	coorx = 0;
+// 	coory = 0;
+// 	currentWindow = stdscr;
+// }
 
 Tampilan::Tampilan(int _row, int _col, int _coorx, int _coory, WINDOW *curwin){
 	row = _row;
@@ -19,6 +21,7 @@ Tampilan::Tampilan(int _row, int _col, int _coorx, int _coory, WINDOW *curwin){
 	coorx = _coorx;
 	coory = _coory;
 	currentWindow = curwin;
+	initscr();
 }
 
 	void Tampilan::setrow(int i){
@@ -92,24 +95,24 @@ void Tampilan::drawtable(int nBaris, int nKolom){
 			}
 		}
 	}
-	refresh();
+	//refresh();
 }
 
 void Tampilan::setcharonpos(char ch, int x, int y){
 	//wclear(currentWindow);
 	mvwaddch(currentWindow, y, x, ch);
-	refresh();
+	//refresh();
 }
 
 void Tampilan::deletecharonpos(int x, int y){
 	//wclear(currentWindow);
 	mvwdelch(currentWindow, y, x);
-	refresh();
+	//refresh();
 }
 
 
 void Tampilan::printstronpos(char* str, int x, int y){
 	//wclear(currentWindow);
 	mvwprintw(currentWindow, y, x, str);
-	refresh();
+	//refresh();
 }

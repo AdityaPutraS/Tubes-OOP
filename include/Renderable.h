@@ -13,41 +13,48 @@
 #ifndef RENDERABLE_H
 #define RENDERABLE_H
 
-#include "frontend/frontend.h"
+#include "frontend.h"
 
 class Renderable
 {
-    private:
-        /**
+  private:
+    /**
          * \brief nilai x atas kiri layar
          */
-        int xLayar;
-        /**
+    int xLayar;
+    /**
          * \brief nilai y atas kiri layar
          */
-        int yLayar;
-        /**
+    int yLayar;
+    /**
          * \brief warna char yang akan di print
          */
-        int color;
-        /**
+    int color;
+    /**
          * \brief char yang akan di print di layar
          */
-        char charRepresentasi;
-    public:
-        /**
+    char charRepresentasi;
+
+  public:
+    /**
          * \brief Constructor renderable
          * \param _x posisi x objek
          * \param _y posisi y objek
          * \param _color warna karakter
          * \param _char karakter yang akan diprint di layar
          */
-        Renderable(int _x, int _y, int _color, char _char);
-        /**
+    Renderable(int _x, int _y, int _color, char _char) : xLayar(_x), yLayar(_y), color(_color), charRepresentasi(_char) {}
+    /**
          * \brief Merender objek ke layar dengan mengeprint charRepresentasi di posisi
          * xLayar, yLayar. Memanggil instance tampilan untuk mengeprint
          */
-        void render();
+    void render();
+
+     /**
+      * \brief Mengembalikan char yang akan dirender
+      */
+    char getRenderChar(){return charRepresentasi;}
+    void setRenderChar(char _renderChar){charRepresentasi = _renderChar;}
 };
 
 #endif
