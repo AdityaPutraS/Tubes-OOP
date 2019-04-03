@@ -1,4 +1,4 @@
-#include "Barn.h"
+#include "Cell/Barn.h"
 
 //method
 bool Barn::isBarn() const{

@@ -35,10 +35,10 @@ class Land : public Cell{
         virtual bool isBarn() const;
 
         //Checking apakah land ini sebuah coop
-        virtual bool isCoop() const{return false;}
+        virtual bool isCoop() const;
 
         //Checking apakah land ini sebuah grassland
-        virtual bool isGrassland() const{return false;}
+        virtual bool isGrassland() const;
 };
 
 #endif

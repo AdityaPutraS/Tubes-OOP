@@ -9,7 +9,7 @@
 #ifndef _CELL_H
 #define _CELL_H
 
-#include "include/Renderable.h"
+#include "Renderable.h"
 #include "Point.h"
 
 #define cellpointer Cell*

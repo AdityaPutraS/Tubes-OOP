@@ -13,7 +13,7 @@
 #ifndef RENDERABLE_H
 #define RENDERABLE_H
 
-#include "frontend.h"
+#include "Frontend/frontend.h"
 
 class Renderable
 {

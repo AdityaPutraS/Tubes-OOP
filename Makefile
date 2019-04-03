@@ -1,50 +1,52 @@
 TARGET = tubes_oop
 
 CXX = g++
-INCLUDE_DIRS = -I Cell -I frontend -I Generik -I LivingBeing \
-			-I Product -I include
+INCLUDE_DIRS = -I include
 CXXFLAGS += -O2 -g -Wall $(INCLUDE_DIRS)
 LIBS += -lncurses
 
-OBJS = Cell/Barn.o \
-	Cell/Cell.o \
-	Cell/Coop.o \
-	Cell/Facility.o
-	Cell/Grassland.o \
-	Cell/Land.o \
-	frontend/frontend.o \
-	LivingBeing/Animal.o \
-	LivingBeing/Chicken.o \
-	LivingBeing/Cow.o \
-	LivingBeing/Diplodocus.o \
-	LivingBeing/EggProducingAnimal.o \
-	LivingBeing/Lamb.o \
-	LivingBeing/LandSalmon.o \
-	LivingBeing/LivingBeing.o \
-	LivingBeing/MeatProducingAnimal.o \
-	LivingBeing/MilkProducingAnimal.o \
-	LivingBeing/Platypus.o \
-	LivingBeing/Player.o \
-	Product/BeefRolade.o \
-	Product/BlueFeather.o \
-	Product/CheeseSteakOmelete.o \
-	Product/ChickenEgg.o \
-	Product/ChickenMeat.o \
-	Product/CowMeat.o \
-	Product/CowMilk.o \
-	Product/CremeBrulee.o \
-	Product/DiplodocusEgg.o \
-	Product/DiplodocusMeat.o \
-	Product/FarmProduct.o \
-	Product/LambMeat.o \
-	Product/LambMilk.o \
-	Product/Lasagna.o \
-	Product/PlatypusEgg.o \
-	Product/Product.o \
-	Product/SalmonEgg.o \
-	Product/SalmonMeat.o \
-	Product/SideProduct.o \
-	Product/STMJ.o \
+OBJS = src/Cell/Barn.o \
+	src/Cell/Cell.o \
+	src/Cell/Coop.o \
+	src/Cell/Facility.o \
+	src/Cell/Mixer.o \
+	src/Cell/Truck.o\
+	src/Cell/Well.o \
+	src/Cell/Grassland.o \
+	src/Cell/Land.o \
+	src/frontend/frontend.o \
+	src/LivingBeing/Animal.o \
+	src/LivingBeing/Chicken.o \
+	src/LivingBeing/Cow.o \
+	src/LivingBeing/Diplodocus.o \
+	src/LivingBeing/EggProducingAnimal.o \
+	src/LivingBeing/Lamb.o \
+	src/LivingBeing/LandSalmon.o \
+	src/LivingBeing/LivingBeing.o \
+	src/LivingBeing/MeatProducingAnimal.o \
+	src/LivingBeing/MilkProducingAnimal.o \
+	src/LivingBeing/Platypus.o \
+	src/LivingBeing/Player.o \
+	src/Product/BeefRolade.o \
+	src/Product/BlueFeather.o \
+	src/Product/CheeseSteakOmelete.o \
+	src/Product/ChickenEgg.o \
+	src/Product/ChickenMeat.o \
+	src/Product/CowMeat.o \
+	src/Product/CowMilk.o \
+	src/Product/CremeBrulee.o \
+	src/Product/DiplodocusEgg.o \
+	src/Product/DiplodocusMeat.o \
+	src/Product/FarmProduct.o \
+	src/Product/LambMeat.o \
+	src/Product/LambMilk.o \
+	src/Product/Lasagna.o \
+	src/Product/PlatypusEgg.o \
+	src/Product/Product.o \
+	src/Product/SalmonEgg.o \
+	src/Product/SalmonMeat.o \
+	src/Product/SideProduct.o \
+	src/Product/STMJ.o \
 	src/Point.o \
 	src/Renderable.o \
 	src/World.o \

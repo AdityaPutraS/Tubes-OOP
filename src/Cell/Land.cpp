@@ -1,7 +1,7 @@
-#include "Land.h"
+#include "Cell/Land.h"
 
 //ctor
-Land::Land(Point _pos, bool _grass = false, char _renderChar) : Cell(_pos, _renderChar){
+Land::Land(Point _pos, char _renderChar, bool _grass) : Cell(_pos, _renderChar){
     grass = _grass;
 }
 
@@ -21,7 +21,7 @@ bool Land::isCoop() const{
     return false;
 }
 
-bool Land::isGrassand() const{
+bool Land::isGrassland() const{
     return false;
 }
 

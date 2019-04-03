@@ -39,11 +39,7 @@ class World {
          * menampung semua objek living being yang ada di game
          */
         LinkedList<LivingBeing*> listLB;
-        /**
-         * \brief catalog adalah linked list dari SideProduct yang
-         * menampung semua SideProduct yang terdefinisi dalam game
-         */
-        LinkedList<SideProduct*> catalog;
+    
         /**
          * \brief Singleton Pattern, objek statis yang hanya ada 1 dan bisa diakses dimanapun
          */
@@ -67,11 +63,7 @@ class World {
          * \brief Singleton Pattern, mengembalikan instance world yang bisa diakses dimanapun
          */
         static World* getInstance(){return world_instance;}
-        /**
-         * \brief Menambahkan SideProduct baru ke katalog
-         * \param sp SideProduct yang akan ditambahkan
-         */
-        void addCatalog(SideProduct* sp);
+        
         /**
          * \brief Menambah living being pada posisi _x dan _y
          * \param lb LivingBeing yang akan dimasukkan ke listLB

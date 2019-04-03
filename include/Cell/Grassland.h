@@ -16,7 +16,7 @@
 class Grassland : public Land{
     public:
         //method
-        bool isGrassland() const{return true;}
+        bool isGrassland() const;
 
 };
 

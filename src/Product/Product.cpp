@@ -7,13 +7,13 @@ Product::Product(){
 Product::Product(int _price){
     price = _price;
 }
-Product::sell(){
+void Product::sell(){
     //nambahin duit player
     //destruk objek
 }
-Product::getPrice() const{
+int Product::getPrice() const{
     return price;
 }
-Product::setPrice(int _price){
+void Product::setPrice(int _price){
     price = _price;
 }
