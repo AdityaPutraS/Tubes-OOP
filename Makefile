@@ -5,7 +5,8 @@ INCLUDE_DIRS = -I include
 CXXFLAGS += -O2 -g -Wall $(INCLUDE_DIRS)
 LIBS += -lncurses
 
-OBJS = src/Cell/Barn.o \
+OBJS = src/Product/SideProduct.o \
+	src/Cell/Barn.o \
 	src/Cell/Cell.o \
 	src/Cell/Coop.o \
 	src/Cell/Facility.o \
@@ -45,7 +46,6 @@ OBJS = src/Cell/Barn.o \
 	src/Product/Product.o \
 	src/Product/SalmonEgg.o \
 	src/Product/SalmonMeat.o \
-	src/Product/SideProduct.o \
 	src/Product/STMJ.o \
 	src/Point.o \
 	src/Renderable.o \
@@ -58,7 +58,9 @@ $(TARGET): $(OBJS)
 	$(CXX) -o $(TARGET) $(OBJS) $(CXXFLAGS) $(LIBS)
 
 clean:
-	rm -f *.a *.o $(TARGET) core *~ *.so *.lo
+	rm -f *.a *.o $(TARGET) core *~ *.so *.lo 
+	find . -name "*.o" -type f 
+	find . -name "*.o" -type f -delete
 
 # useful to make a backup "make tgz"
 tgz: clean

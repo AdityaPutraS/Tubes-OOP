@@ -1,8 +1,8 @@
-#include "BlueFeather.h"
+#include "Product/BlueFeather.h"
 
-BlueFeather:BlueFeather():SideProduct("BlueFeather"){
+BlueFeather::BlueFeather():SideProduct("BlueFeather"){
 
 }
-BlueFeather:BlueFeather(int _price):SideProduct(_price, "BlueFeather"){
+BlueFeather::BlueFeather(int _price):SideProduct(_price, "BlueFeather"){
 
 }

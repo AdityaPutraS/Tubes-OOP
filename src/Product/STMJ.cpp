@@ -1,4 +1,4 @@
-#include "STMJ.h"
+#include "Product/STMJ.h"
 
 STMJ:STMJ():SideProduct("STMJ"){
 

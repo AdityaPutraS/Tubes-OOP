@@ -1,4 +1,4 @@
-#include "ChickenMeat.h"
+#include "Product/ChickenMeat.h"
 
 
 ChickenMeat::ChickenMeat():FarmProduct("ChickenMeat"){

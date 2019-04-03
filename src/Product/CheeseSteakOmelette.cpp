@@ -1,4 +1,4 @@
-#include "CheeseSteakOmelette.h"
+#include "Product/CheeseSteakOmelette.h"
 
 CheeseSteakOmelette:CheeseSteakOmelette():SideProduct("CheeseSteakOmelette"){
 
