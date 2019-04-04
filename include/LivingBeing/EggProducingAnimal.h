@@ -31,5 +31,7 @@ class EggProducingAnimal : public Animal {
         //SETTER
         void SetHaveEgg(bool _haveEgg);///Setter atribut haveEgg
         bool IsHaveEgg();   ///fungsi checker kondisi haveEgg
+
+        bool isEggPA() const {return true;}
 };
 #endif

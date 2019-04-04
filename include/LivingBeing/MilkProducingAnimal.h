@@ -38,5 +38,7 @@ class MilkProducingAnimal : public Animal {
          * \brief Mereturn atribut haveMilk, return True jika siap memproduksi milk, False jika tidak 
          */
         bool IsHaveMilk();
+
+        bool isMilkPA() const {return true;}
 };
 #endif

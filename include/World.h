@@ -53,7 +53,11 @@ class World {
          * menampung semua objek Facility yang ada di game
          */
         vector<Facility*> listFacil;
-    
+        /**
+         * \brief listMsg adalah vector dari string yang menampung pesan pesan
+         * yang muncul agar dilihat player, maksimal muncul 40 pesan
+         */
+        vector<string> listMsg;
         /**
          * \brief Singleton Pattern, objek statis yang hanya ada 1 dan bisa diakses dimanapun
          */
@@ -72,7 +76,7 @@ class World {
          * \brief Destructor World, mendealokasi mapLand, mapLB, catalog
          */
         ~World();
-
+        Point getSize(){return Point(width, height);}
         /**
          * \brief Singleton Pattern, mengembalikan instance world yang bisa diakses dimanapun
          */
@@ -93,6 +97,10 @@ class World {
          */
         void addFacil(Facility *lb, int _x, int _y);
         /**
+         * \brief Menambah pesan ke listMsg agar dilihat player
+         */
+        void addMsg(string s);
+        /**
          * \brief Mengeset Land pada posisi _x dan _y
          * \param c Land yang akan dimasukkan ke mapLand
          * \param _x posisi x Land
@@ -106,7 +114,7 @@ class World {
         /**
          * \brief Mengecek apakah petak [x,y] terisi Animal / Facility / Player
          */
-        void isTerisi(int x, int y);
+        bool isTerisi(int x, int y);
         /**
          * \brief Merender semua Land dan living being dengan memanggil method render
          */

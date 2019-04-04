@@ -32,5 +32,7 @@ class MeatProducingAnimal : public Animal {
          *  ke list inventori Player
          */
         virtual void DieAndGiveMeat()=0;
+        
+        bool isMeatPA() const{return true;}
 };
 #endif

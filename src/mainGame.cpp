@@ -7,6 +7,9 @@
 #include "Frontend/frontend.h"
 #include "LivingBeing/Player.h"
 #include "LivingBeing/LivingBeing.h"
+#include "LivingBeing/Landsalmon.h"
+#include "LivingBeing/MeatProducingAnimal.h"
+#include "Product/CowMeat.h"
 
 using namespace std;
 
@@ -39,7 +42,10 @@ int main()
     World::GetInstance()->addFacil(new Mixer(Point(10, 1)), 10, 1);
     World::GetInstance()->addFacil(new Well(Point(10, 3)), 10, 3);
 
-    //World::GetInstance()->addLB(new LandSalmon(...));
+    World::GetInstance()->addLB((MeatProducingAnimal*)new Landsalmon(2,2), 2,2);
+
+    Player::GetInstance()->AddInventory(new CowMeat(200));
+    
     bool gamePlay = true;
     string inputUser;
     while (gamePlay)
@@ -58,16 +64,36 @@ int main()
             gamePlay = false;
         }else if(inputUser == "up")
         {
-            Player::GetInstance()->Move(LivingBeing::direction::up);
+            if(Player::GetInstance()->Move(LivingBeing::direction::up))
+            {
+                World::GetInstance()->addMsg("Player go up");
+            }else{
+                World::GetInstance()->addMsg("Movement gagal");
+            }
         }else if(inputUser == "down")
         {
-            Player::GetInstance()->Move(LivingBeing::direction::down);
+            if(Player::GetInstance()->Move(LivingBeing::direction::down))
+            {
+                World::GetInstance()->addMsg("Player go down");
+            }else{
+                World::GetInstance()->addMsg("Movement gagal");
+            }
         }else if(inputUser == "left")
         {
-            Player::GetInstance()->Move(LivingBeing::direction::left);
+            if(Player::GetInstance()->Move(LivingBeing::direction::left))
+            {
+                World::GetInstance()->addMsg("Player go left");
+            }else{
+                World::GetInstance()->addMsg("Movement gagal");
+            }
         }else if(inputUser == "right")
         {
-            Player::GetInstance()->Move(LivingBeing::direction::right);
+            if(Player::GetInstance()->Move(LivingBeing::direction::right))
+            {
+                World::GetInstance()->addMsg("Player go right");
+            }else{
+                World::GetInstance()->addMsg("Movement gagal");
+            }
         }else if(inputUser == "talk")
         {
             

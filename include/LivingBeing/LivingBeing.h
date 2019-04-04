@@ -49,14 +49,16 @@ class LivingBeing : public Renderable {
         void SetY(int _y);
         
         /**
-         * \brief Bergerak ke arah directionNumber sejauh 1 petak
+         * \brief Bergerak ke arah directionNumber sejauh 1 petak, return true jika berhasil, false
+         * jika gagal
          * \param directionNumber nomor arah sesuai tipe enum direction
          */
-        void Move(direction directionNumber);
+        bool Move(direction directionNumber);
         /**
          * \brief Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak,
          *      digunakan untuk animal
          */
         void MoveRandom();
+        
 };
 #endif

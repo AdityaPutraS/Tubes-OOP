@@ -6,6 +6,7 @@ using namespace std;
 Animal::Animal(int _x, int _y, string _animalSound, char _repChar): LivingBeing(_x,_y,_repChar){
     animalSound = _animalSound;
     hungerMeter = 5;
+    isAlive = true;
 }
 int Animal::GetHungerMeter(){
     return hungerMeter;
@@ -42,6 +43,7 @@ void Animal::Die(){
     }else{
         cout<<"You managed to slaughter your animal."<<endl;
     }
+    isAlive = false;
 }
 
 //hantu

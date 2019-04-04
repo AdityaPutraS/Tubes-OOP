@@ -6,10 +6,10 @@
 using namespace std;
 
 Landsalmon::Landsalmon(int x, int y) : EggProducingAnimal(x,y,"BlubBlubBlub", 'S'), MeatProducingAnimal(x,y,"BlubBlubBlub", 'S') {
-
+    
 }
-//AWKWWKWKWKWKWKWKWKWKWKWK
-//Landsalmon cok, bukan LandSalmon
-void Landsalmon::GiveMeat(){
+
+void Landsalmon::DieAndGiveMeat(){
     Player::GetInstance()->AddInventory(new SalmonMeat());
+    MeatProducingAnimal::Die();
 } 

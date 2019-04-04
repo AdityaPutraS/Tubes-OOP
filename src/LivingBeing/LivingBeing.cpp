@@ -1,48 +1,67 @@
-#include "../../include/LivingBeing/LivingBeing.h"
+#include "LivingBeing/LivingBeing.h"
+#include "World.h"
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
-LivingBeing::LivingBeing(int _x, int _y, char _repChar) : Renderable(_x, _y, 0, _repChar){
+LivingBeing::LivingBeing(int _x, int _y, char _repChar) : Renderable(_x, _y, 0, _repChar)
+{
     x = _x;
     y = _y;
 }
 
-int LivingBeing::GetX() const{
+int LivingBeing::GetX() const
+{
     return x;
 }
 
-int LivingBeing::GetY() const{
+int LivingBeing::GetY() const
+{
     return y;
 }
 
-void LivingBeing::SetX(int _x){
+void LivingBeing::SetX(int _x)
+{
     x = _x;
     this->setPosLayar(x, y);
 }
 
-void LivingBeing::SetY(int _y){
+void LivingBeing::SetY(int _y)
+{
     y = _y;
     this->setPosLayar(x, y);
 }
 
-void LivingBeing::Move(direction dirNumber){
-    if (dirNumber == up){
-        this->SetY(y-1);
-    }else if (dirNumber == down){
-        this->SetY(y+1);
-    }else if (dirNumber == left){
-        this->SetX(x-1);
-    }else if (dirNumber == right){
-        this->SetX(x+1);
-    }else{
-        cout << "[INFO] : Illegal direction number" << endl;
+bool LivingBeing::Move(direction dirNumber)
+{
+    if (dirNumber == up && y > 0 && !World::GetInstance()->isTerisi(x, y - 1))
+    {
+        this->SetY(y - 1);
     }
+    else if (dirNumber == down && y < World::GetInstance()->getSize().getOrdinat() && !World::GetInstance()->isTerisi(x, y + 1))
+    {
+        this->SetY(y + 1);
+    }
+    else if (dirNumber == left && x > 0 && !World::GetInstance()->isTerisi(x - 1, y))
+    {
+        this->SetX(x - 1);
+    }
+    else if (dirNumber == right && x < World::GetInstance()->getSize().getAbsis() && !World::GetInstance()->isTerisi(x + 1, y))
+    {
+        this->SetX(x + 1);
+    }
+    else
+    {
+        return false;
+    }
+    return true;
 }
 
-void LivingBeing::MoveRandom(){
+void LivingBeing::MoveRandom()
+{
     srand(1);
     direction randDir = static_cast<direction>(rand() % 4 + 1);
     this->Move(randDir);
 }
+
 

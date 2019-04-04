@@ -20,6 +20,7 @@ class Animal : public LivingBeing {
     protected:
         int hungerMeter;        ///< Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value 5
         string animalSound;     ///< Suara hewan, berbeda tiap animal
+        bool isAlive;
     public:
         /**
          * \brief Constructor dengan parameter posisi binatang dan suaranya
@@ -45,5 +46,9 @@ class Animal : public LivingBeing {
         void Eat();             ///< Hewan makan grass yang ada di petaknya
         void SoundTheAnimal();  ///< Mengeluarkan suara hewan
         void Die();             ///< If hungerMeter = 0 "Hewan laper ampe mati" else "Hewan disembelih b"
+
+        virtual bool isMeatPA() const{ return false;}
+        virtual bool isMilkPA() const{ return false;}
+        virtual bool isEggPA() const{ return false;}
 };
 #endif

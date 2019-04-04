@@ -32,6 +32,6 @@ class Landsalmon : public EggProducingAnimal, public MeatProducingAnimal {
          */    
         Landsalmon(int _x, int _y);
 
-        void GiveMeat();
+        void DieAndGiveMeat();
 };
 #endif
