@@ -26,7 +26,7 @@ class MilkProducingAnimal : public Animal {
         * \param _y adalah posisi y dari MilkProducingAnimal 
         * \param _animalSound adalah string yang berisi suara yang dikeluarkan MilkProducingAnimal 
         */ 
-        MilkProducingAnimal(int _x, int _y, string _animalSound); //init haveMilk = false
+        MilkProducingAnimal(int _x, int _y, string _animalSound, char _repChar); //init haveMilk = false
         
         //METHOD
         /** 

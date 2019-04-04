@@ -1,7 +1,7 @@
-#include "Product/DiplodocusEgg.h"
+#include "../../include/Product/DiplodocusEgg.h"
 
 
-DiplodocusEgg::DiplodocusEgg():FarmProduct("DiplodocusEgg"){
+DiplodocusEgg::DiplodocusEgg():FarmProduct(500,"DiplodocusEgg"){
 
 }
 DiplodocusEgg::DiplodocusEgg(int _price):FarmProduct(_price, "DiplodocusEgg"){

@@ -4,7 +4,7 @@
  *
  * BlueFeather adalah SideProduct yang dihasilkan dari semua FarmProduct yang ada di Game
  *  
- * \note Ingredients : Chicken, ChickenMeat, CowMeat,CowMilk, DiplodocusEgg, DiplodocusMeat, LambMeat, LambMilk,
+ * \note Ingredients : ChickenEgg, ChickenMeat, CowMeat,CowMilk, DiplodocusEgg, DiplodocusMeat, LambMeat, LambMilk,
  *  PlatypusEgg, SalmonEgg, SalmonMeat
  * 
  * \author Naufal Aditya D.

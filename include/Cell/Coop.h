@@ -15,11 +15,13 @@
 
 class Coop : public Land{
     public:
+        //CTOR
+        Coop(bool hasGrass);
+
         //method
         bool isCoop() const;
 
 };
-
 
 
 #endif

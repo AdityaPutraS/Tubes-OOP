@@ -14,9 +14,9 @@
 using namespace std;
 
 #ifndef CHEESESTEAKOMELETTE_H
-#define CheesesteakOmelette_H
+#define CHEESESTEAKOMELETTE_H
 
-class CheesesteakOmelette: public SideProduct{
+class CheeseSteakOmelette: public SideProduct{
     //ingredients : DiplodocusEgg & DiplodocusMeat & CowMilk
     public:
         /**
@@ -27,7 +27,7 @@ class CheesesteakOmelette: public SideProduct{
          * \brief Constructor CheeseSteakOmelette dengan parameter harga CheeseSteakOmelette
          * \param _price Harga CheeseSteakOmelette
          */
-        CheesesteakOmelette(int _price);
+        CheeseSteakOmelette(int _price);
         /**
          * \brief Copy Constructor SideProduct dengan parameter CheeseSteakOmelette lain
          * \param CheeseSteakOmelette& CheeseSteakOmelette tujuan copy

@@ -12,36 +12,47 @@ using namespace std;
 #ifndef PRODUCT_H
 #define PRODUCT_H
 
-class Product{
-    protected:
+class Product
+{
+  protected:
     int price;
+    string name;
 
-    public:
+  public:
     /**
      * \brief Constructor Product default
+     * 
      */
-    Product();
+    Product(string _name);
     /**
-     * \brief Constructor Product dengan parameter harga Product
+     * \brief Constructor Product dengan parameter harga Product dan namanya
      * \param _price Harga Product
+     * \param _name Nama Product
      */
-    Product(int _price);
-    /**
-     * \brief prosedur sell Product untuk menjual suatu produk
-     * menambah uang player sejumlah price*jumlah dan mendestruk produk
-     * \param _price Harga Product
-     */    
-    void sell();
+    Product(int _price, string _name);
     /**
      * \brief getter price
      */
     int getPrice() const;
-        //return price
+    //return price
     /**
      * \brief setter price
      * \param _price harga produk
      */
     void setPrice(int _price);
+    /**
+     * \brief getter name
+     */
+    string getName() const;
+    //return price
+    /**
+     * \brief setter name
+     * \param _name nama produk
+     */
+    void setName(int _name);
+
+    bool operator==(const Product& P) const;
+
 };
 
 #endif

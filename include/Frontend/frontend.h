@@ -18,13 +18,13 @@
 #include <ncurses.h>
 #include <iostream>
 #include <stdlib.h>
+#include <string>
+
+using namespace std;
 
 class Tampilan
 {
   private:
-	/// Objek WINDOW untuk menggambar char pada layar
-	WINDOW *currentWindow;
-
 	int row; ///< Baris maksimal WINDOW
 	int col; ///< Kolom maksimal WINDOW
 
@@ -42,7 +42,7 @@ class Tampilan
 	 * \param _coory menandakan nilai Y pojok kiri atas WINDOW
 	 * \param curwin menandakan WINDOW yang digunakkan untuk menggambar char
 	 */
-	Tampilan(int _row, int _col, int _coorx, int _coory, WINDOW *curwin);
+	Tampilan(int _row, int _col, int _coorx, int _coory);
 
   public:
 	/**
@@ -67,20 +67,24 @@ class Tampilan
 	int getx();
 
 	//Method untuk menggambar kotak border terluar window
-	void drawkotak();
+	void drawkotak(int initx, int inity, int width, int height);
 	/**
 	 * \brief Method untuk menggambar tabel (nBaris x nKolom) 
 	 * 		yang memenuhi WINDOWS
 	 * \param nBaris menandakan banyak baris tabel
 	 * \param nKolom menandakan banyak kolom tabel
 	 */
-	void drawtable(int nBaris, int nKolom);
+	void drawtable(int initx, int inity, int dx, int dy, int nKolom, int nBaris);
 	//Mengubah char pada posisi (x,y) menjadi ch
 	void setcharonpos(char ch, int x, int y);
+	//Mengubah char pada posisi (i,j) pada table
+	string readStringTable(int x, int y, int dx, int dy, int i, int j);
+	void setCharTable(char ch, int x, int y, int dx, int dy, int i, int j);
+	void printStringTable(string s, int x, int y, int dx, int dy, int i, int j);
 	//Menghapus char pada posisi (x,y), menjadikannya kosong
 	void deletecharonpos(int x, int y);
 	//Mencetak string str pada posisi (x,y)
-	void printstronpos(char *str, int x, int y);
+	void printstronpos(string s, int x, int y);
 	/**
 	 * \brief mengupdate isi layar
 	 */
@@ -88,6 +92,6 @@ class Tampilan
 	/**
 	 * \brief Singleton pattern, mengembalikan objek instance tampilan
 	 */
-	static Tampilan *GetInstance();
+	static Tampilan *GetInstance(){return tampilan_instance;}
 };
 #endif

@@ -9,20 +9,19 @@
  * 
  */
 
-#include <iostream>
-#include "Product.h"
-#include "FarmProduct.h"
-#include "../Generik/LinkedList.h"
-
-using namespace std;
-
 #ifndef SIDEPRODUCT_H
 #define SIDEPRODUCT_H
 
+#include <iostream>
+#include "Product.h"
+#include "FarmProduct.h"
+#include <vector>
+
+using namespace std;
+
 class SideProduct: public Product{
     protected:
-        string type;
-        LinkedList<FarmProduct> ingredients;    ///< Sebuah list untuk mencatat bahan dasar yang dibutuhkan untuk SideProduct
+        vector<FarmProduct> ingredients;    ///< Sebuah list untuk mencatat bahan dasar yang dibutuhkan untuk SideProduct
     public:
         /**
          * \brief Constructor SideProduct default
@@ -37,12 +36,12 @@ class SideProduct: public Product{
          * \brief Copy Constructor SideProduct dari SideProduct yang sudah ada
          * \param SideProduct& SideProduct lain
          */
-        SideProduct(const SideProduct&);
+        SideProduct(SideProduct&);
         /**
          * \brief Operator = untuk meng-assign isi SideProduct dengan SideProduct lain
          * \param SideProduct& SideProduct lain
          */
-        SideProduct& operator= (const SideProduct&);
+        SideProduct& operator= (SideProduct&);
         /**
          * \brief Destruktor SideProduct
          */
@@ -50,23 +49,27 @@ class SideProduct: public Product{
         /**
          * \brief showIngredients menampilkan bahan bahan yang dibutuhkan untuk mix menjadi SideProduct
          */
-        void showIngridients();
+        void showIngredients();
         /**
          * \brief setter Ingredient untuk meng-assign ingredient yang digunakan dalam sebuah SideProduct
          */
-        void setIngredients(LinkedList<FarmProduct>);
+        void setIngredients(vector<FarmProduct>);
         /**
          * \brief addIngredient untuk menambahkan sebuah FarmProduct ke dalam Ingredients
          */
-        void addIngredients(FarmProduct FP){
+        void addIngredients(FarmProduct FP);
         /**
          * \brief getter Ingredient
          */
-        LinkedList<FarmProduct> getIngredients();
+        vector<FarmProduct>& getIngredients();
         /**
          * \brief getter Type
          */
         string getType();
+        /**
+         * \brief cek apakah side product bisa dibuat dengan bahan sesuai parameter
+         */
+        bool canMake(vector<FarmProduct>& bahan);
 };
 
 #endif

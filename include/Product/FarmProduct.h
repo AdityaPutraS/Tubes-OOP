@@ -14,28 +14,12 @@ using namespace std;
 #ifndef FARMPRODUCT_H
 #define FARMPRODUCT_H
 
-class FarmProduct: public Product{
-    private:
-    /**
-     * \brief tipe data penampung bahwa dia jenis apa
-     */
-    string type;
-    public:
-    /**
-     * \brief Constructor FarmProduct default
-     */
-    FarmProduct(string _type);
-     /**
-     * \brief Constructor FarmProduct dengan parameter harga FarmProduct
-     * \param _price Harga FarmProduct
-     */
-    FarmProduct(int _price, string _type);
-    /**
-     * \brief getter jenis
-     */
-    string getType();
+class FarmProduct : public Product
+{
+  public:
+    FarmProduct(string name);
+
+    FarmProduct(int _price, string name);
 };
-
-
 
 #endif

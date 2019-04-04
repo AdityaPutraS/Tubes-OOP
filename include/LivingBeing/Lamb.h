@@ -27,11 +27,13 @@ class Lamb : public MeatProducingAnimal, public MilkProducingAnimal {
          * \brief Konstruk Lamb dengan parametered location, dan bunyi defaultnya
          * 
          * Lamb akan memanggil konstruktor Animal
-         * dengan parameter bunyi "Mooo"
+         * dengan parameter bunyi "Baaa"
          * 
          * \param _x posisi x Lamb
          * \param _y posisi y Lamb
          */  
         Lamb(int _x, int _y);
+
+        void GiveMeat();
 };
 #endif

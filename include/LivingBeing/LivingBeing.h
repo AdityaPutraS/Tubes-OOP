@@ -10,7 +10,7 @@
 #define _LIVINGBEING_H
 
 #include <iostream>
-#include "include/Renderable.h"
+#include "Renderable.h"
 using namespace std;
 
 class LivingBeing : public Renderable {
@@ -24,7 +24,8 @@ class LivingBeing : public Renderable {
          * left = 3
          * right = 4
          */
-        enum direction {up = 1, down, left, right};
+    
+        enum direction {up = 1, down, left, right}; 
     public:
         /**
          * \brief Default constructor mahluk hidup, diletakan di -1,-1, tapi di render di 0,0 dengan char '-'
@@ -39,9 +40,9 @@ class LivingBeing : public Renderable {
         LivingBeing(int _x, int _y, char _repChar);   //Konstruk dengan parametered location
         
         ///Getter x
-        int GetX();
+        int GetX() const;
         ///Getter y     
-        int GetY();
+        int GetY() const;
         
         ///Setter x
         void SetX(int _x);

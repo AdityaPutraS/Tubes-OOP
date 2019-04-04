@@ -1,19 +1,29 @@
-#include "Product/Product.h"
+#include "../../include/Product/Product.h"
 
 
-Product::Product(){
+Product::Product(string _name){
     price = 0;
+    name = _name;
 }
-Product::Product(int _price){
+Product::Product(int _price, string _name){
     price = _price;
-}
-void Product::sell(){
-    //nambahin duit player
-    //destruk objek
+    name = _name;
 }
 int Product::getPrice() const{
     return price;
 }
 void Product::setPrice(int _price){
     price = _price;
+}
+
+string Product::getName() const{
+    return name;
+}
+void Product::setName(int _name){
+    price = _name;
+}
+
+bool Product::operator==(const Product& P) const
+{
+    return price == P.price && name == P.name;
 }

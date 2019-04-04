@@ -20,8 +20,6 @@
 using namespace std;
 
 class Landsalmon : public EggProducingAnimal, public MeatProducingAnimal {
-    private:
-
     public:
         /**
          * \brief Konstruk Landsalmon dengan parametered location
@@ -33,5 +31,7 @@ class Landsalmon : public EggProducingAnimal, public MeatProducingAnimal {
          * \param _y posisi y Landsalmon
          */    
         Landsalmon(int _x, int _y);
+
+        void GiveMeat();
 };
 #endif

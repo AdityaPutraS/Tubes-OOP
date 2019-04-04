@@ -19,6 +19,7 @@ class LambMeat: public FarmProduct{
     /**
     * \brief Constructor LambMeat dengan inisiasi harga LambMeat default
     */
+   LambMeat();
    /**
      * \brief Constructor  dengan parameter harga LambMeat
      * \param _price Harga LambMeat

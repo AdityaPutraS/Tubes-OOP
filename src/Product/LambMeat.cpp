@@ -1,7 +1,7 @@
-#include "LambMeat.h"
+#include "../../include/Product/LambMeat.h"
 
 
-LambMeat::LambMeat():FarmProduct("LambMeat"){
+LambMeat::LambMeat():FarmProduct(500,"LambMeat"){
 
 }
 LambMeat::LambMeat(int _price):FarmProduct(_price, "LambMeat"){

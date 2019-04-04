@@ -10,8 +10,8 @@
 #include "FarmProduct.h"
 
 
-#ifndef CHICKENMEAT_H
-#define CHICKENMEAT_H
+#ifndef COWMILK_H
+#define COWMILK_H
 
 class CowMilk: public FarmProduct{
     private:

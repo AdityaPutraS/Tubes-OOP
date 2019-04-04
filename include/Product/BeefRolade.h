@@ -14,7 +14,7 @@
 #ifndef BEEFROLADE_H
 #define BEEFROLADE_H
 
-class BeefRolade
+class BeefRolade : public SideProduct
 {
 public:
      /**

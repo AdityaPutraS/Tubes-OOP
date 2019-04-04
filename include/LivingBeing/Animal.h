@@ -27,7 +27,7 @@ class Animal : public LivingBeing {
          * \param _y nilai posisi y binatang pada layar
          * \param _animalSound string yang akan diprint ketika method SoundTheAnimal dipanggil
          */
-        Animal(int _x, int _y, string _animalSound); //Konstruk binatang dengan parametered location and animal sound
+        Animal(int _x, int _y, string _animalSound, char _repChar); //Konstruk binatang dengan parametered location and animal sound
         
         /// Getter hungerMeter
         int GetHungerMeter();

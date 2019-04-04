@@ -17,7 +17,8 @@ class Facility : public Cell
 {
     public:
         Facility(Point pos, char _render);
-        virtual void interact();
+        virtual void interact()=0;
+
 };
 
 #endif

@@ -15,7 +15,7 @@ OBJS = src/Product/SideProduct.o \
 	src/Cell/Well.o \
 	src/Cell/Grassland.o \
 	src/Cell/Land.o \
-	src/frontend/frontend.o \
+	src/Frontend/frontend.o \
 	src/LivingBeing/Animal.o \
 	src/LivingBeing/Chicken.o \
 	src/LivingBeing/Cow.o \
@@ -30,7 +30,7 @@ OBJS = src/Product/SideProduct.o \
 	src/LivingBeing/Player.o \
 	src/Product/BeefRolade.o \
 	src/Product/BlueFeather.o \
-	src/Product/CheeseSteakOmelete.o \
+	src/Product/CheeseSteakOmelette.o \
 	src/Product/ChickenEgg.o \
 	src/Product/ChickenMeat.o \
 	src/Product/CowMeat.o \

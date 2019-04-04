@@ -24,13 +24,13 @@ class MeatProducingAnimal : public Animal {
          * \param _y posisi y MeatProducingAnimal
          * \param _animalSound suara dari MeatProducingAnimal
          */
-        MeatProducingAnimal(int _x, int _y, string _animalSound);
+        MeatProducingAnimal(int _x, int _y, string _animalSound, char _repChar);
 
         //METHOD
         /**
          * \brief DieAndGiveMeat akan men-DTOR kan MeatProducingAnimal dan memasukkan daging <Nama Animal>
          *  ke list inventori Player
          */
-        void DieAndGiveMeat();
+        virtual void DieAndGiveMeat()=0;
 };
 #endif

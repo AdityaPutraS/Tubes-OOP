@@ -11,13 +11,15 @@
 
 #include "Cell.h"
 
-#define landpointer Land*
-
 class Land : public Cell{
     private:
         bool grass;
 
     public:
+        /**
+         * \brief Default constructor
+         */
+        Land();
         /**
          * \param _pos posisi Land yang ingin dibentuk
          * \param _renderChar karakter yang akan di render nantinya
@@ -30,15 +32,6 @@ class Land : public Cell{
 
         //Menumbuhkan grass pada Land
         void growGrass();
-
-        //Checking apakah land ini sebuah barn
-        virtual bool isBarn() const;
-
-        //Checking apakah land ini sebuah coop
-        virtual bool isCoop() const;
-
-        //Checking apakah land ini sebuah grassland
-        virtual bool isGrassland() const;
 };
 
 #endif

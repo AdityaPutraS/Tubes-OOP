@@ -9,6 +9,7 @@
  */
 #include "FarmProduct.h"
 
+
 #ifndef CHICKENEGG_H
 #define CHICKENEGG_H
 
@@ -25,4 +26,5 @@ class ChickenEgg: public FarmProduct{
      */
     ChickenEgg(int _price);
 };
+
 #endif

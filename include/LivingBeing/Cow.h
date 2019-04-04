@@ -33,5 +33,7 @@ class Cow : public MeatProducingAnimal, public MilkProducingAnimal {
          * \param _y posisi y Cow
          */
         Cow(int _x, int _y);
+
+        void GiveMeat();
 };
 #endif

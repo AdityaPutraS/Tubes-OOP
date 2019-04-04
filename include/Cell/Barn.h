@@ -15,8 +15,11 @@
 
 class Barn : public Land{
     public:
+        //CTOR
+        Barn(bool hasGrass);
+
         //method
         bool isBarn() const;
 };
-
+//b
 #endif

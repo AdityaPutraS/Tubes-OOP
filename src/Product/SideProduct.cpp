@@ -2,48 +2,48 @@
 #include <iostream>
 using namespace std;
 
+SideProduct::SideProduct(string _type) : Product(_type), ingredients()
+{}
 
-// SideProduct::SideProduct(string _type):Product(){
-//     ingredients = LinkedList<FarmProduct>();
-//     type = _type;
-// }
-// SideProduct::SideProduct(int _price, string _type): Product(_price){
-//     ingredients = LinkedList<FarmProduct>();
-//     type = _type;
-// }
-// SideProduct::SideProduct(const SideProduct& SP):Product(SP.getPrice()){
-//     ingredients = SP.getIngredients();
-//     price = SP.getPrice();
-//     type = SP.getType();
-// }
-// SideProduct& SideProduct::operator= (const SideProduct& SP){
-//     ingredients = SP.getIngredients();
-//     price = SP.getPrice();
-//     type = SP.getType();
-//     return *this;
-// }
-// SideProduct::~SideProduct(){
-//     ~ingredients;
-// }
-// void SideProduct::showIngredients(){
-//     cout>>"Ingredients :">>endl;
-//     int i=1;
-//     cout>>i>>". ">>Ingredients.getIsi().getType();
-//     i++;
-//     LinkedList<T>*iterator = next;
-//     while(iterator.getNext()!=nullptr){
-//         iterator = next;
-//         cout>>i>>". ">>iterator.getIsi().getType();
-//         i++;
-//     }
-// }
-// void SideProduct::setIngredients(LinkedList<FarmProduct> FP){
-//     Ingredients = FP;
-// }
-// void SideProduct::addIngredients(FarmProduct FP){
-//     Ingredients.addNext(FP);
-// }
+SideProduct::SideProduct(int _price, string _name) : Product(_price, _name), ingredients()
+{}
 
-// string SideProduct::getType(){
-//     return type;
-// }
+SideProduct::SideProduct(SideProduct &SP) : Product(SP.getPrice(), SP.getName()), ingredients(SP.getIngredients())
+{}
+
+SideProduct &SideProduct::operator=(SideProduct &SP)
+{
+    ingredients = vector<FarmProduct>(SP.getIngredients());
+    price = SP.getPrice();
+    name = SP.getName();
+    return *this;
+}
+
+SideProduct::~SideProduct()
+{
+}
+void SideProduct::showIngredients()
+{
+    cout << "Ingredients :" << endl;
+    for(FarmProduct fp : ingredients)
+    {
+        cout << "  " << fp.getName() << endl;
+    }
+}
+void SideProduct::setIngredients(vector<FarmProduct> FP)
+{
+    ingredients = FP;
+}
+void SideProduct::addIngredients(FarmProduct FP)
+{
+    ingredients.push_back(FP);
+}
+vector<FarmProduct> &SideProduct::getIngredients()
+{
+    return ingredients;
+}
+
+bool SideProduct::canMake(vector<FarmProduct>& bahan)
+{
+    
+}

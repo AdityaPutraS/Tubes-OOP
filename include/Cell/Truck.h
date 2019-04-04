@@ -14,9 +14,11 @@
 class Truck : public Facility
 {
     public:
-        Truck(int x, int y);
+        Truck(Point pos);
         //Interact(produk) akan menjual produk tersebut dan menambah uang player
         void interact();
+
+        bool isTruck() const;
 };
 
 #endif

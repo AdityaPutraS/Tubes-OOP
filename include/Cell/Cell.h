@@ -17,13 +17,11 @@
 class Cell : public Renderable{
     private:
         Point pos;
-        char renderChar;
-
     public:
         /**
          * \brief Default constructor Cell, position -1,-1, tapi di render di 0,0 dengan char '-'
          */
-        Cell():pos(Point(-1,-1)), renderChar('-'), Renderable(0,0,0,'-'){}
+        Cell():pos(Point(-1,-1)), Renderable(0,0,0,'-'){}
         /**
          * \param _pos posisi cell yang ingin dibentuk
          * \param _renderChar karakter yang akan di print saat rendering
@@ -39,6 +37,24 @@ class Cell : public Renderable{
          * \param _pos posisi cell baru
          */
         void setPos(Point _pos);
+
+        //Checking apakah cell ini sebuah barn
+        virtual bool isBarn() const;
+
+        //Checking apakah cell ini sebuah coop
+        virtual bool isCoop() const;
+
+        //Checking apakah cell ini sebuah grassland
+        virtual bool isGrassland() const;
+
+        //Checking apakah cell ini sebuah mixer
+        virtual bool isMixer() const;
+
+        //Checking apakah cell ini sebuah truck
+        virtual bool isTruck() const;
+
+        //Checking apakah cell ini sebuah well
+        virtual bool isWell() const;
 };
 
 #endif

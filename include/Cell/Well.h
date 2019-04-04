@@ -14,9 +14,11 @@
 class Well : public Facility
 {
     public:
-        Well(int x, int y);
+        Well(Point pos);
         //Interact akan mengubah nilai water player menjadi 100
         void interact();
+
+        bool isWell() const;
 };
 
 #endif

@@ -1,4 +1,4 @@
-/**
+    /**
  * \class Diplodocus
  * \brief Diplodocus adalah salah satu binatang dalam game
  *
@@ -34,5 +34,7 @@ class Diplodocus : public EggProducingAnimal, public MeatProducingAnimal {
          * \param _y posisi y Diplodocus
          */   
         Diplodocus(int _x, int _y);
+
+        void GiveMeat();
 };
 #endif

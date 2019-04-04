@@ -1,8 +1,8 @@
 #include "Product/STMJ.h"
 
-STMJ:STMJ():SideProduct("STMJ"){
+STMJ::STMJ():SideProduct(800,"STMJ"){
 
 }
-STMJ:STMJ(int _price):SideProduct(_price, "STMJ"){
+STMJ::STMJ(int _price):SideProduct(_price, "STMJ"){
 
 }

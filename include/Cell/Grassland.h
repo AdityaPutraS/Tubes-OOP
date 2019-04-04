@@ -11,11 +11,17 @@
 
 #include "Land.h"
 
-#define grasslandpointer Grassland*
-
 class Grassland : public Land{
     public:
-        //method
+        //CTOR
+        Grassland(bool hasGrass);
+        //METHOD
+        /** 
+         * \brief Meng-overwrite fungsi generik isGrassLand
+         * sehingga jika kelas GrassLand memanggil isGrassLand
+         * akan mereturn true, tapi kalau kelas lain yang manggil
+         * akan mereturn false
+         */
         bool isGrassland() const;
 
 };

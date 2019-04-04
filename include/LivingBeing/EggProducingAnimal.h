@@ -26,7 +26,7 @@ class EggProducingAnimal : public Animal {
          * \param _y posisi y EggProducingAnimal
          * \param _animalSound suara dari EggProducingAnimal
          */
-        EggProducingAnimal(int _x, int _y, string _animalSound);   //init haveEgg = false
+        EggProducingAnimal(int _x, int _y, string _animalSound, char _repChar);   //init haveEgg = false
         
         //SETTER
         void SetHaveEgg(bool _haveEgg);///Setter atribut haveEgg
