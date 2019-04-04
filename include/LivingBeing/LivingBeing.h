@@ -17,6 +17,7 @@ class LivingBeing : public Renderable {
     protected:
         int x;  ///< posisi X dari mahluk hidup
         int y;  ///< posisi Y dari mahluk hidup
+    public:
         /**
          * direction adalah tipe enum dengan nilai
          * up = 1
@@ -24,9 +25,7 @@ class LivingBeing : public Renderable {
          * left = 3
          * right = 4
          */
-    
         enum direction {up = 1, down, left, right}; 
-    public:
         /**
          * \brief Default constructor mahluk hidup, diletakan di -1,-1, tapi di render di 0,0 dengan char '-'
          */

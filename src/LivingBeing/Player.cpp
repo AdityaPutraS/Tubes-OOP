@@ -1,18 +1,18 @@
 #include "LivingBeing/Player.h"
 #include "LivingBeing/Animal.h"
 
-Player* Player::player_instance = new Player();
+Player *Player::player_instance = new Player(3, 3, 100, 0);
 
 /**
  * \brief Constructor Player dengan predefined location, water, and money, dan tas ukuran default
  */
-Player::Player(): tas()
+Player::Player() : tas()
 {
     x = 0;
     y = 0;
     water = 100;
     money = 0;
-}  
+}
 /**
  * \brief Constructor Player dengan parametered location, water, money, dan tas ukuran default
  * \param _x posisi X Player
@@ -20,7 +20,7 @@ Player::Player(): tas()
  * \param _water jumlah water yang dibawa player
  * \param _money jumlah uang yang dibawa player, default =0
  */
-Player::Player(int _x, int _y, int _water, int _money) : tas()
+Player::Player(int _x, int _y, int _water, int _money) : tas(), LivingBeing(_x, _y, 'P')
 {
     x = _x;
     y = _y;
@@ -37,32 +37,38 @@ int Player::GetMoney()
 {
     return money;
 } ///Getter money
-
+Point Player::GetPos()
+{
+    return Point(x, y);
+}
 //SETTER
 void Player::SetWater(int _water)
 {
     water = _water;
-}  ///setter water
+} ///setter water
 void Player::SetMoney(int _money)
 {
     money = _money;
-}  ///setter money
+} ///setter money
+void Player::SetPos(Point pos)
+{
+    this->SetX(pos.getAbsis());
+    this->SetY(pos.getOrdinat());
+}
 
 //METHOD
 /**
  * \brief dipanggil saat command Talk Player dengan Animal, membunyikan suara animal
  */
-void Player::TalkWith(Animal& animalia)
+void Player::TalkWith(Animal &animalia)
 {
-    
 }
 /**
  * \brief Interaksi Player dengan Animal, mengambil Milk atau Egg
  * \note Hanya dapat digunakan ke MilkProducingAnimal atau EggProducingAnimal
  */
-void Player::InteractWith(Animal& animalia)
+void Player::InteractWith(Animal &animalia)
 {
-    
 }
 /**
  * \brief Interaksi Player dengan Facility, jika valid:
@@ -71,7 +77,7 @@ void Player::InteractWith(Animal& animalia)
  * Mixer: Mengolah FarmProduct menjadi SideProduct, sesuai dengan resepnya
  * \note terdapat implementasi validasi posisi Player
  */
-void Player::InteractWith(Facility& facilitia)
+void Player::InteractWith(Facility &facilitia)
 {
     facilitia.interact();
 }
@@ -80,7 +86,7 @@ void Player::InteractWith(Facility& facilitia)
  * dan dimasukkan ke list inventori
  * \note Hanya dapat digunakan ke MeatProducingAnimal
  */
-void Player::Kill(Animal& animalia)
+void Player::Kill(Animal &animalia)
 {
     animalia.Die();
 }
@@ -88,25 +94,25 @@ void Player::Kill(Animal& animalia)
  * \brief Interaksi Player dengan Cell, menumbuhkan rumput sebagai makanan dari Animal, mengurangi water sebanyak 1
  * \note terdapat implementasi validasi sudah ada rumput atau tidak
  */
-void Player::Grow(Land& l)
+void Player::Grow(Land &l)
 {
-    if(l.isGrassland() && water > 0 && !l.hasGrass())
+    if (l.isGrassland() && water > 0 && !l.hasGrass())
     {
         l.growGrass();
         water--;
     }
 }
 
-void Player::AddInventory(Product* _p)
+void Player::AddInventory(Product *_p)
 {
     tas.addNext(_p);
 }
 
-Product* Player::GetInventory(int i)
+Product *Player::GetInventory(int i)
 {
     return tas.get(i);
 }
-LinkedList<Product*>& Player::getTas()
+LinkedList<Product *> &Player::getTas()
 {
     return tas;
 }

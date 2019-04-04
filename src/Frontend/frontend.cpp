@@ -121,6 +121,15 @@ void Tampilan::setCharTable(char ch, int x, int y, int dx, int dy, int i, int j)
 	mvaddch(posY, posX, ch);
 }
 
+string Tampilan::readStringTable(int x, int y, int dx, int dy, int i, int j)
+{
+	int posX = x + dx*i + 1;
+	int posY = y + dy*j + 1;
+	char input[100];
+	mvscanw(posY, posX, "%s", input);
+	return input;
+}
+
 void Tampilan::printStringTable(string s, int x, int y, int dx, int dy, int i, int j)
 {
 	int posX = x + dx*i + 1;
@@ -139,4 +148,14 @@ void Tampilan::printstronpos(string s, int x, int y){
 	//wclear(currentWindow);
 	mvprintw(y, x, s.c_str());
 	//refresh();
+}
+
+void Tampilan::updateLayar()
+{
+	refresh();
+}
+
+void Tampilan::clearLayar()
+{
+	clear();
 }

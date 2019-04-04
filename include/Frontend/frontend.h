@@ -86,9 +86,13 @@ class Tampilan
 	//Mencetak string str pada posisi (x,y)
 	void printstronpos(string s, int x, int y);
 	/**
+	 * \brief menghapus isi layar
+	 */
+	void clearLayar();
+	/**
 	 * \brief mengupdate isi layar
 	 */
-	void updateLayar() { refresh(); }
+	void updateLayar();
 	/**
 	 * \brief Singleton pattern, mengembalikan objek instance tampilan
 	 */

@@ -9,9 +9,9 @@
 #define _PLAYER_H
 
 #include <iostream>
-#include "LivingBeing.h"
+#include "LivingBeing/LivingBeing.h"
 #include "Product/Product.h"
-#include "Animal.h"
+#include "LivingBeing/Animal.h"
 #include "Cell/Facility.h"
 #include "Cell/Land.h"
 #include "Generik/LinkedList.h"
@@ -47,19 +47,14 @@ class Player: public LivingBeing {
         //GETTER
         int GetWater(); ///Getter water
         int GetMoney(); ///Getter money
-        
+        Point GetPos(); ///Getter posisi
         //SETTER
         void SetWater(int _water);  ///setter water
         void SetMoney(int _money);  ///setter money
-
+        void SetPos(Point pos);     ///setter posisi
         static Player* GetInstance(){return player_instance;}
 
         //METHOD
-        /**
-         * \brief Bergerak relative terhadap posisi sekarang, dx positif = kanan, dx negatif = kiri
-         * dy positif = bawah, dy negatif = atas
-         */
-        void MoveRelative(int dx, int dy);
         /**
          * \brief dipanggil saat command Talk Player dengan Animal, membunyikan suara animal
          */

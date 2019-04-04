@@ -1,4 +1,6 @@
 #include "World.h"
+#include "LivingBeing/Player.h"
+
 
 World *World::world_instance = new World(11, 11);
 
@@ -108,6 +110,7 @@ void World::renderAll()
     {
         LF->render();
     }
+    Player::GetInstance()->render();
     //Command
     Tampilan::GetInstance()->drawtable(0, 23, 67, 2,1,1);
     Tampilan::GetInstance()->printStringTable("Command : ", 0, 23, 66,1, 0, 0);
