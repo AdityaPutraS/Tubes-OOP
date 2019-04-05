@@ -1,0 +1,8 @@
+<map id="Lamb" name="Lamb">
+<area shape="rect" id="node1" title="Lamb adalah salah satu binatang dalam game." alt="" coords="123,976,246,1097"/>
+<area shape="rect" id="node2" href="$classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="5,792,175,928"/>
+<area shape="rect" id="node3" href="$classAnimal.html" title="Base class berbagai macam binatang di game." alt="" coords="114,417,255,744"/>
+<area shape="rect" id="node6" href="$classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk" alt="" coords="199,792,363,928"/>
+<area shape="rect" id="node4" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="130,189,239,369"/>
+<area shape="rect" id="node5" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="119,5,250,141"/>
+</map>

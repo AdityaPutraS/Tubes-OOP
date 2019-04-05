@@ -1,0 +1,8 @@
+<map id="Facility" name="Facility">
+<area shape="rect" id="node1" title="Facility adalah parent kelas untuk fasilitas seperti Mixer, Well, dan Truck." alt="" coords="152,447,237,539"/>
+<area shape="rect" id="node4" href="$classMixer.html" title="Mixer adalah kelas untuk objek Mixer yang berguna mencampur barang player." alt="" coords="5,587,128,737"/>
+<area shape="rect" id="node5" href="$classTruck.html" title="Truck adalah kelas untuk objek truck yang berguna menjual barang player." alt="" coords="152,609,237,715"/>
+<area shape="rect" id="node6" href="$classWell.html" title="Well adalah kelas untuk objek Well yang berguna mengubah nilai water player menjadi 100." alt="" coords="261,609,347,715"/>
+<area shape="rect" id="node2" href="$classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="139,189,250,399"/>
+<area shape="rect" id="node3" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="129,5,260,141"/>
+</map>

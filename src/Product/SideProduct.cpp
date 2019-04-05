@@ -56,7 +56,7 @@ bool SideProduct::canMake(vector<Product>& bahan)
             if(fp == bahan[i])
             {
                 auto iterTerpakai = find(terpakai.begin(), terpakai.end(), i);
-                if(iterTerpakai != terpakai.end())
+                if(iterTerpakai == terpakai.end())
                 {
                     terpakai.push_back(i);
                     ketemu = true;

@@ -1,0 +1,22 @@
+<map id="Product" name="Product">
+<area shape="rect" id="node1" title="Product adalah base class dari segala FarmProduct dan SideProduct." alt="" coords="1253,5,1359,185"/>
+<area shape="rect" id="node2" href="$classFarmProduct.html" title="FarmProduct adalah base class dari segala FarmProduct (produk dari hewan) di game." alt="" coords="762,299,879,391"/>
+<area shape="rect" id="node14" href="$classSideProduct.html" title="SideProduct adalah base class dari segala SideProduct (produk olahan hasil mix) di game." alt="" coords="1796,233,1933,457"/>
+<area shape="rect" id="node3" href="$classChickenEgg.html" title="ChickenEgg adalah salah satu FarmProduct dalam game." alt="" coords="5,520,119,612"/>
+<area shape="rect" id="node4" href="$classChickenMeat.html" title="ChickenMeat adalah salah satu FarmProduct dalam game." alt="" coords="143,520,261,612"/>
+<area shape="rect" id="node5" href="$classCowMeat.html" title="CowMeat adalah salah satu FarmProduct dalam game." alt="" coords="286,520,385,612"/>
+<area shape="rect" id="node6" href="$classCowMilk.html" title="CowMilk adalah salah satu FarmProduct dalam game." alt="" coords="409,520,502,612"/>
+<area shape="rect" id="node7" href="$classDiplodocusEgg.html" title="DiplodocusEgg adalah salah satu FarmProduct dalam game." alt="" coords="526,520,657,612"/>
+<area shape="rect" id="node8" href="$classDiplodocusMeat.html" title="DiplodocusMeat adalah salah satu FarmProduct dalam game." alt="" coords="681,520,817,612"/>
+<area shape="rect" id="node9" href="$classLambMeat.html" title="LambMeat adalah salah satu FarmProduct dalam game." alt="" coords="841,520,944,612"/>
+<area shape="rect" id="node10" href="$classLambMilk.html" title="LambMilk adalah salah satu FarmProduct dalam game." alt="" coords="969,520,1067,612"/>
+<area shape="rect" id="node11" href="$classPlatypusEgg.html" title="PlatypusEgg adalah salah satu FarmProduct dalam game." alt="" coords="1092,520,1208,612"/>
+<area shape="rect" id="node12" href="$classSalmonEgg.html" title="SalmonEgg adalah salah satu FarmProduct dalam game." alt="" coords="1233,520,1342,612"/>
+<area shape="rect" id="node13" href="$classSalmonMeat.html" title="SalmonMeat adalah salah satu FarmProduct dalam game." alt="" coords="1366,520,1481,612"/>
+<area shape="rect" id="node15" href="$classBeefRolade.html" title="BeefRolade adalah salah satu SideProduct dalam game." alt="" coords="1505,505,1616,627"/>
+<area shape="rect" id="node16" href="$classBlueFeather.html" title="BlueFeather adalah salah satu SideProduct dalam game." alt="" coords="1641,505,1753,627"/>
+<area shape="rect" id="node17" href="$classCheeseSteakOmelette.html" title="CheeseSteakOmelette adalah salah satu SideProduct dalam game." alt="" coords="1777,520,1952,612"/>
+<area shape="rect" id="node18" href="$classCremeBrulee.html" title="CremeBrulee adalah salah satu SideProduct dalam game." alt="" coords="1976,505,2095,627"/>
+<area shape="rect" id="node19" href="$classLasagna.html" title="Lasagna adalah salah satu SideProduct dalam game." alt="" coords="2119,505,2216,627"/>
+<area shape="rect" id="node20" href="$classSTMJ.html" title="STMJ adalah salah satu SideProduct dalam game." alt="" coords="2240,505,2337,627"/>
+</map>

@@ -2,44 +2,71 @@
 \label{classFacility}\index{Facility@{Facility}}
 
 
-\mbox{\hyperlink{classFacility}{Facility}} adalah kelas untuk fasilitas seperti \mbox{\hyperlink{classMixer}{Mixer}}, \mbox{\hyperlink{classWell}{Well}}, dan \mbox{\hyperlink{classTruck}{Truck}}.  
+\mbox{\hyperlink{classFacility}{Facility}} adalah parent kelas untuk fasilitas seperti \mbox{\hyperlink{classMixer}{Mixer}}, \mbox{\hyperlink{classWell}{Well}}, dan \mbox{\hyperlink{classTruck}{Truck}}.  
 
 
 
 
 {\ttfamily \#include $<$Facility.\+h$>$}
 
-Inheritance diagram for Facility\+:\begin{figure}[H]
+
+
+Inheritance diagram for Facility\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classFacility}
+\includegraphics[height=550pt]{classFacility__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Facility\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classFacility__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFacility_aca76f1d74522884d7c9cfc742db5b9e3}\label{classFacility_aca76f1d74522884d7c9cfc742db5b9e3}} 
-{\bfseries Facility} (int x, int y)
-\end{DoxyCompactItemize}
-\doxysubsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
+\mbox{\hyperlink{classFacility_ada1ef0d92021bf3be6c59c59406f7228}{Facility}} (\mbox{\hyperlink{classPoint}{Point}} pos, char \+\_\+render)
 \item 
-\mbox{\Hypertarget{classFacility_a97a4d1f6f807e0e74c4283cf120daed9}\label{classFacility_a97a4d1f6f807e0e74c4283cf120daed9}} 
-int {\bfseries x}
-\item 
-\mbox{\Hypertarget{classFacility_a28d1fbfe0699e800db094161504b0e44}\label{classFacility_a28d1fbfe0699e800db094161504b0e44}} 
-int {\bfseries y}
+virtual void \mbox{\hyperlink{classFacility_a6ce66eaeb6d5f9208186c8e6be9f0f66}{interact}} ()=0
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\mbox{\hyperlink{classFacility}{Facility}} adalah kelas untuk fasilitas seperti \mbox{\hyperlink{classMixer}{Mixer}}, \mbox{\hyperlink{classWell}{Well}}, dan \mbox{\hyperlink{classTruck}{Truck}}. 
+\mbox{\hyperlink{classFacility}{Facility}} adalah parent kelas untuk fasilitas seperti \mbox{\hyperlink{classMixer}{Mixer}}, \mbox{\hyperlink{classWell}{Well}}, dan \mbox{\hyperlink{classTruck}{Truck}}. 
 
 \begin{DoxyAuthor}{Author}
 Aditya Putra S. 
 \end{DoxyAuthor}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFacility_ada1ef0d92021bf3be6c59c59406f7228}\label{classFacility_ada1ef0d92021bf3be6c59c59406f7228}} 
+\index{Facility@{Facility}!Facility@{Facility}}
+\index{Facility@{Facility}!Facility@{Facility}}
+\doxysubsubsection{\texorpdfstring{Facility()}{Facility()}}
+{\footnotesize\ttfamily Facility\+::\+Facility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{pos,  }\item[{char}]{\+\_\+render }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFacility_a6ce66eaeb6d5f9208186c8e6be9f0f66}\label{classFacility_a6ce66eaeb6d5f9208186c8e6be9f0f66}} 
+\index{Facility@{Facility}!interact@{interact}}
+\index{interact@{interact}!Facility@{Facility}}
+\doxysubsubsection{\texorpdfstring{interact()}{interact()}}
+{\footnotesize\ttfamily virtual void Facility\+::interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMixer_a2c6627b0771aec7ce0046046ee8abda9}{Mixer}}, \mbox{\hyperlink{classTruck_ade3385f07d9db954d329e3d5de180f2e}{Truck}}, and \mbox{\hyperlink{classWell_a0b05bce6404fb86371f31ae7734ca01c}{Well}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Cell/Facility.\+h\end{DoxyCompactItemize}
+include/\+Cell/\mbox{\hyperlink{Facility_8h}{Facility.\+h}}\item 
+src/\+Cell/\mbox{\hyperlink{Facility_8cpp}{Facility.\+cpp}}\end{DoxyCompactItemize}

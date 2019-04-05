@@ -49,7 +49,7 @@ class Product
      * \brief setter name
      * \param _name nama produk
      */
-    void setName(int _name);
+    void setName(string _name);
 
     bool operator==(const Product& P) const;
 

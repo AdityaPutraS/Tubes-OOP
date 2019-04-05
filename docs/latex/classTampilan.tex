@@ -9,57 +9,59 @@ Class sebagai abstraksi dari ncurses.
 
 {\ttfamily \#include $<$frontend.\+h$>$}
 
+
+
+Collaboration diagram for Tampilan\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classTampilan__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classTampilan_ab4cbbbc4ee45145fee2d7e07b16a8ff8}\label{classTampilan_ab4cbbbc4ee45145fee2d7e07b16a8ff8}} 
 \mbox{\hyperlink{classTampilan_ab4cbbbc4ee45145fee2d7e07b16a8ff8}{$\sim$\+Tampilan}} ()
 \begin{DoxyCompactList}\small\item\em Destructor tampilan, mendelete pointer current\+Window dan memanggil end\+Win() \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_aaec0545eaf5a7646482158078d0e6cd3}\label{classTampilan_aaec0545eaf5a7646482158078d0e6cd3}} 
 void \mbox{\hyperlink{classTampilan_aaec0545eaf5a7646482158078d0e6cd3}{setrow}} (int i)
 \begin{DoxyCompactList}\small\item\em Setter row. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_ac617ef582e2fe3a894c71372f60e562f}\label{classTampilan_ac617ef582e2fe3a894c71372f60e562f}} 
 void \mbox{\hyperlink{classTampilan_ac617ef582e2fe3a894c71372f60e562f}{setcol}} (int i)
 \begin{DoxyCompactList}\small\item\em Setter col. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_a1c8443c5bde9718f078ea517bf9f27f0}\label{classTampilan_a1c8443c5bde9718f078ea517bf9f27f0}} 
 void \mbox{\hyperlink{classTampilan_a1c8443c5bde9718f078ea517bf9f27f0}{setx}} (int i)
 \begin{DoxyCompactList}\small\item\em Setter coorx. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_a697d4d73cd649452b0c1aa8ef17c38f9}\label{classTampilan_a697d4d73cd649452b0c1aa8ef17c38f9}} 
 void \mbox{\hyperlink{classTampilan_a697d4d73cd649452b0c1aa8ef17c38f9}{sety}} (int i)
 \begin{DoxyCompactList}\small\item\em Setter coory. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_a4adf565e9d2634938d9790fe8caca1b6}\label{classTampilan_a4adf565e9d2634938d9790fe8caca1b6}} 
 int \mbox{\hyperlink{classTampilan_a4adf565e9d2634938d9790fe8caca1b6}{getrow}} ()
 \begin{DoxyCompactList}\small\item\em Getter row. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_af1cad6ddd09a36776855f198e3ec069e}\label{classTampilan_af1cad6ddd09a36776855f198e3ec069e}} 
 int \mbox{\hyperlink{classTampilan_af1cad6ddd09a36776855f198e3ec069e}{getcol}} ()
 \begin{DoxyCompactList}\small\item\em Getter col. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_abc150afa98710a4b9f4599f3dd798269}\label{classTampilan_abc150afa98710a4b9f4599f3dd798269}} 
 int \mbox{\hyperlink{classTampilan_abc150afa98710a4b9f4599f3dd798269}{gety}} ()
 \begin{DoxyCompactList}\small\item\em Getter coorx. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_ab78540f8a9cb938def2b49628fd2968a}\label{classTampilan_ab78540f8a9cb938def2b49628fd2968a}} 
 int \mbox{\hyperlink{classTampilan_ab78540f8a9cb938def2b49628fd2968a}{getx}} ()
 \begin{DoxyCompactList}\small\item\em Getter coory. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_a88dc86562a58c797a63053e7736972e0}\label{classTampilan_a88dc86562a58c797a63053e7736972e0}} 
-void {\bfseries drawkotak} ()
+void \mbox{\hyperlink{classTampilan_a6ac222e322407ba8d2b4701c1d996fea}{drawkotak}} (int initx, int inity, int width, int height)
 \item 
-void \mbox{\hyperlink{classTampilan_a0b00958444bbba962ff0bf9dbc6c98d3}{drawtable}} (int n\+Baris, int n\+Kolom)
+void \mbox{\hyperlink{classTampilan_a249e636493cf32ad36fba30d9fe83aeb}{drawtable}} (int initx, int inity, int dx, int dy, int n\+Kolom, int n\+Baris)
 \begin{DoxyCompactList}\small\item\em Method untuk menggambar tabel (n\+Baris x n\+Kolom) yang memenuhi W\+I\+N\+D\+O\+WS. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classTampilan_a39b78d35193b89db5e4d191b596b7734}\label{classTampilan_a39b78d35193b89db5e4d191b596b7734}} 
-void {\bfseries setcharonpos} (char ch, int x, int y)
+void \mbox{\hyperlink{classTampilan_a39b78d35193b89db5e4d191b596b7734}{setcharonpos}} (char ch, int x, int y)
 \item 
-\mbox{\Hypertarget{classTampilan_ab14dbbd1c0207088deaefac8e0a48188}\label{classTampilan_ab14dbbd1c0207088deaefac8e0a48188}} 
-void {\bfseries deletecharonpos} (int x, int y)
+string \mbox{\hyperlink{classTampilan_a4c01396b196ce69da35a17c8637eba92}{read\+String\+Table}} (int x, int y, int dx, int dy, int i, int j)
 \item 
-\mbox{\Hypertarget{classTampilan_aaab4834dd6d5d198abf824d8360d1270}\label{classTampilan_aaab4834dd6d5d198abf824d8360d1270}} 
-void {\bfseries printstronpos} (char $\ast$str, int x, int y)
+void \mbox{\hyperlink{classTampilan_adcb02e0568c14b050efc6033ba14c1dd}{set\+Char\+Table}} (char ch, int x, int y, int dx, int dy, int i, int j)
 \item 
-\mbox{\Hypertarget{classTampilan_ac438e8152824ed817607f135f509819f}\label{classTampilan_ac438e8152824ed817607f135f509819f}} 
+void \mbox{\hyperlink{classTampilan_a35b4283088089b3c7680b8fea2127dca}{print\+String\+Table}} (string s, int x, int y, int dx, int dy, int i, int j)
+\item 
+void \mbox{\hyperlink{classTampilan_ab14dbbd1c0207088deaefac8e0a48188}{deletecharonpos}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classTampilan_a1ce814fc8c17868319b3ceba7d68c934}{printstronpos}} (string s, int x, int y)
+\item 
+void \mbox{\hyperlink{classTampilan_a1ce1b786e09d3fff420661e3c8d38383}{clear\+Layar}} ()
+\begin{DoxyCompactList}\small\item\em menghapus isi layar \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTampilan_ac438e8152824ed817607f135f509819f}{update\+Layar}} ()
 \begin{DoxyCompactList}\small\item\em mengupdate isi layar \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classTampilan_ae081b4ccfa6aea95e08393d21457df23}\label{classTampilan_ae081b4ccfa6aea95e08393d21457df23}} 
 static \mbox{\hyperlink{classTampilan}{Tampilan}} $\ast$ \mbox{\hyperlink{classTampilan_ae081b4ccfa6aea95e08393d21457df23}{Get\+Instance}} ()
 \begin{DoxyCompactList}\small\item\em Singleton pattern, mengembalikan objek instance tampilan. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -77,12 +79,47 @@ Rayza Mahendra
 \end{DoxyAuthor}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTampilan_ab4cbbbc4ee45145fee2d7e07b16a8ff8}\label{classTampilan_ab4cbbbc4ee45145fee2d7e07b16a8ff8}} 
+\index{Tampilan@{Tampilan}!````~Tampilan@{$\sim$Tampilan}}
+\index{````~Tampilan@{$\sim$Tampilan}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{$\sim$Tampilan()}{~Tampilan()}}
+{\footnotesize\ttfamily Tampilan\+::$\sim$\+Tampilan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor tampilan, mendelete pointer current\+Window dan memanggil end\+Win() 
+
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classTampilan_a0b00958444bbba962ff0bf9dbc6c98d3}\label{classTampilan_a0b00958444bbba962ff0bf9dbc6c98d3}} 
+\mbox{\Hypertarget{classTampilan_a1ce1b786e09d3fff420661e3c8d38383}\label{classTampilan_a1ce1b786e09d3fff420661e3c8d38383}} 
+\index{Tampilan@{Tampilan}!clearLayar@{clearLayar}}
+\index{clearLayar@{clearLayar}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{clearLayar()}{clearLayar()}}
+{\footnotesize\ttfamily void Tampilan\+::clear\+Layar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+menghapus isi layar 
+
+\mbox{\Hypertarget{classTampilan_ab14dbbd1c0207088deaefac8e0a48188}\label{classTampilan_ab14dbbd1c0207088deaefac8e0a48188}} 
+\index{Tampilan@{Tampilan}!deletecharonpos@{deletecharonpos}}
+\index{deletecharonpos@{deletecharonpos}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{deletecharonpos()}{deletecharonpos()}}
+{\footnotesize\ttfamily void Tampilan\+::deletecharonpos (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTampilan_a6ac222e322407ba8d2b4701c1d996fea}\label{classTampilan_a6ac222e322407ba8d2b4701c1d996fea}} 
+\index{Tampilan@{Tampilan}!drawkotak@{drawkotak}}
+\index{drawkotak@{drawkotak}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{drawkotak()}{drawkotak()}}
+{\footnotesize\ttfamily void Tampilan\+::drawkotak (\begin{DoxyParamCaption}\item[{int}]{initx,  }\item[{int}]{inity,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTampilan_a249e636493cf32ad36fba30d9fe83aeb}\label{classTampilan_a249e636493cf32ad36fba30d9fe83aeb}} 
 \index{Tampilan@{Tampilan}!drawtable@{drawtable}}
 \index{drawtable@{drawtable}!Tampilan@{Tampilan}}
 \doxysubsubsection{\texorpdfstring{drawtable()}{drawtable()}}
-{\footnotesize\ttfamily void Tampilan\+::drawtable (\begin{DoxyParamCaption}\item[{int}]{n\+Baris,  }\item[{int}]{n\+Kolom }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Tampilan\+::drawtable (\begin{DoxyParamCaption}\item[{int}]{initx,  }\item[{int}]{inity,  }\item[{int}]{dx,  }\item[{int}]{dy,  }\item[{int}]{n\+Kolom,  }\item[{int}]{n\+Baris }\end{DoxyParamCaption})}
 
 
 
@@ -95,9 +132,139 @@ Method untuk menggambar tabel (n\+Baris x n\+Kolom) yang memenuhi W\+I\+N\+D\+O\
 {\em n\+Kolom} & menandakan banyak kolom tabel \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classTampilan_af1cad6ddd09a36776855f198e3ec069e}\label{classTampilan_af1cad6ddd09a36776855f198e3ec069e}} 
+\index{Tampilan@{Tampilan}!getcol@{getcol}}
+\index{getcol@{getcol}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{getcol()}{getcol()}}
+{\footnotesize\ttfamily int Tampilan\+::getcol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter col. 
+
+\mbox{\Hypertarget{classTampilan_ae081b4ccfa6aea95e08393d21457df23}\label{classTampilan_ae081b4ccfa6aea95e08393d21457df23}} 
+\index{Tampilan@{Tampilan}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTampilan}{Tampilan}}$\ast$ Tampilan\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Singleton pattern, mengembalikan objek instance tampilan. 
+
+\mbox{\Hypertarget{classTampilan_a4adf565e9d2634938d9790fe8caca1b6}\label{classTampilan_a4adf565e9d2634938d9790fe8caca1b6}} 
+\index{Tampilan@{Tampilan}!getrow@{getrow}}
+\index{getrow@{getrow}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{getrow()}{getrow()}}
+{\footnotesize\ttfamily int Tampilan\+::getrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter row. 
+
+\mbox{\Hypertarget{classTampilan_ab78540f8a9cb938def2b49628fd2968a}\label{classTampilan_ab78540f8a9cb938def2b49628fd2968a}} 
+\index{Tampilan@{Tampilan}!getx@{getx}}
+\index{getx@{getx}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{getx()}{getx()}}
+{\footnotesize\ttfamily int Tampilan\+::getx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter coory. 
+
+\mbox{\Hypertarget{classTampilan_abc150afa98710a4b9f4599f3dd798269}\label{classTampilan_abc150afa98710a4b9f4599f3dd798269}} 
+\index{Tampilan@{Tampilan}!gety@{gety}}
+\index{gety@{gety}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{gety()}{gety()}}
+{\footnotesize\ttfamily int Tampilan\+::gety (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter coorx. 
+
+\mbox{\Hypertarget{classTampilan_a35b4283088089b3c7680b8fea2127dca}\label{classTampilan_a35b4283088089b3c7680b8fea2127dca}} 
+\index{Tampilan@{Tampilan}!printStringTable@{printStringTable}}
+\index{printStringTable@{printStringTable}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{printStringTable()}{printStringTable()}}
+{\footnotesize\ttfamily void Tampilan\+::print\+String\+Table (\begin{DoxyParamCaption}\item[{string}]{s,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{dx,  }\item[{int}]{dy,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTampilan_a1ce814fc8c17868319b3ceba7d68c934}\label{classTampilan_a1ce814fc8c17868319b3ceba7d68c934}} 
+\index{Tampilan@{Tampilan}!printstronpos@{printstronpos}}
+\index{printstronpos@{printstronpos}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{printstronpos()}{printstronpos()}}
+{\footnotesize\ttfamily void Tampilan\+::printstronpos (\begin{DoxyParamCaption}\item[{string}]{s,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTampilan_a4c01396b196ce69da35a17c8637eba92}\label{classTampilan_a4c01396b196ce69da35a17c8637eba92}} 
+\index{Tampilan@{Tampilan}!readStringTable@{readStringTable}}
+\index{readStringTable@{readStringTable}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{readStringTable()}{readStringTable()}}
+{\footnotesize\ttfamily string Tampilan\+::read\+String\+Table (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{dx,  }\item[{int}]{dy,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTampilan_a39b78d35193b89db5e4d191b596b7734}\label{classTampilan_a39b78d35193b89db5e4d191b596b7734}} 
+\index{Tampilan@{Tampilan}!setcharonpos@{setcharonpos}}
+\index{setcharonpos@{setcharonpos}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{setcharonpos()}{setcharonpos()}}
+{\footnotesize\ttfamily void Tampilan\+::setcharonpos (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTampilan_adcb02e0568c14b050efc6033ba14c1dd}\label{classTampilan_adcb02e0568c14b050efc6033ba14c1dd}} 
+\index{Tampilan@{Tampilan}!setCharTable@{setCharTable}}
+\index{setCharTable@{setCharTable}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{setCharTable()}{setCharTable()}}
+{\footnotesize\ttfamily void Tampilan\+::set\+Char\+Table (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{dx,  }\item[{int}]{dy,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTampilan_ac617ef582e2fe3a894c71372f60e562f}\label{classTampilan_ac617ef582e2fe3a894c71372f60e562f}} 
+\index{Tampilan@{Tampilan}!setcol@{setcol}}
+\index{setcol@{setcol}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{setcol()}{setcol()}}
+{\footnotesize\ttfamily void Tampilan\+::setcol (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Setter col. 
+
+\mbox{\Hypertarget{classTampilan_aaec0545eaf5a7646482158078d0e6cd3}\label{classTampilan_aaec0545eaf5a7646482158078d0e6cd3}} 
+\index{Tampilan@{Tampilan}!setrow@{setrow}}
+\index{setrow@{setrow}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{setrow()}{setrow()}}
+{\footnotesize\ttfamily void Tampilan\+::setrow (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Setter row. 
+
+\mbox{\Hypertarget{classTampilan_a1c8443c5bde9718f078ea517bf9f27f0}\label{classTampilan_a1c8443c5bde9718f078ea517bf9f27f0}} 
+\index{Tampilan@{Tampilan}!setx@{setx}}
+\index{setx@{setx}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{setx()}{setx()}}
+{\footnotesize\ttfamily void Tampilan\+::setx (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Setter coorx. 
+
+\mbox{\Hypertarget{classTampilan_a697d4d73cd649452b0c1aa8ef17c38f9}\label{classTampilan_a697d4d73cd649452b0c1aa8ef17c38f9}} 
+\index{Tampilan@{Tampilan}!sety@{sety}}
+\index{sety@{sety}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{sety()}{sety()}}
+{\footnotesize\ttfamily void Tampilan\+::sety (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Setter coory. 
+
+\mbox{\Hypertarget{classTampilan_ac438e8152824ed817607f135f509819f}\label{classTampilan_ac438e8152824ed817607f135f509819f}} 
+\index{Tampilan@{Tampilan}!updateLayar@{updateLayar}}
+\index{updateLayar@{updateLayar}!Tampilan@{Tampilan}}
+\doxysubsubsection{\texorpdfstring{updateLayar()}{updateLayar()}}
+{\footnotesize\ttfamily void Tampilan\+::update\+Layar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+mengupdate isi layar 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-frontend/frontend.\+h\item 
-frontend/frontend.\+cpp\end{DoxyCompactItemize}
+include/\+Frontend/\mbox{\hyperlink{frontend_8h}{frontend.\+h}}\item 
+src/\+Frontend/\mbox{\hyperlink{frontend_8cpp}{frontend.\+cpp}}\end{DoxyCompactItemize}

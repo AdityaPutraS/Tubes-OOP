@@ -22,7 +22,7 @@ class Mixer : public Facility
          * \brief catalog adalah linked list dari SideProduct yang
          * menampung semua SideProduct yang terdefinisi dalam game
          */
-    static vector<SideProduct> catalog;
+    static vector<SideProduct*> catalog;
 
   public:
     Mixer(Point pos);

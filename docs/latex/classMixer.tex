@@ -1,23 +1,120 @@
 \hypertarget{classMixer}{}\doxysection{Mixer Class Reference}
 \label{classMixer}\index{Mixer@{Mixer}}
-Inheritance diagram for Mixer\+:\begin{figure}[H]
+
+
+\mbox{\hyperlink{classMixer}{Mixer}} adalah kelas untuk objek \mbox{\hyperlink{classMixer}{Mixer}} yang berguna mencampur barang player.  
+
+
+
+
+{\ttfamily \#include $<$Mixer.\+h$>$}
+
+
+
+Inheritance diagram for Mixer\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classMixer}
+\includegraphics[height=550pt]{classMixer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mixer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMixer__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMixer_a5620a7de2a956fb9eb512ef534e5ad18}\label{classMixer_a5620a7de2a956fb9eb512ef534e5ad18}} 
-{\bfseries Mixer} (int x, int y)
+\mbox{\hyperlink{classMixer_a6612df29f2e0f090a788f080036798c0}{Mixer}} (\mbox{\hyperlink{classPoint}{Point}} pos)
 \item 
-\mbox{\Hypertarget{classMixer_a9352a81375709063c7473e3951f51214}\label{classMixer_a9352a81375709063c7473e3951f51214}} 
-\mbox{\hyperlink{classSideProduct}{Side\+Product}} {\bfseries mix} (\mbox{\hyperlink{classProduct}{Product}} P1, \mbox{\hyperlink{classProduct}{Product}} P2)
+void \mbox{\hyperlink{classMixer_a2c6627b0771aec7ce0046046ee8abda9}{interact}} ()
+\item 
+bool \mbox{\hyperlink{classMixer_a38143845a39960d80fe769ad0755559c}{is\+Mixer}} () const
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-Cell/Facility.\+h\end{DoxyCompactItemize}
+static \mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$ \mbox{\hyperlink{classMixer_a1ddf6e9f19e22e0cafef39405a2b87b1}{mix}} (vector$<$ \mbox{\hyperlink{classProduct}{Product}} $>$ bahan)
+\item 
+static void \mbox{\hyperlink{classMixer_af8127afd2994e928513f442554478b62}{init\+Catalog}} ()
+\item 
+static void \mbox{\hyperlink{classMixer_a135aea7c35a7a1c5deda4f9a0a8643a9}{add\+To\+Catalog}} (int price, string nama\+SP)
+\begin{DoxyCompactList}\small\item\em Menambahkan \mbox{\hyperlink{classSideProduct}{Side\+Product}} baru ke katalog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classMixer}{Mixer}} adalah kelas untuk objek \mbox{\hyperlink{classMixer}{Mixer}} yang berguna mencampur barang player. 
+
+\begin{DoxyAuthor}{Author}
+Aditya Putra S. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMixer_a6612df29f2e0f090a788f080036798c0}\label{classMixer_a6612df29f2e0f090a788f080036798c0}} 
+\index{Mixer@{Mixer}!Mixer@{Mixer}}
+\index{Mixer@{Mixer}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{Mixer()}{Mixer()}}
+{\footnotesize\ttfamily Mixer\+::\+Mixer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMixer_a135aea7c35a7a1c5deda4f9a0a8643a9}\label{classMixer_a135aea7c35a7a1c5deda4f9a0a8643a9}} 
+\index{Mixer@{Mixer}!addToCatalog@{addToCatalog}}
+\index{addToCatalog@{addToCatalog}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{addToCatalog()}{addToCatalog()}}
+{\footnotesize\ttfamily static void Mixer\+::add\+To\+Catalog (\begin{DoxyParamCaption}\item[{int}]{price,  }\item[{string}]{nama\+SP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menambahkan \mbox{\hyperlink{classSideProduct}{Side\+Product}} baru ke katalog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SP} & \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang akan ditambahkan \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMixer_af8127afd2994e928513f442554478b62}\label{classMixer_af8127afd2994e928513f442554478b62}} 
+\index{Mixer@{Mixer}!initCatalog@{initCatalog}}
+\index{initCatalog@{initCatalog}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{initCatalog()}{initCatalog()}}
+{\footnotesize\ttfamily void Mixer\+::init\+Catalog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classMixer_a2c6627b0771aec7ce0046046ee8abda9}\label{classMixer_a2c6627b0771aec7ce0046046ee8abda9}} 
+\index{Mixer@{Mixer}!interact@{interact}}
+\index{interact@{interact}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{interact()}{interact()}}
+{\footnotesize\ttfamily void Mixer\+::interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFacility_a6ce66eaeb6d5f9208186c8e6be9f0f66}{Facility}}.
+
+\mbox{\Hypertarget{classMixer_a38143845a39960d80fe769ad0755559c}\label{classMixer_a38143845a39960d80fe769ad0755559c}} 
+\index{Mixer@{Mixer}!isMixer@{isMixer}}
+\index{isMixer@{isMixer}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{isMixer()}{isMixer()}}
+{\footnotesize\ttfamily bool Mixer\+::is\+Mixer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCell_a367645d13a08483318add37b9279b297}{Cell}}.
+
+\mbox{\Hypertarget{classMixer_a1ddf6e9f19e22e0cafef39405a2b87b1}\label{classMixer_a1ddf6e9f19e22e0cafef39405a2b87b1}} 
+\index{Mixer@{Mixer}!mix@{mix}}
+\index{mix@{mix}!Mixer@{Mixer}}
+\doxysubsubsection{\texorpdfstring{mix()}{mix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$ Mixer\+::mix (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classProduct}{Product}} $>$}]{bahan }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Cell/\mbox{\hyperlink{Mixer_8h}{Mixer.\+h}}\item 
+src/\+Cell/\mbox{\hyperlink{Mixer_8cpp}{Mixer.\+cpp}}\end{DoxyCompactItemize}

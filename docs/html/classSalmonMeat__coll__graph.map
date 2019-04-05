@@ -1,0 +1,5 @@
+<map id="SalmonMeat" name="SalmonMeat">
+<area shape="rect" id="node1" title="SalmonMeat adalah salah satu FarmProduct dalam game." alt="" coords="7,373,121,465"/>
+<area shape="rect" id="node2" href="$classFarmProduct.html" title="FarmProduct adalah base class dari segala FarmProduct (produk dari hewan) di game." alt="" coords="5,233,123,325"/>
+<area shape="rect" id="node3" href="$classProduct.html" title="Product adalah base class dari segala FarmProduct dan SideProduct." alt="" coords="11,5,117,185"/>
+</map>

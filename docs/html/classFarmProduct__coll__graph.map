@@ -1,0 +1,4 @@
+<map id="FarmProduct" name="FarmProduct">
+<area shape="rect" id="node1" title="FarmProduct adalah base class dari segala FarmProduct (produk dari hewan) di game." alt="" coords="5,233,123,325"/>
+<area shape="rect" id="node2" href="$classProduct.html" title="Product adalah base class dari segala FarmProduct dan SideProduct." alt="" coords="11,5,117,185"/>
+</map>

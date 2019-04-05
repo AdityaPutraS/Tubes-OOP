@@ -78,70 +78,180 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for Barn:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classBarn.png" usemap="#Barn_map" alt=""/>
-  <map id="Barn_map" name="Barn_map">
-<area href="classLand.html" title="Land adalah base class untuk Barn, Coop, dan Grassland." alt="Land" shape="rect" coords="0,112,77,136"/>
-<area href="classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="Cell" shape="rect" coords="0,56,77,80"/>
-<area href="classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="Renderable" shape="rect" coords="0,0,77,24"/>
-  </map>
-</div></div>
+<div class="center"><img src="classBarn__inherit__graph.png" border="0" usemap="#Barn_inherit__map" alt="Inheritance graph"/></div>
+<map name="Barn_inherit__map" id="Barn_inherit__map">
+<area shape="rect" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung." alt="" coords="23,616,118,723"/>
+<area shape="rect" href="$classLand.html" title="Land adalah base class untuk Barn, Coop, dan Grassland." alt="" coords="21,447,120,568"/>
+<area shape="rect" href="$classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="15,189,126,399"/>
+<area shape="rect" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="5,5,136,141"/>
+</map>
+</div>
+<div class="dynheader">
+Collaboration diagram for Barn:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBarn__coll__graph.png" border="0" usemap="#Barn_coll__map" alt="Collaboration graph"/></div>
+<map name="Barn_coll__map" id="Barn_coll__map">
+<area shape="rect" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung." alt="" coords="23,616,118,723"/>
+<area shape="rect" href="$classLand.html" title="Land adalah base class untuk Barn, Coop, dan Grassland." alt="" coords="21,447,120,568"/>
+<area shape="rect" href="$classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="15,189,126,399"/>
+<area shape="rect" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="5,5,136,141"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a716f3e1ecf4d4d37fe934d29425841a1"><td class="memItemLeft" align="right" valign="top"><a id="a716f3e1ecf4d4d37fe934d29425841a1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBarn</b> () const</td></tr>
+<tr class="memitem:a0a30f9a6862bfc84464708c29f220c72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBarn.html#a0a30f9a6862bfc84464708c29f220c72">Barn</a> (bool <a class="el" href="classLand.html#aecde97d7ed842f3bf3fdff52a6057cc5">hasGrass</a>)</td></tr>
+<tr class="memdesc:a0a30f9a6862bfc84464708c29f220c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstructor default <a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a>.  <a href="#a0a30f9a6862bfc84464708c29f220c72">More...</a><br /></td></tr>
+<tr class="separator:a0a30f9a6862bfc84464708c29f220c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716f3e1ecf4d4d37fe934d29425841a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBarn.html#a716f3e1ecf4d4d37fe934d29425841a1">isBarn</a> () const</td></tr>
+<tr class="memdesc:a716f3e1ecf4d4d37fe934d29425841a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mereturn true jika <a class="el" href="classCell.html" title="Cell adalah Base class untuk Land dan Facility.">Cell</a> yang sedang ditunjuk merupakan sebuah <a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a>.  <a href="#a716f3e1ecf4d4d37fe934d29425841a1">More...</a><br /></td></tr>
 <tr class="separator:a716f3e1ecf4d4d37fe934d29425841a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6b0c77de56fc4f9a5a77adb8ae4702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBarn.html#a7b6b0c77de56fc4f9a5a77adb8ae4702">setGrass</a> (bool <a class="el" href="classLand.html#aecde97d7ed842f3bf3fdff52a6057cc5">hasGrass</a>)</td></tr>
+<tr class="memdesc:a7b6b0c77de56fc4f9a5a77adb8ae4702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menjadikan <a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a> mempunyai grass.  <a href="#a7b6b0c77de56fc4f9a5a77adb8ae4702">More...</a><br /></td></tr>
+<tr class="separator:a7b6b0c77de56fc4f9a5a77adb8ae4702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLand"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLand')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLand.html">Land</a></td></tr>
+<tr class="memitem:ac7c9222dffa39c06dd961d3043331b90 inherit pub_methods_classLand"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLand.html#ac7c9222dffa39c06dd961d3043331b90">Land</a> ()</td></tr>
+<tr class="memdesc:ac7c9222dffa39c06dd961d3043331b90 inherit pub_methods_classLand"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classLand.html#ac7c9222dffa39c06dd961d3043331b90">More...</a><br /></td></tr>
+<tr class="separator:ac7c9222dffa39c06dd961d3043331b90 inherit pub_methods_classLand"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab015b76094e536fc206a912fec3dc6a9 inherit pub_methods_classLand"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLand.html#ab015b76094e536fc206a912fec3dc6a9">Land</a> (<a class="el" href="classPoint.html">Point</a> _pos, char _renderChar, bool _grass=false)</td></tr>
 <tr class="separator:ab015b76094e536fc206a912fec3dc6a9 inherit pub_methods_classLand"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecde97d7ed842f3bf3fdff52a6057cc5 inherit pub_methods_classLand"><td class="memItemLeft" align="right" valign="top"><a id="aecde97d7ed842f3bf3fdff52a6057cc5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGrass</b> () const</td></tr>
+<tr class="memitem:aecde97d7ed842f3bf3fdff52a6057cc5 inherit pub_methods_classLand"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLand.html#aecde97d7ed842f3bf3fdff52a6057cc5">hasGrass</a> () const</td></tr>
 <tr class="separator:aecde97d7ed842f3bf3fdff52a6057cc5 inherit pub_methods_classLand"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8324641dc1cfdf2500a345441998c18d inherit pub_methods_classLand"><td class="memItemLeft" align="right" valign="top"><a id="a8324641dc1cfdf2500a345441998c18d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>growGrass</b> ()</td></tr>
-<tr class="separator:a8324641dc1cfdf2500a345441998c18d inherit pub_methods_classLand"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f75e0b5f655ce65716eabc7da03124 inherit pub_methods_classLand"><td class="memItemLeft" align="right" valign="top"><a id="a17f75e0b5f655ce65716eabc7da03124"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCoop</b> () const</td></tr>
-<tr class="separator:a17f75e0b5f655ce65716eabc7da03124 inherit pub_methods_classLand"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa79c16746d74c0493e66ce73f2fa0e0f inherit pub_methods_classLand"><td class="memItemLeft" align="right" valign="top"><a id="aa79c16746d74c0493e66ce73f2fa0e0f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGrassland</b> () const</td></tr>
-<tr class="separator:aa79c16746d74c0493e66ce73f2fa0e0f inherit pub_methods_classLand"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classCell"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classCell')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classCell.html">Cell</a></td></tr>
-<tr class="memitem:a394510643e8664cf12b5efaf5cb99f71 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top"><a id="a394510643e8664cf12b5efaf5cb99f71"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a> ()</td></tr>
-<tr class="memdesc:a394510643e8664cf12b5efaf5cb99f71 inherit pub_methods_classCell"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor <a class="el" href="classCell.html" title="Cell adalah Base class untuk Land dan Facility.">Cell</a>, position -1,-1, tapi di render di 0,0 dengan char '-'. <br /></td></tr>
+<tr class="memitem:a394510643e8664cf12b5efaf5cb99f71 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a> ()</td></tr>
+<tr class="memdesc:a394510643e8664cf12b5efaf5cb99f71 inherit pub_methods_classCell"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor <a class="el" href="classCell.html" title="Cell adalah Base class untuk Land dan Facility.">Cell</a>, position -1,-1, tapi di render di 0,0 dengan char '-'.  <a href="classCell.html#a394510643e8664cf12b5efaf5cb99f71">More...</a><br /></td></tr>
 <tr class="separator:a394510643e8664cf12b5efaf5cb99f71 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aff0e3bf85a1690c4424aaf28df5da0 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a8aff0e3bf85a1690c4424aaf28df5da0">Cell</a> (<a class="el" href="classPoint.html">Point</a> _pos, char _renderChar)</td></tr>
 <tr class="separator:a8aff0e3bf85a1690c4424aaf28df5da0 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb435a236584c42c0ffc77b67e2decc7 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top"><a id="adb435a236584c42c0ffc77b67e2decc7"></a>
-<a class="el" href="classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#adb435a236584c42c0ffc77b67e2decc7">getPoint</a> () const</td></tr>
-<tr class="memdesc:adb435a236584c42c0ffc77b67e2decc7 inherit pub_methods_classCell"><td class="mdescLeft">&#160;</td><td class="mdescRight">return posisi cell berada sebagai point <br /></td></tr>
+<tr class="memitem:adb435a236584c42c0ffc77b67e2decc7 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPoint.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#adb435a236584c42c0ffc77b67e2decc7">getPoint</a> () const</td></tr>
+<tr class="memdesc:adb435a236584c42c0ffc77b67e2decc7 inherit pub_methods_classCell"><td class="mdescLeft">&#160;</td><td class="mdescRight">return posisi cell berada sebagai point  <a href="classCell.html#adb435a236584c42c0ffc77b67e2decc7">More...</a><br /></td></tr>
 <tr class="separator:adb435a236584c42c0ffc77b67e2decc7 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bf0de61827c10b7153dcebb84b47988 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a2bf0de61827c10b7153dcebb84b47988">setPos</a> (<a class="el" href="classPoint.html">Point</a> _pos)</td></tr>
 <tr class="separator:a2bf0de61827c10b7153dcebb84b47988 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176bb076ddf2ac942cdb9ae2c29ce1ce inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a176bb076ddf2ac942cdb9ae2c29ce1ce">isCoop</a> () const</td></tr>
+<tr class="separator:a176bb076ddf2ac942cdb9ae2c29ce1ce inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832662a443f852b8f5fc00fee0490838 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a832662a443f852b8f5fc00fee0490838">isGrassland</a> () const</td></tr>
+<tr class="separator:a832662a443f852b8f5fc00fee0490838 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367645d13a08483318add37b9279b297 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a367645d13a08483318add37b9279b297">isMixer</a> () const</td></tr>
+<tr class="separator:a367645d13a08483318add37b9279b297 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58fd73fbe72c6f397abee0235f5da32 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#af58fd73fbe72c6f397abee0235f5da32">isTruck</a> () const</td></tr>
+<tr class="separator:af58fd73fbe72c6f397abee0235f5da32 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fe833b86b1de4af182b55ae2b719c9 inherit pub_methods_classCell"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCell.html#a94fe833b86b1de4af182b55ae2b719c9">isWell</a> () const</td></tr>
+<tr class="separator:a94fe833b86b1de4af182b55ae2b719c9 inherit pub_methods_classCell"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRenderable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRenderable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRenderable.html">Renderable</a></td></tr>
 <tr class="memitem:acb0447c628685e308def861001a184c3 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#acb0447c628685e308def861001a184c3">Renderable</a> (int _x, int _y, int _color, char _char)</td></tr>
 <tr class="memdesc:acb0447c628685e308def861001a184c3 inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor renderable.  <a href="classRenderable.html#acb0447c628685e308def861001a184c3">More...</a><br /></td></tr>
 <tr class="separator:acb0447c628685e308def861001a184c3 inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top"><a id="a1dce45c4703b60fd30acf824c77df9b6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a1dce45c4703b60fd30acf824c77df9b6">render</a> ()</td></tr>
-<tr class="memdesc:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merender objek ke layar dengan mengeprint charRepresentasi di posisi xLayar, yLayar. Memanggil instance tampilan untuk mengeprint. <br /></td></tr>
+<tr class="memitem:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a1dce45c4703b60fd30acf824c77df9b6">render</a> ()</td></tr>
+<tr class="memdesc:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merender objek ke layar dengan mengeprint charRepresentasi di posisi xLayar, yLayar. Memanggil instance tampilan untuk mengeprint.  <a href="classRenderable.html#a1dce45c4703b60fd30acf824c77df9b6">More...</a><br /></td></tr>
 <tr class="separator:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top"><a id="a8c98ee851d9bb8ebc3598cebf8efa28c"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a8c98ee851d9bb8ebc3598cebf8efa28c">getRenderChar</a> ()</td></tr>
-<tr class="memdesc:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengembalikan char yang akan dirender. <br /></td></tr>
+<tr class="memitem:a80220ee3f89c4c2fa17b7a2f3962ecea inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a80220ee3f89c4c2fa17b7a2f3962ecea">setPosLayar</a> (int x, int y)</td></tr>
+<tr class="separator:a80220ee3f89c4c2fa17b7a2f3962ecea inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a8c98ee851d9bb8ebc3598cebf8efa28c">getRenderChar</a> ()</td></tr>
+<tr class="memdesc:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengembalikan char yang akan dirender.  <a href="classRenderable.html#a8c98ee851d9bb8ebc3598cebf8efa28c">More...</a><br /></td></tr>
 <tr class="separator:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf91cb52654dcea98a90c36900b22531 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top"><a id="aaf91cb52654dcea98a90c36900b22531"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRenderChar</b> (char _renderChar)</td></tr>
+<tr class="memitem:aaf91cb52654dcea98a90c36900b22531 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#aaf91cb52654dcea98a90c36900b22531">setRenderChar</a> (char _renderChar)</td></tr>
 <tr class="separator:aaf91cb52654dcea98a90c36900b22531 inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classLand"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classLand')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classLand.html">Land</a></td></tr>
+<tr class="memitem:a0f91555e5ecc0da41ef8d924dae6c3bd inherit pro_attribs_classLand"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLand.html#a0f91555e5ecc0da41ef8d924dae6c3bd">grass</a></td></tr>
+<tr class="separator:a0f91555e5ecc0da41ef8d924dae6c3bd inherit pro_attribs_classLand"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a> adalah kelas untuk mengembangbiakan hewan lumbung. </p>
 <dl class="section author"><dt>Author</dt><dd>M. Khairul Makirin </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>Cell/<a class="el" href="Barn_8h_source.html">Barn.h</a></li>
-<li>Cell/Barn.cpp</li>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0a30f9a6862bfc84464708c29f220c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a30f9a6862bfc84464708c29f220c72">&#9670;&nbsp;</a></span>Barn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Barn::Barn </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasGrass</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstructor default <a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">True</td><td>jika di <a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a> tersebut ada grass </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a716f3e1ecf4d4d37fe934d29425841a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716f3e1ecf4d4d37fe934d29425841a1">&#9670;&nbsp;</a></span>isBarn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Barn::isBarn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mereturn true jika <a class="el" href="classCell.html" title="Cell adalah Base class untuk Land dan Facility.">Cell</a> yang sedang ditunjuk merupakan sebuah <a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a>. </p>
+
+<p>Reimplemented from <a class="el" href="classCell.html#a6b084db2e56d57684ed811081ae0547f">Cell</a>.</p>
+
+</div>
+</div>
+<a id="a7b6b0c77de56fc4f9a5a77adb8ae4702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6b0c77de56fc4f9a5a77adb8ae4702">&#9670;&nbsp;</a></span>setGrass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Barn::setGrass </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasGrass</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Menjadikan <a class="el" href="classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung.">Barn</a> mempunyai grass. </p>
+
+<p>Reimplemented from <a class="el" href="classLand.html#aae914b33c39f3081c60f3ec20f56d14d">Land</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>include/Cell/<a class="el" href="Barn_8h_source.html">Barn.h</a></li>
+<li>src/Cell/<a class="el" href="Barn_8cpp.html">Barn.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

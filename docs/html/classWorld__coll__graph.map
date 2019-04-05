@@ -1,0 +1,6 @@
+<map id="World" name="World">
+<area shape="rect" id="node1" title="Class yang menampung semua objek yang ada di game." alt="" coords="14,633,127,975"/>
+<area shape="rect" id="node2" href="$classLand.html" title="Land adalah base class untuk Barn, Coop, dan Grassland." alt="" coords="21,449,120,571"/>
+<area shape="rect" id="node3" href="$classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="15,191,126,400"/>
+<area shape="rect" id="node4" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="5,5,136,141"/>
+</map>

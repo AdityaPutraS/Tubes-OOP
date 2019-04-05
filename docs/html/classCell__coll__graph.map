@@ -1,0 +1,4 @@
+<map id="Cell" name="Cell">
+<area shape="rect" id="node1" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="15,189,126,399"/>
+<area shape="rect" id="node2" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="5,5,136,141"/>
+</map>

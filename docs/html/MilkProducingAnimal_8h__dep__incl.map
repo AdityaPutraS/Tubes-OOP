@@ -1,0 +1,10 @@
+<map id="include/LivingBeing/MilkProducingAnimal.h" name="include/LivingBeing/MilkProducingAnimal.h">
+<area shape="rect" id="node1" title=" " alt="" coords="263,5,421,47"/>
+<area shape="rect" id="node2" href="$Cow_8h.html" title=" " alt="" coords="116,95,251,136"/>
+<area shape="rect" id="node6" href="$Lamb_8h.html" title=" " alt="" coords="275,95,409,136"/>
+<area shape="rect" id="node8" href="$MilkProducingAnimal_8cpp.html" title=" " alt="" coords="434,95,631,136"/>
+<area shape="rect" id="node3" href="$AllAnimal_8h.html" title=" " alt="" coords="196,184,331,225"/>
+<area shape="rect" id="node5" href="$Cow_8cpp.html" title=" " alt="" coords="5,191,172,218"/>
+<area shape="rect" id="node4" href="$mainGame_8cpp.html" title=" " alt="" coords="197,273,329,300"/>
+<area shape="rect" id="node7" href="$Lamb_8cpp.html" title=" " alt="" coords="355,191,527,218"/>
+</map>

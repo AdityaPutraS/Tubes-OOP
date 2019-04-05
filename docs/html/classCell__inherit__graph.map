@@ -1,0 +1,12 @@
+<map id="Cell" name="Cell">
+<area shape="rect" id="node1" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="278,189,389,399"/>
+<area shape="rect" id="node3" href="$classFacility.html" title="Facility adalah parent kelas untuk fasilitas seperti Mixer, Well, dan Truck." alt="" coords="233,461,319,553"/>
+<area shape="rect" id="node7" href="$classLand.html" title="Land adalah base class untuk Barn, Coop, dan Grassland." alt="" coords="396,447,495,568"/>
+<area shape="rect" id="node2" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="268,5,399,141"/>
+<area shape="rect" id="node4" href="$classMixer.html" title="Mixer adalah kelas untuk objek Mixer yang berguna mencampur barang player." alt="" coords="5,616,128,767"/>
+<area shape="rect" id="node5" href="$classTruck.html" title="Truck adalah kelas untuk objek truck yang berguna menjual barang player." alt="" coords="152,638,237,745"/>
+<area shape="rect" id="node6" href="$classWell.html" title="Well adalah kelas untuk objek Well yang berguna mengubah nilai water player menjadi 100." alt="" coords="261,638,347,745"/>
+<area shape="rect" id="node8" href="$classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung." alt="" coords="371,638,466,745"/>
+<area shape="rect" id="node9" href="$classCoop.html" title="Coop adalah kelas untuk mengembangbiakan hewan kombong." alt="" coords="490,638,585,745"/>
+<area shape="rect" id="node10" href="$classGrassland.html" title="Grassland adalah kelas untuk mengembangbiakan hewan ternak." alt="" coords="609,638,719,745"/>
+</map>

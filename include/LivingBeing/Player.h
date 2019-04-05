@@ -56,33 +56,11 @@ class Player: public LivingBeing {
 
         //METHOD
         /**
-         * \brief dipanggil saat command Talk Player dengan Animal, membunyikan suara animal
-         */
-        void TalkWith(Animal& animalia);
-        /**
-         * \brief Interaksi Player dengan Animal, mengambil Milk atau Egg
-         * \note Hanya dapat digunakan ke MilkProducingAnimal atau EggProducingAnimal
-         */
-        void InteractWith(Animal& animalia);
-        /**
-         * \brief Interaksi Player dengan Facility, jika valid:
-         * Well: Mengisi air yang dibawa player (int water)
-         * Truck: Menjual semua Product yang ada pada inventori player
-         * Mixer: Mengolah FarmProduct menjadi SideProduct, sesuai dengan resepnya
-         * \note terdapat implementasi validasi posisi Player
-         */
-        void InteractWith(Facility& facilitia);
-        /**
-         * \brief Player menyembelih Animal, lalu mendapatFarmProduct berupa Meat dari Animal yang disembelih
+         * \brief Player menyembelih Animal, lalu mendapat FarmProduct berupa Meat dari Animal yang disembelih
          * dan dimasukkan ke list inventori
          * \note Hanya dapat digunakan ke MeatProducingAnimal
          */
-        void Kill(Animal& animalia);
-        /**
-         * \brief Interaksi Player dengan Land, menumbuhkan rumput sebagai makanan dari Animal, mengurangi water sebanyak 1
-         * \note terdapat implementasi validasi sudah ada rumput atau tidak
-         */
-        void Grow(Land& l);
+        void Kill(Animal* animalia);
         /**
          * \brief Menambah barang ke inventori player
          * \param _p refrence dari pointer ke product yang akan ditambahkan
@@ -97,6 +75,10 @@ class Player: public LivingBeing {
          * \brief Mencari product di tas
          */
         int SearchInventory(string productName);
+        /**
+         * \brief Menghapus barang di tas
+         */
+        void DelInventory(int i);
         /**
          * \brief Getter tas
          */

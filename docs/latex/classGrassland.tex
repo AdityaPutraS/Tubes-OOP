@@ -9,18 +9,34 @@
 
 {\ttfamily \#include $<$Grassland.\+h$>$}
 
-Inheritance diagram for Grassland\+:\begin{figure}[H]
+
+
+Inheritance diagram for Grassland\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classGrassland}
+\includegraphics[height=550pt]{classGrassland__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Grassland\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGrassland__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGrassland_acc208f36b47ed1c8442f30df234bc72f}\label{classGrassland_acc208f36b47ed1c8442f30df234bc72f}} 
-bool {\bfseries is\+Grassland} () const
+\mbox{\hyperlink{classGrassland_a27eaf75f7360408b31658e5b89c6818a}{Grassland}} (bool \mbox{\hyperlink{classLand_aecde97d7ed842f3bf3fdff52a6057cc5}{has\+Grass}})
+\begin{DoxyCompactList}\small\item\em Konstruktor default \mbox{\hyperlink{classGrassland}{Grassland}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGrassland_ac4f00629f20061d2ec9f792a42f7315c}{is\+Grassland}} () const
+\begin{DoxyCompactList}\small\item\em Meng-\/overwrite fungsi generik is\+Grass\+Land sehingga jika kelas Grass\+Land memanggil is\+Grass\+Land akan mereturn true, tapi kalau kelas lain yang manggil akan mereturn false. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGrassland_a0968b6d6de887f607507fb92cf1f37d3}{set\+Grass}} (bool \mbox{\hyperlink{classLand_aecde97d7ed842f3bf3fdff52a6057cc5}{has\+Grass}})
 \end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
@@ -31,7 +47,52 @@ M. Khairul Makirin
 \end{DoxyAuthor}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGrassland_a27eaf75f7360408b31658e5b89c6818a}\label{classGrassland_a27eaf75f7360408b31658e5b89c6818a}} 
+\index{Grassland@{Grassland}!Grassland@{Grassland}}
+\index{Grassland@{Grassland}!Grassland@{Grassland}}
+\doxysubsubsection{\texorpdfstring{Grassland()}{Grassland()}}
+{\footnotesize\ttfamily Grassland\+::\+Grassland (\begin{DoxyParamCaption}\item[{bool}]{has\+Grass = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor default \mbox{\hyperlink{classGrassland}{Grassland}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Apakah} & di \mbox{\hyperlink{classGrassland}{Grassland}} terdapat grass \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGrassland_ac4f00629f20061d2ec9f792a42f7315c}\label{classGrassland_ac4f00629f20061d2ec9f792a42f7315c}} 
+\index{Grassland@{Grassland}!isGrassland@{isGrassland}}
+\index{isGrassland@{isGrassland}!Grassland@{Grassland}}
+\doxysubsubsection{\texorpdfstring{isGrassland()}{isGrassland()}}
+{\footnotesize\ttfamily bool Grassland\+::is\+Grassland (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Meng-\/overwrite fungsi generik is\+Grass\+Land sehingga jika kelas Grass\+Land memanggil is\+Grass\+Land akan mereturn true, tapi kalau kelas lain yang manggil akan mereturn false. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classCell_a832662a443f852b8f5fc00fee0490838}{Cell}}.
+
+\mbox{\Hypertarget{classGrassland_a0968b6d6de887f607507fb92cf1f37d3}\label{classGrassland_a0968b6d6de887f607507fb92cf1f37d3}} 
+\index{Grassland@{Grassland}!setGrass@{setGrass}}
+\index{setGrass@{setGrass}!Grassland@{Grassland}}
+\doxysubsubsection{\texorpdfstring{setGrass()}{setGrass()}}
+{\footnotesize\ttfamily void Grassland\+::set\+Grass (\begin{DoxyParamCaption}\item[{bool}]{has\+Grass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classLand_aae914b33c39f3081c60f3ec20f56d14d}{Land}}.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Cell/Grassland.\+h\item 
-Cell/Grassland.\+cpp\end{DoxyCompactItemize}
+include/\+Cell/\mbox{\hyperlink{Grassland_8h}{Grassland.\+h}}\item 
+src/\+Cell/\mbox{\hyperlink{Grassland_8cpp}{Grassland.\+cpp}}\end{DoxyCompactItemize}

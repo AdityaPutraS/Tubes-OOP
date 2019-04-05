@@ -1,0 +1,6 @@
+<map id="Well" name="Well">
+<area shape="rect" id="node1" title="Well adalah kelas untuk objek Well yang berguna mengubah nilai water player menjadi 100." alt="" coords="28,587,113,693"/>
+<area shape="rect" id="node2" href="$classFacility.html" title="Facility adalah parent kelas untuk fasilitas seperti Mixer, Well, dan Truck." alt="" coords="28,447,113,539"/>
+<area shape="rect" id="node3" href="$classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="15,189,126,399"/>
+<area shape="rect" id="node4" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="5,5,136,141"/>
+</map>

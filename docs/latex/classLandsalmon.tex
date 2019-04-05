@@ -9,17 +9,36 @@
 
 {\ttfamily \#include $<$Landsalmon.\+h$>$}
 
-Inheritance diagram for Landsalmon\+:\begin{figure}[H]
+
+
+Inheritance diagram for Landsalmon\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=5.000000cm]{classLandsalmon}
+\includegraphics[height=550pt]{classLandsalmon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Landsalmon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLandsalmon__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classLandsalmon_ad48e73eaf7d9799ea6b1d1365bcacb04}{Landsalmon}} (int \+\_\+x, int \+\_\+y)
-\begin{DoxyCompactList}\small\item\em Konstruk \mbox{\hyperlink{classLandsalmon}{Landsalmon}} dengan parametered location. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Konstruk \mbox{\hyperlink{classLandsalmon}{Landsalmon}} dengan parametered location. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLandsalmon_a7664d5828ba5186845b178da15aa2ec2}{Move\+Random}} ()
+\begin{DoxyCompactList}\small\item\em Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLandsalmon_a79397e94ec3bd1fd47ff7a84698d2285}{Die}} (bool died\+Of\+Hunger)
+\begin{DoxyCompactList}\small\item\em If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLandsalmon_a7d26e7986c3676fbbabf053ddf55a86b}{Interact}} ()
+\begin{DoxyCompactList}\small\item\em Method interaksi player dengan hewan ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -58,6 +77,53 @@ Konstruk \mbox{\hyperlink{classLandsalmon}{Landsalmon}} dengan parametered locat
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLandsalmon_a79397e94ec3bd1fd47ff7a84698d2285}\label{classLandsalmon_a79397e94ec3bd1fd47ff7a84698d2285}} 
+\index{Landsalmon@{Landsalmon}!Die@{Die}}
+\index{Die@{Die}!Landsalmon@{Landsalmon}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Landsalmon\+::\+Die (\begin{DoxyParamCaption}\item[{bool}]{died\+Of\+Hunger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. 
+
+
+
+Implements \mbox{\hyperlink{classAnimal_a65d7e4861ae9e03ee37d6ca276f6e234}{Animal}}.
+
+\mbox{\Hypertarget{classLandsalmon_a7d26e7986c3676fbbabf053ddf55a86b}\label{classLandsalmon_a7d26e7986c3676fbbabf053ddf55a86b}} 
+\index{Landsalmon@{Landsalmon}!Interact@{Interact}}
+\index{Interact@{Interact}!Landsalmon@{Landsalmon}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Landsalmon\+::\+Interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method interaksi player dengan hewan ~\newline
+ 
+
+
+
+Reimplemented from \mbox{\hyperlink{classEggProducingAnimal_a017775649b983bc9c4bb7bbb9f07cb3c}{Egg\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classLandsalmon_a7664d5828ba5186845b178da15aa2ec2}\label{classLandsalmon_a7664d5828ba5186845b178da15aa2ec2}} 
+\index{Landsalmon@{Landsalmon}!MoveRandom@{MoveRandom}}
+\index{MoveRandom@{MoveRandom}!Landsalmon@{Landsalmon}}
+\doxysubsubsection{\texorpdfstring{MoveRandom()}{MoveRandom()}}
+{\footnotesize\ttfamily bool Landsalmon\+::\+Move\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classEggProducingAnimal_a039c852908b9eefb9097e5a31809ad97}{Egg\+Producing\+Animal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Living\+Being/Landsalmon.\+h\end{DoxyCompactItemize}
+include/\+Living\+Being/\mbox{\hyperlink{Landsalmon_8h}{Landsalmon.\+h}}\item 
+src/\+Living\+Being/\mbox{\hyperlink{LandSalmon_8cpp}{Land\+Salmon.\+cpp}}\end{DoxyCompactItemize}

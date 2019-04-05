@@ -9,29 +9,38 @@
 
 {\ttfamily \#include $<$Egg\+Producing\+Animal.\+h$>$}
 
-Inheritance diagram for Egg\+Producing\+Animal\+:\begin{figure}[H]
+
+
+Inheritance diagram for Egg\+Producing\+Animal\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=5.000000cm]{classEggProducingAnimal}
+\includegraphics[height=550pt]{classEggProducingAnimal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Egg\+Producing\+Animal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classEggProducingAnimal__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classEggProducingAnimal_ae56591f20dbf37986ec8de71985727ad}{Egg\+Producing\+Animal}} (int \+\_\+x, int \+\_\+y, string \+\_\+animal\+Sound)
+\mbox{\hyperlink{classEggProducingAnimal_abab5de573d2eb4546fbb96b66f95be6d}{Egg\+Producing\+Animal}} (int \+\_\+x, int \+\_\+y, string \+\_\+animal\+Sound, char \+\_\+rep\+Char, int \mbox{\hyperlink{classAnimal_aea509702bc376ce7faabb267fa6695c2}{max\+Hunger}})
 \begin{DoxyCompactList}\small\item\em Constructor \mbox{\hyperlink{classEggProducingAnimal}{Egg\+Producing\+Animal}} dengan parametered location dan animal\+Sound. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classEggProducingAnimal_ac699d03b81f89eb711757003acc3c2e3}\label{classEggProducingAnimal_ac699d03b81f89eb711757003acc3c2e3}} 
-void {\bfseries Set\+Have\+Egg} (bool \+\_\+have\+Egg)
+virtual void \mbox{\hyperlink{classEggProducingAnimal_a222932c75ee6ebe0fd9b3d09c651999e}{Die}} ()
 \item 
-\mbox{\Hypertarget{classEggProducingAnimal_acb9c9562617faea641c7247010b1de28}\label{classEggProducingAnimal_acb9c9562617faea641c7247010b1de28}} 
-bool \mbox{\hyperlink{classEggProducingAnimal_acb9c9562617faea641c7247010b1de28}{Is\+Have\+Egg}} ()
-\begin{DoxyCompactList}\small\item\em Setter atribut have\+Egg. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classEggProducingAnimal_a017775649b983bc9c4bb7bbb9f07cb3c}{Interact}} ()
+\begin{DoxyCompactList}\small\item\em Method interaksi player dengan hewan ~\newline
+ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEggProducingAnimal_ab81775e4cb461ff112262b7501a2eae0}{is\+Egg\+PA}} () const
 \item 
-\mbox{\Hypertarget{classEggProducingAnimal_adba93a141ce347708ae9341c6a2f5a7e}\label{classEggProducingAnimal_adba93a141ce347708ae9341c6a2f5a7e}} 
-bool {\bfseries have\+Egg}
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classEggProducingAnimal_a039c852908b9eefb9097e5a31809ad97}{Move\+Random}} ()
+\begin{DoxyCompactList}\small\item\em Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -47,11 +56,11 @@ Ahmad Rizal Alifio
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classEggProducingAnimal_ae56591f20dbf37986ec8de71985727ad}\label{classEggProducingAnimal_ae56591f20dbf37986ec8de71985727ad}} 
+\mbox{\Hypertarget{classEggProducingAnimal_abab5de573d2eb4546fbb96b66f95be6d}\label{classEggProducingAnimal_abab5de573d2eb4546fbb96b66f95be6d}} 
 \index{EggProducingAnimal@{EggProducingAnimal}!EggProducingAnimal@{EggProducingAnimal}}
 \index{EggProducingAnimal@{EggProducingAnimal}!EggProducingAnimal@{EggProducingAnimal}}
 \doxysubsubsection{\texorpdfstring{EggProducingAnimal()}{EggProducingAnimal()}}
-{\footnotesize\ttfamily Egg\+Producing\+Animal\+::\+Egg\+Producing\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{string}]{\+\_\+animal\+Sound }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Egg\+Producing\+Animal\+::\+Egg\+Producing\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{string}]{\+\_\+animal\+Sound,  }\item[{char}]{\+\_\+rep\+Char,  }\item[{int}]{max\+Hunger }\end{DoxyParamCaption})}
 
 
 
@@ -68,6 +77,63 @@ Constructor \mbox{\hyperlink{classEggProducingAnimal}{Egg\+Producing\+Animal}} d
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEggProducingAnimal_a222932c75ee6ebe0fd9b3d09c651999e}\label{classEggProducingAnimal_a222932c75ee6ebe0fd9b3d09c651999e}} 
+\index{EggProducingAnimal@{EggProducingAnimal}!Die@{Die}}
+\index{Die@{Die}!EggProducingAnimal@{EggProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily virtual void Egg\+Producing\+Animal\+::\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classEggProducingAnimal_a017775649b983bc9c4bb7bbb9f07cb3c}\label{classEggProducingAnimal_a017775649b983bc9c4bb7bbb9f07cb3c}} 
+\index{EggProducingAnimal@{EggProducingAnimal}!Interact@{Interact}}
+\index{Interact@{Interact}!EggProducingAnimal@{EggProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily virtual void Egg\+Producing\+Animal\+::\+Interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Method interaksi player dengan hewan ~\newline
+ 
+
+
+
+Implements \mbox{\hyperlink{classAnimal_aa620e55ec419fc9b20d983d933b5ee11}{Animal}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classChicken_a66d141db66af10b97105ec0ad3ac9660}{Chicken}}, \mbox{\hyperlink{classDiplodocus_a659190a607f437674a12c4225bc4e120}{Diplodocus}}, \mbox{\hyperlink{classLandsalmon_a7d26e7986c3676fbbabf053ddf55a86b}{Landsalmon}}, and \mbox{\hyperlink{classPlatypus_a6046cba1d239ee45b0703d436dda50e0}{Platypus}}.
+
+\mbox{\Hypertarget{classEggProducingAnimal_ab81775e4cb461ff112262b7501a2eae0}\label{classEggProducingAnimal_ab81775e4cb461ff112262b7501a2eae0}} 
+\index{EggProducingAnimal@{EggProducingAnimal}!isEggPA@{isEggPA}}
+\index{isEggPA@{isEggPA}!EggProducingAnimal@{EggProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{isEggPA()}{isEggPA()}}
+{\footnotesize\ttfamily bool Egg\+Producing\+Animal\+::is\+Egg\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classAnimal_ab2953c6793a65f037eff345c0fce5ab6}{Animal}}.
+
+\mbox{\Hypertarget{classEggProducingAnimal_a039c852908b9eefb9097e5a31809ad97}\label{classEggProducingAnimal_a039c852908b9eefb9097e5a31809ad97}} 
+\index{EggProducingAnimal@{EggProducingAnimal}!MoveRandom@{MoveRandom}}
+\index{MoveRandom@{MoveRandom}!EggProducingAnimal@{EggProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{MoveRandom()}{MoveRandom()}}
+{\footnotesize\ttfamily bool Egg\+Producing\+Animal\+::\+Move\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. 
+
+
+
+Implements \mbox{\hyperlink{classAnimal_a65c3b860ed2cdc5f8d330a40c401a80c}{Animal}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classLandsalmon_a7664d5828ba5186845b178da15aa2ec2}{Landsalmon}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Living\+Being/Egg\+Producing\+Animal.\+h\end{DoxyCompactItemize}
+include/\+Living\+Being/\mbox{\hyperlink{EggProducingAnimal_8h}{Egg\+Producing\+Animal.\+h}}\item 
+src/\+Living\+Being/\mbox{\hyperlink{EggProducingAnimal_8cpp}{Egg\+Producing\+Animal.\+cpp}}\end{DoxyCompactItemize}

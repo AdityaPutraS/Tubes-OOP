@@ -9,26 +9,57 @@ Class yang menampung semua objek yang ada di game.
 
 {\ttfamily \#include $<$World.\+h$>$}
 
+
+
+Collaboration diagram for World\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classWorld__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWorld_a8c73fba541a5817fff65147ba47cd827}\label{classWorld_a8c73fba541a5817fff65147ba47cd827}} 
 \mbox{\hyperlink{classWorld_a8c73fba541a5817fff65147ba47cd827}{$\sim$\+World}} ()
-\begin{DoxyCompactList}\small\item\em Destructor \mbox{\hyperlink{classWorld}{World}}, mendealokasi map\+Cell, map\+LB, catalog. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classWorld_aa49727533f071d5014c0c5f8906a2768}{add\+Catalog}} (\mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$sp)
-\begin{DoxyCompactList}\small\item\em Menambahkan \mbox{\hyperlink{classSideProduct}{Side\+Product}} baru ke katalog. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classWorld_a8bb0f6d9afea0c7210e576b0f11a5178}{add\+LB}} (\mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$lb, int \+\_\+x, int \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Destructor \mbox{\hyperlink{classWorld}{World}}, mendealokasi map\+Land, map\+LB, catalog. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classWorld_a89557065f3641f6c9f1bcf0277f35318}{get\+Size}} ()
+\item 
+void \mbox{\hyperlink{classWorld_a629eb61d44a825fea4d92daf70c7c500}{add\+Animal}} (\mbox{\hyperlink{classAnimal}{Animal}} $\ast$la, int \+\_\+x, int \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Menambah animal pada posisi \+\_\+x dan \+\_\+y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a82718ce2e0425f47ba9c869437201f21}{add\+Facil}} (\mbox{\hyperlink{classFacility}{Facility}} $\ast$lb, int \+\_\+x, int \+\_\+y)
 \begin{DoxyCompactList}\small\item\em Menambah living being pada posisi \+\_\+x dan \+\_\+y. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classWorld_adac2a178d4e424042dda556ecdc56bd7}{set\+Cell}} (\mbox{\hyperlink{classCell}{Cell}} c, int \+\_\+x, int \+\_\+y)
-\begin{DoxyCompactList}\small\item\em Mengeset cell pada posisi \+\_\+x dan \+\_\+y. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWorld_a848be277f92d37cff32ccfe10b9e747a}\label{classWorld_a848be277f92d37cff32ccfe10b9e747a}} 
+void \mbox{\hyperlink{classWorld_a66d32d0c498df3fdfe5429a54474d49a}{add\+Msg}} (string s)
+\begin{DoxyCompactList}\small\item\em Menambah pesan ke list\+Msg agar dilihat player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWorld_abdcd439f66773dc62505d9d958e865b9}{set\+Land}} (\mbox{\hyperlink{classLand}{Land}} $\ast$c, int \+\_\+x, int \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Mengeset \mbox{\hyperlink{classLand}{Land}} pada posisi \+\_\+x dan \+\_\+y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLand}{Land}} $\ast$ \mbox{\hyperlink{classWorld_a8afae63b3ce1d560b7d71bab351531f3}{get\+Land}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Getter dari map\+Land pada posisi x, y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a793b6203ac3c06b8945390881d0a3732}{set\+Terisi}} (int x, int y, bool isi)
+\begin{DoxyCompactList}\small\item\em Mengeset bawah petak \mbox{[}x,y\mbox{]} terisi/tidak oleh sesuatu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWorld_ab6b1cdff58d6814a01e8afc0e11f2991}{is\+Terisi}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Mengecek apakah petak \mbox{[}x,y\mbox{]} terisi \mbox{\hyperlink{classAnimal}{Animal}} / \mbox{\hyperlink{classFacility}{Facility}} / \mbox{\hyperlink{classPlayer}{Player}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWorld_a848be277f92d37cff32ccfe10b9e747a}{render\+All}} ()
-\begin{DoxyCompactList}\small\item\em Merender semua cell dan living being dengan memanggil method render. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Merender semua \mbox{\hyperlink{classLand}{Land}} dan living being dengan memanggil method render. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a58dc2ff9ab77d77790f5c7a0f58848a3}{update\+All}} ()
+\begin{DoxyCompactList}\small\item\em Mengupdate semua objek di dunia ini. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classAnimal}{Animal}} $\ast$ $>$ \mbox{\hyperlink{classWorld_afe265db734166ed7d8be223d7da90133}{get\+Nearest\+Animal}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Mereturn binatang yang ada di atas, kiri, kanan, bawah posisi x,y. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classFacility}{Facility}} $\ast$ $>$ \mbox{\hyperlink{classWorld_a665768817fb2cba0aa1035a28a146d66}{get\+Nearest\+Facility}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Mereturn fasilitas yang ada di atas, kiri, kanan, bawah posisi x,y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWorld_a63cc3f5068c2a6d53c5c87850fbbaa94}{get\+Tick}} () const
+\begin{DoxyCompactList}\small\item\em Mereturn nilai tick. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWorld_a92b6456e2922bd15c1d8b5c74ae0b938}{anybody\+Alife}} ()
+\begin{DoxyCompactList}\small\item\em Mengecek jika masih ada hewan yang hidup, jika ada return true jika tidak return false. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_af2413675ded3e29f93ffbef91e184178}{empty\+Message}} ()
+\begin{DoxyCompactList}\small\item\em Mengapus semua message yang telah dicetak. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a555843b674320a3f0b568ab5ffd82d99}{hapus\+Animal}} (\mbox{\hyperlink{classAnimal}{Animal}} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Menghapus hewan yang disimpan di list\+Animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}\label{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}} 
-static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_ae064bbe3023fc9b6b49e9e16edd3bf07}{get\+Instance}} ()
+static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_a87841a60b198db2ef4c25f4c0f5567b1}{Get\+Instance}} ()
 \begin{DoxyCompactList}\small\item\em Singleton Pattern, mengembalikan instance world yang bisa diakses dimanapun. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -38,25 +69,26 @@ static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_a
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWorld_ad441f046e49a274301278a3cf9339944}\label{classWorld_ad441f046e49a274301278a3cf9339944}} 
+int \mbox{\hyperlink{classWorld_a90d2f00b0fe4de84d7d9d1da40c0f8f6}{tick}}
+\begin{DoxyCompactList}\small\item\em menandakan berapa tick/detik game sudah berjalan \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classWorld_ad441f046e49a274301278a3cf9339944}{width}}
 \begin{DoxyCompactList}\small\item\em width adalah lebar dari dunia game \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}\label{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}} 
 int \mbox{\hyperlink{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}{height}}
 \begin{DoxyCompactList}\small\item\em height adalah tinggi dari dunia game \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}\label{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}} 
-\mbox{\hyperlink{classCell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{classWorld_a829ccccee6dcf935cfb816c486c6cfa5}{map\+Cell}}
-\begin{DoxyCompactList}\small\item\em map\+Cell adalah array 2 dimensi dari \mbox{\hyperlink{classCell}{Cell}} \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ \mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$ $>$ \mbox{\hyperlink{classWorld_a719284875fa878248cedcb3267b188c4}{list\+LB}}
-\item 
-\mbox{\Hypertarget{classWorld_a0ea56e0a0c1f15144466a24f178b9320}\label{classWorld_a0ea56e0a0c1f15144466a24f178b9320}} 
-\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ \mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$ $>$ \mbox{\hyperlink{classWorld_a0ea56e0a0c1f15144466a24f178b9320}{catalog}}
-\begin{DoxyCompactList}\small\item\em catalog adalah linked list dari \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang menampung semua \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang terdefinisi dalam game \end{DoxyCompactList}\end{DoxyCompactItemize}
+bool $\ast$$\ast$ \mbox{\hyperlink{classWorld_ac5db98013fd213e890698dee8816be24}{terisi}}
+\begin{DoxyCompactList}\small\item\em terisi adalah map 2d of bool yang menandakan apakah suatu petak sudah diisi sesuatu / belum, Sesuatu bisa berupa \mbox{\hyperlink{classAnimal}{Animal}} / \mbox{\hyperlink{classFacility}{Facility}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLand}{Land}} $\ast$$\ast$$\ast$ \mbox{\hyperlink{classWorld_a0a969b5dda5a5527f7a7b41b2f3322db}{map\+Land}}
+\begin{DoxyCompactList}\small\item\em map\+Land adalah array 2 dimensi dari pointer of \mbox{\hyperlink{classLand}{Land}} \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classAnimal}{Animal}} $\ast$ $>$ \mbox{\hyperlink{classWorld_a9c5a07a9c5684b6592859d77a57c88ad}{list\+Animal}}
+\begin{DoxyCompactList}\small\item\em list\+Animal adalah vector dari \mbox{\hyperlink{classAnimal}{Animal}} yang menampung semua objek \mbox{\hyperlink{classAnimal}{Animal}} yang ada di game \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classFacility}{Facility}} $\ast$ $>$ \mbox{\hyperlink{classWorld_a159daa2cefc57653c49eaba3b8b88347}{list\+Facil}}
+\begin{DoxyCompactList}\small\item\em list\+Facil adalah vector dari \mbox{\hyperlink{classFacility}{Facility}} yang menampung semua objek \mbox{\hyperlink{classFacility}{Facility}} yang ada di game \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classWorld_adef070debd46a40b1d86e3cc1f16480c}{list\+Msg}}
+\begin{DoxyCompactList}\small\item\em list\+Msg adalah vector dari string yang menampung pesan pesan yang muncul agar dilihat player, maksimal muncul 40 pesan \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}\label{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}} 
-static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}{world\+\_\+instance}} = new \mbox{\hyperlink{classWorld}{World}}(40, 30)
+static \mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}{world\+\_\+instance}} = new \mbox{\hyperlink{classWorld}{World}}(11, 11)
 \begin{DoxyCompactList}\small\item\em Singleton Pattern, objek statis yang hanya ada 1 dan bisa diakses dimanapun. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -83,34 +115,48 @@ Constructor \mbox{\hyperlink{classWorld}{World}}, Singleton Pattern maka di priv
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+width} & lebar array 2D map\+Cell, map\+LB \\
+{\em \+\_\+width} & lebar array 2D map\+Land, map\+LB \\
 \hline
-{\em \+\_\+height} & tinggi array 2D map\+Cell, map\+LB \\
+{\em \+\_\+height} & tinggi array 2D map\+Land, map\+LB \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classWorld_a8c73fba541a5817fff65147ba47cd827}\label{classWorld_a8c73fba541a5817fff65147ba47cd827}} 
+\index{World@{World}!````~World@{$\sim$World}}
+\index{````~World@{$\sim$World}!World@{World}}
+\doxysubsubsection{\texorpdfstring{$\sim$World()}{~World()}}
+{\footnotesize\ttfamily World\+::$\sim$\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor \mbox{\hyperlink{classWorld}{World}}, mendealokasi map\+Land, map\+LB, catalog. 
+
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classWorld_aa49727533f071d5014c0c5f8906a2768}\label{classWorld_aa49727533f071d5014c0c5f8906a2768}} 
-\index{World@{World}!addCatalog@{addCatalog}}
-\index{addCatalog@{addCatalog}!World@{World}}
-\doxysubsubsection{\texorpdfstring{addCatalog()}{addCatalog()}}
-{\footnotesize\ttfamily void World\+::add\+Catalog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSideProduct}{Side\+Product}} $\ast$}]{sp }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classWorld_a629eb61d44a825fea4d92daf70c7c500}\label{classWorld_a629eb61d44a825fea4d92daf70c7c500}} 
+\index{World@{World}!addAnimal@{addAnimal}}
+\index{addAnimal@{addAnimal}!World@{World}}
+\doxysubsubsection{\texorpdfstring{addAnimal()}{addAnimal()}}
+{\footnotesize\ttfamily void World\+::add\+Animal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAnimal}{Animal}} $\ast$}]{la,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
 
 
 
-Menambahkan \mbox{\hyperlink{classSideProduct}{Side\+Product}} baru ke katalog. 
+Menambah animal pada posisi \+\_\+x dan \+\_\+y. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em sp} & \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang akan ditambahkan \\
+{\em la} & \mbox{\hyperlink{classAnimal}{Animal}} yang akan dimasukkan ke list\+Animal \\
+\hline
+{\em \+\_\+x} & posisi x \mbox{\hyperlink{classAnimal}{Animal}} \\
+\hline
+{\em \+\_\+y} & posisi y \mbox{\hyperlink{classAnimal}{Animal}} \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classWorld_a8bb0f6d9afea0c7210e576b0f11a5178}\label{classWorld_a8bb0f6d9afea0c7210e576b0f11a5178}} 
-\index{World@{World}!addLB@{addLB}}
-\index{addLB@{addLB}!World@{World}}
-\doxysubsubsection{\texorpdfstring{addLB()}{addLB()}}
-{\footnotesize\ttfamily void World\+::add\+LB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLivingBeing}{Living\+Being}} $\ast$}]{lb,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classWorld_a82718ce2e0425f47ba9c869437201f21}\label{classWorld_a82718ce2e0425f47ba9c869437201f21}} 
+\index{World@{World}!addFacil@{addFacil}}
+\index{addFacil@{addFacil}!World@{World}}
+\doxysubsubsection{\texorpdfstring{addFacil()}{addFacil()}}
+{\footnotesize\ttfamily void World\+::add\+Facil (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFacility}{Facility}} $\ast$}]{lb,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
 
 
 
@@ -118,44 +164,269 @@ Menambah living being pada posisi \+\_\+x dan \+\_\+y.
 
 
 \begin{DoxyParams}{Parameters}
-{\em lb} & \mbox{\hyperlink{classLivingBeing}{Living\+Being}} yang akan dimasukkan ke list\+LB \\
+{\em lb} & \mbox{\hyperlink{classLivingBeing}{Living\+Being}} yang akan dimasukkan ke list\+Animal \\
 \hline
 {\em \+\_\+x} & posisi x living being \\
 \hline
 {\em \+\_\+y} & posisi y living being \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classWorld_adac2a178d4e424042dda556ecdc56bd7}\label{classWorld_adac2a178d4e424042dda556ecdc56bd7}} 
-\index{World@{World}!setCell@{setCell}}
-\index{setCell@{setCell}!World@{World}}
-\doxysubsubsection{\texorpdfstring{setCell()}{setCell()}}
-{\footnotesize\ttfamily bool World\+::set\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCell}{Cell}}}]{c,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classWorld_a66d32d0c498df3fdfe5429a54474d49a}\label{classWorld_a66d32d0c498df3fdfe5429a54474d49a}} 
+\index{World@{World}!addMsg@{addMsg}}
+\index{addMsg@{addMsg}!World@{World}}
+\doxysubsubsection{\texorpdfstring{addMsg()}{addMsg()}}
+{\footnotesize\ttfamily void World\+::add\+Msg (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
 
 
 
-Mengeset cell pada posisi \+\_\+x dan \+\_\+y. 
+Menambah pesan ke list\+Msg agar dilihat player. 
+
+\mbox{\Hypertarget{classWorld_a92b6456e2922bd15c1d8b5c74ae0b938}\label{classWorld_a92b6456e2922bd15c1d8b5c74ae0b938}} 
+\index{World@{World}!anybodyAlife@{anybodyAlife}}
+\index{anybodyAlife@{anybodyAlife}!World@{World}}
+\doxysubsubsection{\texorpdfstring{anybodyAlife()}{anybodyAlife()}}
+{\footnotesize\ttfamily bool World\+::anybody\+Alife (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mengecek jika masih ada hewan yang hidup, jika ada return true jika tidak return false. 
+
+\mbox{\Hypertarget{classWorld_af2413675ded3e29f93ffbef91e184178}\label{classWorld_af2413675ded3e29f93ffbef91e184178}} 
+\index{World@{World}!emptyMessage@{emptyMessage}}
+\index{emptyMessage@{emptyMessage}!World@{World}}
+\doxysubsubsection{\texorpdfstring{emptyMessage()}{emptyMessage()}}
+{\footnotesize\ttfamily void World\+::empty\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mengapus semua message yang telah dicetak. 
+
+\mbox{\Hypertarget{classWorld_a87841a60b198db2ef4c25f4c0f5567b1}\label{classWorld_a87841a60b198db2ef4c25f4c0f5567b1}} 
+\index{World@{World}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!World@{World}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classWorld}{World}}$\ast$ World\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Singleton Pattern, mengembalikan instance world yang bisa diakses dimanapun. 
+
+\mbox{\Hypertarget{classWorld_a8afae63b3ce1d560b7d71bab351531f3}\label{classWorld_a8afae63b3ce1d560b7d71bab351531f3}} 
+\index{World@{World}!getLand@{getLand}}
+\index{getLand@{getLand}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getLand()}{getLand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLand}{Land}} $\ast$ World\+::get\+Land (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Getter dari map\+Land pada posisi x, y. 
+
+\mbox{\Hypertarget{classWorld_afe265db734166ed7d8be223d7da90133}\label{classWorld_afe265db734166ed7d8be223d7da90133}} 
+\index{World@{World}!getNearestAnimal@{getNearestAnimal}}
+\index{getNearestAnimal@{getNearestAnimal}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getNearestAnimal()}{getNearestAnimal()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classAnimal}{Animal}} $\ast$ $>$ World\+::get\+Nearest\+Animal (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Mereturn binatang yang ada di atas, kiri, kanan, bawah posisi x,y. 
+
+\mbox{\Hypertarget{classWorld_a665768817fb2cba0aa1035a28a146d66}\label{classWorld_a665768817fb2cba0aa1035a28a146d66}} 
+\index{World@{World}!getNearestFacility@{getNearestFacility}}
+\index{getNearestFacility@{getNearestFacility}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getNearestFacility()}{getNearestFacility()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classFacility}{Facility}} $\ast$ $>$ World\+::get\+Nearest\+Facility (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Mereturn fasilitas yang ada di atas, kiri, kanan, bawah posisi x,y. 
+
+\mbox{\Hypertarget{classWorld_a89557065f3641f6c9f1bcf0277f35318}\label{classWorld_a89557065f3641f6c9f1bcf0277f35318}} 
+\index{World@{World}!getSize@{getSize}}
+\index{getSize@{getSize}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} World\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWorld_a63cc3f5068c2a6d53c5c87850fbbaa94}\label{classWorld_a63cc3f5068c2a6d53c5c87850fbbaa94}} 
+\index{World@{World}!getTick@{getTick}}
+\index{getTick@{getTick}!World@{World}}
+\doxysubsubsection{\texorpdfstring{getTick()}{getTick()}}
+{\footnotesize\ttfamily int World\+::get\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Mereturn nilai tick. 
+
+\mbox{\Hypertarget{classWorld_a555843b674320a3f0b568ab5ffd82d99}\label{classWorld_a555843b674320a3f0b568ab5ffd82d99}} 
+\index{World@{World}!hapusAnimal@{hapusAnimal}}
+\index{hapusAnimal@{hapusAnimal}!World@{World}}
+\doxysubsubsection{\texorpdfstring{hapusAnimal()}{hapusAnimal()}}
+{\footnotesize\ttfamily void World\+::hapus\+Animal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAnimal}{Animal}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+Menghapus hewan yang disimpan di list\+Animal. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em c} & \mbox{\hyperlink{classCell}{Cell}} yang akan dimasukkan ke map\+Cell \\
-\hline
-{\em \+\_\+x} & posisi x cell \\
-\hline
-{\em \+\_\+y} & posisi y cell \\
+{\em Objek} & animal yang ingin di hapus \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classWorld_ab6b1cdff58d6814a01e8afc0e11f2991}\label{classWorld_ab6b1cdff58d6814a01e8afc0e11f2991}} 
+\index{World@{World}!isTerisi@{isTerisi}}
+\index{isTerisi@{isTerisi}!World@{World}}
+\doxysubsubsection{\texorpdfstring{isTerisi()}{isTerisi()}}
+{\footnotesize\ttfamily bool World\+::is\+Terisi (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Mengecek apakah petak \mbox{[}x,y\mbox{]} terisi \mbox{\hyperlink{classAnimal}{Animal}} / \mbox{\hyperlink{classFacility}{Facility}} / \mbox{\hyperlink{classPlayer}{Player}}. 
+
+\mbox{\Hypertarget{classWorld_a848be277f92d37cff32ccfe10b9e747a}\label{classWorld_a848be277f92d37cff32ccfe10b9e747a}} 
+\index{World@{World}!renderAll@{renderAll}}
+\index{renderAll@{renderAll}!World@{World}}
+\doxysubsubsection{\texorpdfstring{renderAll()}{renderAll()}}
+{\footnotesize\ttfamily void World\+::render\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Merender semua \mbox{\hyperlink{classLand}{Land}} dan living being dengan memanggil method render. 
+
+\mbox{\Hypertarget{classWorld_abdcd439f66773dc62505d9d958e865b9}\label{classWorld_abdcd439f66773dc62505d9d958e865b9}} 
+\index{World@{World}!setLand@{setLand}}
+\index{setLand@{setLand}!World@{World}}
+\doxysubsubsection{\texorpdfstring{setLand()}{setLand()}}
+{\footnotesize\ttfamily bool World\+::set\+Land (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLand}{Land}} $\ast$}]{c,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Mengeset \mbox{\hyperlink{classLand}{Land}} pada posisi \+\_\+x dan \+\_\+y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \mbox{\hyperlink{classLand}{Land}} yang akan dimasukkan ke map\+Land \\
+\hline
+{\em \+\_\+x} & posisi x \mbox{\hyperlink{classLand}{Land}} \\
+\hline
+{\em \+\_\+y} & posisi y \mbox{\hyperlink{classLand}{Land}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWorld_a793b6203ac3c06b8945390881d0a3732}\label{classWorld_a793b6203ac3c06b8945390881d0a3732}} 
+\index{World@{World}!setTerisi@{setTerisi}}
+\index{setTerisi@{setTerisi}!World@{World}}
+\doxysubsubsection{\texorpdfstring{setTerisi()}{setTerisi()}}
+{\footnotesize\ttfamily void World\+::set\+Terisi (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{isi }\end{DoxyParamCaption})}
+
+
+
+Mengeset bawah petak \mbox{[}x,y\mbox{]} terisi/tidak oleh sesuatu. 
+
+\mbox{\Hypertarget{classWorld_a58dc2ff9ab77d77790f5c7a0f58848a3}\label{classWorld_a58dc2ff9ab77d77790f5c7a0f58848a3}} 
+\index{World@{World}!updateAll@{updateAll}}
+\index{updateAll@{updateAll}!World@{World}}
+\doxysubsubsection{\texorpdfstring{updateAll()}{updateAll()}}
+{\footnotesize\ttfamily void World\+::update\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mengupdate semua objek di dunia ini. 
+
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classWorld_a719284875fa878248cedcb3267b188c4}\label{classWorld_a719284875fa878248cedcb3267b188c4}} 
-\index{World@{World}!listLB@{listLB}}
-\index{listLB@{listLB}!World@{World}}
-\doxysubsubsection{\texorpdfstring{listLB}{listLB}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$\mbox{\hyperlink{classLivingBeing}{Living\+Being}}$\ast$$>$ World\+::list\+LB\hspace{0.3cm}{\ttfamily [protected]}}
+\mbox{\Hypertarget{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}\label{classWorld_ad2e63a39659cb400a619a0d16e3b4f9e}} 
+\index{World@{World}!height@{height}}
+\index{height@{height}!World@{World}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int World\+::height\hspace{0.3cm}{\ttfamily [protected]}}
 
-\textbackslash{}breif list\+LB adalah linked list dari \mbox{\hyperlink{classLivingBeing}{Living\+Being}} yang menampung semua objek living being yang ada di game 
+
+
+height adalah tinggi dari dunia game 
+
+\mbox{\Hypertarget{classWorld_a9c5a07a9c5684b6592859d77a57c88ad}\label{classWorld_a9c5a07a9c5684b6592859d77a57c88ad}} 
+\index{World@{World}!listAnimal@{listAnimal}}
+\index{listAnimal@{listAnimal}!World@{World}}
+\doxysubsubsection{\texorpdfstring{listAnimal}{listAnimal}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classAnimal}{Animal}}$\ast$$>$ World\+::list\+Animal\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+list\+Animal adalah vector dari \mbox{\hyperlink{classAnimal}{Animal}} yang menampung semua objek \mbox{\hyperlink{classAnimal}{Animal}} yang ada di game 
+
+\mbox{\Hypertarget{classWorld_a159daa2cefc57653c49eaba3b8b88347}\label{classWorld_a159daa2cefc57653c49eaba3b8b88347}} 
+\index{World@{World}!listFacil@{listFacil}}
+\index{listFacil@{listFacil}!World@{World}}
+\doxysubsubsection{\texorpdfstring{listFacil}{listFacil}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classFacility}{Facility}}$\ast$$>$ World\+::list\+Facil\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+list\+Facil adalah vector dari \mbox{\hyperlink{classFacility}{Facility}} yang menampung semua objek \mbox{\hyperlink{classFacility}{Facility}} yang ada di game 
+
+\mbox{\Hypertarget{classWorld_adef070debd46a40b1d86e3cc1f16480c}\label{classWorld_adef070debd46a40b1d86e3cc1f16480c}} 
+\index{World@{World}!listMsg@{listMsg}}
+\index{listMsg@{listMsg}!World@{World}}
+\doxysubsubsection{\texorpdfstring{listMsg}{listMsg}}
+{\footnotesize\ttfamily vector$<$string$>$ World\+::list\+Msg\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+list\+Msg adalah vector dari string yang menampung pesan pesan yang muncul agar dilihat player, maksimal muncul 40 pesan 
+
+\mbox{\Hypertarget{classWorld_a0a969b5dda5a5527f7a7b41b2f3322db}\label{classWorld_a0a969b5dda5a5527f7a7b41b2f3322db}} 
+\index{World@{World}!mapLand@{mapLand}}
+\index{mapLand@{mapLand}!World@{World}}
+\doxysubsubsection{\texorpdfstring{mapLand}{mapLand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLand}{Land}}$\ast$$\ast$$\ast$ World\+::map\+Land\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+map\+Land adalah array 2 dimensi dari pointer of \mbox{\hyperlink{classLand}{Land}} 
+
+\mbox{\Hypertarget{classWorld_ac5db98013fd213e890698dee8816be24}\label{classWorld_ac5db98013fd213e890698dee8816be24}} 
+\index{World@{World}!terisi@{terisi}}
+\index{terisi@{terisi}!World@{World}}
+\doxysubsubsection{\texorpdfstring{terisi}{terisi}}
+{\footnotesize\ttfamily bool$\ast$$\ast$ World\+::terisi\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+terisi adalah map 2d of bool yang menandakan apakah suatu petak sudah diisi sesuatu / belum, Sesuatu bisa berupa \mbox{\hyperlink{classAnimal}{Animal}} / \mbox{\hyperlink{classFacility}{Facility}} 
+
+\mbox{\Hypertarget{classWorld_a90d2f00b0fe4de84d7d9d1da40c0f8f6}\label{classWorld_a90d2f00b0fe4de84d7d9d1da40c0f8f6}} 
+\index{World@{World}!tick@{tick}}
+\index{tick@{tick}!World@{World}}
+\doxysubsubsection{\texorpdfstring{tick}{tick}}
+{\footnotesize\ttfamily int World\+::tick\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+menandakan berapa tick/detik game sudah berjalan 
+
+\mbox{\Hypertarget{classWorld_ad441f046e49a274301278a3cf9339944}\label{classWorld_ad441f046e49a274301278a3cf9339944}} 
+\index{World@{World}!width@{width}}
+\index{width@{width}!World@{World}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int World\+::width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+width adalah lebar dari dunia game 
+
+\mbox{\Hypertarget{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}\label{classWorld_ac7cdc71bd9c3356a91efea6c50d3cd29}} 
+\index{World@{World}!world\_instance@{world\_instance}}
+\index{world\_instance@{world\_instance}!World@{World}}
+\doxysubsubsection{\texorpdfstring{world\_instance}{world\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWorld}{World}} $\ast$ World\+::world\+\_\+instance = new \mbox{\hyperlink{classWorld}{World}}(11, 11)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Singleton Pattern, objek statis yang hanya ada 1 dan bisa diakses dimanapun. 
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/World.\+h\item 
-src/World.\+cpp\end{DoxyCompactItemize}
+include/\mbox{\hyperlink{World_8h}{World.\+h}}\item 
+src/\mbox{\hyperlink{World_8cpp}{World.\+cpp}}\end{DoxyCompactItemize}

@@ -78,160 +78,167 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for Lamb:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="classLamb.png" usemap="#Lamb_map" alt=""/>
-  <map id="Lamb_map" name="Lamb_map">
-<area href="classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="MeatProducingAnimal" shape="rect" coords="0,168,136,192"/>
-<area href="classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk" alt="MilkProducingAnimal" shape="rect" coords="146,168,282,192"/>
-<area href="classAnimal.html" title="Base class berbagai macam binatang di game." alt="Animal" shape="rect" coords="0,112,136,136"/>
-<area href="classAnimal.html" title="Base class berbagai macam binatang di game." alt="Animal" shape="rect" coords="146,112,282,136"/>
-<area href="classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="LivingBeing" shape="rect" coords="0,56,136,80"/>
-<area href="classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="LivingBeing" shape="rect" coords="146,56,282,80"/>
-<area href="classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="Renderable" shape="rect" coords="0,0,136,24"/>
-<area href="classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="Renderable" shape="rect" coords="146,0,282,24"/>
-  </map>
-</div></div>
+<div class="center"><img src="classLamb__inherit__graph.png" border="0" usemap="#Lamb_inherit__map" alt="Inheritance graph"/></div>
+<map name="Lamb_inherit__map" id="Lamb_inherit__map">
+<area shape="rect" title="Lamb adalah salah satu binatang dalam game." alt="" coords="123,976,246,1097"/>
+<area shape="rect" href="$classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="5,792,175,928"/>
+<area shape="rect" href="$classAnimal.html" title="Base class berbagai macam binatang di game." alt="" coords="114,417,255,744"/>
+<area shape="rect" href="$classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk" alt="" coords="199,792,363,928"/>
+<area shape="rect" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="130,189,239,369"/>
+<area shape="rect" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="119,5,250,141"/>
+</map>
+</div>
+<div class="dynheader">
+Collaboration diagram for Lamb:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLamb__coll__graph.png" border="0" usemap="#Lamb_coll__map" alt="Collaboration graph"/></div>
+<map name="Lamb_coll__map" id="Lamb_coll__map">
+<area shape="rect" title="Lamb adalah salah satu binatang dalam game." alt="" coords="123,976,246,1097"/>
+<area shape="rect" href="$classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="5,792,175,928"/>
+<area shape="rect" href="$classAnimal.html" title="Base class berbagai macam binatang di game." alt="" coords="114,417,255,744"/>
+<area shape="rect" href="$classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk" alt="" coords="199,792,363,928"/>
+<area shape="rect" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="130,189,239,369"/>
+<area shape="rect" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="119,5,250,141"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab74133ef64cd43f3ea1127fb847488d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLamb.html#ab74133ef64cd43f3ea1127fb847488d4">Lamb</a> (int _x, int _y)</td></tr>
 <tr class="memdesc:ab74133ef64cd43f3ea1127fb847488d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruk <a class="el" href="classLamb.html" title="Lamb adalah salah satu binatang dalam game.">Lamb</a> dengan parametered location, dan bunyi defaultnya.  <a href="#ab74133ef64cd43f3ea1127fb847488d4">More...</a><br /></td></tr>
 <tr class="separator:ab74133ef64cd43f3ea1127fb847488d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94ac52144e2727d4d3d1528ddb7021c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLamb.html#ab94ac52144e2727d4d3d1528ddb7021c">MoveRandom</a> ()</td></tr>
+<tr class="memdesc:ab94ac52144e2727d4d3d1528ddb7021c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal.  <a href="#ab94ac52144e2727d4d3d1528ddb7021c">More...</a><br /></td></tr>
+<tr class="separator:ab94ac52144e2727d4d3d1528ddb7021c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d124576991b4291726469d982109f1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLamb.html#a8d124576991b4291726469d982109f1c">Die</a> (bool diedOfHunger)</td></tr>
+<tr class="memdesc:a8d124576991b4291726469d982109f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If hungerMeter = 0 "Hewan laper ampe mati" else "Hewan disembelih b".  <a href="#a8d124576991b4291726469d982109f1c">More...</a><br /></td></tr>
+<tr class="separator:a8d124576991b4291726469d982109f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838d93f30c461ae0fc3e2a7e1076b621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLamb.html#a838d93f30c461ae0fc3e2a7e1076b621">Interact</a> ()</td></tr>
+<tr class="memdesc:a838d93f30c461ae0fc3e2a7e1076b621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method interaksi player dengan hewan <br  />
+  <a href="#a838d93f30c461ae0fc3e2a7e1076b621">More...</a><br /></td></tr>
+<tr class="separator:a838d93f30c461ae0fc3e2a7e1076b621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classMeatProducingAnimal"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMeatProducingAnimal')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMeatProducingAnimal.html">MeatProducingAnimal</a></td></tr>
-<tr class="memitem:a6d4d1eeff935695331bae48fd17fb4e1 inherit pub_methods_classMeatProducingAnimal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMeatProducingAnimal.html#a6d4d1eeff935695331bae48fd17fb4e1">MeatProducingAnimal</a> (int _x, int _y, string _animalSound)</td></tr>
-<tr class="memdesc:a6d4d1eeff935695331bae48fd17fb4e1 inherit pub_methods_classMeatProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor <a class="el" href="classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game.">MeatProducingAnimal</a> dengan parametered location dan animalSound.  <a href="classMeatProducingAnimal.html#a6d4d1eeff935695331bae48fd17fb4e1">More...</a><br /></td></tr>
-<tr class="separator:a6d4d1eeff935695331bae48fd17fb4e1 inherit pub_methods_classMeatProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a650fb47769f851ca11171d217bf78ef6 inherit pub_methods_classMeatProducingAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a650fb47769f851ca11171d217bf78ef6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMeatProducingAnimal.html#a650fb47769f851ca11171d217bf78ef6">DieAndGiveMeat</a> ()</td></tr>
-<tr class="memdesc:a650fb47769f851ca11171d217bf78ef6 inherit pub_methods_classMeatProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">DieAndGiveMeat akan men-DTOR kan <a class="el" href="classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game.">MeatProducingAnimal</a> dan memasukkan daging &lt;Nama animal&gt;=""&gt; ke list inventori <a class="el" href="classPlayer.html" title="Player adalah class dari perwujudan pemain di game.">Player</a>. <br /></td></tr>
-<tr class="separator:a650fb47769f851ca11171d217bf78ef6 inherit pub_methods_classMeatProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991339d44efe1794b5db469119410fe5 inherit pub_methods_classMeatProducingAnimal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMeatProducingAnimal.html#a991339d44efe1794b5db469119410fe5">MeatProducingAnimal</a> (int _x, int _y, string _animalSound, char _repChar, int <a class="el" href="classAnimal.html#aea509702bc376ce7faabb267fa6695c2">maxHunger</a>)</td></tr>
+<tr class="memdesc:a991339d44efe1794b5db469119410fe5 inherit pub_methods_classMeatProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor <a class="el" href="classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game.">MeatProducingAnimal</a> dengan parametered location dan animalSound.  <a href="classMeatProducingAnimal.html#a991339d44efe1794b5db469119410fe5">More...</a><br /></td></tr>
+<tr class="separator:a991339d44efe1794b5db469119410fe5 inherit pub_methods_classMeatProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdf3cd9d135f893fee414439d2be211 inherit pub_methods_classMeatProducingAnimal"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMeatProducingAnimal.html#a9bdf3cd9d135f893fee414439d2be211">Die</a> ()</td></tr>
+<tr class="separator:a9bdf3cd9d135f893fee414439d2be211 inherit pub_methods_classMeatProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92fb1a5cad0977e9e2c141597aae4cb inherit pub_methods_classMeatProducingAnimal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMeatProducingAnimal.html#ae92fb1a5cad0977e9e2c141597aae4cb">Interact</a> ()</td></tr>
+<tr class="memdesc:ae92fb1a5cad0977e9e2c141597aae4cb inherit pub_methods_classMeatProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method interaksi player dengan hewan <br  />
+  <a href="classMeatProducingAnimal.html#ae92fb1a5cad0977e9e2c141597aae4cb">More...</a><br /></td></tr>
+<tr class="separator:ae92fb1a5cad0977e9e2c141597aae4cb inherit pub_methods_classMeatProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007fa49a7579839da8402243a581b143 inherit pub_methods_classMeatProducingAnimal"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMeatProducingAnimal.html#a007fa49a7579839da8402243a581b143">isMeatPA</a> () const</td></tr>
+<tr class="separator:a007fa49a7579839da8402243a581b143 inherit pub_methods_classMeatProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAnimal"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAnimal')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAnimal.html">Animal</a></td></tr>
-<tr class="memitem:a0895c473f5d1a074447a1a0a9f1def61 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a0895c473f5d1a074447a1a0a9f1def61">Animal</a> (int _x, int _y, string _animalSound)</td></tr>
-<tr class="memdesc:a0895c473f5d1a074447a1a0a9f1def61 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor dengan parameter posisi binatang dan suaranya.  <a href="classAnimal.html#a0895c473f5d1a074447a1a0a9f1def61">More...</a><br /></td></tr>
-<tr class="separator:a0895c473f5d1a074447a1a0a9f1def61 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af615c696ba45912dffeb7a149f531238 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="af615c696ba45912dffeb7a149f531238"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#af615c696ba45912dffeb7a149f531238">GetHungerMeter</a> ()</td></tr>
-<tr class="memdesc:af615c696ba45912dffeb7a149f531238 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter hungerMeter. <br /></td></tr>
+<tr class="memitem:a228bff8e07067a6700ac35dedcb85b98 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a228bff8e07067a6700ac35dedcb85b98">Animal</a> (int _x, int _y, string _animalSound, char _repChar, int _maxHunger)</td></tr>
+<tr class="memdesc:a228bff8e07067a6700ac35dedcb85b98 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor dengan parameter posisi binatang dan suaranya.  <a href="classAnimal.html#a228bff8e07067a6700ac35dedcb85b98">More...</a><br /></td></tr>
+<tr class="separator:a228bff8e07067a6700ac35dedcb85b98 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af615c696ba45912dffeb7a149f531238 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#af615c696ba45912dffeb7a149f531238">GetHungerMeter</a> ()</td></tr>
+<tr class="memdesc:af615c696ba45912dffeb7a149f531238 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter hungerMeter.  <a href="classAnimal.html#af615c696ba45912dffeb7a149f531238">More...</a><br /></td></tr>
 <tr class="separator:af615c696ba45912dffeb7a149f531238 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3656294d99761e2e7786eb592cecfd15 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a3656294d99761e2e7786eb592cecfd15"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a3656294d99761e2e7786eb592cecfd15">GetAnimalSound</a> ()</td></tr>
-<tr class="memdesc:a3656294d99761e2e7786eb592cecfd15 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter animalSound. <br /></td></tr>
+<tr class="memitem:a3656294d99761e2e7786eb592cecfd15 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a3656294d99761e2e7786eb592cecfd15">GetAnimalSound</a> ()</td></tr>
+<tr class="memdesc:a3656294d99761e2e7786eb592cecfd15 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter animalSound.  <a href="classAnimal.html#a3656294d99761e2e7786eb592cecfd15">More...</a><br /></td></tr>
 <tr class="separator:a3656294d99761e2e7786eb592cecfd15 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6894b8b33ce7cf3d6dc42c64f06b76 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a4d6894b8b33ce7cf3d6dc42c64f06b76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a4d6894b8b33ce7cf3d6dc42c64f06b76">SetHungerMeter</a> (int _hungerMeter)</td></tr>
-<tr class="memdesc:a4d6894b8b33ce7cf3d6dc42c64f06b76 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter hungerMeter. <br /></td></tr>
+<tr class="memitem:a4d6894b8b33ce7cf3d6dc42c64f06b76 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a4d6894b8b33ce7cf3d6dc42c64f06b76">SetHungerMeter</a> (int _hungerMeter)</td></tr>
+<tr class="memdesc:a4d6894b8b33ce7cf3d6dc42c64f06b76 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter hungerMeter.  <a href="classAnimal.html#a4d6894b8b33ce7cf3d6dc42c64f06b76">More...</a><br /></td></tr>
 <tr class="separator:a4d6894b8b33ce7cf3d6dc42c64f06b76 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8fdb2bbb3d2ae4d1f70b850a71e42ab inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="af8fdb2bbb3d2ae4d1f70b850a71e42ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#af8fdb2bbb3d2ae4d1f70b850a71e42ab">SetAnimalSound</a> (string _animalSound)</td></tr>
-<tr class="memdesc:af8fdb2bbb3d2ae4d1f70b850a71e42ab inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter animalSound. <br /></td></tr>
+<tr class="memitem:af8fdb2bbb3d2ae4d1f70b850a71e42ab inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#af8fdb2bbb3d2ae4d1f70b850a71e42ab">SetAnimalSound</a> (string _animalSound)</td></tr>
+<tr class="memdesc:af8fdb2bbb3d2ae4d1f70b850a71e42ab inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter animalSound.  <a href="classAnimal.html#af8fdb2bbb3d2ae4d1f70b850a71e42ab">More...</a><br /></td></tr>
 <tr class="separator:af8fdb2bbb3d2ae4d1f70b850a71e42ab inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24334feff002c33f5513902546daba9b inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a24334feff002c33f5513902546daba9b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a24334feff002c33f5513902546daba9b">GettingHungry</a> ()</td></tr>
-<tr class="memdesc:a24334feff002c33f5513902546daba9b inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengurangi HungerMeter tiap 1 tick, dipanggil tiap tick selesai. <br /></td></tr>
+<tr class="memitem:a24334feff002c33f5513902546daba9b inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a24334feff002c33f5513902546daba9b">GettingHungry</a> ()</td></tr>
+<tr class="memdesc:a24334feff002c33f5513902546daba9b inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengurangi HungerMeter tiap 1 tick, dipanggil tiap tick selesai.  <a href="classAnimal.html#a24334feff002c33f5513902546daba9b">More...</a><br /></td></tr>
 <tr class="separator:a24334feff002c33f5513902546daba9b inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdae3d782b7451096932296179860a12 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="acdae3d782b7451096932296179860a12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#acdae3d782b7451096932296179860a12">Eat</a> ()</td></tr>
-<tr class="memdesc:acdae3d782b7451096932296179860a12 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hewan makan grass yang ada di petaknya. <br /></td></tr>
-<tr class="separator:acdae3d782b7451096932296179860a12 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133f57a24e15741829d677c2602effd2 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a133f57a24e15741829d677c2602effd2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a133f57a24e15741829d677c2602effd2">SoundTheAnimal</a> ()</td></tr>
-<tr class="memdesc:a133f57a24e15741829d677c2602effd2 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengeluarkan suara hewan. <br /></td></tr>
+<tr class="memitem:ac14c048fdb431e3dc027abe9e5c711ec inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#ac14c048fdb431e3dc027abe9e5c711ec">Eat</a> ()</td></tr>
+<tr class="memdesc:ac14c048fdb431e3dc027abe9e5c711ec inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hewan makan grass yang ada di petaknya.  <a href="classAnimal.html#ac14c048fdb431e3dc027abe9e5c711ec">More...</a><br /></td></tr>
+<tr class="separator:ac14c048fdb431e3dc027abe9e5c711ec inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133f57a24e15741829d677c2602effd2 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a133f57a24e15741829d677c2602effd2">SoundTheAnimal</a> ()</td></tr>
+<tr class="memdesc:a133f57a24e15741829d677c2602effd2 inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengeluarkan suara hewan.  <a href="classAnimal.html#a133f57a24e15741829d677c2602effd2">More...</a><br /></td></tr>
 <tr class="separator:a133f57a24e15741829d677c2602effd2 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af0b13eae4ab6758df22b3ac0908ecc inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a6af0b13eae4ab6758df22b3ac0908ecc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a6af0b13eae4ab6758df22b3ac0908ecc">Die</a> ()</td></tr>
-<tr class="memdesc:a6af0b13eae4ab6758df22b3ac0908ecc inherit pub_methods_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">If hungerMeter = 0 "Hewan laper ampe mati" else "Hewan disembelih b". <br /></td></tr>
-<tr class="separator:a6af0b13eae4ab6758df22b3ac0908ecc inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2953c6793a65f037eff345c0fce5ab6 inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#ab2953c6793a65f037eff345c0fce5ab6">isEggPA</a> () const</td></tr>
+<tr class="separator:ab2953c6793a65f037eff345c0fce5ab6 inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa196af80a3473391089239ab6bf7421c inherit pub_methods_classAnimal"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#aa196af80a3473391089239ab6bf7421c">masihHidup</a> ()</td></tr>
+<tr class="separator:aa196af80a3473391089239ab6bf7421c inherit pub_methods_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classLivingBeing"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLivingBeing')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLivingBeing.html">LivingBeing</a></td></tr>
-<tr class="memitem:ade4995255db077055426d7429257769f inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="ade4995255db077055426d7429257769f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#ade4995255db077055426d7429257769f">LivingBeing</a> ()</td></tr>
-<tr class="memdesc:ade4995255db077055426d7429257769f inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor mahluk hidup, diletakan di -1,-1, tapi di render di 0,0 dengan char '-'. <br /></td></tr>
+<tr class="memitem:ade4995255db077055426d7429257769f inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#ade4995255db077055426d7429257769f">LivingBeing</a> ()</td></tr>
+<tr class="memdesc:ade4995255db077055426d7429257769f inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor mahluk hidup, diletakan di -1,-1, tapi di render di 0,0 dengan char '-'.  <a href="classLivingBeing.html#ade4995255db077055426d7429257769f">More...</a><br /></td></tr>
 <tr class="separator:ade4995255db077055426d7429257769f inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a564c0c4423b463ee4e0f386400602751 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a564c0c4423b463ee4e0f386400602751">LivingBeing</a> (int _x, int _y, char _repChar)</td></tr>
 <tr class="memdesc:a564c0c4423b463ee4e0f386400602751 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor Mahluk hidup dengan parameter posisi dan karakter representasinya di layar.  <a href="classLivingBeing.html#a564c0c4423b463ee4e0f386400602751">More...</a><br /></td></tr>
 <tr class="separator:a564c0c4423b463ee4e0f386400602751 inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a013886d4ae3a8e1d9710471486a0bd9e inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="a013886d4ae3a8e1d9710471486a0bd9e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a013886d4ae3a8e1d9710471486a0bd9e">GetX</a> ()</td></tr>
-<tr class="memdesc:a013886d4ae3a8e1d9710471486a0bd9e inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter x. <br /></td></tr>
-<tr class="separator:a013886d4ae3a8e1d9710471486a0bd9e inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349ac8d394ee2e54b992e7e693d7782b inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="a349ac8d394ee2e54b992e7e693d7782b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a349ac8d394ee2e54b992e7e693d7782b">GetY</a> ()</td></tr>
-<tr class="memdesc:a349ac8d394ee2e54b992e7e693d7782b inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter y <br  />
- <br /></td></tr>
-<tr class="separator:a349ac8d394ee2e54b992e7e693d7782b inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066f825613f93f0d97f644d5f0ce1cb5 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="a066f825613f93f0d97f644d5f0ce1cb5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a066f825613f93f0d97f644d5f0ce1cb5">SetX</a> (int _x)</td></tr>
-<tr class="memdesc:a066f825613f93f0d97f644d5f0ce1cb5 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter x. <br /></td></tr>
+<tr class="memitem:a3b093003d85a477eee40b51c10621041 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a3b093003d85a477eee40b51c10621041">GetX</a> () const</td></tr>
+<tr class="memdesc:a3b093003d85a477eee40b51c10621041 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter x.  <a href="classLivingBeing.html#a3b093003d85a477eee40b51c10621041">More...</a><br /></td></tr>
+<tr class="separator:a3b093003d85a477eee40b51c10621041 inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a9db53dee9adcb435a88e240c30816 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a48a9db53dee9adcb435a88e240c30816">GetY</a> () const</td></tr>
+<tr class="memdesc:a48a9db53dee9adcb435a88e240c30816 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter y <br  />
+  <a href="classLivingBeing.html#a48a9db53dee9adcb435a88e240c30816">More...</a><br /></td></tr>
+<tr class="separator:a48a9db53dee9adcb435a88e240c30816 inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066f825613f93f0d97f644d5f0ce1cb5 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a066f825613f93f0d97f644d5f0ce1cb5">SetX</a> (int _x)</td></tr>
+<tr class="memdesc:a066f825613f93f0d97f644d5f0ce1cb5 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter x.  <a href="classLivingBeing.html#a066f825613f93f0d97f644d5f0ce1cb5">More...</a><br /></td></tr>
 <tr class="separator:a066f825613f93f0d97f644d5f0ce1cb5 inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e58a8fb18b45d41b308dab4f654a37 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="a69e58a8fb18b45d41b308dab4f654a37"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a69e58a8fb18b45d41b308dab4f654a37">SetY</a> (int _y)</td></tr>
-<tr class="memdesc:a69e58a8fb18b45d41b308dab4f654a37 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter y. <br /></td></tr>
+<tr class="memitem:a69e58a8fb18b45d41b308dab4f654a37 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a69e58a8fb18b45d41b308dab4f654a37">SetY</a> (int _y)</td></tr>
+<tr class="memdesc:a69e58a8fb18b45d41b308dab4f654a37 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter y.  <a href="classLivingBeing.html#a69e58a8fb18b45d41b308dab4f654a37">More...</a><br /></td></tr>
 <tr class="separator:a69e58a8fb18b45d41b308dab4f654a37 inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d612696127afb2cca466ff8757dde45 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a5d612696127afb2cca466ff8757dde45">Move</a> (<a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1">direction</a> directionNumber)</td></tr>
-<tr class="memdesc:a5d612696127afb2cca466ff8757dde45 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bergerak ke arah directionNumber sejauh 1 petak.  <a href="classLivingBeing.html#a5d612696127afb2cca466ff8757dde45">More...</a><br /></td></tr>
-<tr class="separator:a5d612696127afb2cca466ff8757dde45 inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41df7acfc3337b4ae07ae6f107d55a58 inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="a41df7acfc3337b4ae07ae6f107d55a58"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a41df7acfc3337b4ae07ae6f107d55a58">MoveRandom</a> ()</td></tr>
-<tr class="memdesc:a41df7acfc3337b4ae07ae6f107d55a58 inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. <br /></td></tr>
-<tr class="separator:a41df7acfc3337b4ae07ae6f107d55a58 inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b9610388114288933291c767d4c16d inherit pub_methods_classLivingBeing"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a64b9610388114288933291c767d4c16d">Move</a> (<a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1">direction</a> directionNumber)</td></tr>
+<tr class="memdesc:a64b9610388114288933291c767d4c16d inherit pub_methods_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bergerak ke arah directionNumber sejauh 1 petak, return true jika berhasil, false jika gagal.  <a href="classLivingBeing.html#a64b9610388114288933291c767d4c16d">More...</a><br /></td></tr>
+<tr class="separator:a64b9610388114288933291c767d4c16d inherit pub_methods_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRenderable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRenderable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRenderable.html">Renderable</a></td></tr>
 <tr class="memitem:acb0447c628685e308def861001a184c3 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#acb0447c628685e308def861001a184c3">Renderable</a> (int _x, int _y, int _color, char _char)</td></tr>
 <tr class="memdesc:acb0447c628685e308def861001a184c3 inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor renderable.  <a href="classRenderable.html#acb0447c628685e308def861001a184c3">More...</a><br /></td></tr>
 <tr class="separator:acb0447c628685e308def861001a184c3 inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top"><a id="a1dce45c4703b60fd30acf824c77df9b6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a1dce45c4703b60fd30acf824c77df9b6">render</a> ()</td></tr>
-<tr class="memdesc:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merender objek ke layar dengan mengeprint charRepresentasi di posisi xLayar, yLayar. Memanggil instance tampilan untuk mengeprint. <br /></td></tr>
+<tr class="memitem:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a1dce45c4703b60fd30acf824c77df9b6">render</a> ()</td></tr>
+<tr class="memdesc:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merender objek ke layar dengan mengeprint charRepresentasi di posisi xLayar, yLayar. Memanggil instance tampilan untuk mengeprint.  <a href="classRenderable.html#a1dce45c4703b60fd30acf824c77df9b6">More...</a><br /></td></tr>
 <tr class="separator:a1dce45c4703b60fd30acf824c77df9b6 inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top"><a id="a8c98ee851d9bb8ebc3598cebf8efa28c"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a8c98ee851d9bb8ebc3598cebf8efa28c">getRenderChar</a> ()</td></tr>
-<tr class="memdesc:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengembalikan char yang akan dirender. <br /></td></tr>
+<tr class="memitem:a80220ee3f89c4c2fa17b7a2f3962ecea inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a80220ee3f89c4c2fa17b7a2f3962ecea">setPosLayar</a> (int x, int y)</td></tr>
+<tr class="separator:a80220ee3f89c4c2fa17b7a2f3962ecea inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#a8c98ee851d9bb8ebc3598cebf8efa28c">getRenderChar</a> ()</td></tr>
+<tr class="memdesc:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mengembalikan char yang akan dirender.  <a href="classRenderable.html#a8c98ee851d9bb8ebc3598cebf8efa28c">More...</a><br /></td></tr>
 <tr class="separator:a8c98ee851d9bb8ebc3598cebf8efa28c inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf91cb52654dcea98a90c36900b22531 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top"><a id="aaf91cb52654dcea98a90c36900b22531"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRenderChar</b> (char _renderChar)</td></tr>
+<tr class="memitem:aaf91cb52654dcea98a90c36900b22531 inherit pub_methods_classRenderable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderable.html#aaf91cb52654dcea98a90c36900b22531">setRenderChar</a> (char _renderChar)</td></tr>
 <tr class="separator:aaf91cb52654dcea98a90c36900b22531 inherit pub_methods_classRenderable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classMilkProducingAnimal"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMilkProducingAnimal')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMilkProducingAnimal.html">MilkProducingAnimal</a></td></tr>
-<tr class="memitem:ad2c1a8cfaae9486d5f988a862d5af8bd inherit pub_methods_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMilkProducingAnimal.html#ad2c1a8cfaae9486d5f988a862d5af8bd">MilkProducingAnimal</a> (int _x, int _y, string _animalSound)</td></tr>
-<tr class="memdesc:ad2c1a8cfaae9486d5f988a862d5af8bd inherit pub_methods_classMilkProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">atribut <a class="el" href="classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk">MilkProducingAnimal</a>, bernilai true jika memiliki Milk  <a href="classMilkProducingAnimal.html#ad2c1a8cfaae9486d5f988a862d5af8bd">More...</a><br /></td></tr>
-<tr class="separator:ad2c1a8cfaae9486d5f988a862d5af8bd inherit pub_methods_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3054aafbbda5a31143b060f0d91fd63 inherit pub_methods_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top"><a id="ac3054aafbbda5a31143b060f0d91fd63"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMilkProducingAnimal.html#ac3054aafbbda5a31143b060f0d91fd63">ProduceMilk</a> ()</td></tr>
-<tr class="memdesc:ac3054aafbbda5a31143b060f0d91fd63 inherit pub_methods_classMilkProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menghasilkan milk ke player jika ada disekitar player yang melakukan Interaksi. <br /></td></tr>
-<tr class="separator:ac3054aafbbda5a31143b060f0d91fd63 inherit pub_methods_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7af929b987af2329e3dd4af368e9d297 inherit pub_methods_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a7af929b987af2329e3dd4af368e9d297"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMilkProducingAnimal.html#a7af929b987af2329e3dd4af368e9d297">IsHaveMilk</a> ()</td></tr>
-<tr class="memdesc:a7af929b987af2329e3dd4af368e9d297 inherit pub_methods_classMilkProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mereturn atribut haveMilk, return True jika siap memproduksi milk, False jika tidak. <br /></td></tr>
-<tr class="separator:a7af929b987af2329e3dd4af368e9d297 inherit pub_methods_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a4291845f3a34c08662c483ea887d2 inherit pub_methods_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMilkProducingAnimal.html#ad1a4291845f3a34c08662c483ea887d2">MilkProducingAnimal</a> (int _x, int _y, string _animalSound, char _repChar, int <a class="el" href="classAnimal.html#aea509702bc376ce7faabb267fa6695c2">maxHunger</a>)</td></tr>
+<tr class="memdesc:ad1a4291845f3a34c08662c483ea887d2 inherit pub_methods_classMilkProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor berparameter <a class="el" href="classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk">MilkProducingAnimal</a>.  <a href="classMilkProducingAnimal.html#ad1a4291845f3a34c08662c483ea887d2">More...</a><br /></td></tr>
+<tr class="separator:ad1a4291845f3a34c08662c483ea887d2 inherit pub_methods_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57bd4f68b4ec85e4e08c15517c49481 inherit pub_methods_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMilkProducingAnimal.html#aa57bd4f68b4ec85e4e08c15517c49481">Die</a> ()</td></tr>
+<tr class="separator:aa57bd4f68b4ec85e4e08c15517c49481 inherit pub_methods_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e1831c3de2a416324f7f2e871a092b inherit pub_methods_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMilkProducingAnimal.html#ad9e1831c3de2a416324f7f2e871a092b">isMilkPA</a> () const</td></tr>
+<tr class="separator:ad9e1831c3de2a416324f7f2e871a092b inherit pub_methods_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec8a2637cd3ddc5efe62782e7815aa3 inherit pub_methods_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMilkProducingAnimal.html#aeec8a2637cd3ddc5efe62782e7815aa3">MoveRandom</a> ()</td></tr>
+<tr class="memdesc:aeec8a2637cd3ddc5efe62782e7815aa3 inherit pub_methods_classMilkProducingAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal.  <a href="classMilkProducingAnimal.html#aeec8a2637cd3ddc5efe62782e7815aa3">More...</a><br /></td></tr>
+<tr class="separator:aeec8a2637cd3ddc5efe62782e7815aa3 inherit pub_methods_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_classLivingBeing"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classLivingBeing')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classLivingBeing.html">LivingBeing</a></td></tr>
-<tr class="memitem:a26002fcf620ed05cb9ac2604038b19f1 inherit pro_types_classLivingBeing"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1">direction</a> { <b>up</b> = 1, 
-<b>down</b>, 
-<b>left</b>, 
-<b>right</b>
+<tr class="inherit_header pub_types_classLivingBeing"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classLivingBeing')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classLivingBeing.html">LivingBeing</a></td></tr>
+<tr class="memitem:a26002fcf620ed05cb9ac2604038b19f1 inherit pub_types_classLivingBeing"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1">direction</a> { <br />
+&#160;&#160;<a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1a807a0a5f725e09c7c45418697f15fcbc">up</a> = 1, 
+<a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1a2d17cadb69dbb99d60cc20545f44858b">down</a>, 
+<a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1ac72132c2bcae3ec9867a256367ed67e5">left</a>, 
+<a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1aa842c9316ffaf4e452e6a19c9552ba07">right</a>, 
+<br />
+&#160;&#160;<a class="el" href="classLivingBeing.html#a26002fcf620ed05cb9ac2604038b19f1ac41070d3acb57c0e3768c53ea7d21007">not_move</a>
+<br />
  }</td></tr>
-<tr class="separator:a26002fcf620ed05cb9ac2604038b19f1 inherit pro_types_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a26002fcf620ed05cb9ac2604038b19f1 inherit pub_types_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classAnimal"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classAnimal')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classAnimal.html">Animal</a></td></tr>
-<tr class="memitem:a7b6c94227fc60ac60d5506fb5e857fd9 inherit pro_attribs_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a7b6c94227fc60ac60d5506fb5e857fd9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a7b6c94227fc60ac60d5506fb5e857fd9">hungerMeter</a></td></tr>
-<tr class="memdesc:a7b6c94227fc60ac60d5506fb5e857fd9 inherit pro_attribs_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value 5. <br /></td></tr>
+<tr class="memitem:aea509702bc376ce7faabb267fa6695c2 inherit pro_attribs_classAnimal"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#aea509702bc376ce7faabb267fa6695c2">maxHunger</a></td></tr>
+<tr class="memdesc:aea509702bc376ce7faabb267fa6695c2 inherit pro_attribs_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maksimum tingkat kelaparan hewan.  <a href="classAnimal.html#aea509702bc376ce7faabb267fa6695c2">More...</a><br /></td></tr>
+<tr class="separator:aea509702bc376ce7faabb267fa6695c2 inherit pro_attribs_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6c94227fc60ac60d5506fb5e857fd9 inherit pro_attribs_classAnimal"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a7b6c94227fc60ac60d5506fb5e857fd9">hungerMeter</a></td></tr>
+<tr class="memdesc:a7b6c94227fc60ac60d5506fb5e857fd9 inherit pro_attribs_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value maxHunger.  <a href="classAnimal.html#a7b6c94227fc60ac60d5506fb5e857fd9">More...</a><br /></td></tr>
 <tr class="separator:a7b6c94227fc60ac60d5506fb5e857fd9 inherit pro_attribs_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a085fb0d50fc205ef61891e33c8dcb737 inherit pro_attribs_classAnimal"><td class="memItemLeft" align="right" valign="top"><a id="a085fb0d50fc205ef61891e33c8dcb737"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a085fb0d50fc205ef61891e33c8dcb737">animalSound</a></td></tr>
-<tr class="memdesc:a085fb0d50fc205ef61891e33c8dcb737 inherit pro_attribs_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suara hewan, berbeda tiap animal. <br /></td></tr>
+<tr class="memitem:a085fb0d50fc205ef61891e33c8dcb737 inherit pro_attribs_classAnimal"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#a085fb0d50fc205ef61891e33c8dcb737">animalSound</a></td></tr>
+<tr class="memdesc:a085fb0d50fc205ef61891e33c8dcb737 inherit pro_attribs_classAnimal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suara hewan, berbeda tiap animal.  <a href="classAnimal.html#a085fb0d50fc205ef61891e33c8dcb737">More...</a><br /></td></tr>
 <tr class="separator:a085fb0d50fc205ef61891e33c8dcb737 inherit pro_attribs_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5576c4cdfa09927d4f4491b51c9a8c inherit pro_attribs_classAnimal"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimal.html#aab5576c4cdfa09927d4f4491b51c9a8c">isAlive</a></td></tr>
+<tr class="separator:aab5576c4cdfa09927d4f4491b51c9a8c inherit pro_attribs_classAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classLivingBeing"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classLivingBeing')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classLivingBeing.html">LivingBeing</a></td></tr>
-<tr class="memitem:a5007230d07e60ebd845dfd87ddc4a5e0 inherit pro_attribs_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="a5007230d07e60ebd845dfd87ddc4a5e0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a5007230d07e60ebd845dfd87ddc4a5e0">x</a></td></tr>
-<tr class="memdesc:a5007230d07e60ebd845dfd87ddc4a5e0 inherit pro_attribs_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">posisi X dari mahluk hidup <br /></td></tr>
+<tr class="memitem:a5007230d07e60ebd845dfd87ddc4a5e0 inherit pro_attribs_classLivingBeing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a5007230d07e60ebd845dfd87ddc4a5e0">x</a></td></tr>
+<tr class="memdesc:a5007230d07e60ebd845dfd87ddc4a5e0 inherit pro_attribs_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">posisi X dari mahluk hidup  <a href="classLivingBeing.html#a5007230d07e60ebd845dfd87ddc4a5e0">More...</a><br /></td></tr>
 <tr class="separator:a5007230d07e60ebd845dfd87ddc4a5e0 inherit pro_attribs_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8a9e6124ef52ea0554bc14e20b7486 inherit pro_attribs_classLivingBeing"><td class="memItemLeft" align="right" valign="top"><a id="a3c8a9e6124ef52ea0554bc14e20b7486"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a3c8a9e6124ef52ea0554bc14e20b7486">y</a></td></tr>
-<tr class="memdesc:a3c8a9e6124ef52ea0554bc14e20b7486 inherit pro_attribs_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">posisi Y dari mahluk hidup <br /></td></tr>
+<tr class="memitem:a3c8a9e6124ef52ea0554bc14e20b7486 inherit pro_attribs_classLivingBeing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLivingBeing.html#a3c8a9e6124ef52ea0554bc14e20b7486">y</a></td></tr>
+<tr class="memdesc:a3c8a9e6124ef52ea0554bc14e20b7486 inherit pro_attribs_classLivingBeing"><td class="mdescLeft">&#160;</td><td class="mdescRight">posisi Y dari mahluk hidup  <a href="classLivingBeing.html#a3c8a9e6124ef52ea0554bc14e20b7486">More...</a><br /></td></tr>
 <tr class="separator:a3c8a9e6124ef52ea0554bc14e20b7486 inherit pro_attribs_classLivingBeing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classMilkProducingAnimal"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classMilkProducingAnimal')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classMilkProducingAnimal.html">MilkProducingAnimal</a></td></tr>
-<tr class="memitem:ad31582ea9ea4eedd26753c1d9a7bbf46 inherit pro_attribs_classMilkProducingAnimal"><td class="memItemLeft" align="right" valign="top"><a id="ad31582ea9ea4eedd26753c1d9a7bbf46"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>haveMilk</b></td></tr>
-<tr class="separator:ad31582ea9ea4eedd26753c1d9a7bbf46 inherit pro_attribs_classMilkProducingAnimal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classLamb.html" title="Lamb adalah salah satu binatang dalam game.">Lamb</a> adalah salah satu binatang dalam game. </p>
@@ -266,7 +273,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>haveMilk</b></td></tr
 </div><div class="memdoc">
 
 <p>Konstruk <a class="el" href="classLamb.html" title="Lamb adalah salah satu binatang dalam game.">Lamb</a> dengan parametered location, dan bunyi defaultnya. </p>
-<p><a class="el" href="classLamb.html" title="Lamb adalah salah satu binatang dalam game.">Lamb</a> akan memanggil konstruktor <a class="el" href="classAnimal.html" title="Base class berbagai macam binatang di game.">Animal</a> dengan parameter bunyi "Mooo"</p>
+<p><a class="el" href="classLamb.html" title="Lamb adalah salah satu binatang dalam game.">Lamb</a> akan memanggil konstruktor <a class="el" href="classAnimal.html" title="Base class berbagai macam binatang di game.">Animal</a> dengan parameter bunyi "Baaa"</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_x</td><td>posisi x <a class="el" href="classLamb.html" title="Lamb adalah salah satu binatang dalam game.">Lamb</a> </td></tr>
@@ -277,8 +284,99 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>haveMilk</b></td></tr
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>LivingBeing/<a class="el" href="Lamb_8h_source.html">Lamb.h</a></li>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8d124576991b4291726469d982109f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d124576991b4291726469d982109f1c">&#9670;&nbsp;</a></span>Die()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Lamb::Die </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>diedOfHunger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If hungerMeter = 0 "Hewan laper ampe mati" else "Hewan disembelih b". </p>
+
+<p>Implements <a class="el" href="classAnimal.html#a65d7e4861ae9e03ee37d6ca276f6e234">Animal</a>.</p>
+
+</div>
+</div>
+<a id="a838d93f30c461ae0fc3e2a7e1076b621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838d93f30c461ae0fc3e2a7e1076b621">&#9670;&nbsp;</a></span>Interact()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Lamb::Interact </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method interaksi player dengan hewan <br  />
+ </p>
+
+<p>Reimplemented from <a class="el" href="classMilkProducingAnimal.html#a4c950777374d718cb7d791817bd4aa7b">MilkProducingAnimal</a>.</p>
+
+</div>
+</div>
+<a id="ab94ac52144e2727d4d3d1528ddb7021c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab94ac52144e2727d4d3d1528ddb7021c">&#9670;&nbsp;</a></span>MoveRandom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Lamb::MoveRandom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. </p>
+
+<p>Reimplemented from <a class="el" href="classMeatProducingAnimal.html#ad8ea1fd640278ec5039829f28f9b8b49">MeatProducingAnimal</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>include/LivingBeing/<a class="el" href="Lamb_8h_source.html">Lamb.h</a></li>
+<li>src/LivingBeing/<a class="el" href="Lamb_8cpp.html">Lamb.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

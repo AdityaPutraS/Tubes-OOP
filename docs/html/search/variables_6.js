@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../classLivingBeing.html#a5007230d07e60ebd845dfd87ddc4a5e0',1,'LivingBeing']]]
+  ['name',['name',['../classProduct.html#acc9bddcf74112d85a6dc231db2269b8d',1,'Product']]]
 ];

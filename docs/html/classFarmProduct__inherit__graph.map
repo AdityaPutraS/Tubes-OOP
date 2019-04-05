@@ -1,0 +1,15 @@
+<map id="FarmProduct" name="FarmProduct">
+<area shape="rect" id="node1" title="FarmProduct adalah base class dari segala FarmProduct (produk dari hewan) di game." alt="" coords="690,233,807,325"/>
+<area shape="rect" id="node3" href="$classChickenEgg.html" title="ChickenEgg adalah salah satu FarmProduct dalam game." alt="" coords="5,373,119,465"/>
+<area shape="rect" id="node4" href="$classChickenMeat.html" title="ChickenMeat adalah salah satu FarmProduct dalam game." alt="" coords="143,373,261,465"/>
+<area shape="rect" id="node5" href="$classCowMeat.html" title="CowMeat adalah salah satu FarmProduct dalam game." alt="" coords="286,373,385,465"/>
+<area shape="rect" id="node6" href="$classCowMilk.html" title="CowMilk adalah salah satu FarmProduct dalam game." alt="" coords="409,373,502,465"/>
+<area shape="rect" id="node7" href="$classDiplodocusEgg.html" title="DiplodocusEgg adalah salah satu FarmProduct dalam game." alt="" coords="526,373,657,465"/>
+<area shape="rect" id="node8" href="$classDiplodocusMeat.html" title="DiplodocusMeat adalah salah satu FarmProduct dalam game." alt="" coords="681,373,817,465"/>
+<area shape="rect" id="node9" href="$classLambMeat.html" title="LambMeat adalah salah satu FarmProduct dalam game." alt="" coords="841,373,944,465"/>
+<area shape="rect" id="node10" href="$classLambMilk.html" title="LambMilk adalah salah satu FarmProduct dalam game." alt="" coords="969,373,1067,465"/>
+<area shape="rect" id="node11" href="$classPlatypusEgg.html" title="PlatypusEgg adalah salah satu FarmProduct dalam game." alt="" coords="1092,373,1208,465"/>
+<area shape="rect" id="node12" href="$classSalmonEgg.html" title="SalmonEgg adalah salah satu FarmProduct dalam game." alt="" coords="1233,373,1342,465"/>
+<area shape="rect" id="node13" href="$classSalmonMeat.html" title="SalmonMeat adalah salah satu FarmProduct dalam game." alt="" coords="1366,373,1481,465"/>
+<area shape="rect" id="node2" href="$classProduct.html" title="Product adalah base class dari segala FarmProduct dan SideProduct." alt="" coords="696,5,801,185"/>
+</map>

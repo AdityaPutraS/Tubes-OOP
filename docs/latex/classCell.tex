@@ -9,24 +9,46 @@
 
 {\ttfamily \#include $<$Cell.\+h$>$}
 
-Inheritance diagram for Cell\+:\begin{figure}[H]
+
+
+Inheritance diagram for Cell\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classCell}
+\includegraphics[width=350pt]{classCell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cell\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classCell__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classCell_a394510643e8664cf12b5efaf5cb99f71}\label{classCell_a394510643e8664cf12b5efaf5cb99f71}} 
 \mbox{\hyperlink{classCell_a394510643e8664cf12b5efaf5cb99f71}{Cell}} ()
 \begin{DoxyCompactList}\small\item\em Default constructor \mbox{\hyperlink{classCell}{Cell}}, position -\/1,-\/1, tapi di render di 0,0 dengan char \textquotesingle{}-\/\textquotesingle{}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classCell_a8aff0e3bf85a1690c4424aaf28df5da0}{Cell}} (\mbox{\hyperlink{classPoint}{Point}} \+\_\+pos, char \+\_\+render\+Char)
 \item 
-\mbox{\Hypertarget{classCell_adb435a236584c42c0ffc77b67e2decc7}\label{classCell_adb435a236584c42c0ffc77b67e2decc7}} 
 \mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classCell_adb435a236584c42c0ffc77b67e2decc7}{get\+Point}} () const
 \begin{DoxyCompactList}\small\item\em return posisi cell berada sebagai point \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCell_a2bf0de61827c10b7153dcebb84b47988}{set\+Pos}} (\mbox{\hyperlink{classPoint}{Point}} \+\_\+pos)
+\item 
+virtual bool \mbox{\hyperlink{classCell_a6b084db2e56d57684ed811081ae0547f}{is\+Barn}} () const
+\item 
+virtual bool \mbox{\hyperlink{classCell_a176bb076ddf2ac942cdb9ae2c29ce1ce}{is\+Coop}} () const
+\item 
+virtual bool \mbox{\hyperlink{classCell_a832662a443f852b8f5fc00fee0490838}{is\+Grassland}} () const
+\item 
+virtual bool \mbox{\hyperlink{classCell_a367645d13a08483318add37b9279b297}{is\+Mixer}} () const
+\item 
+virtual bool \mbox{\hyperlink{classCell_af58fd73fbe72c6f397abee0235f5da32}{is\+Truck}} () const
+\item 
+virtual bool \mbox{\hyperlink{classCell_a94fe833b86b1de4af182b55ae2b719c9}{is\+Well}} () const
 \end{DoxyCompactItemize}
 
 
@@ -39,10 +61,20 @@ M. Khairul Makirin
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCell_a394510643e8664cf12b5efaf5cb99f71}\label{classCell_a394510643e8664cf12b5efaf5cb99f71}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor \mbox{\hyperlink{classCell}{Cell}}, position -\/1,-\/1, tapi di render di 0,0 dengan char \textquotesingle{}-\/\textquotesingle{}. 
+
 \mbox{\Hypertarget{classCell_a8aff0e3bf85a1690c4424aaf28df5da0}\label{classCell_a8aff0e3bf85a1690c4424aaf28df5da0}} 
 \index{Cell@{Cell}!Cell@{Cell}}
 \index{Cell@{Cell}!Cell@{Cell}}
-\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{\+\_\+pos,  }\item[{char}]{\+\_\+render\+Char }\end{DoxyParamCaption})}
 
 
@@ -55,6 +87,76 @@ M. Khairul Makirin
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCell_adb435a236584c42c0ffc77b67e2decc7}\label{classCell_adb435a236584c42c0ffc77b67e2decc7}} 
+\index{Cell@{Cell}!getPoint@{getPoint}}
+\index{getPoint@{getPoint}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getPoint()}{getPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} Cell\+::get\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+return posisi cell berada sebagai point 
+
+\mbox{\Hypertarget{classCell_a6b084db2e56d57684ed811081ae0547f}\label{classCell_a6b084db2e56d57684ed811081ae0547f}} 
+\index{Cell@{Cell}!isBarn@{isBarn}}
+\index{isBarn@{isBarn}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isBarn()}{isBarn()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Barn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classBarn_a716f3e1ecf4d4d37fe934d29425841a1}{Barn}}.
+
+\mbox{\Hypertarget{classCell_a176bb076ddf2ac942cdb9ae2c29ce1ce}\label{classCell_a176bb076ddf2ac942cdb9ae2c29ce1ce}} 
+\index{Cell@{Cell}!isCoop@{isCoop}}
+\index{isCoop@{isCoop}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isCoop()}{isCoop()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Coop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCoop_af611b31347d3a8cf2304af22ecbfc450}{Coop}}.
+
+\mbox{\Hypertarget{classCell_a832662a443f852b8f5fc00fee0490838}\label{classCell_a832662a443f852b8f5fc00fee0490838}} 
+\index{Cell@{Cell}!isGrassland@{isGrassland}}
+\index{isGrassland@{isGrassland}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isGrassland()}{isGrassland()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Grassland (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classGrassland_ac4f00629f20061d2ec9f792a42f7315c}{Grassland}}.
+
+\mbox{\Hypertarget{classCell_a367645d13a08483318add37b9279b297}\label{classCell_a367645d13a08483318add37b9279b297}} 
+\index{Cell@{Cell}!isMixer@{isMixer}}
+\index{isMixer@{isMixer}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isMixer()}{isMixer()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Mixer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classMixer_a38143845a39960d80fe769ad0755559c}{Mixer}}.
+
+\mbox{\Hypertarget{classCell_af58fd73fbe72c6f397abee0235f5da32}\label{classCell_af58fd73fbe72c6f397abee0235f5da32}} 
+\index{Cell@{Cell}!isTruck@{isTruck}}
+\index{isTruck@{isTruck}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isTruck()}{isTruck()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Truck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classTruck_a2df8865e21b29de21b2d3ba6a51ad1ce}{Truck}}.
+
+\mbox{\Hypertarget{classCell_a94fe833b86b1de4af182b55ae2b719c9}\label{classCell_a94fe833b86b1de4af182b55ae2b719c9}} 
+\index{Cell@{Cell}!isWell@{isWell}}
+\index{isWell@{isWell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{isWell()}{isWell()}}
+{\footnotesize\ttfamily bool Cell\+::is\+Well (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classWell_ab91c1cca726fd92f68911daaf869695a}{Well}}.
+
 \mbox{\Hypertarget{classCell_a2bf0de61827c10b7153dcebb84b47988}\label{classCell_a2bf0de61827c10b7153dcebb84b47988}} 
 \index{Cell@{Cell}!setPos@{setPos}}
 \index{setPos@{setPos}!Cell@{Cell}}
@@ -68,6 +170,7 @@ M. Khairul Makirin
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Cell/Cell.\+h\end{DoxyCompactItemize}
+include/\+Cell/\mbox{\hyperlink{Cell_8h}{Cell.\+h}}\item 
+src/\+Cell/\mbox{\hyperlink{Cell_8cpp}{Cell.\+cpp}}\end{DoxyCompactItemize}

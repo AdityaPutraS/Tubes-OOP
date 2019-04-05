@@ -14,19 +14,19 @@ bool MilkProducingAnimal::MoveRandom()
     {
         srand(World::GetInstance()->getTick());
         randDir = static_cast<direction>(rand() % 5 + 1);
-        if (randDir == up && World::GetInstance()->getLand(x, y - 1)->isGrassland())
+        if (randDir == up && World::GetInstance()->getLand(x, y - 1)->isGrassland()&& y > 0)
         {
             moveValid = true;
         }
-        else if (randDir == down && World::GetInstance()->getLand(x, y + 1)->isGrassland())
+        else if (randDir == down && y < World::GetInstance()->getSize().getOrdinat() && World::GetInstance()->getLand(x, y + 1)->isGrassland())
         {
             moveValid = true;
         }
-        else if (randDir == left && World::GetInstance()->getLand(x - 1, y)->isGrassland())
+        else if (randDir == left && x>0 && World::GetInstance()->getLand(x - 1, y)->isGrassland())
         {
             moveValid = true;
         }
-        else if (randDir == right && World::GetInstance()->getLand(x + 1, y)->isGrassland())
+        else if (randDir == right && x < World::GetInstance()->getSize().getAbsis() && World::GetInstance()->getLand(x + 1, y)->isGrassland())
         {
             moveValid = true;
         }

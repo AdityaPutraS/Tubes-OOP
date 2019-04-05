@@ -1,13 +1,15 @@
 #include "LivingBeing/Player.h"
 #include "LivingBeing/Animal.h"
+#include "World.h"
 
 Player *Player::player_instance = new Player(3, 3, 100, 0);
 
 /**
  * \brief Constructor Player dengan predefined location, water, and money, dan tas ukuran default
  */
-Player::Player() : tas()
+Player::Player()
 {
+    tas = new LinkedList<Product*>();
     x = 0;
     y = 0;
     water = 100;
@@ -20,8 +22,9 @@ Player::Player() : tas()
  * \param _water jumlah water yang dibawa player
  * \param _money jumlah uang yang dibawa player, default =0
  */
-Player::Player(int _x, int _y, int _water, int _money) : tas(), LivingBeing(_x, _y, 'P')
+Player::Player(int _x, int _y, int _water, int _money) :  LivingBeing(_x, _y, 'P')
 {
+    tas = new LinkedList<Product*>();
     x = _x;
     y = _y;
     water = _water;
@@ -58,49 +61,14 @@ void Player::SetPos(Point pos)
 
 //METHOD
 /**
- * \brief dipanggil saat command Talk Player dengan Animal, membunyikan suara animal
- */
-void Player::TalkWith(Animal &animalia)
-{
-}
-/**
- * \brief Interaksi Player dengan Animal, mengambil Milk atau Egg
- * \note Hanya dapat digunakan ke MilkProducingAnimal atau EggProducingAnimal
- */
-void Player::InteractWith(Animal &animalia)
-{
-}
-/**
- * \brief Interaksi Player dengan Facility, jika valid:
- * Well: Mengisi air yang dibawa player (int water)
- * Truck: Menjual semua Product yang ada pada inventori player
- * Mixer: Mengolah FarmProduct menjadi SideProduct, sesuai dengan resepnya
- * \note terdapat implementasi validasi posisi Player
- */
-void Player::InteractWith(Facility &facilitia)
-{
-    facilitia.interact();
-}
-/**
  * \brief Player menyembelih Animal, lalu mendapatFarmProduct berupa Meat dari Animal yang disembelih
  * dan dimasukkan ke list inventori
  * \note Hanya dapat digunakan ke MeatProducingAnimal
  */
-void Player::Kill(Animal &animalia)
+void Player::Kill(Animal *animalia)
 {
-    animalia.Die(true);
-}
-/**
- * \brief Interaksi Player dengan Cell, menumbuhkan rumput sebagai makanan dari Animal, mengurangi water sebanyak 1
- * \note terdapat implementasi validasi sudah ada rumput atau tidak
- */
-void Player::Grow(Land &l)
-{
-    if (l.isGrassland() && water > 0 && !l.hasGrass())
-    {
-        l.setGrass(true);
-        water--;
-    }
+    World::GetInstance()->hapusAnimal(animalia);
+    animalia->Die(true);
 }
 
 void Player::AddInventory(Product *_p)
@@ -128,6 +96,12 @@ int Player::SearchInventory(string productName)
         }
     }
     return -1;
+}
+
+void Player::DelInventory(int i)
+{
+    delete tas->getLinkedList(i).getIsi();
+    tas->getLinkedList(i).removeThis();
 }
 LinkedList<Product *>* Player::getTas()
 {

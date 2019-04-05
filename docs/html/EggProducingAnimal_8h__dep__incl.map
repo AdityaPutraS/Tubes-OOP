@@ -1,0 +1,14 @@
+<map id="include/LivingBeing/EggProducingAnimal.h" name="include/LivingBeing/EggProducingAnimal.h">
+<area shape="rect" id="node1" title=" " alt="" coords="538,5,697,47"/>
+<area shape="rect" id="node2" href="$Chicken_8h.html" title=" " alt="" coords="709,95,843,136"/>
+<area shape="rect" id="node6" href="$Diplodocus_8h.html" title=" " alt="" coords="233,95,367,136"/>
+<area shape="rect" id="node8" href="$Landsalmon_8h.html" title=" " alt="" coords="391,95,526,136"/>
+<area shape="rect" id="node10" href="$Platypus_8h.html" title=" " alt="" coords="550,95,685,136"/>
+<area shape="rect" id="node12" href="$EggProducingAnimal_8cpp.html" title=" " alt="" coords="867,95,1063,136"/>
+<area shape="rect" id="node3" href="$AllAnimal_8h.html" title=" " alt="" coords="471,184,606,225"/>
+<area shape="rect" id="node5" href="$Chicken_8cpp.html" title=" " alt="" coords="845,191,1033,218"/>
+<area shape="rect" id="node4" href="$mainGame_8cpp.html" title=" " alt="" coords="473,273,605,300"/>
+<area shape="rect" id="node7" href="$Diplodocus_8cpp.html" title=" " alt="" coords="5,191,211,218"/>
+<area shape="rect" id="node9" href="$LandSalmon_8cpp.html" title=" " alt="" coords="235,191,447,218"/>
+<area shape="rect" id="node11" href="$Platypus_8cpp.html" title=" " alt="" coords="630,191,821,218"/>
+</map>

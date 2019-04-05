@@ -63,6 +63,7 @@ class World {
          */
         static World* world_instance;
         
+        
         /**
          * \brief Constructor World, Singleton Pattern maka di private agar user tidak bisa
          * menciptakan objek World lainnya
@@ -139,6 +140,20 @@ class World {
          * \brief Mereturn nilai tick
          */
         int getTick() const;
+        /**
+         * \brief Mengecek jika masih ada hewan yang hidup, jika ada return true
+         * jika tidak return false
+         */
+        bool anybodyAlife();
+        /**
+         * \brief Mengapus semua message yang telah dicetak
+         */
+        void emptyMessage();
+        /**
+         * \brief Menghapus hewan yang disimpan di listAnimal
+         * \param Objek animal yang ingin di hapus
+         */
+        void hapusAnimal(Animal* a);
 };
 
 #endif

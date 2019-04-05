@@ -1,0 +1,5 @@
+<map id="CremeBrulee" name="CremeBrulee">
+<area shape="rect" id="node1" title="CremeBrulee adalah salah satu SideProduct dalam game." alt="" coords="15,505,133,627"/>
+<area shape="rect" id="node2" href="$classSideProduct.html" title="SideProduct adalah base class dari segala SideProduct (produk olahan hasil mix) di game." alt="" coords="5,233,143,457"/>
+<area shape="rect" id="node3" href="$classProduct.html" title="Product adalah base class dari segala FarmProduct dan SideProduct." alt="" coords="21,5,127,185"/>
+</map>

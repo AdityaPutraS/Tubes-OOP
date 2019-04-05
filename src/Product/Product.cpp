@@ -19,8 +19,8 @@ void Product::setPrice(int _price){
 string Product::getName() const{
     return name;
 }
-void Product::setName(int _name){
-    price = _name;
+void Product::setName(string _name){
+    name = _name;
 }
 
 bool Product::operator==(const Product& P) const

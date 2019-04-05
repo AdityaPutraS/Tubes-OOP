@@ -1,0 +1,7 @@
+#include "Animal.h"
+#include "Chicken.h"
+#include "Cow.h"
+#include "Diplodocus.h"
+#include "Lamb.h"
+#include "Landsalmon.h"
+#include "Platypus.h"

@@ -13,13 +13,18 @@
 
 class Barn : public Land{
     public:
-        //CTOR
+        /**
+        * \brief Konstructor default Barn
+        * \param True jika di Barn tersebut ada grass
+        */
         Barn(bool hasGrass);
-
-        //method
+        /**
+        * \brief Mereturn true jika Cell yang sedang ditunjuk merupakan sebuah Barn
+        */
         bool isBarn() const;
-
-        //method
+        /**
+        * \brief Menjadikan Barn mempunyai grass
+        */
         void setGrass(bool hasGrass);
 };
 //b

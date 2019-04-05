@@ -359,6 +359,27 @@ class LinkedList
         }
     }
     /**
+     * \brief Menghapus linkedlist ini, ini menjadi next dari ini
+     */
+    void removeThis()
+    {
+        LinkedList *tempNext = next;
+        LinkedList *tempPrev = prev;
+        if(tempNext != nullptr)
+        {
+            isi = tempNext->getIsi();
+            this->removeNext();
+        }else{
+            if(tempPrev != nullptr)
+            {
+                isi = tempPrev->getIsi();
+                this->removePrev();
+            }else{
+                neff--;
+            }
+        }
+    }
+    /**
      * \brief Mendapatkan elemen dengan indeks ke _indeks relatif terhadap LinkedList sekarang
      * \param _indeks Indeks elemen yang akan didapatkan relatif terhadap indeks sekarang
      */

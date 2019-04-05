@@ -1,0 +1,5 @@
+<map id="DiplodocusMeat" name="DiplodocusMeat">
+<area shape="rect" id="node1" title="DiplodocusMeat adalah salah satu FarmProduct dalam game." alt="" coords="5,373,141,465"/>
+<area shape="rect" id="node2" href="$classFarmProduct.html" title="FarmProduct adalah base class dari segala FarmProduct (produk dari hewan) di game." alt="" coords="15,233,132,325"/>
+<area shape="rect" id="node3" href="$classProduct.html" title="Product adalah base class dari segala FarmProduct dan SideProduct." alt="" coords="21,5,126,185"/>
+</map>

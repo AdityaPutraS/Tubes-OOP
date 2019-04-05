@@ -6,7 +6,7 @@
 
 using namespace std;
 
-vector<SideProduct> Mixer::catalog = vector<SideProduct>();
+vector<SideProduct *> Mixer::catalog = vector<SideProduct *>();
 
 Mixer::Mixer(Point pos) : Facility(pos, 'M')
 {
@@ -14,11 +14,11 @@ Mixer::Mixer(Point pos) : Facility(pos, 'M')
 
 SideProduct *Mixer::mix(vector<Product> bahan)
 {
-    for (SideProduct sp : catalog)
+    for (SideProduct *sp : catalog)
     {
-        if (sp.canMake(bahan))
+        if (sp->canMake(bahan))
         {
-            return &sp;
+            return sp;
         }
     }
     return nullptr;
@@ -26,12 +26,12 @@ SideProduct *Mixer::mix(vector<Product> bahan)
 
 void Mixer::initCatalog()
 {
-    catalog.push_back(BeefRolade());
-    catalog.push_back(BlueFeather());
-    catalog.push_back(CheeseSteakOmelette());
-    catalog.push_back(CremeBrulee());
-    catalog.push_back(Lasagna());
-    catalog.push_back(STMJ());
+    catalog.push_back(new BeefRolade());
+    catalog.push_back(new BlueFeather());
+    catalog.push_back(new CheeseSteakOmelette());
+    catalog.push_back(new CremeBrulee());
+    catalog.push_back(new Lasagna());
+    catalog.push_back(new STMJ());
 }
 
 bool Mixer::isMixer() const
@@ -43,8 +43,8 @@ void Mixer::interact()
 {
     World::GetInstance()->addMsg("Masukkan banyak product yang");
     World::GetInstance()->addMsg("mau di Mix");
-    int n;
     Tampilan::GetInstance()->clearLayar();
+    World::GetInstance()->renderAll();
     string inputUser;
     inputUser = Tampilan::GetInstance()->readStringTable(0, 23, 11, 1, 1, 0);
     for (int i = 0; i < inputUser.size(); i++)
@@ -52,7 +52,10 @@ void Mixer::interact()
         inputUser[i] = tolower(inputUser[i]);
     }
     int n = stoi(inputUser);
+    World::GetInstance()->addMsg("Silahkan masukan input");
+    World::GetInstance()->addMsg("nama bahan yang mau di mix");
     vector<Product> bahanInput;
+    vector<int> noBahanDiInven;
     for (int i = 0; i < n; i++)
     {
         Tampilan::GetInstance()->clearLayar();
@@ -67,6 +70,7 @@ void Mixer::interact()
         if (letakBahan != -1)
         {
             bahanInput.push_back(*Player::GetInstance()->GetInventory(letakBahan));
+            noBahanDiInven.push_back(letakBahan);
         }
     }
     if (bahanInput.size() != n)
@@ -87,6 +91,13 @@ void Mixer::interact()
         {
             Player::GetInstance()->AddInventory(ptrSP);
             World::GetInstance()->addMsg("Sukses mix");
+            //Hapus dari inventory
+            int k = 0;
+            for (int i : noBahanDiInven)
+            {
+                Player::GetInstance()->DelInventory(i-k);
+                k++;
+            }
         }
     }
 }

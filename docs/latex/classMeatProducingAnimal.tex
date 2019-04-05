@@ -9,20 +9,38 @@
 
 {\ttfamily \#include $<$Meat\+Producing\+Animal.\+h$>$}
 
-Inheritance diagram for Meat\+Producing\+Animal\+:\begin{figure}[H]
+
+
+Inheritance diagram for Meat\+Producing\+Animal\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.888889cm]{classMeatProducingAnimal}
+\includegraphics[width=350pt]{classMeatProducingAnimal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Meat\+Producing\+Animal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMeatProducingAnimal__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classMeatProducingAnimal_a6d4d1eeff935695331bae48fd17fb4e1}{Meat\+Producing\+Animal}} (int \+\_\+x, int \+\_\+y, string \+\_\+animal\+Sound)
+\mbox{\hyperlink{classMeatProducingAnimal_a991339d44efe1794b5db469119410fe5}{Meat\+Producing\+Animal}} (int \+\_\+x, int \+\_\+y, string \+\_\+animal\+Sound, char \+\_\+rep\+Char, int \mbox{\hyperlink{classAnimal_aea509702bc376ce7faabb267fa6695c2}{max\+Hunger}})
 \begin{DoxyCompactList}\small\item\em Constructor \mbox{\hyperlink{classMeatProducingAnimal}{Meat\+Producing\+Animal}} dengan parametered location dan animal\+Sound. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classMeatProducingAnimal_a650fb47769f851ca11171d217bf78ef6}\label{classMeatProducingAnimal_a650fb47769f851ca11171d217bf78ef6}} 
-void \mbox{\hyperlink{classMeatProducingAnimal_a650fb47769f851ca11171d217bf78ef6}{Die\+And\+Give\+Meat}} ()
-\begin{DoxyCompactList}\small\item\em Die\+And\+Give\+Meat akan men-\/\+D\+T\+OR kan \mbox{\hyperlink{classMeatProducingAnimal}{Meat\+Producing\+Animal}} dan memasukkan daging $<$\+Nama animal$>$=\char`\"{}\char`\"{}$>$ ke list inventori \mbox{\hyperlink{classPlayer}{Player}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classMeatProducingAnimal_a9bdf3cd9d135f893fee414439d2be211}{Die}} ()
+\item 
+void \mbox{\hyperlink{classMeatProducingAnimal_ae92fb1a5cad0977e9e2c141597aae4cb}{Interact}} ()
+\begin{DoxyCompactList}\small\item\em Method interaksi player dengan hewan ~\newline
+ \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classMeatProducingAnimal_a007fa49a7579839da8402243a581b143}{is\+Meat\+PA}} () const
+\item 
+virtual bool \mbox{\hyperlink{classMeatProducingAnimal_ad8ea1fd640278ec5039829f28f9b8b49}{Move\+Random}} ()
+\begin{DoxyCompactList}\small\item\em Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -35,11 +53,11 @@ Ahmad Rizal Alifio
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classMeatProducingAnimal_a6d4d1eeff935695331bae48fd17fb4e1}\label{classMeatProducingAnimal_a6d4d1eeff935695331bae48fd17fb4e1}} 
+\mbox{\Hypertarget{classMeatProducingAnimal_a991339d44efe1794b5db469119410fe5}\label{classMeatProducingAnimal_a991339d44efe1794b5db469119410fe5}} 
 \index{MeatProducingAnimal@{MeatProducingAnimal}!MeatProducingAnimal@{MeatProducingAnimal}}
 \index{MeatProducingAnimal@{MeatProducingAnimal}!MeatProducingAnimal@{MeatProducingAnimal}}
 \doxysubsubsection{\texorpdfstring{MeatProducingAnimal()}{MeatProducingAnimal()}}
-{\footnotesize\ttfamily Meat\+Producing\+Animal\+::\+Meat\+Producing\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{string}]{\+\_\+animal\+Sound }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Meat\+Producing\+Animal\+::\+Meat\+Producing\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{string}]{\+\_\+animal\+Sound,  }\item[{char}]{\+\_\+rep\+Char,  }\item[{int}]{max\+Hunger }\end{DoxyParamCaption})}
 
 
 
@@ -56,6 +74,59 @@ Constructor \mbox{\hyperlink{classMeatProducingAnimal}{Meat\+Producing\+Animal}}
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMeatProducingAnimal_a9bdf3cd9d135f893fee414439d2be211}\label{classMeatProducingAnimal_a9bdf3cd9d135f893fee414439d2be211}} 
+\index{MeatProducingAnimal@{MeatProducingAnimal}!Die@{Die}}
+\index{Die@{Die}!MeatProducingAnimal@{MeatProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily virtual void Meat\+Producing\+Animal\+::\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classMeatProducingAnimal_ae92fb1a5cad0977e9e2c141597aae4cb}\label{classMeatProducingAnimal_ae92fb1a5cad0977e9e2c141597aae4cb}} 
+\index{MeatProducingAnimal@{MeatProducingAnimal}!Interact@{Interact}}
+\index{Interact@{Interact}!MeatProducingAnimal@{MeatProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Meat\+Producing\+Animal\+::\+Interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Method interaksi player dengan hewan ~\newline
+ 
+
+
+
+Implements \mbox{\hyperlink{classAnimal_aa620e55ec419fc9b20d983d933b5ee11}{Animal}}.
+
+\mbox{\Hypertarget{classMeatProducingAnimal_a007fa49a7579839da8402243a581b143}\label{classMeatProducingAnimal_a007fa49a7579839da8402243a581b143}} 
+\index{MeatProducingAnimal@{MeatProducingAnimal}!isMeatPA@{isMeatPA}}
+\index{isMeatPA@{isMeatPA}!MeatProducingAnimal@{MeatProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{isMeatPA()}{isMeatPA()}}
+{\footnotesize\ttfamily virtual bool Meat\+Producing\+Animal\+::is\+Meat\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classAnimal_a82d7db6ef46cc9aaa1525e12c191731f}{Animal}}.
+
+\mbox{\Hypertarget{classMeatProducingAnimal_ad8ea1fd640278ec5039829f28f9b8b49}\label{classMeatProducingAnimal_ad8ea1fd640278ec5039829f28f9b8b49}} 
+\index{MeatProducingAnimal@{MeatProducingAnimal}!MoveRandom@{MoveRandom}}
+\index{MoveRandom@{MoveRandom}!MeatProducingAnimal@{MeatProducingAnimal}}
+\doxysubsubsection{\texorpdfstring{MoveRandom()}{MoveRandom()}}
+{\footnotesize\ttfamily bool Meat\+Producing\+Animal\+::\+Move\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. 
+
+
+
+Implements \mbox{\hyperlink{classAnimal_a65c3b860ed2cdc5f8d330a40c401a80c}{Animal}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classDiplodocus_aa2b70e85b8d2570b6c1be0d526a9449f}{Diplodocus}}, \mbox{\hyperlink{classCow_aa3a6d83cb2677b775f69e18f8c3037e8}{Cow}}, \mbox{\hyperlink{classLamb_ab94ac52144e2727d4d3d1528ddb7021c}{Lamb}}, \mbox{\hyperlink{classChicken_ad18c44fcb57948ebd8a62e3298f615cc}{Chicken}}, and \mbox{\hyperlink{classLandsalmon_a7664d5828ba5186845b178da15aa2ec2}{Landsalmon}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Living\+Being/Meat\+Producing\+Animal.\+h\end{DoxyCompactItemize}
+include/\+Living\+Being/\mbox{\hyperlink{MeatProducingAnimal_8h}{Meat\+Producing\+Animal.\+h}}\item 
+src/\+Living\+Being/\mbox{\hyperlink{MeatProducingAnimal_8cpp}{Meat\+Producing\+Animal.\+cpp}}\end{DoxyCompactItemize}

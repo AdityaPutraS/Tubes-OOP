@@ -9,17 +9,36 @@
 
 {\ttfamily \#include $<$Diplodocus.\+h$>$}
 
-Inheritance diagram for Diplodocus\+:\begin{figure}[H]
+
+
+Inheritance diagram for Diplodocus\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=5.000000cm]{classDiplodocus}
+\includegraphics[height=550pt]{classDiplodocus__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Diplodocus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classDiplodocus__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classDiplodocus_a2cd0b6edd66f2bbacb3b8eb141836901}{Diplodocus}} (int \+\_\+x, int \+\_\+y)
-\begin{DoxyCompactList}\small\item\em Konstruk \mbox{\hyperlink{classDiplodocus}{Diplodocus}} dengan parametered location, dan bunyi defaultnya. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Konstruk \mbox{\hyperlink{classDiplodocus}{Diplodocus}} dengan parametered location, dan bunyi defaultnya. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDiplodocus_aa2b70e85b8d2570b6c1be0d526a9449f}{Move\+Random}} ()
+\begin{DoxyCompactList}\small\item\em Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDiplodocus_a9ffe601dfb363c4817c531126ba3388f}{Die}} (bool died\+Of\+Hunger)
+\begin{DoxyCompactList}\small\item\em If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDiplodocus_a659190a607f437674a12c4225bc4e120}{Interact}} ()
+\begin{DoxyCompactList}\small\item\em Method interaksi player dengan hewan ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -58,6 +77,53 @@ Konstruk \mbox{\hyperlink{classDiplodocus}{Diplodocus}} dengan parametered locat
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDiplodocus_a9ffe601dfb363c4817c531126ba3388f}\label{classDiplodocus_a9ffe601dfb363c4817c531126ba3388f}} 
+\index{Diplodocus@{Diplodocus}!Die@{Die}}
+\index{Die@{Die}!Diplodocus@{Diplodocus}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Diplodocus\+::\+Die (\begin{DoxyParamCaption}\item[{bool}]{died\+Of\+Hunger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. 
+
+
+
+Implements \mbox{\hyperlink{classAnimal_a65d7e4861ae9e03ee37d6ca276f6e234}{Animal}}.
+
+\mbox{\Hypertarget{classDiplodocus_a659190a607f437674a12c4225bc4e120}\label{classDiplodocus_a659190a607f437674a12c4225bc4e120}} 
+\index{Diplodocus@{Diplodocus}!Interact@{Interact}}
+\index{Interact@{Interact}!Diplodocus@{Diplodocus}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Diplodocus\+::\+Interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method interaksi player dengan hewan ~\newline
+ 
+
+
+
+Reimplemented from \mbox{\hyperlink{classEggProducingAnimal_a017775649b983bc9c4bb7bbb9f07cb3c}{Egg\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classDiplodocus_aa2b70e85b8d2570b6c1be0d526a9449f}\label{classDiplodocus_aa2b70e85b8d2570b6c1be0d526a9449f}} 
+\index{Diplodocus@{Diplodocus}!MoveRandom@{MoveRandom}}
+\index{MoveRandom@{MoveRandom}!Diplodocus@{Diplodocus}}
+\doxysubsubsection{\texorpdfstring{MoveRandom()}{MoveRandom()}}
+{\footnotesize\ttfamily bool Diplodocus\+::\+Move\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classMeatProducingAnimal_ad8ea1fd640278ec5039829f28f9b8b49}{Meat\+Producing\+Animal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Living\+Being/Diplodocus.\+h\end{DoxyCompactItemize}
+include/\+Living\+Being/\mbox{\hyperlink{Diplodocus_8h}{Diplodocus.\+h}}\item 
+src/\+Living\+Being/\mbox{\hyperlink{Diplodocus_8cpp}{Diplodocus.\+cpp}}\end{DoxyCompactItemize}

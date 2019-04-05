@@ -15,13 +15,17 @@
 
 class Coop : public Land{
     public:
-        //CTOR
+        /**
+        * \brief Konstruktor default Coop
+        */
         Coop(bool hasGrass);
-
-        //method
+        /**
+        * \brief Mereturn true jika Cell yang sedang ditunjuk merupakan sebuah Coop
+        */
         bool isCoop() const;
-
-        //method
+        /**
+        * \brief Menjadikan Coop mempunyai grass
+        */
         void setGrass(bool hasGrass);
 
 };

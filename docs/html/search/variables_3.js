@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['listlb',['listLB',['../classWorld.html#a719284875fa878248cedcb3267b188c4',1,'World']]]
+  ['ingredients',['ingredients',['../classSideProduct.html#a031fa3383ee23a02e0f29639b66a39d2',1,'SideProduct']]],
+  ['isalive',['isAlive',['../classAnimal.html#aab5576c4cdfa09927d4f4491b51c9a8c',1,'Animal']]]
 ];

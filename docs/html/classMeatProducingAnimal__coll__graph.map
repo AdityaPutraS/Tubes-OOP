@@ -1,0 +1,6 @@
+<map id="MeatProducingAnimal" name="MeatProducingAnimal">
+<area shape="rect" id="node1" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="5,792,175,928"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="Base class berbagai macam binatang di game." alt="" coords="19,417,161,744"/>
+<area shape="rect" id="node3" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="35,189,145,369"/>
+<area shape="rect" id="node4" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="25,5,155,141"/>
+</map>

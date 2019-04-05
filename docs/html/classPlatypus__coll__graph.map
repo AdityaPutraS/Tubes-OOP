@@ -1,0 +1,7 @@
+<map id="Platypus" name="Platypus">
+<area shape="rect" id="node1" title="Platypus adalah salah satu binatang dalam game." alt="" coords="40,976,133,1083"/>
+<area shape="rect" id="node2" href="$classEggProducingAnimal.html" title="EggProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="5,792,168,928"/>
+<area shape="rect" id="node3" href="$classAnimal.html" title="Base class berbagai macam binatang di game." alt="" coords="16,417,157,744"/>
+<area shape="rect" id="node4" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="32,189,141,369"/>
+<area shape="rect" id="node5" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="21,5,152,141"/>
+</map>

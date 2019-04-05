@@ -1,0 +1,24 @@
+<map id="Renderable" name="Renderable">
+<area shape="rect" id="node1" title="Class sebagai base semua class yang bisa di render." alt="" coords="616,5,747,141"/>
+<area shape="rect" id="node2" href="$classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="482,189,593,399"/>
+<area shape="rect" id="node11" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="865,204,975,384"/>
+<area shape="rect" id="node3" href="$classFacility.html" title="Facility adalah parent kelas untuk fasilitas seperti Mixer, Well, dan Truck." alt="" coords="207,564,292,656"/>
+<area shape="rect" id="node7" href="$classLand.html" title="Land adalah base class untuk Barn, Coop, dan Grassland." alt="" coords="488,549,587,671"/>
+<area shape="rect" id="node4" href="$classMixer.html" title="Mixer adalah kelas untuk objek Mixer yang berguna mencampur barang player." alt="" coords="5,821,128,972"/>
+<area shape="rect" id="node5" href="$classTruck.html" title="Truck adalah kelas untuk objek truck yang berguna menjual barang player." alt="" coords="152,843,237,950"/>
+<area shape="rect" id="node6" href="$classWell.html" title="Well adalah kelas untuk objek Well yang berguna mengubah nilai water player menjadi 100." alt="" coords="261,843,347,950"/>
+<area shape="rect" id="node8" href="$classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung." alt="" coords="371,843,466,950"/>
+<area shape="rect" id="node9" href="$classCoop.html" title="Coop adalah kelas untuk mengembangbiakan hewan kombong." alt="" coords="490,843,585,950"/>
+<area shape="rect" id="node10" href="$classGrassland.html" title="Grassland adalah kelas untuk mengembangbiakan hewan ternak." alt="" coords="609,843,719,950"/>
+<area shape="rect" id="node12" href="$classAnimal.html" title="Base class berbagai macam binatang di game." alt="" coords="849,447,991,773"/>
+<area shape="rect" id="node22" href="$classPlayer.html" title="Player adalah class dari perwujudan pemain di game." alt="" coords="1015,469,1153,751"/>
+<area shape="rect" id="node13" href="$classEggProducingAnimal.html" title="EggProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="744,829,907,965"/>
+<area shape="rect" id="node18" href="$classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="931,829,1101,965"/>
+<area shape="rect" id="node21" href="$classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk" alt="" coords="1125,829,1289,965"/>
+<area shape="rect" id="node14" href="$classChicken.html" title="Chicken adalah salah satu binatang dalam game." alt="" coords="661,1020,784,1141"/>
+<area shape="rect" id="node15" href="$classDiplodocus.html" title="Diplodocus adalah salah satu binatang dalam game." alt="" coords="808,1020,931,1141"/>
+<area shape="rect" id="node16" href="$classLandsalmon.html" title="Landsalmon adalah salah satu binatang dalam game." alt="" coords="955,1020,1077,1141"/>
+<area shape="rect" id="node17" href="$classPlatypus.html" title="Platypus adalah salah satu binatang dalam game." alt="" coords="544,1027,637,1134"/>
+<area shape="rect" id="node19" href="$classCow.html" title="Cow adalah salah satu binatang dalam game." alt="" coords="1101,1020,1224,1141"/>
+<area shape="rect" id="node20" href="$classLamb.html" title="Lamb adalah salah satu binatang dalam game." alt="" coords="1248,1020,1371,1141"/>
+</map>

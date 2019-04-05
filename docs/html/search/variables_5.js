@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['width',['width',['../classWorld.html#ad441f046e49a274301278a3cf9339944',1,'World']]],
-  ['world_5finstance',['world_instance',['../classWorld.html#ac7cdc71bd9c3356a91efea6c50d3cd29',1,'World']]]
+  ['mapland',['mapLand',['../classWorld.html#a0a969b5dda5a5527f7a7b41b2f3322db',1,'World']]],
+  ['maxhunger',['maxHunger',['../classAnimal.html#aea509702bc376ce7faabb267fa6695c2',1,'Animal']]]
 ];

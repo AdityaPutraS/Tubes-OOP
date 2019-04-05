@@ -1,0 +1,8 @@
+<map id="Land" name="Land">
+<area shape="rect" id="node1" title="Land adalah base class untuk Barn, Coop, dan Grassland." alt="" coords="122,447,221,568"/>
+<area shape="rect" id="node4" href="$classBarn.html" title="Barn adalah kelas untuk mengembangbiakan hewan lumbung." alt="" coords="5,616,100,723"/>
+<area shape="rect" id="node5" href="$classCoop.html" title="Coop adalah kelas untuk mengembangbiakan hewan kombong." alt="" coords="124,616,219,723"/>
+<area shape="rect" id="node6" href="$classGrassland.html" title="Grassland adalah kelas untuk mengembangbiakan hewan ternak." alt="" coords="243,616,353,723"/>
+<area shape="rect" id="node2" href="$classCell.html" title="Cell adalah Base class untuk Land dan Facility." alt="" coords="116,189,227,399"/>
+<area shape="rect" id="node3" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="106,5,237,141"/>
+</map>

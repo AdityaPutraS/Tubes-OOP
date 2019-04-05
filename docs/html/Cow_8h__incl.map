@@ -1,0 +1,13 @@
+<map id="include/LivingBeing/Cow.h" name="include/LivingBeing/Cow.h">
+<area shape="rect" id="node1" title=" " alt="" coords="372,5,507,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="391,468,463,495"/>
+<area shape="rect" id="node3" href="$MeatProducingAnimal_8h.html" title=" " alt="" coords="178,95,338,121"/>
+<area shape="rect" id="node11" href="$MilkProducingAnimal_8h.html" title=" " alt="" coords="362,95,517,121"/>
+<area shape="rect" id="node4" href="$Animal_8h.html" title=" " alt="" coords="360,169,433,196"/>
+<area shape="rect" id="node5" href="$LivingBeing_8h.html" title=" " alt="" coords="315,244,415,271"/>
+<area shape="rect" id="node6" href="$Renderable_8h.html" title=" " alt="" coords="266,319,365,345"/>
+<area shape="rect" id="node7" href="$frontend_8h.html" title=" " alt="" coords="56,393,191,420"/>
+<area shape="rect" id="node8" title=" " alt="" coords="84,468,163,495"/>
+<area shape="rect" id="node9" title=" " alt="" coords="187,468,251,495"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,468,60,495"/>
+</map>

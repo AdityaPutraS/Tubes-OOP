@@ -9,50 +9,69 @@ Base class berbagai macam binatang di game.
 
 {\ttfamily \#include $<$Animal.\+h$>$}
 
-Inheritance diagram for Animal\+:\begin{figure}[H]
+
+
+Inheritance diagram for Animal\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=5.833333cm]{classAnimal}
+\includegraphics[width=350pt]{classAnimal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimal__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classAnimal_a0895c473f5d1a074447a1a0a9f1def61}{Animal}} (int \+\_\+x, int \+\_\+y, string \+\_\+animal\+Sound)
+\mbox{\hyperlink{classAnimal_a228bff8e07067a6700ac35dedcb85b98}{Animal}} (int \+\_\+x, int \+\_\+y, string \+\_\+animal\+Sound, char \+\_\+rep\+Char, int \+\_\+max\+Hunger)
 \begin{DoxyCompactList}\small\item\em Constructor dengan parameter posisi binatang dan suaranya. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_af615c696ba45912dffeb7a149f531238}\label{classAnimal_af615c696ba45912dffeb7a149f531238}} 
 int \mbox{\hyperlink{classAnimal_af615c696ba45912dffeb7a149f531238}{Get\+Hunger\+Meter}} ()
 \begin{DoxyCompactList}\small\item\em Getter hunger\+Meter. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_a3656294d99761e2e7786eb592cecfd15}\label{classAnimal_a3656294d99761e2e7786eb592cecfd15}} 
 string \mbox{\hyperlink{classAnimal_a3656294d99761e2e7786eb592cecfd15}{Get\+Animal\+Sound}} ()
 \begin{DoxyCompactList}\small\item\em Getter animal\+Sound. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_a4d6894b8b33ce7cf3d6dc42c64f06b76}\label{classAnimal_a4d6894b8b33ce7cf3d6dc42c64f06b76}} 
 void \mbox{\hyperlink{classAnimal_a4d6894b8b33ce7cf3d6dc42c64f06b76}{Set\+Hunger\+Meter}} (int \+\_\+hunger\+Meter)
 \begin{DoxyCompactList}\small\item\em Setter hunger\+Meter. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_af8fdb2bbb3d2ae4d1f70b850a71e42ab}\label{classAnimal_af8fdb2bbb3d2ae4d1f70b850a71e42ab}} 
 void \mbox{\hyperlink{classAnimal_af8fdb2bbb3d2ae4d1f70b850a71e42ab}{Set\+Animal\+Sound}} (string \+\_\+animal\+Sound)
 \begin{DoxyCompactList}\small\item\em Setter animal\+Sound. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_a24334feff002c33f5513902546daba9b}\label{classAnimal_a24334feff002c33f5513902546daba9b}} 
 void \mbox{\hyperlink{classAnimal_a24334feff002c33f5513902546daba9b}{Getting\+Hungry}} ()
 \begin{DoxyCompactList}\small\item\em Mengurangi Hunger\+Meter tiap 1 tick, dipanggil tiap tick selesai. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_acdae3d782b7451096932296179860a12}\label{classAnimal_acdae3d782b7451096932296179860a12}} 
-void \mbox{\hyperlink{classAnimal_acdae3d782b7451096932296179860a12}{Eat}} ()
+bool \mbox{\hyperlink{classAnimal_ac14c048fdb431e3dc027abe9e5c711ec}{Eat}} ()
 \begin{DoxyCompactList}\small\item\em Hewan makan grass yang ada di petaknya. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_a133f57a24e15741829d677c2602effd2}\label{classAnimal_a133f57a24e15741829d677c2602effd2}} 
 void \mbox{\hyperlink{classAnimal_a133f57a24e15741829d677c2602effd2}{Sound\+The\+Animal}} ()
 \begin{DoxyCompactList}\small\item\em Mengeluarkan suara hewan. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_a6af0b13eae4ab6758df22b3ac0908ecc}\label{classAnimal_a6af0b13eae4ab6758df22b3ac0908ecc}} 
-void \mbox{\hyperlink{classAnimal_a6af0b13eae4ab6758df22b3ac0908ecc}{Die}} ()
-\begin{DoxyCompactList}\small\item\em If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classAnimal_a65d7e4861ae9e03ee37d6ca276f6e234}{Die}} (bool died\+Of\+Hunger)=0
+\begin{DoxyCompactList}\small\item\em If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAnimal_aa620e55ec419fc9b20d983d933b5ee11}{Interact}} ()=0
+\begin{DoxyCompactList}\small\item\em Method interaksi player dengan hewan ~\newline
+ \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classAnimal_a82d7db6ef46cc9aaa1525e12c191731f}{is\+Meat\+PA}} () const
+\item 
+virtual bool \mbox{\hyperlink{classAnimal_a5aaf330f2e3619018b13ff65b9ce0afb}{is\+Milk\+PA}} () const
+\item 
+virtual bool \mbox{\hyperlink{classAnimal_ab2953c6793a65f037eff345c0fce5ab6}{is\+Egg\+PA}} () const
+\item 
+bool \mbox{\hyperlink{classAnimal_aa196af80a3473391089239ab6bf7421c}{masih\+Hidup}} ()
+\item 
+virtual bool \mbox{\hyperlink{classAnimal_a65c3b860ed2cdc5f8d330a40c401a80c}{Move\+Random}} ()=0
+\begin{DoxyCompactList}\small\item\em Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAnimal_a7b6c94227fc60ac60d5506fb5e857fd9}\label{classAnimal_a7b6c94227fc60ac60d5506fb5e857fd9}} 
+int \mbox{\hyperlink{classAnimal_aea509702bc376ce7faabb267fa6695c2}{max\+Hunger}}
+\begin{DoxyCompactList}\small\item\em Maksimum tingkat kelaparan hewan. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classAnimal_a7b6c94227fc60ac60d5506fb5e857fd9}{hunger\+Meter}}
-\begin{DoxyCompactList}\small\item\em Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value 5. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAnimal_a085fb0d50fc205ef61891e33c8dcb737}\label{classAnimal_a085fb0d50fc205ef61891e33c8dcb737}} 
+\begin{DoxyCompactList}\small\item\em Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value max\+Hunger. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{classAnimal_a085fb0d50fc205ef61891e33c8dcb737}{animal\+Sound}}
-\begin{DoxyCompactList}\small\item\em Suara hewan, berbeda tiap animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Suara hewan, berbeda tiap animal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAnimal_aab5576c4cdfa09927d4f4491b51c9a8c}{is\+Alive}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -67,11 +86,11 @@ Ahmad Rizal Alifio
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classAnimal_a0895c473f5d1a074447a1a0a9f1def61}\label{classAnimal_a0895c473f5d1a074447a1a0a9f1def61}} 
+\mbox{\Hypertarget{classAnimal_a228bff8e07067a6700ac35dedcb85b98}\label{classAnimal_a228bff8e07067a6700ac35dedcb85b98}} 
 \index{Animal@{Animal}!Animal@{Animal}}
 \index{Animal@{Animal}!Animal@{Animal}}
 \doxysubsubsection{\texorpdfstring{Animal()}{Animal()}}
-{\footnotesize\ttfamily Animal\+::\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{string}]{\+\_\+animal\+Sound }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Animal\+::\+Animal (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{string}]{\+\_\+animal\+Sound,  }\item[{char}]{\+\_\+rep\+Char,  }\item[{int}]{\+\_\+max\+Hunger }\end{DoxyParamCaption})}
 
 
 
@@ -88,6 +107,198 @@ Constructor dengan parameter posisi binatang dan suaranya.
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimal_a65d7e4861ae9e03ee37d6ca276f6e234}\label{classAnimal_a65d7e4861ae9e03ee37d6ca276f6e234}} 
+\index{Animal@{Animal}!Die@{Die}}
+\index{Die@{Die}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily virtual void Animal\+::\+Die (\begin{DoxyParamCaption}\item[{bool}]{died\+Of\+Hunger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. 
+
+
+
+Implemented in \mbox{\hyperlink{classChicken_abf52b83d514418b3d84298be4b5c2777}{Chicken}}, \mbox{\hyperlink{classDiplodocus_a9ffe601dfb363c4817c531126ba3388f}{Diplodocus}}, \mbox{\hyperlink{classCow_a9d10f371f2bec6fee69c49badca3a850}{Cow}}, \mbox{\hyperlink{classLamb_a8d124576991b4291726469d982109f1c}{Lamb}}, \mbox{\hyperlink{classLandsalmon_a79397e94ec3bd1fd47ff7a84698d2285}{Landsalmon}}, and \mbox{\hyperlink{classPlatypus_aed1d3c1b8a9cef963ed0efc52c062a2a}{Platypus}}.
+
+\mbox{\Hypertarget{classAnimal_ac14c048fdb431e3dc027abe9e5c711ec}\label{classAnimal_ac14c048fdb431e3dc027abe9e5c711ec}} 
+\index{Animal@{Animal}!Eat@{Eat}}
+\index{Eat@{Eat}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily bool Animal\+::\+Eat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Hewan makan grass yang ada di petaknya. 
+
+\mbox{\Hypertarget{classAnimal_a3656294d99761e2e7786eb592cecfd15}\label{classAnimal_a3656294d99761e2e7786eb592cecfd15}} 
+\index{Animal@{Animal}!GetAnimalSound@{GetAnimalSound}}
+\index{GetAnimalSound@{GetAnimalSound}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{GetAnimalSound()}{GetAnimalSound()}}
+{\footnotesize\ttfamily string Animal\+::\+Get\+Animal\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter animal\+Sound. 
+
+\mbox{\Hypertarget{classAnimal_af615c696ba45912dffeb7a149f531238}\label{classAnimal_af615c696ba45912dffeb7a149f531238}} 
+\index{Animal@{Animal}!GetHungerMeter@{GetHungerMeter}}
+\index{GetHungerMeter@{GetHungerMeter}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{GetHungerMeter()}{GetHungerMeter()}}
+{\footnotesize\ttfamily int Animal\+::\+Get\+Hunger\+Meter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter hunger\+Meter. 
+
+\mbox{\Hypertarget{classAnimal_a24334feff002c33f5513902546daba9b}\label{classAnimal_a24334feff002c33f5513902546daba9b}} 
+\index{Animal@{Animal}!GettingHungry@{GettingHungry}}
+\index{GettingHungry@{GettingHungry}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{GettingHungry()}{GettingHungry()}}
+{\footnotesize\ttfamily void Animal\+::\+Getting\+Hungry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mengurangi Hunger\+Meter tiap 1 tick, dipanggil tiap tick selesai. 
+
+$<$ Mengurangi Hunger\+Meter tiap 1 tick, dipanggil tiap tick selesai\mbox{\Hypertarget{classAnimal_aa620e55ec419fc9b20d983d933b5ee11}\label{classAnimal_aa620e55ec419fc9b20d983d933b5ee11}} 
+\index{Animal@{Animal}!Interact@{Interact}}
+\index{Interact@{Interact}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily virtual void Animal\+::\+Interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method interaksi player dengan hewan ~\newline
+ 
+
+
+
+Implemented in \mbox{\hyperlink{classChicken_a66d141db66af10b97105ec0ad3ac9660}{Chicken}}, \mbox{\hyperlink{classDiplodocus_a659190a607f437674a12c4225bc4e120}{Diplodocus}}, \mbox{\hyperlink{classCow_a92e3c78859aff94a3f6c99e916e0402b}{Cow}}, \mbox{\hyperlink{classLamb_a838d93f30c461ae0fc3e2a7e1076b621}{Lamb}}, \mbox{\hyperlink{classLandsalmon_a7d26e7986c3676fbbabf053ddf55a86b}{Landsalmon}}, \mbox{\hyperlink{classPlatypus_a6046cba1d239ee45b0703d436dda50e0}{Platypus}}, \mbox{\hyperlink{classEggProducingAnimal_a017775649b983bc9c4bb7bbb9f07cb3c}{Egg\+Producing\+Animal}}, \mbox{\hyperlink{classMilkProducingAnimal_a4c950777374d718cb7d791817bd4aa7b}{Milk\+Producing\+Animal}}, and \mbox{\hyperlink{classMeatProducingAnimal_ae92fb1a5cad0977e9e2c141597aae4cb}{Meat\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classAnimal_ab2953c6793a65f037eff345c0fce5ab6}\label{classAnimal_ab2953c6793a65f037eff345c0fce5ab6}} 
+\index{Animal@{Animal}!isEggPA@{isEggPA}}
+\index{isEggPA@{isEggPA}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{isEggPA()}{isEggPA()}}
+{\footnotesize\ttfamily virtual bool Animal\+::is\+Egg\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classEggProducingAnimal_ab81775e4cb461ff112262b7501a2eae0}{Egg\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classAnimal_a82d7db6ef46cc9aaa1525e12c191731f}\label{classAnimal_a82d7db6ef46cc9aaa1525e12c191731f}} 
+\index{Animal@{Animal}!isMeatPA@{isMeatPA}}
+\index{isMeatPA@{isMeatPA}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{isMeatPA()}{isMeatPA()}}
+{\footnotesize\ttfamily virtual bool Animal\+::is\+Meat\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classMeatProducingAnimal_a007fa49a7579839da8402243a581b143}{Meat\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classAnimal_a5aaf330f2e3619018b13ff65b9ce0afb}\label{classAnimal_a5aaf330f2e3619018b13ff65b9ce0afb}} 
+\index{Animal@{Animal}!isMilkPA@{isMilkPA}}
+\index{isMilkPA@{isMilkPA}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{isMilkPA()}{isMilkPA()}}
+{\footnotesize\ttfamily virtual bool Animal\+::is\+Milk\+PA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classMilkProducingAnimal_ad9e1831c3de2a416324f7f2e871a092b}{Milk\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classAnimal_aa196af80a3473391089239ab6bf7421c}\label{classAnimal_aa196af80a3473391089239ab6bf7421c}} 
+\index{Animal@{Animal}!masihHidup@{masihHidup}}
+\index{masihHidup@{masihHidup}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{masihHidup()}{masihHidup()}}
+{\footnotesize\ttfamily bool Animal\+::masih\+Hidup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimal_a65c3b860ed2cdc5f8d330a40c401a80c}\label{classAnimal_a65c3b860ed2cdc5f8d330a40c401a80c}} 
+\index{Animal@{Animal}!MoveRandom@{MoveRandom}}
+\index{MoveRandom@{MoveRandom}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{MoveRandom()}{MoveRandom()}}
+{\footnotesize\ttfamily virtual bool Animal\+::\+Move\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. 
+
+
+
+Implemented in \mbox{\hyperlink{classDiplodocus_aa2b70e85b8d2570b6c1be0d526a9449f}{Diplodocus}}, \mbox{\hyperlink{classCow_aa3a6d83cb2677b775f69e18f8c3037e8}{Cow}}, \mbox{\hyperlink{classLamb_ab94ac52144e2727d4d3d1528ddb7021c}{Lamb}}, \mbox{\hyperlink{classChicken_ad18c44fcb57948ebd8a62e3298f615cc}{Chicken}}, \mbox{\hyperlink{classEggProducingAnimal_a039c852908b9eefb9097e5a31809ad97}{Egg\+Producing\+Animal}}, \mbox{\hyperlink{classLandsalmon_a7664d5828ba5186845b178da15aa2ec2}{Landsalmon}}, \mbox{\hyperlink{classMilkProducingAnimal_aeec8a2637cd3ddc5efe62782e7815aa3}{Milk\+Producing\+Animal}}, and \mbox{\hyperlink{classMeatProducingAnimal_ad8ea1fd640278ec5039829f28f9b8b49}{Meat\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classAnimal_af8fdb2bbb3d2ae4d1f70b850a71e42ab}\label{classAnimal_af8fdb2bbb3d2ae4d1f70b850a71e42ab}} 
+\index{Animal@{Animal}!SetAnimalSound@{SetAnimalSound}}
+\index{SetAnimalSound@{SetAnimalSound}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{SetAnimalSound()}{SetAnimalSound()}}
+{\footnotesize\ttfamily void Animal\+::\+Set\+Animal\+Sound (\begin{DoxyParamCaption}\item[{string}]{\+\_\+animal\+Sound }\end{DoxyParamCaption})}
+
+
+
+Setter animal\+Sound. 
+
+\mbox{\Hypertarget{classAnimal_a4d6894b8b33ce7cf3d6dc42c64f06b76}\label{classAnimal_a4d6894b8b33ce7cf3d6dc42c64f06b76}} 
+\index{Animal@{Animal}!SetHungerMeter@{SetHungerMeter}}
+\index{SetHungerMeter@{SetHungerMeter}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{SetHungerMeter()}{SetHungerMeter()}}
+{\footnotesize\ttfamily void Animal\+::\+Set\+Hunger\+Meter (\begin{DoxyParamCaption}\item[{int}]{\+\_\+hunger\+Meter }\end{DoxyParamCaption})}
+
+
+
+Setter hunger\+Meter. 
+
+\mbox{\Hypertarget{classAnimal_a133f57a24e15741829d677c2602effd2}\label{classAnimal_a133f57a24e15741829d677c2602effd2}} 
+\index{Animal@{Animal}!SoundTheAnimal@{SoundTheAnimal}}
+\index{SoundTheAnimal@{SoundTheAnimal}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{SoundTheAnimal()}{SoundTheAnimal()}}
+{\footnotesize\ttfamily void Animal\+::\+Sound\+The\+Animal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mengeluarkan suara hewan. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAnimal_a085fb0d50fc205ef61891e33c8dcb737}\label{classAnimal_a085fb0d50fc205ef61891e33c8dcb737}} 
+\index{Animal@{Animal}!animalSound@{animalSound}}
+\index{animalSound@{animalSound}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{animalSound}{animalSound}}
+{\footnotesize\ttfamily string Animal\+::animal\+Sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Suara hewan, berbeda tiap animal. 
+
+\mbox{\Hypertarget{classAnimal_a7b6c94227fc60ac60d5506fb5e857fd9}\label{classAnimal_a7b6c94227fc60ac60d5506fb5e857fd9}} 
+\index{Animal@{Animal}!hungerMeter@{hungerMeter}}
+\index{hungerMeter@{hungerMeter}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{hungerMeter}{hungerMeter}}
+{\footnotesize\ttfamily int Animal\+::hunger\+Meter\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value max\+Hunger. 
+
+\mbox{\Hypertarget{classAnimal_aab5576c4cdfa09927d4f4491b51c9a8c}\label{classAnimal_aab5576c4cdfa09927d4f4491b51c9a8c}} 
+\index{Animal@{Animal}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{isAlive}{isAlive}}
+{\footnotesize\ttfamily bool Animal\+::is\+Alive\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAnimal_aea509702bc376ce7faabb267fa6695c2}\label{classAnimal_aea509702bc376ce7faabb267fa6695c2}} 
+\index{Animal@{Animal}!maxHunger@{maxHunger}}
+\index{maxHunger@{maxHunger}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{maxHunger}{maxHunger}}
+{\footnotesize\ttfamily int Animal\+::max\+Hunger\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Maksimum tingkat kelaparan hewan. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Living\+Being/Animal.\+h\end{DoxyCompactItemize}
+include/\+Living\+Being/\mbox{\hyperlink{Animal_8h}{Animal.\+h}}\item 
+src/\+Living\+Being/\mbox{\hyperlink{Animal_8cpp}{Animal.\+cpp}}\end{DoxyCompactItemize}

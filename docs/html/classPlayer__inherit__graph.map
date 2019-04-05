@@ -1,0 +1,5 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node1" title="Player adalah class dari perwujudan pemain di game." alt="" coords="5,417,143,700"/>
+<area shape="rect" id="node2" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="19,189,129,369"/>
+<area shape="rect" id="node3" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="9,5,139,141"/>
+</map>

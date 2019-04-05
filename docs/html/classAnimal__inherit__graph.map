@@ -1,0 +1,14 @@
+<map id="Animal" name="Animal">
+<area shape="rect" id="node1" title="Base class berbagai macam binatang di game." alt="" coords="407,417,548,744"/>
+<area shape="rect" id="node4" href="$classEggProducingAnimal.html" title="EggProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="205,792,368,928"/>
+<area shape="rect" id="node9" href="$classMeatProducingAnimal.html" title="MeatProducingAnimal adalah class turunan Animal berupa kategori Animal yang menghasilkan Egg di game." alt="" coords="393,792,562,928"/>
+<area shape="rect" id="node12" href="$classMilkProducingAnimal.html" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk" alt="" coords="586,792,750,928"/>
+<area shape="rect" id="node2" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="423,189,532,369"/>
+<area shape="rect" id="node3" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="412,5,543,141"/>
+<area shape="rect" id="node5" href="$classChicken.html" title="Chicken adalah salah satu binatang dalam game." alt="" coords="123,976,245,1097"/>
+<area shape="rect" id="node6" href="$classDiplodocus.html" title="Diplodocus adalah salah satu binatang dalam game." alt="" coords="269,976,392,1097"/>
+<area shape="rect" id="node7" href="$classLandsalmon.html" title="Landsalmon adalah salah satu binatang dalam game." alt="" coords="416,976,539,1097"/>
+<area shape="rect" id="node8" href="$classPlatypus.html" title="Platypus adalah salah satu binatang dalam game." alt="" coords="5,983,99,1090"/>
+<area shape="rect" id="node10" href="$classCow.html" title="Cow adalah salah satu binatang dalam game." alt="" coords="563,976,685,1097"/>
+<area shape="rect" id="node11" href="$classLamb.html" title="Lamb adalah salah satu binatang dalam game." alt="" coords="709,976,832,1097"/>
+</map>

@@ -13,7 +13,10 @@
 
 class Grassland : public Land{
     public:
-        //CTOR
+        /**
+        * \brief Konstruktor default Grassland
+        * \param Apakah di Grassland terdapat grass
+        */
         Grassland(bool hasGrass);
         //METHOD
         /** 

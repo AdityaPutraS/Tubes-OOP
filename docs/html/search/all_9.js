@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kill',['Kill',['../classPlayer.html#a0c74d6bd430490417bb34e9abc233bb7',1,'Player']]]
+  ['kill',['Kill',['../classPlayer.html#a2838f13b6617888c5abe405f5167967f',1,'Player']]]
 ];

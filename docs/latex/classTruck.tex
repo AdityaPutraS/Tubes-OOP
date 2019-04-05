@@ -1,23 +1,84 @@
 \hypertarget{classTruck}{}\doxysection{Truck Class Reference}
 \label{classTruck}\index{Truck@{Truck}}
-Inheritance diagram for Truck\+:\begin{figure}[H]
+
+
+\mbox{\hyperlink{classTruck}{Truck}} adalah kelas untuk objek truck yang berguna menjual barang player.  
+
+
+
+
+{\ttfamily \#include $<$Truck.\+h$>$}
+
+
+
+Inheritance diagram for Truck\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classTruck}
+\includegraphics[height=550pt]{classTruck__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Truck\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classTruck__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classTruck_a32610a125a2178949f046810760116b7}\label{classTruck_a32610a125a2178949f046810760116b7}} 
-{\bfseries Truck} (int x, int y)
+\mbox{\hyperlink{classTruck_ac0a0083ab3f9de6059eea5ba99afab03}{Truck}} (\mbox{\hyperlink{classPoint}{Point}} pos)
 \item 
-\mbox{\Hypertarget{classTruck_ade3385f07d9db954d329e3d5de180f2e}\label{classTruck_ade3385f07d9db954d329e3d5de180f2e}} 
-void {\bfseries interact} ()
+void \mbox{\hyperlink{classTruck_ade3385f07d9db954d329e3d5de180f2e}{interact}} ()
+\item 
+bool \mbox{\hyperlink{classTruck_a2df8865e21b29de21b2d3ba6a51ad1ce}{is\+Truck}} () const
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classTruck}{Truck}} adalah kelas untuk objek truck yang berguna menjual barang player. 
+
+\begin{DoxyAuthor}{Author}
+Aditya Putra S. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTruck_ac0a0083ab3f9de6059eea5ba99afab03}\label{classTruck_ac0a0083ab3f9de6059eea5ba99afab03}} 
+\index{Truck@{Truck}!Truck@{Truck}}
+\index{Truck@{Truck}!Truck@{Truck}}
+\doxysubsubsection{\texorpdfstring{Truck()}{Truck()}}
+{\footnotesize\ttfamily Truck\+::\+Truck (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTruck_ade3385f07d9db954d329e3d5de180f2e}\label{classTruck_ade3385f07d9db954d329e3d5de180f2e}} 
+\index{Truck@{Truck}!interact@{interact}}
+\index{interact@{interact}!Truck@{Truck}}
+\doxysubsubsection{\texorpdfstring{interact()}{interact()}}
+{\footnotesize\ttfamily void Truck\+::interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFacility_a6ce66eaeb6d5f9208186c8e6be9f0f66}{Facility}}.
+
+\mbox{\Hypertarget{classTruck_a2df8865e21b29de21b2d3ba6a51ad1ce}\label{classTruck_a2df8865e21b29de21b2d3ba6a51ad1ce}} 
+\index{Truck@{Truck}!isTruck@{isTruck}}
+\index{isTruck@{isTruck}!Truck@{Truck}}
+\doxysubsubsection{\texorpdfstring{isTruck()}{isTruck()}}
+{\footnotesize\ttfamily bool Truck\+::is\+Truck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCell_af58fd73fbe72c6f397abee0235f5da32}{Cell}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Cell/Facility.\+h\end{DoxyCompactItemize}
+include/\+Cell/\mbox{\hyperlink{Truck_8h}{Truck.\+h}}\item 
+src/\+Cell/\mbox{\hyperlink{Truck_8cpp}{Truck.\+cpp}}\end{DoxyCompactItemize}

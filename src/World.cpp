@@ -99,10 +99,10 @@ void World::renderAll()
     //Inventory
     Tampilan::GetInstance()->printstronpos("Inventory: ", 45, 3);
     Tampilan::GetInstance()->drawtable(45, 4, 31, 14, 1, 1);
-    for (int i = 0; i < Player::GetInstance()->getTas().getNeff(); i++)
+    for (int i = 0; i < Player::GetInstance()->getTas()->getNeff(); i++)
     {
         string s = "- " + Player::GetInstance()->GetInventory(i)->getName();
-        Tampilan::GetInstance()->printStringTable(s, 45, 4, 31, 1, 0, 0);
+        Tampilan::GetInstance()->printStringTable(s, 45, 4, 31, 1, 0, i);
     }
     //Money, Water & Tick
     Tampilan::GetInstance()->printStringTable("Money: ", 45, 18, 9, 1, 0, 0);
@@ -199,7 +199,6 @@ void World::updateAll()
             LA->Eat();
         }
     }
-
 }
 
 vector<Animal *> World::getNearestAnimal(int x, int y)
@@ -253,6 +252,35 @@ vector<Facility *> World::getNearestFacility(int x, int y)
     return hasil;
 }
 
-int World::getTick() const{
+int World::getTick() const
+{
     return tick;
+}
+
+bool World::anybodyAlife()
+{
+    return listAnimal.size() != 0;
+}
+
+void World::emptyMessage()
+{
+    listMsg.erase(listMsg.begin(), listMsg.end());
+}
+
+void World::hapusAnimal(Animal *a)
+{
+    int idxHapus = -1;
+    int idx = 0;
+    for (Animal *la : listAnimal)
+    {
+        if (la->GetX() == a->GetX() && la->GetY() == a->GetY())
+        {
+            idxHapus = idx;
+        }
+        idx += 1;
+    }
+    if (idxHapus != -1)
+    {
+        listAnimal.erase(listAnimal.begin() + idxHapus);
+    }
 }

@@ -1,0 +1,6 @@
+<map id="MilkProducingAnimal" name="MilkProducingAnimal">
+<area shape="rect" id="node1" title="class MilkProducingAnimal adalah tipe Animal dalam game yang menghasilkan Milk" alt="" coords="5,792,169,928"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="Base class berbagai macam binatang di game." alt="" coords="17,417,158,744"/>
+<area shape="rect" id="node3" href="$classLivingBeing.html" title="LivingBeing adalah base class dari segala mahluk di game." alt="" coords="33,189,142,369"/>
+<area shape="rect" id="node4" href="$classRenderable.html" title="Class sebagai base semua class yang bisa di render." alt="" coords="22,5,153,141"/>
+</map>

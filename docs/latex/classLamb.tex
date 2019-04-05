@@ -9,17 +9,36 @@
 
 {\ttfamily \#include $<$Lamb.\+h$>$}
 
-Inheritance diagram for Lamb\+:\begin{figure}[H]
+
+
+Inheritance diagram for Lamb\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=5.000000cm]{classLamb}
+\includegraphics[height=550pt]{classLamb__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Lamb\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLamb__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classLamb_ab74133ef64cd43f3ea1127fb847488d4}{Lamb}} (int \+\_\+x, int \+\_\+y)
-\begin{DoxyCompactList}\small\item\em Konstruk \mbox{\hyperlink{classLamb}{Lamb}} dengan parametered location, dan bunyi defaultnya. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Konstruk \mbox{\hyperlink{classLamb}{Lamb}} dengan parametered location, dan bunyi defaultnya. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLamb_ab94ac52144e2727d4d3d1528ddb7021c}{Move\+Random}} ()
+\begin{DoxyCompactList}\small\item\em Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLamb_a8d124576991b4291726469d982109f1c}{Die}} (bool died\+Of\+Hunger)
+\begin{DoxyCompactList}\small\item\em If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLamb_a838d93f30c461ae0fc3e2a7e1076b621}{Interact}} ()
+\begin{DoxyCompactList}\small\item\em Method interaksi player dengan hewan ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -47,7 +66,7 @@ Ahmad Rizal Alifio
 
 Konstruk \mbox{\hyperlink{classLamb}{Lamb}} dengan parametered location, dan bunyi defaultnya. 
 
-\mbox{\hyperlink{classLamb}{Lamb}} akan memanggil konstruktor \mbox{\hyperlink{classAnimal}{Animal}} dengan parameter bunyi \char`\"{}\+Mooo\char`\"{}
+\mbox{\hyperlink{classLamb}{Lamb}} akan memanggil konstruktor \mbox{\hyperlink{classAnimal}{Animal}} dengan parameter bunyi \char`\"{}\+Baaa\char`\"{}
 
 
 \begin{DoxyParams}{Parameters}
@@ -58,6 +77,53 @@ Konstruk \mbox{\hyperlink{classLamb}{Lamb}} dengan parametered location, dan bun
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLamb_a8d124576991b4291726469d982109f1c}\label{classLamb_a8d124576991b4291726469d982109f1c}} 
+\index{Lamb@{Lamb}!Die@{Die}}
+\index{Die@{Die}!Lamb@{Lamb}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Lamb\+::\+Die (\begin{DoxyParamCaption}\item[{bool}]{died\+Of\+Hunger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+If hunger\+Meter = 0 \char`\"{}\+Hewan laper ampe mati\char`\"{} else \char`\"{}\+Hewan disembelih b\char`\"{}. 
+
+
+
+Implements \mbox{\hyperlink{classAnimal_a65d7e4861ae9e03ee37d6ca276f6e234}{Animal}}.
+
+\mbox{\Hypertarget{classLamb_a838d93f30c461ae0fc3e2a7e1076b621}\label{classLamb_a838d93f30c461ae0fc3e2a7e1076b621}} 
+\index{Lamb@{Lamb}!Interact@{Interact}}
+\index{Interact@{Interact}!Lamb@{Lamb}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Lamb\+::\+Interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method interaksi player dengan hewan ~\newline
+ 
+
+
+
+Reimplemented from \mbox{\hyperlink{classMilkProducingAnimal_a4c950777374d718cb7d791817bd4aa7b}{Milk\+Producing\+Animal}}.
+
+\mbox{\Hypertarget{classLamb_ab94ac52144e2727d4d3d1528ddb7021c}\label{classLamb_ab94ac52144e2727d4d3d1528ddb7021c}} 
+\index{Lamb@{Lamb}!MoveRandom@{MoveRandom}}
+\index{MoveRandom@{MoveRandom}!Lamb@{Lamb}}
+\doxysubsubsection{\texorpdfstring{MoveRandom()}{MoveRandom()}}
+{\footnotesize\ttfamily bool Lamb\+::\+Move\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak, digunakan untuk animal. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classMeatProducingAnimal_ad8ea1fd640278ec5039829f28f9b8b49}{Meat\+Producing\+Animal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Living\+Being/Lamb.\+h\end{DoxyCompactItemize}
+include/\+Living\+Being/\mbox{\hyperlink{Lamb_8h}{Lamb.\+h}}\item 
+src/\+Living\+Being/\mbox{\hyperlink{Lamb_8cpp}{Lamb.\+cpp}}\end{DoxyCompactItemize}

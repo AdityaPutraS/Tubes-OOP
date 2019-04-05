@@ -9,12 +9,54 @@
 
 {\ttfamily \#include $<$Side\+Product.\+h$>$}
 
-Inheritance diagram for Side\+Product\+:\begin{figure}[H]
+
+
+Inheritance diagram for Side\+Product\+:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=1.323877cm]{classSideProduct}
+\includegraphics[width=350pt]{classSideProduct__inherit__graph}
 \end{center}
 \end{figure}
+
+
+Collaboration diagram for Side\+Product\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classSideProduct__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSideProduct_ab9d3731b4f1f6268a315d1f10649f0ee}{Side\+Product}} (string \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Constructor \mbox{\hyperlink{classSideProduct}{Side\+Product}} default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSideProduct_ae88a7e19cba844949ecaebaca59e90dc}{Side\+Product}} (int \+\_\+price, string \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Constructor \mbox{\hyperlink{classSideProduct}{Side\+Product}} dengan parameter harga \mbox{\hyperlink{classSideProduct}{Side\+Product}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSideProduct_ab8ac7e1c3a7fe58f536e201aa14092a7}{Side\+Product}} (\mbox{\hyperlink{classSideProduct}{Side\+Product}} \&)
+\begin{DoxyCompactList}\small\item\em Copy Constructor \mbox{\hyperlink{classSideProduct}{Side\+Product}} dari \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang sudah ada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSideProduct}{Side\+Product}} \& \mbox{\hyperlink{classSideProduct_a384da9b3f1cce4a6ab4434d0346d2b49}{operator=}} (\mbox{\hyperlink{classSideProduct}{Side\+Product}} \&)
+\begin{DoxyCompactList}\small\item\em Operator = untuk meng-\/assign isi \mbox{\hyperlink{classSideProduct}{Side\+Product}} dengan \mbox{\hyperlink{classSideProduct}{Side\+Product}} lain. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSideProduct_a9a54de9d2c9da9ca6ab416f7ae50e75d}{$\sim$\+Side\+Product}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor \mbox{\hyperlink{classSideProduct}{Side\+Product}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSideProduct_a380a7ee9074bdb1d4af44e9fac156472}{show\+Ingredients}} ()
+\begin{DoxyCompactList}\small\item\em show\+Ingredients menampilkan bahan bahan yang dibutuhkan untuk mix menjadi \mbox{\hyperlink{classSideProduct}{Side\+Product}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSideProduct_a0fd1cbbccce9384ba4f5e3e578611936}{set\+Ingredients}} (vector$<$ \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $>$)
+\begin{DoxyCompactList}\small\item\em setter Ingredient untuk meng-\/assign ingredient yang digunakan dalam sebuah \mbox{\hyperlink{classSideProduct}{Side\+Product}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSideProduct_ad54702e10d19e78601993ed5db74a4fa}{add\+Ingredients}} (\mbox{\hyperlink{classFarmProduct}{Farm\+Product}} FP)
+\begin{DoxyCompactList}\small\item\em add\+Ingredient untuk menambahkan sebuah \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} ke dalam Ingredients \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $>$ \& \mbox{\hyperlink{classSideProduct_ad528df1f3be1c5de25ac3c8338832373}{get\+Ingredients}} ()
+\begin{DoxyCompactList}\small\item\em getter Ingredient \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSideProduct_a711188d937c0dada1472a61d458cb9e9}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em getter Type \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSideProduct_a52e15c63a393e838b012f3e670569015}{can\+Make}} (vector$<$ \mbox{\hyperlink{classProduct}{Product}} $>$ \&bahan)
+\begin{DoxyCompactList}\small\item\em cek apakah side product bisa dibuat dengan bahan sesuai parameter \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $>$ \mbox{\hyperlink{classSideProduct_a031fa3383ee23a02e0f29639b66a39d2}{ingredients}}
+\begin{DoxyCompactList}\small\item\em Sebuah list untuk mencatat bahan dasar yang dibutuhkan untuk \mbox{\hyperlink{classSideProduct}{Side\+Product}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -28,6 +70,151 @@ Naufal Aditya D.
 \end{DoxyAuthor}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSideProduct_ab9d3731b4f1f6268a315d1f10649f0ee}\label{classSideProduct_ab9d3731b4f1f6268a315d1f10649f0ee}} 
+\index{SideProduct@{SideProduct}!SideProduct@{SideProduct}}
+\index{SideProduct@{SideProduct}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{SideProduct()}{SideProduct()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Side\+Product\+::\+Side\+Product (\begin{DoxyParamCaption}\item[{string}]{\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Constructor \mbox{\hyperlink{classSideProduct}{Side\+Product}} default. 
+
+\mbox{\Hypertarget{classSideProduct_ae88a7e19cba844949ecaebaca59e90dc}\label{classSideProduct_ae88a7e19cba844949ecaebaca59e90dc}} 
+\index{SideProduct@{SideProduct}!SideProduct@{SideProduct}}
+\index{SideProduct@{SideProduct}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{SideProduct()}{SideProduct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Side\+Product\+::\+Side\+Product (\begin{DoxyParamCaption}\item[{int}]{\+\_\+price,  }\item[{string}]{\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Constructor \mbox{\hyperlink{classSideProduct}{Side\+Product}} dengan parameter harga \mbox{\hyperlink{classSideProduct}{Side\+Product}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+price} & Harga \mbox{\hyperlink{classSideProduct}{Side\+Product}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSideProduct_ab8ac7e1c3a7fe58f536e201aa14092a7}\label{classSideProduct_ab8ac7e1c3a7fe58f536e201aa14092a7}} 
+\index{SideProduct@{SideProduct}!SideProduct@{SideProduct}}
+\index{SideProduct@{SideProduct}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{SideProduct()}{SideProduct()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Side\+Product\+::\+Side\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSideProduct}{Side\+Product}} \&}]{SP }\end{DoxyParamCaption})}
+
+
+
+Copy Constructor \mbox{\hyperlink{classSideProduct}{Side\+Product}} dari \mbox{\hyperlink{classSideProduct}{Side\+Product}} yang sudah ada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Side\+Product\&} & \mbox{\hyperlink{classSideProduct}{Side\+Product}} lain \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSideProduct_a9a54de9d2c9da9ca6ab416f7ae50e75d}\label{classSideProduct_a9a54de9d2c9da9ca6ab416f7ae50e75d}} 
+\index{SideProduct@{SideProduct}!````~SideProduct@{$\sim$SideProduct}}
+\index{````~SideProduct@{$\sim$SideProduct}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{$\sim$SideProduct()}{~SideProduct()}}
+{\footnotesize\ttfamily Side\+Product\+::$\sim$\+Side\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor \mbox{\hyperlink{classSideProduct}{Side\+Product}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSideProduct_ad54702e10d19e78601993ed5db74a4fa}\label{classSideProduct_ad54702e10d19e78601993ed5db74a4fa}} 
+\index{SideProduct@{SideProduct}!addIngredients@{addIngredients}}
+\index{addIngredients@{addIngredients}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{addIngredients()}{addIngredients()}}
+{\footnotesize\ttfamily void Side\+Product\+::add\+Ingredients (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFarmProduct}{Farm\+Product}}}]{FP }\end{DoxyParamCaption})}
+
+
+
+add\+Ingredient untuk menambahkan sebuah \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} ke dalam Ingredients 
+
+\mbox{\Hypertarget{classSideProduct_a52e15c63a393e838b012f3e670569015}\label{classSideProduct_a52e15c63a393e838b012f3e670569015}} 
+\index{SideProduct@{SideProduct}!canMake@{canMake}}
+\index{canMake@{canMake}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{canMake()}{canMake()}}
+{\footnotesize\ttfamily bool Side\+Product\+::can\+Make (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classProduct}{Product}} $>$ \&}]{bahan }\end{DoxyParamCaption})}
+
+
+
+cek apakah side product bisa dibuat dengan bahan sesuai parameter 
+
+\mbox{\Hypertarget{classSideProduct_ad528df1f3be1c5de25ac3c8338832373}\label{classSideProduct_ad528df1f3be1c5de25ac3c8338832373}} 
+\index{SideProduct@{SideProduct}!getIngredients@{getIngredients}}
+\index{getIngredients@{getIngredients}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{getIngredients()}{getIngredients()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $>$ \& Side\+Product\+::get\+Ingredients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter Ingredient 
+
+\mbox{\Hypertarget{classSideProduct_a711188d937c0dada1472a61d458cb9e9}\label{classSideProduct_a711188d937c0dada1472a61d458cb9e9}} 
+\index{SideProduct@{SideProduct}!getType@{getType}}
+\index{getType@{getType}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Side\+Product\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter Type 
+
+\mbox{\Hypertarget{classSideProduct_a384da9b3f1cce4a6ab4434d0346d2b49}\label{classSideProduct_a384da9b3f1cce4a6ab4434d0346d2b49}} 
+\index{SideProduct@{SideProduct}!operator=@{operator=}}
+\index{operator=@{operator=}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSideProduct}{Side\+Product}} \& Side\+Product\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSideProduct}{Side\+Product}} \&}]{SP }\end{DoxyParamCaption})}
+
+
+
+Operator = untuk meng-\/assign isi \mbox{\hyperlink{classSideProduct}{Side\+Product}} dengan \mbox{\hyperlink{classSideProduct}{Side\+Product}} lain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Side\+Product\&} & \mbox{\hyperlink{classSideProduct}{Side\+Product}} lain \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSideProduct_a0fd1cbbccce9384ba4f5e3e578611936}\label{classSideProduct_a0fd1cbbccce9384ba4f5e3e578611936}} 
+\index{SideProduct@{SideProduct}!setIngredients@{setIngredients}}
+\index{setIngredients@{setIngredients}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{setIngredients()}{setIngredients()}}
+{\footnotesize\ttfamily void Side\+Product\+::set\+Ingredients (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classFarmProduct}{Farm\+Product}} $>$}]{FP }\end{DoxyParamCaption})}
+
+
+
+setter Ingredient untuk meng-\/assign ingredient yang digunakan dalam sebuah \mbox{\hyperlink{classSideProduct}{Side\+Product}} 
+
+\mbox{\Hypertarget{classSideProduct_a380a7ee9074bdb1d4af44e9fac156472}\label{classSideProduct_a380a7ee9074bdb1d4af44e9fac156472}} 
+\index{SideProduct@{SideProduct}!showIngredients@{showIngredients}}
+\index{showIngredients@{showIngredients}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{showIngredients()}{showIngredients()}}
+{\footnotesize\ttfamily void Side\+Product\+::show\+Ingredients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+show\+Ingredients menampilkan bahan bahan yang dibutuhkan untuk mix menjadi \mbox{\hyperlink{classSideProduct}{Side\+Product}} 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSideProduct_a031fa3383ee23a02e0f29639b66a39d2}\label{classSideProduct_a031fa3383ee23a02e0f29639b66a39d2}} 
+\index{SideProduct@{SideProduct}!ingredients@{ingredients}}
+\index{ingredients@{ingredients}!SideProduct@{SideProduct}}
+\doxysubsubsection{\texorpdfstring{ingredients}{ingredients}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classFarmProduct}{Farm\+Product}}$>$ Side\+Product\+::ingredients\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sebuah list untuk mencatat bahan dasar yang dibutuhkan untuk \mbox{\hyperlink{classSideProduct}{Side\+Product}}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Product/Side\+Product.\+h\end{DoxyCompactItemize}
+include/\+Product/\mbox{\hyperlink{SideProduct_8h}{Side\+Product.\+h}}\item 
+src/\+Product/\mbox{\hyperlink{SideProduct_8cpp}{Side\+Product.\+cpp}}\end{DoxyCompactItemize}

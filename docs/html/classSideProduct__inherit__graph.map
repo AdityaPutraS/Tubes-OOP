@@ -1,0 +1,10 @@
+<map id="SideProduct" name="SideProduct">
+<area shape="rect" id="node1" title="SideProduct adalah base class dari segala SideProduct (produk olahan hasil mix) di game." alt="" coords="381,233,519,457"/>
+<area shape="rect" id="node3" href="$classBeefRolade.html" title="BeefRolade adalah salah satu SideProduct dalam game." alt="" coords="5,505,116,627"/>
+<area shape="rect" id="node4" href="$classBlueFeather.html" title="BlueFeather adalah salah satu SideProduct dalam game." alt="" coords="141,505,253,627"/>
+<area shape="rect" id="node5" href="$classCheeseSteakOmelette.html" title="CheeseSteakOmelette adalah salah satu SideProduct dalam game." alt="" coords="277,520,452,612"/>
+<area shape="rect" id="node6" href="$classCremeBrulee.html" title="CremeBrulee adalah salah satu SideProduct dalam game." alt="" coords="476,505,595,627"/>
+<area shape="rect" id="node7" href="$classLasagna.html" title="Lasagna adalah salah satu SideProduct dalam game." alt="" coords="619,505,716,627"/>
+<area shape="rect" id="node8" href="$classSTMJ.html" title="STMJ adalah salah satu SideProduct dalam game." alt="" coords="740,505,837,627"/>
+<area shape="rect" id="node2" href="$classProduct.html" title="Product adalah base class dari segala FarmProduct dan SideProduct." alt="" coords="397,5,503,185"/>
+</map>

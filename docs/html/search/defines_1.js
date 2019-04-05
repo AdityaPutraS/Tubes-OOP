@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cellpointer',['cellpointer',['../Cell_8h.html#a5451d2ad18b5876f52fceedf5b3c176a',1,'Cell.h']]],
-  ['cheesesteakomelette_5fh',['CheesesteakOmelette_H',['../CheeseSteakOmelette_8h.html#adb5b157406804f44041bc7fb13629742',1,'CheeseSteakOmelette.h']]],
-  ['cooppointer',['cooppointer',['../Coop_8h.html#a7248504a2afe73336a96754cc6aa484b',1,'Coop.h']]]
+  ['max_5fnext',['MAX_NEXT',['../LinkedList_8h.html#aa2880c1b3aa47d8daf2702242dbde464',1,'LinkedList.h']]],
+  ['max_5fprev',['MAX_PREV',['../LinkedList_8h.html#aaf00b1fe7ef65af515fc71d6d1be79bf',1,'LinkedList.h']]]
 ];
