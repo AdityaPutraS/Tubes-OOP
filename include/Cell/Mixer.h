@@ -26,7 +26,7 @@ class Mixer : public Facility
 
   public:
     Mixer(Point pos);
-    static SideProduct mix(Product P1, Product P2);
+    static SideProduct* mix(vector<Product> bahan);
     void interact();
     static void initCatalog();
     /**

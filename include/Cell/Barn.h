@@ -11,8 +11,6 @@
 
 #include "Land.h"
 
-#define barnpointer Barn*
-
 class Barn : public Land{
     public:
         //CTOR
@@ -20,6 +18,9 @@ class Barn : public Land{
 
         //method
         bool isBarn() const;
+
+        //method
+        void setGrass(bool hasGrass);
 };
 //b
 #endif

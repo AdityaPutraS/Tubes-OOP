@@ -44,6 +44,7 @@ bool Animal::Eat(){
         return false;
     }
 }///< Hewan makan grass yang ada di petaknya
+
 void Animal::SoundTheAnimal(){
     World::GetInstance()->addMsg(animalSound);
 }  ///< Mengeluarkan suara hewan

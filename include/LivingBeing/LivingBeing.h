@@ -25,7 +25,7 @@ class LivingBeing : public Renderable {
          * left = 3
          * right = 4
          */
-        enum direction {up = 1, down, left, right}; 
+        enum direction {up = 1, down, left, right, not_move}; 
         /**
          * \brief Default constructor mahluk hidup, diletakan di -1,-1, tapi di render di 0,0 dengan char '-'
          */

@@ -1,5 +1,6 @@
 #include "LivingBeing/MilkProducingAnimal.h"
 #include "World.h"
+#include <ctime>
 
 MilkProducingAnimal::MilkProducingAnimal(int _x, int _y, string _animalSound, char _repChar, int maxHunger) : Animal(_x, _y, _animalSound, _repChar, maxHunger){
 }
@@ -11,8 +12,8 @@ bool MilkProducingAnimal::MoveRandom()
     direction randDir;
     while (i < 4 && !moveValid)
     {
-        srand(1);
-        randDir = static_cast<direction>(rand() % 4 + 1);
+        srand(World::GetInstance()->getTick());
+        randDir = static_cast<direction>(rand() % 5 + 1);
         if (randDir == up && World::GetInstance()->getLand(x, y - 1)->isGrassland())
         {
             moveValid = true;
@@ -35,5 +36,6 @@ bool MilkProducingAnimal::MoveRandom()
     {
         this->Move(randDir);
     }
+    // World::GetInstance()->addMsg("MilkAnimal Bergerak");
     return moveValid;
 }

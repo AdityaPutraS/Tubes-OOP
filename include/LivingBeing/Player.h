@@ -26,7 +26,7 @@ class Player: public LivingBeing {
         * Implementasi inventori 
         * List yang isinya inventori player, berisi FarmProduct dan SideProduct, Ukuran default = 20
         */
-        LinkedList<Product*> tas; 
+        LinkedList<Product*>* tas; 
         /**
          * \brief Singleton pattern , instance variable dari player
          */
@@ -94,8 +94,14 @@ class Player: public LivingBeing {
          */
         Product* GetInventory(int i);
         /**
+         * \brief Mencari product di tas
+         */
+        int SearchInventory(string productName);
+        /**
          * \brief Getter tas
          */
-        LinkedList<Product*>& getTas();
+        LinkedList<Product*>* getTas();
+        void RemoveTas();
+        void MakeTas();
 };
 #endif

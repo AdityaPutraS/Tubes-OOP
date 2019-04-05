@@ -15,8 +15,8 @@ bool MeatProducingAnimal::MoveRandom()
     direction randDir;
     while (i < 4 && !moveValid)
     {
-        srand(1);
-        randDir = static_cast<direction>(rand() % 4 + 1);
+        srand(World::GetInstance()->getTick());
+        randDir = static_cast<direction>(rand() % 5 + 1);
         if (randDir == up && World::GetInstance()->getLand(x, y - 1)->isBarn())
         {
             moveValid = true;
@@ -39,5 +39,6 @@ bool MeatProducingAnimal::MoveRandom()
     {
         this->Move(randDir);
     }
+    // World::GetInstance()->addMsg("MeatAnimal Bergerak");
     return moveValid;
 }

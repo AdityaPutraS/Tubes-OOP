@@ -12,7 +12,7 @@
 #include "Cell.h"
 
 class Land : public Cell{
-    private:
+    protected:
         bool grass;
 
     public:
@@ -30,8 +30,8 @@ class Land : public Cell{
         //Mengirimkan true jika Land punya grass
         bool hasGrass() const;
 
-        //Menumbuhkan grass pada Land
-        void growGrass();
+        //Menumbuhkan grass pada Land, implementasi di Barn, Coop, dan Grassland
+        virtual void setGrass(bool hasGrass);
 };
 
 #endif

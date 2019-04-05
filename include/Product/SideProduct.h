@@ -69,7 +69,7 @@ class SideProduct: public Product{
         /**
          * \brief cek apakah side product bisa dibuat dengan bahan sesuai parameter
          */
-        bool canMake(vector<FarmProduct>& bahan);
+        bool canMake(vector<Product>& bahan);
 };
 
 #endif

@@ -24,6 +24,8 @@ class Grassland : public Land{
          */
         bool isGrassland() const;
 
+        void setGrass(bool hasGrass);
+
 };
 
 

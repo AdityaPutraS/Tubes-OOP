@@ -98,21 +98,45 @@ void Player::Grow(Land &l)
 {
     if (l.isGrassland() && water > 0 && !l.hasGrass())
     {
-        l.growGrass();
+        l.setGrass(true);
         water--;
     }
 }
 
 void Player::AddInventory(Product *_p)
 {
-    tas.addNext(_p);
+    tas->addNext(_p);
 }
 
 Product *Player::GetInventory(int i)
 {
-    return tas.get(i);
+    return tas->get(i);
 }
-LinkedList<Product *> &Player::getTas()
+
+int Player::SearchInventory(string productName)
+{
+    for(int i = 0; i < tas->getNeff(); i++)
+    {
+        string temp = tas->get(i)->getName();
+        for (int j = 0; j < temp.size(); j++)
+        {
+            temp[j] = tolower(temp[j]);
+        }
+        if(temp == productName)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+LinkedList<Product *>* Player::getTas()
 {
     return tas;
+}
+
+void Player::MakeTas(){
+    tas = new LinkedList<Product*>();
+}
+void Player::RemoveTas(){
+    delete tas;
 }

@@ -135,6 +135,10 @@ class World {
          * \brief Mereturn fasilitas yang ada di atas, kiri, kanan, bawah posisi x,y
          */
         vector<Facility*> getNearestFacility(int x, int y);
+        /**
+         * \brief Mereturn nilai tick
+         */
+        int getTick() const;
 };
 
 #endif

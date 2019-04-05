@@ -53,7 +53,6 @@ int main()
     {
         Tampilan::GetInstance()->clearLayar();
         World::GetInstance()->renderAll();
-        World::GetInstance()->updateAll();
         //Get input user
         inputUser = Tampilan::GetInstance()->readStringTable(0, 23, 11, 1, 1, 0);
         for (int i = 0; i < inputUser.size(); i++)
@@ -115,10 +114,12 @@ int main()
                 Player::GetInstance()->GetY()
             );
             if(nearAnimal.size() != 0)
-            {
+            { 
                 for(Animal* a : nearAnimal)
                 {
-                    World::GetInstance()->addMsg("Kamu bicara dengan "+a->getRenderChar());
+                    string berbicara = "Kamu bicara dengan ";
+                    berbicara += a->getRenderChar();
+                    World::GetInstance()->addMsg(berbicara);
                     World::GetInstance()->addMsg("  Dia berkata : "+a->GetAnimalSound());
                 }
             }else{
@@ -127,6 +128,127 @@ int main()
         }
         else if (inputUser == "interact")
         {
+            int playerX = Player::GetInstance()->GetX();
+            int playerY = Player::GetInstance()->GetY();
+            vector<Animal*> nearAnimal = World::GetInstance()->getNearestAnimal(playerX, playerY);
+            vector<Facility*> nearFacility = World::GetInstance()->getNearestFacility(playerX, playerY);
+            Animal *atasA = nullptr, *bawahA = nullptr, *kiriA = nullptr, *kananA = nullptr;
+            Facility *atasF = nullptr, *bawahF = nullptr, *kiriF = nullptr, *kananF = nullptr;
+            World::GetInstance()->addMsg("Animal dekat kamu:");
+            for(Animal* a : nearAnimal)
+            {
+                string temp = "  ";
+                temp += a->getRenderChar();
+                if(a->GetX()==playerX && a->GetY()==playerY-1)
+                {
+                    temp += " (atas)";
+                    atasA = a;
+                }else if(a->GetX()==playerX && a->GetY()==playerY+1)
+                {
+                    temp += " (bawah)";
+                    bawahA = a;
+                }else if(a->GetX()==playerX-1 && a->GetY()==playerY)
+                {
+                    temp += " (kiri)";
+                    kiriA = a;
+                }else if(a->GetX()==playerX+1 && a->GetY()==playerY)
+                {
+                    temp += " (kanan)";
+                    kananA = a;
+                }
+                World::GetInstance()->addMsg(temp);
+            }
+            World::GetInstance()->addMsg("Facility dekat kamu:");
+            for(Facility* f : nearFacility)
+            {
+                string temp = "  ";
+                temp += f->getRenderChar();
+                int f_x = f->getPoint().getAbsis();
+                int f_y = f->getPoint().getOrdinat();
+                if(f_x==playerX && f_y==playerY-1)
+                {
+                    temp += " (atas)";
+                    atasF = f;
+                }else if(f_x==playerX && f_y==playerY+1)
+                {
+                    temp += " (bawah)";
+                    bawahF = f;
+                }else if(f_x==playerX-1 && f_y==playerY)
+                {
+                    temp += " (kiri)";
+                    kiriF = f;
+                }else if(f_x==playerX+1 && f_y==playerY)
+                {
+                    temp += " (kanan)";
+                    kananF = f;
+                }
+                World::GetInstance()->addMsg(temp);
+            }
+            World::GetInstance()->addMsg("Ketik arah untuk berinteraksi");
+            World::GetInstance()->renderAll();
+            bool valid = false;
+            while(!valid){
+                inputUser = Tampilan::GetInstance()->readStringTable(0, 23, 11, 1, 1, 0);
+                for (int i = 0; i < inputUser.size(); i++)
+                {
+                    inputUser[i] = tolower(inputUser[i]);
+                }
+                if(inputUser == "atas" || inputUser == "bawah" || inputUser == "kiri" || inputUser == "kanan")
+                {
+                    valid = true;
+                }else{
+                    World::GetInstance()->addMsg("Input salah, masukan arah interaksi");
+                }
+                World::GetInstance()->renderAll();
+            }
+            if(inputUser == "atas")
+            {
+                //Interact dengan atas
+                if(atasA != nullptr)
+                {
+                    atasA->Interact();
+                }else if(atasF != nullptr)
+                {
+                    atasF->interact();
+                }else{
+                    World::GetInstance()->addMsg("Tidak ada apapun di atasmu");
+                }
+            }else if(inputUser == "bawah") {
+                //Interact dengan bawah
+                if(bawahA != nullptr)
+                {
+                    bawahA->Interact();         
+                }else if(bawahF != nullptr)
+                {
+                    bawahF->interact();
+                }else{
+                    World::GetInstance()->addMsg("Tidak ada apapun di bawahmu");
+                }
+
+            }else if(inputUser == "kiri") {
+                //Interact dengan kiri
+                if(kiriA != nullptr)
+                {
+                    kiriA->Interact();    
+                }else if(kiriF != nullptr)
+                {
+                    kiriF->interact();
+                }else{
+                    World::GetInstance()->addMsg("Tidak ada apapun di kirimu");
+                }
+
+            }else{
+                //Interact dengan kanan
+                if(kananA != nullptr)
+                {
+                    kananA->Interact();
+                }else if(kananF != nullptr)
+                {
+                    kananF->interact();
+                }else{
+                    World::GetInstance()->addMsg("Tidak ada apapun di kananmu");
+                }
+            }
         }
         else if (inputUser == "kill")
         {
@@ -139,10 +261,11 @@ int main()
             {
                 World::GetInstance()->addMsg("Sudah ada rumput");
             }else{
-                World::GetInstance()->getLand(x, y)->growGrass();
+                World::GetInstance()->getLand(x, y)->setGrass(true);
                 World::GetInstance()->addMsg("Kamu menanam rumput");
             }
         }
+        World::GetInstance()->updateAll();
     }
     endwin();
 }

@@ -1,4 +1,4 @@
-#include "LinkedList.h"
+#include "../../include/Generik/LinkedList.h"
 #include<iostream>
 using namespace std;
 
@@ -26,5 +26,7 @@ int main()
     Lol.removePrev();
     Lol.print();
     Lol2.print();
+
+
     return 0;
 }

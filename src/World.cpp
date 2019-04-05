@@ -184,6 +184,11 @@ void World::updateAll()
     {
         listAnimal.erase(listAnimal.begin() + i);
     }
+    //Update letak semua binatang
+    for (Animal *LA : listAnimal)
+    {
+        LA->MoveRandom();
+    }
     //Update tick lapar semua binatang
     for (Animal *LA : listAnimal)
     {
@@ -194,6 +199,7 @@ void World::updateAll()
             LA->Eat();
         }
     }
+
 }
 
 vector<Animal *> World::getNearestAnimal(int x, int y)
@@ -245,4 +251,8 @@ vector<Facility *> World::getNearestFacility(int x, int y)
         }
     }
     return hasil;
+}
+
+int World::getTick() const{
+    return tick;
 }

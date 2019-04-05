@@ -14,8 +14,9 @@ bool Land::hasGrass() const{
     return grass;
 }
 
-void Land::growGrass(){
-    grass = true;
+void Land::setGrass(bool hasGrass)
+{
+    grass = hasGrass;
 }
 
 

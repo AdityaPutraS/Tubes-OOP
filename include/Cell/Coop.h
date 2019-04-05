@@ -21,6 +21,9 @@ class Coop : public Land{
         //method
         bool isCoop() const;
 
+        //method
+        void setGrass(bool hasGrass);
+
 };
 
 

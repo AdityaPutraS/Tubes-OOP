@@ -12,8 +12,8 @@ bool EggProducingAnimal::MoveRandom()
     direction randDir;
     while (i < 4 && !moveValid)
     {
-        srand(1);
-        randDir = static_cast<direction>(rand() % 4 + 1);
+        srand(World::GetInstance()->getTick());
+        randDir = static_cast<direction>(rand() % 5 + 1);
         if (randDir == up && World::GetInstance()->getLand(x, y - 1)->isCoop())
         {
             moveValid = true;
@@ -32,6 +32,7 @@ bool EggProducingAnimal::MoveRandom()
         }
         i++;
     }
+    // World::GetInstance()->addMsg("EggAnimal Bergerak");
     if(moveValid)
     {
         this->Move(randDir);
