@@ -88,7 +88,7 @@ void Player::InteractWith(Facility &facilitia)
  */
 void Player::Kill(Animal &animalia)
 {
-    animalia.Die();
+    animalia.Die(true);
 }
 /**
  * \brief Interaksi Player dengan Cell, menumbuhkan rumput sebagai makanan dari Animal, mengurangi water sebanyak 1

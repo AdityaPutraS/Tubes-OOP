@@ -1,16 +1,40 @@
-#include "../../include/LivingBeing/EggProducingAnimal.h"
-#include <iostream>
+#include "LivingBeing/EggProducingAnimal.h"
+#include "World.h"
+#include "LivingBeing/Player.h"
 
-using namespace std;
-
-EggProducingAnimal::EggProducingAnimal(int _x, int _y, string _animalSound, char _repChar) : Animal(_x, _y, _animalSound, _repChar){
-    haveEgg = false;
+EggProducingAnimal::EggProducingAnimal(int _x, int _y, string _animalSound, char _repChar, int maxHunger) : Animal(_x, _y, _animalSound, _repChar, maxHunger){
 }
 
-void EggProducingAnimal::SetHaveEgg(bool _haveEgg){
-    haveEgg = _haveEgg;
-}
-
-bool EggProducingAnimal::IsHaveEgg(){
-    return haveEgg;
+bool EggProducingAnimal::MoveRandom()
+{
+    bool moveValid = false;
+    int i = 0;
+    direction randDir;
+    while (i < 4 && !moveValid)
+    {
+        srand(1);
+        randDir = static_cast<direction>(rand() % 4 + 1);
+        if (randDir == up && World::GetInstance()->getLand(x, y - 1)->isCoop())
+        {
+            moveValid = true;
+        }
+        else if (randDir == down && World::GetInstance()->getLand(x, y + 1)->isCoop())
+        {
+            moveValid = true;
+        }
+        else if (randDir == left && World::GetInstance()->getLand(x - 1, y)->isCoop())
+        {
+            moveValid = true;
+        }
+        else if (randDir == right && World::GetInstance()->getLand(x + 1, y)->isCoop())
+        {
+            moveValid = true;
+        }
+        i++;
+    }
+    if(moveValid)
+    {
+        this->Move(randDir);
+    }
+    return moveValid;
 }

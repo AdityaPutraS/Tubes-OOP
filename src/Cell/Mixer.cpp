@@ -1,4 +1,5 @@
 #include "Cell/Mixer.h"
+#include "Product/AllProduct.h"
 
 vector<SideProduct> Mixer::catalog = vector<SideProduct>();
 
@@ -23,7 +24,12 @@ SideProduct Mixer::mix(Product P1, Product P2)
 
 void Mixer::initCatalog()
 {
-    
+    // catalog.push_back(BeefRolade());
+    // catalog.push_back(BlueFeather());
+    // catalog.push_back(CheeseSteakOmelette());
+    // catalog.push_back(CremeBrulee());
+    // catalog.push_back(Lasagna());
+    // catalog.push_back(STMJ());
 }
 
 bool Mixer::isMixer() const{

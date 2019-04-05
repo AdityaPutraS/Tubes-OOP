@@ -34,6 +34,9 @@ class Lamb : public MeatProducingAnimal, public MilkProducingAnimal {
          */  
         Lamb(int _x, int _y);
 
-        void GiveMeat();
+        bool MoveRandom();
+
+        void Die(bool diedOfHunger);
+        void Interact(); 
 };
 #endif

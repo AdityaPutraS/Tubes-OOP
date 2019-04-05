@@ -1,11 +1,13 @@
-#include "../include/LivingBeing/Animal.h"
+#include "LivingBeing/Animal.h"
+#include "World.h"
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
-Animal::Animal(int _x, int _y, string _animalSound, char _repChar): LivingBeing(_x,_y,_repChar){
+Animal::Animal(int _x, int _y, string _animalSound, char _repChar, int _maxHunger): LivingBeing(_x,_y,_repChar){
     animalSound = _animalSound;
-    hungerMeter = 5;
+    maxHunger = _maxHunger;
+    hungerMeter = maxHunger;
     isAlive = true;
 }
 int Animal::GetHungerMeter(){
@@ -31,19 +33,22 @@ void Animal::GettingHungry(){
 ///< Mengurangi HungerMeter tiap 1 tick, dipanggil tiap tick selesai
     hungerMeter--;
 }
-void Animal::Eat(){
-
-}             ///< Hewan makan grass yang ada di petaknya
-void Animal::SoundTheAnimal(){
-    cout<<animalSound<<endl;
-}  ///< Mengeluarkan suara hewan
-void Animal::Die(){
-    if(hungerMeter==0){
-        cout<<"Your animal died of starvation, RIP."<<endl;
+bool Animal::Eat(){
+    //Cek apakah di tempat dia berdiri ada rumput
+    if(World::GetInstance()->getLand(x, y)->hasGrass())
+    {
+        setRenderChar(toupper(getRenderChar()));
+        hungerMeter = maxHunger;
+        return true;
     }else{
-        cout<<"You managed to slaughter your animal."<<endl;
+        return false;
     }
-    isAlive = false;
-}
+}///< Hewan makan grass yang ada di petaknya
+void Animal::SoundTheAnimal(){
+    World::GetInstance()->addMsg(animalSound);
+}  ///< Mengeluarkan suara hewan
 
-//hantu
+bool Animal::masihHidup()
+{
+    return isAlive;
+}

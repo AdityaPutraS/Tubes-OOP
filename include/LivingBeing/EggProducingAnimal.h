@@ -15,23 +15,24 @@
 #include "Animal.h"
 using namespace std;
 
-class EggProducingAnimal : public Animal {
-    protected:
-        bool haveEgg;
-    public:
-        //CTOR
-        /**
+class EggProducingAnimal : public virtual Animal
+{
+  public:
+    //CTOR
+    /**
          * \brief Constructor EggProducingAnimal dengan parametered location dan animalSound
          * \param _x posisi x EggProducingAnimal
          * \param _y posisi y EggProducingAnimal
          * \param _animalSound suara dari EggProducingAnimal
          */
-        EggProducingAnimal(int _x, int _y, string _animalSound, char _repChar);   //init haveEgg = false
-        
-        //SETTER
-        void SetHaveEgg(bool _haveEgg);///Setter atribut haveEgg
-        bool IsHaveEgg();   ///fungsi checker kondisi haveEgg
+    EggProducingAnimal(int _x, int _y, string _animalSound, char _repChar, int maxHunger); //init haveEgg = false
 
-        bool isEggPA() const {return true;}
+    virtual void Die(){};
+
+    virtual void Interact(){};
+
+    bool isEggPA() const { return true; }
+
+    bool MoveRandom();
 };
 #endif

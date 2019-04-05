@@ -4,7 +4,7 @@
  *
  * STMJ adalah SideProduct yang dihasilkan dari beberapa FarmProduct yang ada di Game
  *  
- * \note Ingredients : STMJ & CowMilk
+ * \note Ingredients : ChickenEgg & CowMilk
  * 
  * \author Naufal Aditya D.
  * 

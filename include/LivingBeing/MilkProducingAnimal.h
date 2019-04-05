@@ -8,37 +8,30 @@
 * oleh player yang berada di sekitar MilkProducingAnimal 
 * 
 *\author Ahmad Rizal Alifio 
-*/ 
-
+*/
 
 #include <iostream>
 #include "Animal.h"
 using namespace std;
 
-class MilkProducingAnimal : public Animal {
-    protected:
-        bool haveMilk; /// atribut MilkProducingAnimal, bernilai true jika memiliki Milk 
-    public:
-        //CTOR
-        /** 
-        * \brief Konstruktor berparameter MilkProducingAnimal 
-        * \param _x adalah posisi x dari MilkProducingAnimal 
-        * \param _y adalah posisi y dari MilkProducingAnimal 
-        * \param _animalSound adalah string yang berisi suara yang dikeluarkan MilkProducingAnimal 
-        */ 
-        MilkProducingAnimal(int _x, int _y, string _animalSound, char _repChar); //init haveMilk = false
-        
-        //METHOD
-        /** 
-         * \brief Menghasilkan milk ke player jika 
-         * ada disekitar player yang melakukan Interaksi 
-         */
-        void ProduceMilk();
-        /** 
-         * \brief Mereturn atribut haveMilk, return True jika siap memproduksi milk, False jika tidak 
-         */
-        bool IsHaveMilk();
+class MilkProducingAnimal : public virtual Animal
+{
+public:
+  //CTOR
+  /** 
+              * \brief Konstruktor berparameter MilkProducingAnimal 
+              * \param _x adalah posisi x dari MilkProducingAnimal 
+              * \param _y adalah posisi y dari MilkProducingAnimal 
+              * \param _animalSound adalah string yang berisi suara yang dikeluarkan MilkProducingAnimal 
+              */
+  MilkProducingAnimal(int _x, int _y, string _animalSound, char _repChar, int maxHunger); //init haveMilk = false
 
-        bool isMilkPA() const {return true;}
+  virtual void Die(){};
+
+  virtual void Interact(){};
+
+  bool isMilkPA() const { return true; }
+
+  bool MoveRandom();
 };
 #endif

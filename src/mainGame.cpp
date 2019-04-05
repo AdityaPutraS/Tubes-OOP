@@ -1,4 +1,3 @@
-//hantu
 #include <iostream>
 #include "Product/SideProduct.h"
 #include "World.h"
@@ -8,6 +7,7 @@
 #include "LivingBeing/Player.h"
 #include "LivingBeing/LivingBeing.h"
 #include "LivingBeing/Landsalmon.h"
+#include "LivingBeing/Diplodocus.h"
 #include "LivingBeing/MeatProducingAnimal.h"
 #include "Product/CowMeat.h"
 
@@ -42,10 +42,11 @@ int main()
     World::GetInstance()->addFacil(new Mixer(Point(10, 1)), 10, 1);
     World::GetInstance()->addFacil(new Well(Point(10, 3)), 10, 3);
 
-    World::GetInstance()->addLB((MeatProducingAnimal*)new Landsalmon(2,2), 2,2);
+    World::GetInstance()->addAnimal(new Landsalmon(2, 2), 2, 2);
+    World::GetInstance()->addAnimal(new Diplodocus(4, 3), 4, 3);
 
     Player::GetInstance()->AddInventory(new CowMeat(200));
-    
+
     bool gamePlay = true;
     string inputUser;
     while (gamePlay)
@@ -54,58 +55,93 @@ int main()
         World::GetInstance()->renderAll();
         World::GetInstance()->updateAll();
         //Get input user
-        inputUser = Tampilan::GetInstance()->readStringTable(0, 23,11,1, 1, 0);
-        for(int i = 0; i < inputUser.size(); i++)
+        inputUser = Tampilan::GetInstance()->readStringTable(0, 23, 11, 1, 1, 0);
+        for (int i = 0; i < inputUser.size(); i++)
         {
             inputUser[i] = tolower(inputUser[i]);
         }
-        if(inputUser == "exit")
+        if (inputUser == "exit")
         {
             gamePlay = false;
-        }else if(inputUser == "up")
+        }
+        else if (inputUser == "up")
         {
-            if(Player::GetInstance()->Move(LivingBeing::direction::up))
+            if (Player::GetInstance()->Move(LivingBeing::direction::up))
             {
                 World::GetInstance()->addMsg("Player go up");
-            }else{
+            }
+            else
+            {
                 World::GetInstance()->addMsg("Movement gagal");
             }
-        }else if(inputUser == "down")
+        }
+        else if (inputUser == "down")
         {
-            if(Player::GetInstance()->Move(LivingBeing::direction::down))
+            if (Player::GetInstance()->Move(LivingBeing::direction::down))
             {
                 World::GetInstance()->addMsg("Player go down");
-            }else{
+            }
+            else
+            {
                 World::GetInstance()->addMsg("Movement gagal");
             }
-        }else if(inputUser == "left")
+        }
+        else if (inputUser == "left")
         {
-            if(Player::GetInstance()->Move(LivingBeing::direction::left))
+            if (Player::GetInstance()->Move(LivingBeing::direction::left))
             {
                 World::GetInstance()->addMsg("Player go left");
-            }else{
+            }
+            else
+            {
                 World::GetInstance()->addMsg("Movement gagal");
             }
-        }else if(inputUser == "right")
+        }
+        else if (inputUser == "right")
         {
-            if(Player::GetInstance()->Move(LivingBeing::direction::right))
+            if (Player::GetInstance()->Move(LivingBeing::direction::right))
             {
                 World::GetInstance()->addMsg("Player go right");
-            }else{
+            }
+            else
+            {
                 World::GetInstance()->addMsg("Movement gagal");
             }
-        }else if(inputUser == "talk")
+        }
+        else if (inputUser == "talk")
         {
-            
-        }else if(inputUser == "interact")
+            vector<Animal*> nearAnimal = World::GetInstance()->getNearestAnimal(
+                Player::GetInstance()->GetX(),
+                Player::GetInstance()->GetY()
+            );
+            if(nearAnimal.size() != 0)
+            {
+                for(Animal* a : nearAnimal)
+                {
+                    World::GetInstance()->addMsg("Kamu bicara dengan "+a->getRenderChar());
+                    World::GetInstance()->addMsg("  Dia berkata : "+a->GetAnimalSound());
+                }
+            }else{
+                World::GetInstance()->addMsg("Jangan ngomong sendiri");
+            }
+        }
+        else if (inputUser == "interact")
         {
-            
-        }else if(inputUser == "kill")
+        }
+        else if (inputUser == "kill")
         {
-            
-        }else if(inputUser == "grow")
+        }
+        else if (inputUser == "grow")
         {
-            
+            int x = Player::GetInstance()->GetX();
+            int y = Player::GetInstance()->GetY();
+            if(World::GetInstance()->getLand(x, y)->hasGrass())
+            {
+                World::GetInstance()->addMsg("Sudah ada rumput");
+            }else{
+                World::GetInstance()->getLand(x, y)->growGrass();
+                World::GetInstance()->addMsg("Kamu menanam rumput");
+            }
         }
     }
     endwin();

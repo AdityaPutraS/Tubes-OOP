@@ -21,8 +21,6 @@
 using namespace std;
 
 class Chicken : public EggProducingAnimal, public MeatProducingAnimal {
-    private:
-
     public:
         /**
          * \brief Konstruk Chicken dengan parametered location, dan bunyi defaultnya
@@ -34,8 +32,11 @@ class Chicken : public EggProducingAnimal, public MeatProducingAnimal {
          * \param _y posisi y Chicken
          */
         Chicken(int _x, int _y); 
+        
+        bool MoveRandom();
 
-        void GiveMeat();
+        void Die(bool diedOfHunger) override;
+        void Interact() override; 
 };
 
 #endif

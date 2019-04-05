@@ -35,6 +35,9 @@ class Diplodocus : public EggProducingAnimal, public MeatProducingAnimal {
          */   
         Diplodocus(int _x, int _y);
 
-        void GiveMeat();
+        bool MoveRandom();
+
+        void Die(bool diedOfHunger);
+        void Interact(); 
 };
 #endif

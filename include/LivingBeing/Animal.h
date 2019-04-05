@@ -18,7 +18,8 @@ using namespace std;
 
 class Animal : public LivingBeing {
     protected:
-        int hungerMeter;        ///< Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value 5
+        int maxHunger;          ///< Maksimum tingkat kelaparan hewan
+        int hungerMeter;        ///< Tingkat kelaparan hewan, tiap tick akan berkurang 1, default value maxHunger
         string animalSound;     ///< Suara hewan, berbeda tiap animal
         bool isAlive;
     public:
@@ -28,7 +29,7 @@ class Animal : public LivingBeing {
          * \param _y nilai posisi y binatang pada layar
          * \param _animalSound string yang akan diprint ketika method SoundTheAnimal dipanggil
          */
-        Animal(int _x, int _y, string _animalSound, char _repChar); //Konstruk binatang dengan parametered location and animal sound
+        Animal(int _x, int _y, string _animalSound, char _repChar, int _maxHunger); //Konstruk binatang dengan parametered location and animal sound
         
         /// Getter hungerMeter
         int GetHungerMeter();
@@ -43,12 +44,18 @@ class Animal : public LivingBeing {
 
         
         void GettingHungry();   ///< Mengurangi HungerMeter tiap 1 tick, dipanggil tiap tick selesai
-        void Eat();             ///< Hewan makan grass yang ada di petaknya
+        bool Eat();             ///< Hewan makan grass yang ada di petaknya
         void SoundTheAnimal();  ///< Mengeluarkan suara hewan
-        void Die();             ///< If hungerMeter = 0 "Hewan laper ampe mati" else "Hewan disembelih b"
-
+        virtual void Die(bool diedOfHunger)=0;   ///< If hungerMeter = 0 "Hewan laper ampe mati" else "Hewan disembelih b"
+        virtual void Interact()=0; ///< Method interaksi player dengan hewan  
         virtual bool isMeatPA() const{ return false;}
         virtual bool isMilkPA() const{ return false;}
         virtual bool isEggPA() const{ return false;}
+        bool masihHidup();
+        /**
+         * \brief Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak,
+         *      digunakan untuk animal
+         */
+        virtual bool MoveRandom()=0;
 };
 #endif

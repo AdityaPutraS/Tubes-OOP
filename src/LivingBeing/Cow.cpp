@@ -1,14 +1,33 @@
-#include "../../include/LivingBeing/Cow.h"
+#include "LivingBeing/Cow.h"
 #include "LivingBeing/Player.h"
 #include "Product/CowMeat.h"
-#include <iostream>
+#include "Product/CowMilk.h"
+#include "World.h"
 
-using namespace std;
-
-Cow::Cow(int _x, int _y): MilkProducingAnimal(_x,_y,"Mooo", 'B'), MeatProducingAnimal(_x,_y,"Mooo", 'B'){
+Cow::Cow(int _x, int _y): MilkProducingAnimal(_x,_y,"Mooo", 'B',8), MeatProducingAnimal(_x,_y,"Mooo", 'B',8), Animal(_x, _y, "Mooo", 'B', 8){
 
 }
-    
-void Cow::GiveMeat(){
-    Player::GetInstance()->AddInventory(new CowMeat());
+
+bool Cow::MoveRandom(){
+    if(MilkProducingAnimal::MoveRandom())
+    {
+        return true;
+    } else if(MeatProducingAnimal::MoveRandom()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+void Cow::Die(bool diedOfHunger){
+    if(!diedOfHunger){
+        Player::GetInstance()->AddInventory(new CowMeat());
+    }
+    World::GetInstance()->addMsg("1 Cow Mati");
+}
+
+void Cow::Interact()
+{
+    Player::GetInstance()->AddInventory(new CowMilk());
+    World::GetInstance()->addMsg("Kamu mendapat susu sapi");
 }

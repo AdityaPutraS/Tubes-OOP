@@ -31,5 +31,10 @@ class Platypus : public EggProducingAnimal {
         */
 
         Platypus(int _x, int _y); 
+
+        void Die(bool diedOfHunger) ;
+
+        void Interact() ;
+
 };
 #endif

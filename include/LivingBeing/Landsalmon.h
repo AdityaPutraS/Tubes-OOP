@@ -19,7 +19,7 @@
 #include "MeatProducingAnimal.h"
 using namespace std;
 
-class Landsalmon : public EggProducingAnimal, public MeatProducingAnimal {
+class Landsalmon : public MeatProducingAnimal, public EggProducingAnimal {
     public:
         /**
          * \brief Konstruk Landsalmon dengan parametered location
@@ -31,7 +31,10 @@ class Landsalmon : public EggProducingAnimal, public MeatProducingAnimal {
          * \param _y posisi y Landsalmon
          */    
         Landsalmon(int _x, int _y);
+        
+        bool MoveRandom();
 
-        void DieAndGiveMeat();
+        void Die(bool diedOfHunger);
+        void Interact(); 
 };
 #endif

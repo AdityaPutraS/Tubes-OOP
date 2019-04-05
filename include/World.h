@@ -17,7 +17,7 @@
 #include "Product/SideProduct.h"
 #include "Cell/Land.h"
 #include "Cell/Facility.h"
-#include "LivingBeing/LivingBeing.h"
+#include "LivingBeing/Animal.h"
 #include <vector>
 using namespace std;
 
@@ -45,10 +45,10 @@ class World {
          */
         Land*** mapLand;
         /**
-         * \brief listLB adalah vector dari LivingBeing yang
-         * menampung semua objek living being yang ada di game
+         * \brief listAnimal adalah vector dari Animal yang
+         * menampung semua objek Animal yang ada di game
          */
-        vector<LivingBeing*> listLB;
+        vector<Animal*> listAnimal;
         /** \brief listFacil adalah vector dari Facility yang 
          * menampung semua objek Facility yang ada di game
          */
@@ -83,15 +83,15 @@ class World {
         static World* GetInstance(){return world_instance;}
         
         /**
-         * \brief Menambah living being pada posisi _x dan _y
-         * \param lb LivingBeing yang akan dimasukkan ke listLB
-         * \param _x posisi x living being
-         * \param _y posisi y living being
+         * \brief Menambah animal pada posisi _x dan _y
+         * \param la Animal yang akan dimasukkan ke listAnimal
+         * \param _x posisi x Animal
+         * \param _y posisi y Animal
          */
-        void addLB(LivingBeing *lb, int _x, int _y);
+        void addAnimal(Animal *la, int _x, int _y);
         /**
          * \brief Menambah living being pada posisi _x dan _y
-         * \param lb LivingBeing yang akan dimasukkan ke listLB
+         * \param lb LivingBeing yang akan dimasukkan ke listAnimal
          * \param _x posisi x living being
          * \param _y posisi y living being
          */
@@ -108,6 +108,10 @@ class World {
          */
         bool setLand(Land* c, int _x, int _y);
         /**
+         * \brief Getter dari mapLand pada posisi x, y
+         */
+        Land* getLand(int x, int y);
+        /**
          * \brief Mengeset bawah petak [x,y] terisi/tidak oleh sesuatu
          */
         void setTerisi(int x, int y, bool isi);
@@ -123,6 +127,14 @@ class World {
          * \brief Mengupdate semua objek di dunia ini
          */
         void updateAll();
+        /**
+         * \brief Mereturn binatang yang ada di atas, kiri, kanan, bawah posisi x,y
+         */
+        vector<Animal*> getNearestAnimal(int x, int y);
+        /**
+         * \brief Mereturn fasilitas yang ada di atas, kiri, kanan, bawah posisi x,y
+         */
+        vector<Facility*> getNearestFacility(int x, int y);
 };
 
 #endif

@@ -1,9 +1,10 @@
 #include "World.h"
 #include "LivingBeing/Player.h"
+#include "LivingBeing/Animal.h"
 
 World *World::world_instance = new World(11, 11);
 
-World::World(int _w, int _h) : width(_w), height(_h), listLB(), tick(0)
+World::World(int _w, int _h) : width(_w), height(_h), listAnimal(), listFacil(), tick(0)
 {
     mapLand = new Land **[_h];
     terisi = new bool *[_h];
@@ -31,21 +32,27 @@ World::~World()
     }
     delete[] mapLand;
     delete[] terisi;
-    for (LivingBeing *LB : listLB)
+    for (Animal *LA : listAnimal)
     {
-        delete LB;
+        delete LA;
+    }
+    for (Facility *LF : listFacil)
+    {
+        delete LF;
     }
 }
 
-void World::addLB(LivingBeing *lb, int _x, int _y)
+void World::addAnimal(Animal *la, int _x, int _y)
 {
-    listLB.push_back(lb);
+    listAnimal.push_back(la);
+    terisi[_y][_x] = true;
     //mapLand[_y][_x]->setRenderChar(lb->getRenderChar());
 }
 
 void World::addFacil(Facility *lf, int _x, int _y)
 {
     listFacil.push_back(lf);
+    terisi[_y][_x] = true;
     //mapLand[_y][_x]->setRenderChar(lf->getRenderChar());
 }
 
@@ -65,6 +72,11 @@ bool World::setLand(Land *c, int _x, int _y)
     c->setPosLayar(_x, _y);
     mapLand[_y][_x] = c;
     return true;
+}
+
+Land *World::getLand(int x, int y)
+{
+    return mapLand[y][x];
 }
 
 void World::setTerisi(int x, int y, bool isi)
@@ -124,9 +136,9 @@ void World::renderAll()
             mapLand[y][x]->render();
         }
     }
-    for (LivingBeing *LB : listLB)
+    for (Animal *LA : listAnimal)
     {
-        LB->render();
+        LA->render();
     }
     for (Facility *LF : listFacil)
     {
@@ -150,26 +162,87 @@ void World::renderAll()
 void World::updateAll()
 {
     tick += 1;
-    for(int i = 0; i < height; i++)
+    //Hapus binatang yang sudah mati
+    vector<int> akanDihapus;
+    for (int i = 0; i < listAnimal.size(); i++)
     {
-        for(int j = 0; j < width; j++)
+        Animal *LA = listAnimal[i];
+        if (!LA->masihHidup())
         {
-            terisi[i][j] = false;
+            akanDihapus.push_back(i);
+        }
+        else
+        {
+            if (LA->GetHungerMeter() <= -5)
+            {
+                LA->Die(true);
+                akanDihapus.push_back(i);
+            }
         }
     }
-    for (LivingBeing *LB : listLB)
+    for (int i : akanDihapus)
     {
-        int x = LB->GetX();
-        int y = LB->GetY();
-        terisi[y][x] = true;
+        listAnimal.erase(listAnimal.begin() + i);
     }
+    //Update tick lapar semua binatang
+    for (Animal *LA : listAnimal)
+    {
+        LA->GettingHungry();
+        if (LA->GetHungerMeter() <= 0)
+        {
+            LA->setRenderChar(tolower(LA->getRenderChar()));
+            LA->Eat();
+        }
+    }
+}
+
+vector<Animal *> World::getNearestAnimal(int x, int y)
+{
+    vector<Animal *> hasil;
+    for (Animal *LA : listAnimal)
+    {
+        if (LA->GetX() == x && LA->GetY() == y - 1)
+        {
+            hasil.push_back(LA);
+        }
+        else if (LA->GetX() == x && LA->GetY() == y + 1)
+        {
+            hasil.push_back(LA);
+        }
+        else if (LA->GetX() == x - 1 && LA->GetY() == y)
+        {
+            hasil.push_back(LA);
+        }
+        else if (LA->GetX() == x + 1 && LA->GetY() == y)
+        {
+            hasil.push_back(LA);
+        }
+    }
+    return hasil;
+}
+vector<Facility *> World::getNearestFacility(int x, int y)
+{
+    vector<Facility *> hasil;
     for (Facility *LF : listFacil)
     {
-        int x = LF->getPoint().getAbsis();
-        int y = LF->getPoint().getOrdinat();
-        terisi[y][x] = true;
+        int _x = LF->getPoint().getAbsis();
+        int _y = LF->getPoint().getOrdinat();
+        if (_x == x && _y == y - 1)
+        {
+            hasil.push_back(LF);
+        }
+        else if (_x == x && _y == y + 1)
+        {
+            hasil.push_back(LF);
+        }
+        else if (_x == x - 1 && _y == y)
+        {
+            hasil.push_back(LF);
+        }
+        else if (_x == x + 1 && _y == y)
+        {
+            hasil.push_back(LF);
+        }
     }
-    int x = Player::GetInstance()->GetX();
-    int y = Player::GetInstance()->GetY();
-    terisi[y][x] = true;
+    return hasil;
 }

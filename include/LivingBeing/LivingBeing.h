@@ -54,11 +54,6 @@ class LivingBeing : public Renderable {
          * \param directionNumber nomor arah sesuai tipe enum direction
          */
         bool Move(direction directionNumber);
-        /**
-         * \brief Bergerak acak ke salah satu dari 4 arah yang ada sebanyak 1 petak,
-         *      digunakan untuk animal
-         */
-        void MoveRandom();
         
 };
 #endif

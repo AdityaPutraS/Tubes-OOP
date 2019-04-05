@@ -34,6 +34,7 @@ void LivingBeing::SetY(int _y)
 
 bool LivingBeing::Move(direction dirNumber)
 {
+    World::GetInstance()->setTerisi(x,y,false);
     if (dirNumber == up && y > 0 && !World::GetInstance()->isTerisi(x, y - 1))
     {
         this->SetY(y - 1);
@@ -52,16 +53,10 @@ bool LivingBeing::Move(direction dirNumber)
     }
     else
     {
+        World::GetInstance()->setTerisi(x,y,true);
         return false;
     }
+    World::GetInstance()->setTerisi(x,y,true);
     return true;
 }
-
-void LivingBeing::MoveRandom()
-{
-    srand(1);
-    direction randDir = static_cast<direction>(rand() % 4 + 1);
-    this->Move(randDir);
-}
-
 
