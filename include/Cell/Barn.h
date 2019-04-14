@@ -18,12 +18,16 @@ class Barn : public Land{
         * \param True jika di Barn tersebut ada grass
         */
         Barn(bool hasGrass);
-        /**
-        * \brief Mereturn true jika Cell yang sedang ditunjuk merupakan sebuah Barn
-        */
+        /** 
+         * \brief Meng-overwrite fungsi generik isBarn
+         * sehingga jika kelas Barn memanggil isBarn
+         * akan mereturn true, tapi kalau kelas lain yang manggil
+         * akan mereturn false
+         */
         bool isBarn() const;
         /**
         * \brief Menjadikan Barn mempunyai grass
+        * \param true jika akan ada grass, false jika tidak
         */
         void setGrass(bool hasGrass);
 };

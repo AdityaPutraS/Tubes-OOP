@@ -31,7 +31,9 @@ class Landsalmon : public MeatProducingAnimal, public EggProducingAnimal {
          * \param _y posisi y Landsalmon
          */    
         Landsalmon(int _x, int _y);
-        
+        /**
+        * \brief Prosedur agar Landsalmon dapat bergerak secara acak
+        */
         bool MoveRandom();
 
         void Die(bool diedOfHunger);

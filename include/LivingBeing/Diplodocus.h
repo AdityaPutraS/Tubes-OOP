@@ -34,7 +34,9 @@ class Diplodocus : public EggProducingAnimal, public MeatProducingAnimal {
          * \param _y posisi y Diplodocus
          */   
         Diplodocus(int _x, int _y);
-
+        /**
+        * \brief Prosedur agar Diplodocus dapat bergerak secara acak
+        */
         bool MoveRandom();
 
         void Die(bool diedOfHunger);

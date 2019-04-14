@@ -2,7 +2,7 @@
 #include "LivingBeing/Animal.h"
 #include "World.h"
 
-Player *Player::player_instance = new Player(3, 3, 100, 0);
+Player *Player::player_instance = new Player(9, 2, 100, 0);
 
 /**
  * \brief Constructor Player dengan predefined location, water, and money, dan tas ukuran default
@@ -68,7 +68,7 @@ void Player::SetPos(Point pos)
 void Player::Kill(Animal *animalia)
 {
     World::GetInstance()->hapusAnimal(animalia);
-    animalia->Die(true);
+    animalia->Die(false);
 }
 
 void Player::AddInventory(Product *_p)

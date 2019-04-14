@@ -38,12 +38,12 @@ int main()
             World::GetInstance()->setLand(new Barn(false), x, y);
         }
     }
-    World::GetInstance()->addFacil(new Truck(Point(10, 0)), 10, 0);
+    World::GetInstance()->addFacil(new Truck(Point(10, 2)), 10, 0);
     World::GetInstance()->addFacil(new Mixer(Point(10, 1)), 10, 1);
     World::GetInstance()->addFacil(new Well(Point(10, 3)), 10, 3);
 
     World::GetInstance()->addAnimal(new Landsalmon(2, 2), 2, 2);
-    World::GetInstance()->addAnimal(new Diplodocus(4, 3), 4, 3);
+    World::GetInstance()->addAnimal(new Diplodocus(4, 2), 4, 3);
     World::GetInstance()->addAnimal(new Lamb(8,1), 8,1);
     World::GetInstance()->addAnimal(new Chicken(0,0), 0, 0);
     World::GetInstance()->addAnimal(new Cow(6,1), 6, 1);

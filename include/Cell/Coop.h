@@ -17,14 +17,19 @@ class Coop : public Land{
     public:
         /**
         * \brief Konstruktor default Coop
+        * \param hasGrass Apakah di Coop tersebut ada grass
         */
         Coop(bool hasGrass);
-        /**
-        * \brief Mereturn true jika Cell yang sedang ditunjuk merupakan sebuah Coop
-        */
+        /** 
+         * \brief Meng-overwrite fungsi generik isCoop
+         * sehingga jika kelas Coop memanggil isCoop
+         * akan mereturn true, tapi kalau kelas lain yang manggil
+         * akan mereturn false
+         */
         bool isCoop() const;
         /**
         * \brief Menjadikan Coop mempunyai grass
+        * \param hasGrass true jika akan ada grass, false jika tidak
         */
         void setGrass(bool hasGrass);
 

@@ -118,17 +118,20 @@ void World::renderAll()
     Tampilan::GetInstance()->drawtable(77, 0, 20, 25, 1, 1);
     Tampilan::GetInstance()->printStringTable("Keterangan:", 77, 0, 20, 1, 0, 0);
     Tampilan::GetInstance()->printStringTable("C: Ayam", 77, 0, 20, 1, 0, 1);
-    Tampilan::GetInstance()->printStringTable("G: Kambing", 77, 0, 20, 1, 0, 2);
-    Tampilan::GetInstance()->printStringTable("H: Kuda", 77, 0, 20, 1, 0, 3);
-    Tampilan::GetInstance()->printStringTable("T: Truck", 77, 0, 20, 1, 0, 4);
-    Tampilan::GetInstance()->printStringTable("M: Mixer", 77, 0, 20, 1, 0, 5);
-    Tampilan::GetInstance()->printStringTable("W: Well", 77, 0, 20, 1, 0, 6);
-    Tampilan::GetInstance()->printStringTable("P: Player", 77, 0, 20, 1, 0, 8);
-    Tampilan::GetInstance()->printStringTable("-: Grassland", 77, 0, 20, 1, 0, 10);
-    Tampilan::GetInstance()->printStringTable("x: Barn", 77, 0, 20, 1, 0, 11);
-    Tampilan::GetInstance()->printStringTable("o: Coop", 77, 0, 20, 1, 0, 12);
-    Tampilan::GetInstance()->printStringTable("*,@,#: Land dengan", 77, 0, 20, 1, 0, 14);
-    Tampilan::GetInstance()->printStringTable("rumput", 77, 0, 20, 1, 0, 15);
+    Tampilan::GetInstance()->printStringTable("B: Sapi", 77, 0, 20, 1, 0, 2);
+    Tampilan::GetInstance()->printStringTable("D: Diplodocus", 77, 0, 20, 1, 0, 3);
+    Tampilan::GetInstance()->printStringTable("L: Lamb", 77, 0, 20, 1, 0, 4);
+    Tampilan::GetInstance()->printStringTable("S: Land Salmon", 77, 0, 20, 1,0, 5);
+    Tampilan::GetInstance()->printStringTable("Y: Platypus", 77, 0, 20, 1, 0, 6);
+    Tampilan::GetInstance()->printStringTable("T: Truck", 77, 0, 20, 1, 0, 7);
+    Tampilan::GetInstance()->printStringTable("M: Mixer", 77, 0, 20, 1, 0, 8);
+    Tampilan::GetInstance()->printStringTable("W: Well", 77, 0, 20, 1, 0, 9);
+    Tampilan::GetInstance()->printStringTable("P: Player", 77, 0, 20, 1, 0, 10);
+    Tampilan::GetInstance()->printStringTable("-: Grassland", 77, 0, 20, 1, 0, 11);
+    Tampilan::GetInstance()->printStringTable("x: Barn", 77, 0, 20, 1, 0, 12);
+    Tampilan::GetInstance()->printStringTable("o: Coop", 77, 0, 20, 1, 0, 13);
+    Tampilan::GetInstance()->printStringTable("*,@,#: Land dengan", 77, 0, 20, 1, 0, 17);
+    Tampilan::GetInstance()->printStringTable("rumput", 77, 0, 20, 1, 0, 18);
     for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < width; x++)
@@ -180,9 +183,38 @@ void World::updateAll()
             }
         }
     }
+    // int temp = 0;
+    vector<Animal *> listTemp;
+    int idx = 0;
+    for(auto b : listAnimal)
+    {
+        bool tambahkan = true;
+        for(int i : akanDihapus)
+        {
+            if(idx == i)
+            {
+                tambahkan = false;
+                break;
+            }
+        }
+        if(tambahkan)
+        {
+            listTemp.push_back(b);
+        }
+        idx++;
+    }
+    listAnimal.clear();
+    for(auto b : listTemp)
+    {
+        listAnimal.push_back(b);
+    }
+    listTemp.clear();
     for (int i : akanDihapus)
     {
-        listAnimal.erase(listAnimal.begin() + i);
+        // delete listAnimal[i];
+        // addMsg(to_string(listAnimal[i]->GetX()));
+        // addMsg(to_string(listAnimal[i]->GetY()));
+        // listAnimal.erase(listAnimal.begin() + i - temp);
     }
     //Update letak semua binatang
     for (Animal *LA : listAnimal)
@@ -271,16 +303,43 @@ void World::hapusAnimal(Animal *a)
 {
     int idxHapus = -1;
     int idx = 0;
+    int xHapus = 0, yHapus = 0;
     for (Animal *la : listAnimal)
     {
         if (la->GetX() == a->GetX() && la->GetY() == a->GetY())
         {
             idxHapus = idx;
+            xHapus = a->GetX();
+            yHapus = a->GetY();
         }
         idx += 1;
     }
     if (idxHapus != -1)
     {
-        listAnimal.erase(listAnimal.begin() + idxHapus);
+        vector<Animal *> listTemp;
+        int idx = 0;
+        for(auto b : listAnimal)
+        {
+            bool tambahkan = true;
+            if(idx == idxHapus)
+            {
+                tambahkan = false;
+                break;
+            }
+            if(tambahkan)
+            {
+                listTemp.push_back(b);
+            }
+            idx++;
+        }
+        listAnimal.clear();
+        for(auto b : listTemp)
+        {
+            listAnimal.push_back(b);
+        }
+        listTemp.clear();
+        // terisi[yHapus][xHapus] = false;
+        // delete listAnimal[idxHapus];
+        // listAnimal.erase(listAnimal.begin() + idxHapus);
     }
 }

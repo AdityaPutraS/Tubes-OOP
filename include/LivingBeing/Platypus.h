@@ -19,21 +19,14 @@
 using namespace std;
 
 class Platypus : public EggProducingAnimal {
-    private:
-
     public:
-        //CTOR
-        //Konstruktor berparameter 
-        /*
-        * param _x menandakan posisi absis awal platypus
-        * param _y menandakan posisi ordinat awal platypus
-        * 
-        */
-
+        /**
+         * \brief Constructor default Platypus
+         * \param _x Absis objek Platypus
+         * \param _y Ordinat objek Platypus
+         */
         Platypus(int _x, int _y); 
-
         void Die(bool diedOfHunger) ;
-
         void Interact() ;
 
 };

@@ -22,9 +22,8 @@ class Player: public LivingBeing {
     private:
         int water;  ///< Jumlah air yang dibawa Player
         int money;  ///< Jumlah uang yang dibawa Player
-        /**
-        * Implementasi inventori 
-        * List yang isinya inventori player, berisi FarmProduct dan SideProduct, Ukuran default = 20
+        /** 
+        * \brief Implementasi inventori, List yang isinya inventori player, berisi FarmProduct dan SideProduct, Ukuran default = 20
         */
         LinkedList<Product*>* tas; 
         /**
@@ -44,14 +43,36 @@ class Player: public LivingBeing {
          */
         Player(int _x, int _y, int _water, int _money);
     public:
-        //GETTER
+        /**
+         * \brief Mereturn jumlah air yang dimiliki Player
+         */
         int GetWater(); ///Getter water
+        /**
+         * \brief Mereturn jumlah uang yang dimiliki Player
+         */
         int GetMoney(); ///Getter money
+        /**
+         * \brief Mereturn jumlah posisi Player
+         */
         Point GetPos(); ///Getter posisi
-        //SETTER
+        /**
+         * \brief Mengubah jumlah air yang dimiliki Player
+         * \param _water Banyaknya jumlah air
+         */
         void SetWater(int _water);  ///setter water
+        /**
+         * \brief Mengubah jumlah uang yang dimiliki Player
+         * \param _money Banyaknya jumlah uang
+         */
         void SetMoney(int _money);  ///setter money
+        /**
+         * \brief Mengubah posisi dari Player
+         * \param pos Posisi baru Player
+         */
         void SetPos(Point pos);     ///setter posisi
+        /**
+         * \brief Mereturn sebuah pointer ke obje Player sekarang
+         */
         static Player* GetInstance(){return player_instance;}
 
         //METHOD
@@ -68,22 +89,30 @@ class Player: public LivingBeing {
         void AddInventory(Product* _p);
         /**
          * \brief Mendapatkan refrence ke barang no sekian dari player
-         * \param i nomor barang di tas
+         * \param idx Indeks barang di tas
          */
-        Product* GetInventory(int i);
+        Product* GetInventory(int idx);
         /**
          * \brief Mencari product di tas
+         * \param productName Nama produk yang ingin dicari
          */
         int SearchInventory(string productName);
         /**
          * \brief Menghapus barang di tas
+         * \param idx Indeks barang di tas
          */
-        void DelInventory(int i);
+        void DelInventory(int idx);
         /**
          * \brief Getter tas
          */
         LinkedList<Product*>* getTas();
+        /**
+         * \brief Menghapus semua barang di dalam tas tas
+         */
         void RemoveTas();
+        /**
+         * \brief Getter tas
+         */
         void MakeTas();
 };
 #endif

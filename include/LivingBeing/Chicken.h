@@ -32,7 +32,9 @@ class Chicken : public EggProducingAnimal, public MeatProducingAnimal {
          * \param _y posisi y Chicken
          */
         Chicken(int _x, int _y); 
-        
+        /**
+        * \brief Prosedur agar Chicken dapat bergerak secara acak
+        */
         bool MoveRandom();
 
         void Die(bool diedOfHunger) override;

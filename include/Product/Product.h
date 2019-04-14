@@ -21,7 +21,7 @@ class Product
   public:
     /**
      * \brief Constructor Product default
-     * 
+     * \param _name Nama dari produk yang ingin dibuat
      */
     Product(string _name);
     /**

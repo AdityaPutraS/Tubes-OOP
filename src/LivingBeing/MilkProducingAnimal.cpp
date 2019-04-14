@@ -14,7 +14,7 @@ bool MilkProducingAnimal::MoveRandom()
     {
         srand(World::GetInstance()->getTick());
         randDir = static_cast<direction>(rand() % 5 + 1);
-        if (randDir == up && World::GetInstance()->getLand(x, y - 1)->isGrassland()&& y > 0)
+        if (randDir == up && y > 0 && World::GetInstance()->getLand(x, y - 1)->isGrassland())
         {
             moveValid = true;
         }

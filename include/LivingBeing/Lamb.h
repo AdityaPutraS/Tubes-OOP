@@ -33,7 +33,9 @@ class Lamb : public MeatProducingAnimal, public MilkProducingAnimal {
          * \param _y posisi y Lamb
          */  
         Lamb(int _x, int _y);
-
+        /**
+        * \brief Prosedur agar Lamb dapat bergerak secara acak
+        */
         bool MoveRandom();
 
         void Die(bool diedOfHunger);

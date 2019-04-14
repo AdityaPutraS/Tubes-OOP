@@ -17,10 +17,11 @@ class Land : public Cell{
 
     public:
         /**
-         * \brief Default constructor
+         * \brief Default constructor kelas Land
          */
         Land();
         /**
+         * \brief Konstruktor berparameter Land
          * \param _pos posisi Land yang ingin dibentuk
          * \param _renderChar karakter yang akan di render nantinya
          * \param _grass apakah di Land tersebut ada grass

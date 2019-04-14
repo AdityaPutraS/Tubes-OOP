@@ -15,10 +15,9 @@ class Grassland : public Land{
     public:
         /**
         * \brief Konstruktor default Grassland
-        * \param Apakah di Grassland terdapat grass
+        * \param hasGrass Apakah di Grassland terdapat grass
         */
         Grassland(bool hasGrass);
-        //METHOD
         /** 
          * \brief Meng-overwrite fungsi generik isGrassLand
          * sehingga jika kelas GrassLand memanggil isGrassLand
@@ -26,7 +25,10 @@ class Grassland : public Land{
          * akan mereturn false
          */
         bool isGrassland() const;
-
+        /**
+        * \brief Mengganti status grass
+        * \param hasGrass true jika akan ada grass, false jika tidak
+        */
         void setGrass(bool hasGrass);
 
 };
